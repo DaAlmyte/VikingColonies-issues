@@ -6,7 +6,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! Before you start: stand near the settler or building with the trouble, press **F5** and
+        Thanks for reporting! Is it already on the [known issues](https://github.com/DaAlmyte/VikingColonies-issues/blob/main/guide/Known-Issues.md)?
+        There may be a way round it. Before you start: stand near the settler or building with the trouble, press **F5** and
         type `vc_bugreport` (no cheats needed). It writes `BepInEx/VikingColonies-bugreport.txt` in your mod manager
         profile. Attach that file below, with `BepInEx/LogOutput.log` from the same folder.
   - type: textarea

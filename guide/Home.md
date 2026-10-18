@@ -9,3 +9,4 @@
 - [Settings](Settings.md) — every option and what it does
 - [Multiplayer](Multiplayer.md) — servers and playing with friends
 - [Troubleshooting](Troubleshooting.md) — common problems, other mods, and how to report bugs
+- [Known issues](Known-Issues.md) — problems we know about, what's being done, and ways round them
