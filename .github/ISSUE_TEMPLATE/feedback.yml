@@ -1,0 +1,24 @@
+name: Feedback or idea
+description: Something you love, miss, would change, or an idea for the colony
+title: "[Feedback] "
+labels: ["feedback", "needs triage"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind?
+      options:
+        - An idea for something new
+        - Something that felt like a chore or was confusing
+        - Balance (too easy, too hard, too slow, too fast)
+        - Something I really like
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Tell us
+      description: The more about how you play, the better (alone or with friends, how far you are in the game).
+    validations:
+      required: true

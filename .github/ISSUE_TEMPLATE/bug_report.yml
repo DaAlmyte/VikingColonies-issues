@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in VikingColonies doesn't work as it should
+title: "[Bug] "
+labels: ["bug", "needs triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Before you start: stand near the settler or building with the trouble, press **F5** and
+        type `vc_bugreport` (no cheats needed). It writes `BepInEx/VikingColonies-bugreport.txt` in your mod manager
+        profile. Attach that file below, with `BepInEx/LogOutput.log` from the same folder.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see? What were you doing just before?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be made to happen again?
+      description: Steps if you know them; "it just happened once" is fine too.
+  - type: dropdown
+    id: how-bad
+    attributes:
+      label: How bad is it?
+      options:
+        - The game won't start, crashes, or I lost items or my colony
+        - A feature doesn't work and there's no way round it
+        - Something small is wrong, or there's a way round it
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where do you play?
+      options:
+        - On my own
+        - On a server or with friends (I host)
+        - On a server or with friends (someone else hosts)
+        - On a dedicated server
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions
+      description: VikingColonies and Valheim (the bug report file has them too)
+      placeholder: "VikingColonies 1.0.0, Valheim 1.0.20"
+  - type: textarea
+    id: files
+    attributes:
+      label: The bug report file and the log
+      description: Drag VikingColonies-bugreport.txt and LogOutput.log here.
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other mods
+      description: The bug report file lists them; mention any you think may be involved.
