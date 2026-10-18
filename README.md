@@ -9,6 +9,8 @@ shelter from raids and mend what monsters break, while you go adventuring.
 
 This page is for **reporting bugs, giving feedback and sharing ideas**. The mod's code isn't here.
 
+**Chat, quick help and colony pictures: [the VikingColonies Discord](https://discord.gg/yCzDUPQA3D).**
+
 ## Found a bug?
 
 1. Stand near the settler or building with the trouble.
