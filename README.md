@@ -13,6 +13,13 @@ This page is for **reporting bugs, giving feedback and sharing ideas**. The mod'
 
 ## Found a bug?
 
+The quickest way (1.4 and later): stand near the settler or building with the trouble, open a Town Hall's window
+(Shift+E) and press **Report a problem**. Your browser opens the bug form with the versions filled in, and the whole
+report is copied: click in the form's last box, press Ctrl+V, and say what happened. Nothing is sent until you press
+Submit. See the [known issues](guide/Known-Issues.md) first.
+
+Or by hand:
+
 1. Stand near the settler or building with the trouble.
 2. Open the console with **F5**. It needs the `-console` launch option: in Steam, right-click Valheim › Properties ›
    Launch options. Then type `vc_bugreport` and press Enter. No cheats needed.
