@@ -247,7 +247,8 @@
   of items, each with an amount, that its chest keeps. "Keep in stock: 2 of 5", then a row per item with what the
   chest holds of what it keeps ("8 / 10", orange while short), **−** / **+** (by 5; with Shift by a whole stack) and
   **×** to take it off. **Add…** lists **Food (any)** (any food a settler eats) and every item the colony's chests
-  hold; tick one to keep a whole stack of it.
+  hold that stacks; tick one to keep a whole stack of it. Weapons, armour and tools aren't on it (1.4.1): a settler
+  can't carry one without losing its quality, wear and maker, so move those by hand.
 - Room on the list: 5 items per level on a job hut, 10 per level on the Longhouse, 10 on the Town Hall. A full list
   greys Add… and says "The list is full (5 at level 1)".
 - **Other settlers leave kept items alone**: breakfast, meals, feeding fires and builders take only what a chest holds
@@ -272,7 +273,8 @@
     level 2 Builder's Hut — or clear it yourself". The ground in front of each door counts too: they level it and
     clear what grows or lies there (bushes, small trees, stumps, rocks, logs), never items or anyone's building.
   - **Red** — the hut can't go here: another building or another hut's site is in the way, a rock nothing can break
-    (a cliff, or a boulder no pickaxe breaks) stands where it goes, it's outside the colony
+    (a cliff, or a boulder no pickaxe breaks) stands where it goes, a grave or a crate from a ship stands there (it goes
+    once it's emptied), it's outside the colony
     area (the Town Hall's circle and its Watchtowers'), it's someone else's colony (you need to be on its owner's ward there), inside someone else's ward, in a place where building isn't allowed, below the water line, too steep (the
     ground varies more than 4 m), or raised higher than the design's posts reach. Red huts can't be placed.
 - **Page Up / Page Down** raise or lower the hut 25 cm at a time, up to 2 m (settings `Placing.RaiseKey` and
