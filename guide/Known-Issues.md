@@ -18,6 +18,8 @@ things that work that way on purpose.
   meal goes hungry for the rest of the day, however much food arrives later (big stacks from stack-size mods are
   fine). **Way round:** keep food in a colony chest before the morning meal. Fixed for 1.4.2: a hungry settler looks
   for food again during the day.
+- **Debug mode's K key, and the console's killall and killenemies, kill settlers too:** they treat settlers like
+  monsters. **Way round:** don't use them near a colony. Fixed for 1.4.2: settlers are spared, as tamed animals are.
 - **A settler may climb onto a hut's roof when its door is blocked** (rare): they try the blocked door from beside it
   and step up onto the low edge of the roof. **Way round:** keep huts' doors clear. Fixed for 1.4.2.
 
