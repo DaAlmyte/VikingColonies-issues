@@ -14,6 +14,10 @@ things that work that way on purpose.
   after runs from it, and in a colony with no walls or guards, a Neck that keeps hunting can catch them. **Way round:**
   build a Watchtower early (its guards deal with monsters in the colony), put up walls, or clear the Necks near the
   colony yourself. Settlers that stand up to weak animals are planned for 1.5.
+- **Food put in after settlers went hungry is only eaten the next day.** A settler who finds nothing to eat at their
+  meal goes hungry for the rest of the day, however much food arrives later (big stacks from stack-size mods are
+  fine). **Way round:** keep food in a colony chest before the morning meal. Fixed for 1.4.2: a hungry settler looks
+  for food again during the day.
 - **A settler may climb onto a hut's roof when its door is blocked** (rare): they try the blocked door from beside it
   and step up onto the low edge of the roof. **Way round:** keep huts' doors clear. Fixed for 1.4.2.
 
