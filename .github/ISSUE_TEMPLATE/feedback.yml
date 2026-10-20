@@ -22,3 +22,10 @@ body:
       description: The more about how you play, the better (alone or with friends, how far you are in the game).
     validations:
       required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions (filled in by the game's Feedback button)
+      description: VikingColonies and Valheim versions, if you know them
+    validations:
+      required: false
