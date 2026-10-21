@@ -2,9 +2,9 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 20 October 2026._
+_Last updated 21 October 2026._
 
-VikingColonies 1.4.1 · Works with the current Valheim (checked 19 October 2026).
+VikingColonies 1.4.2 · Works with Valheim 1.0.20 (checked 21 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press
 **Report a problem** in the Town Hall's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the
@@ -14,14 +14,18 @@ things that work that way on purpose.
   after runs from it, and in a colony with no walls or guards, a Neck that keeps hunting can catch them. **Way round:**
   build a Watchtower early (its guards deal with monsters in the colony), put up walls, or clear the Necks near the
   colony yourself. Settlers that stand up to weak animals are planned for 1.5.
-- **Food put in after settlers went hungry is only eaten the next day.** A settler who finds nothing to eat at their
-  meal goes hungry for the rest of the day, however much food arrives later (big stacks from stack-size mods are
-  fine). **Way round:** keep food in a colony chest before the morning meal. Fixed for 1.4.2: a hungry settler looks
-  for food again during the day.
-- **Debug mode's K key, and the console's killall and killenemies, kill settlers too:** they treat settlers like
-  monsters. **Way round:** don't use them near a colony. Fixed for 1.4.2: settlers are spared, as tamed animals are.
-- **A settler may climb onto a hut's roof when its door is blocked** (rare): they try the blocked door from beside it
-  and step up onto the low edge of the roof. **Way round:** keep huts' doors clear. Fixed for 1.4.2.
+- **Guards may not gather when you sound the alarm from inside the Town Hall** (rare): each guard heads for a spot
+  round where you stand, and a hut close by can be in the way, so a guard keeps trying its door instead. **Way
+  round:** sound the alarm standing outside, in the open. A fix is planned.
+
+## Recently fixed
+
+- **MyLittleUI: the Town Hall's hover says Rename, and Shift+E doesn't open its window**: fixed in 1.4.2: update the mod. ([#1](https://github.com/DaAlmyte/VikingColonies-issues/issues/1))
+- **Food put in after settlers went hungry was only eaten the next day**: fixed in 1.4.2: update the mod. A hungry
+  settler now looks for food again every half minute.
+- **Debug mode's K key, and the console's killall, killenemies and killtame, killed settlers too**: fixed in 1.4.2:
+  update the mod.
+- **A settler could climb onto a hut's roof when its door was blocked**: fixed in 1.4.2: update the mod.
 
 ## Fixed in 1.4.1
 
