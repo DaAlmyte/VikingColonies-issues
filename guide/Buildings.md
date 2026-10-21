@@ -9,6 +9,8 @@
 - **Shift+E**: the colony's window, in five tabs (the fifth, **Hall**, since 1.4: see Levels below), and **Sound the alarm** (1.3) beside Close: everyone of the colony
   shelters indoors as in a raid, and the guards gather round where you stood (each at their own spot) and fight any
   monster within 30 m of it (a call for help still brings them), for 5 minutes or until **All clear**. Players in the colony's area are told when it starts and ends.
+  The same row has **Report a problem** (the bug form with your versions filled in) and **Feedback** (1.4.2: our Discord
+  or the feedback form, opened in your browser; nothing is sent from the game).
   - **Citizens**: the colony at a glance (beds taken, food in this chest, how many are hungry, what the next newcomer
     waits for), then every citizen (name, job, status, workplace), ten a page. Citizens nobody is near show their last
     known status; vanished citizens show as *Missing* and drop off after 3 in-game days. Click a citizen to choose

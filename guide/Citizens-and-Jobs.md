@@ -80,13 +80,16 @@
 - In rain or snow nobody sits on the open ground; seats and fires with a roof over them are still used.
 - A seat you sit or stand on is yours: settlers leave it, and get up if you sit down there.
 - They get up and go the moment their job has work again, a monster comes, night falls or you recall them.
-- Hover over them to see what they're doing: "Crops growing (taking a seat)", "Jobless (talking with Bjorn)".
+- Hover over them to see what they're doing: "Crops growing (taking a seat)", "Jobless (talking with Bjorn)". A
+  settler on the way to a hut far from you (not loaded on your computer) says "Heading to work".
 - **Greetings:** the first time each day you come within 6 m of a settler, they say "Hail, <your name>!" (and waves, if
   they're in free time).
 - **Small talk:** settlers in free time within 10 m say things above their heads. A chatting pair takes turns; others
   say a line every few minutes.
   - What they talk about follows the colony: a settler who died in the last two days, the weather, a newcomer or a new
-    building today, or their job's wait.
+    building today, a raid held off in the last two days, or their job's wait. Then their own trade (the lumberjack's
+    trees, the farmer's crops, the guard's watch), their temper (cheerful or grumpy), and a boss fallen in your world:
+    the Town Hall's saga tells when the colony hears of it, and they talk of it for two days (1.4.2).
   - A need ("Needs 12 Wood") always comes first. "Hungry" shows for a few seconds every half minute, with their talk in
     between; their hover always says it.
   - Setting `Messages.SmallTalk` (your own).
@@ -100,6 +103,8 @@
   the colony's chests), then the
   logs and stump, picks up wood and seeds, and delivers to the hut when carrying 50 items (`Lumberjack.CarryCapacity`)
   or at night.
+- Its hover says what it is doing (1.4.2): "Felling trees", "Gathering wood", or "Keeping clear of falling logs" while a
+  felled tree comes down.
 - Replants a sapling where the tree stood, using a dropped seed or one from the hut's storage, while a **Cultivator** is
   in the hut's storage or another of the colony's chests (`Lumberjack.Replant`, `Lumberjack.ReplantNeedsCultivator`). Without one, seeds are delivered.
 - **Trees list** ("Trees…" in the hut's window, 0.22): a line per tree kind with **Fell** and **Replant** ticks. They fell
@@ -210,8 +215,9 @@
   - An **archer** takes the best bow or crossbow that has its ammunition in the chests, and that ammunition (it is
     never used up). They shoot a monster they can see within 25 m, fully drawn (a crossbow loaded between shots), from
     where they stand; one they can't see (behind a wall, a rock) they walk towards until they can; one closer than 5 m
-    makes them step back, and cornered they shoot anyway. Without a bow and ammunition they fight with a melee weapon from
-    the chests, if any.
+    makes them step back, and cornered they shoot anyway. An archer also shoots what a sword can't reach: a monster that
+    swims or flies, or one standing up to 15 m above the ground (1.4.2). Without a bow and ammunition they fight with a
+    melee weapon from the chests, if any.
   - **Armour**: the best helmet, chest, legs and cape in the chests, worn in place of their trade's clothes; it protects
     them as a player's does (other settlers' work clothes are for looks).
   - Nothing to fight with anywhere: "Needs a weapon in the Watchtower's chest" (an archer: "a bow and arrows"), and they
@@ -312,9 +318,10 @@
   and mushrooms go before cooked meat, meals vary, and your best food is left for you. Any food a player can eat counts; meads and potions don't. Keep food you don't want eaten out of the colony's
   chests, or on a building's Keep in stock list (0.21: then it's eaten only when there's nothing else). Breakfast takes
   only food no building keeps. A table with benches by the Town Hall makes a fine breakfast place.
-- **Hungry:** a settler who finds nothing is hungry till their next meal. Hovering over them says "Hungry", and they work at
-  half speed (`Colony.HungryWorkSpeed`): they chop weaker and build slower. Nobody starves or leaves. A new settler comes
-  fed, so their first meal is due the next morning.
+- **Hungry:** a settler who finds nothing is hungry. Hovering over them says "Hungry", and they work at half speed
+  (`Colony.HungryWorkSpeed`): they chop weaker and build slower. By day a hungry settler looks again every half minute,
+  so food you put in a chest later is eaten the same day (1.4.2). Nobody starves or leaves. A new settler comes fed, so
+  their first meal is due the next morning.
 - Turn meals off with `Colony.SettlersEat`.
 - **Newcomers:** once a day, in daylight, while the colony has a free bed (more Longhouse beds than settlers), at least
   5 food in the Town Hall's chest, and isn't unhappy (see [Mood](#mood)), a newcomer comes and eats that food (the

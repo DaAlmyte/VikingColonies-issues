@@ -44,14 +44,17 @@
 - **Settlers gather at the Town Hall in the evening** — no fire is burning in the colony: the camp's fire (1.4) burns
   once it's built and there's wood in a colony chest (settlers keep it fed); without a camp yet, light a campfire or
   hearth near the Town Hall.
-- **The wood in the Town Hall goes down** — settlers feed the colony's fires with it (never the last 10).
+- **The wood in the Town Hall goes down** — settlers feed the colony's fires with it (never the last 10); a fire they
+  keep burning says so when you look at it.
   `Colony.TendFires` turns it off; or keep the wood in your own chest, or put Wood on the Town Hall's Keep in stock list.
 - **A settler takes nothing from a chest that holds it** — that building keeps it (its Keep in stock tab, 0.21): other
-  settlers leave kept items there. Lower the amount or take it off the list.
+  settlers leave kept items there, and a builder who needs it says where it's kept ("more Wood is kept in the
+  Lumberjack's Hut"). Lower the amount or take it off the list.
 - **Things move between chests by themselves** — settlers with free time carry what a building keeps and lacks from
   chests that can spare it (0.21). The Town Hall keeps 10 food for newcomers to start. Turn it off with
   `Colony.CarryToStock`, or change the lists.
-- **Settlers don't eat breakfast from the Town Hall** — its food is kept for newcomers (Food (any) × 10 to start):
+- **Settlers don't eat breakfast from the Town Hall** — its food is kept for newcomers (Food (any) × 10 to start; the
+  Town Hall's window says how much it keeps):
   breakfast takes only food beyond that. Their daily meal still comes from it when there's no other food.
 - **A settler sleeps beside their bed, not in it** — a player lies in it or has claimed it as a spawn point, or
   `Colony.SleepInBeds` is off.
@@ -143,6 +146,8 @@
 ## Other mods
 - Tested together with PlantEverything, PlantEasily, Seasonality, PlanBuild, EpicLoot and Monstrum (with Warfare)
   (2026-10-15): the whole self-test passes with them installed, no errors, no clashing patches.
+- **MyLittleUI** (checked with 1.2.31, 1.4.2): Shift+E on the Town Hall and the huts opens their window, and their hover
+  says "Manage", not MyLittleUI's "Rename". Before 1.4.2 the chest's rename took over Shift+E (report #1).
 - Trees and bushes another mod makes plantable (PlantEverything) are cleared from a building site like wild plants;
   the ones you planted yourself are left alone, and a hut's outline turns red over them.
 - Crops a mod adds to the Cultivator show up on a Farm's What to grow list; plants another mod adds for picking show
@@ -153,6 +158,13 @@
   in them), the settlers and their cairns disappear from the world while it's gone, and come back when you install
   it again. The pieces the builder put up are the game's own and stay as ordinary buildings.
 - On a server, everyone needs the same version: don't remove it while players use a colony.
+
+## Telling us what you think
+Press **Feedback** in the Town Hall's window (beside Report a problem). It opens a small window with two buttons:
+**Tell us on Discord** opens our Discord server (post in #feedback), and **Write it on GitHub** opens the feedback form
+with the versions filled in. Nothing is sent from the game: you write it and press send yourself. What you like, what
+felt like a chore and what broke all help. The same window comes by itself once, at a good moment; `Messages.AskForFeedback`
+turns that off.
 
 ## Reporting a bug
 The quickest way: press **Report a problem** in the Town Hall's window (beside Close). It writes the report below,

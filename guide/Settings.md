@@ -66,6 +66,7 @@ server's values are used by everyone.
 | Placing | LowerKey | PageDown | — | lower a hut 0.25 m while placing it (your own key, not the server's) |
 | Messages | DeathMessage | CentreAndChat | CentreAndChat, ChatOnly | how you're told a settler died (your own setting, not the server's) |
 | Messages | HuginTips | true | — | Hugin explains the colony as you play, each tip once per character (with the game's tutorials on); your own setting |
+| Messages | AskForFeedback | true | — | once on this computer, at a good moment, a small window asks what you think of the mod, with links to its Discord and GitHub (nothing is sent from the game); off: it never asks, and the Town Hall's Feedback button stays; on a server, the server's setting |
 | Messages | WordsAboveHeads | true | — | a settler near you who needs you says so above their head; your own setting |
 | Messages | SmallTalk | true | — | settlers greet you once a day and make small talk above their heads in their free time (needs come first); your own setting |
 | Developer | VerboseLog | false | — | write every settler's step to the log (for a bug report); always on in test worlds; your own setting |
