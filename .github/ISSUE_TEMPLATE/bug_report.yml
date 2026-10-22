@@ -54,16 +54,16 @@ body:
     attributes:
       label: Versions
       description: VikingColonies and Valheim (the bug report file has them too)
-      placeholder: "VikingColonies 1.0.0, Valheim 1.0.20"
-  - type: textarea
-    id: files
-    attributes:
-      label: The bug report file and the log
-      description: Drag VikingColonies-bugreport.txt and LogOutput.log here.
-    validations:
-      required: true
+      placeholder: "VikingColonies 1.4.2, Valheim 1.0.20"
   - type: textarea
     id: mods
     attributes:
       label: Other mods
       description: The bug report file lists them; mention any you think may be involved.
+  - type: textarea
+    id: files
+    attributes:
+      label: The bug report file and the log
+      description: Paste the bug report here (the game's Report a problem button copies it), or drag VikingColonies-bugreport.txt and LogOutput.log here.
+    validations:
+      required: true

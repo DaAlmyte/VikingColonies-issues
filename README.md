@@ -7,7 +7,8 @@ shelter from raids and mend what monsters break, while you go adventuring.
 **Get it on Thunderstore: [thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/)**
 (or search **VikingColonies** in r2modman). It needs BepInEx and Jötunn, which the mod manager installs for you.
 
-This page is for **reporting bugs, giving feedback and sharing ideas**. The mod's code isn't here.
+This page is for **reporting bugs, giving feedback and sharing ideas**. The mod's code is at
+[DaAlmyte/VikingColonies-source](https://github.com/DaAlmyte/VikingColonies-source).
 
 **Chat, quick help and colony pictures: [the VikingColonies Discord](https://discord.gg/yCzDUPQA3D).**
 
@@ -56,4 +57,9 @@ The server and every player need the same version of the mod. The server must no
 
 ## Licence
 
-MIT. VikingColonies is a fan-made mod and isn't made by or affiliated with Iron Gate.
+The mod is free to play, to share unchanged (in a modpack, with friends) and to make add-ons and compatibility patches
+for. Publishing its code or a changed copy needs DaAlmyte's OK first: see the
+[code's licence](https://github.com/DaAlmyte/VikingColonies-source/blob/main/LICENSE). Versions up to 1.4.1 were MIT.
+The player guide and the forms on this page are MIT (see LICENSE).
+
+VikingColonies is a fan-made mod and isn't made by or affiliated with Iron Gate.
