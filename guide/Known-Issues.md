@@ -11,7 +11,7 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 - **A young colony can lose settlers to Necks and Greylings.** Settlers don't fight back yet: the one a monster is
   after runs from it, and in a colony with no walls or guards, a Neck that keeps hunting can catch them. **Way round:**
   build a Watchtower early (its guards deal with monsters in the colony), put up walls, or clear the Necks near the
-  colony yourself. Settlers that stand up to weak animals are planned for an update after 1.5.
+  colony yourself. Settlers that stand up to weak animals are coming in 1.5.0.
 
 ## Recently fixed
 
