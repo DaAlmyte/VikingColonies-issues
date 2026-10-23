@@ -1,6 +1,19 @@
 # Multiplayer
 
-- Every player and the server need VikingColonies and Jotunn; the server must not use crossplay.
+- Every player and the server need VikingColonies and Jotunn, with the same first two numbers of VikingColonies'
+  version (1.4.2 and 1.4.3 play together; a 1.5 player can't join a 1.4 server, though on a crossplay server check
+  the versions yourselves).
+- **Crossplay** works for players on PC who have the mod: they join with the join code (tested on a dedicated server
+  with 1.4.3). Players on Xbox or PlayStation can't install mods, so they can't use the colony.
+- **Make sure everyone has the mod:** on a crossplay server the game doesn't check it for you (without crossplay it
+  turns away a player with no mods, saying "Incompatible version"). A player without the mod gets in but can't see
+  the Town Hall or the settlers, and settlers near only that player may stop working.
+- **Joining:** a join code only exists while crossplay is on, and it changes each time the server starts; it needs no
+  router setup. Without crossplay, join with **Join IP** (the server's address and port, usually 2456), from the
+  server list, or, for a world a Steam friend hosts from the menu, from the **Friends** tab. A dedicated server in
+  your home, joined by address, needs UDP ports 2456–2458 open on the router for friends outside the house.
+- If you use r2modman or the Thunderstore app, start the game from it (Start modded): started straight from Steam it
+  has no mods, and a server without crossplay turns you away with "Incompatible version".
 - Citizens and buildings are saved with the world and look the same for everyone.
 - **The server's settings count:** the colony buildings' costs, and every other colony setting marked as synced, come
   from the server when you join it (the hammer asks the server's cost at once); your own again in a world of your own.

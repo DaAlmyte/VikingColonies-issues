@@ -153,11 +153,18 @@
 - Crops a mod adds to the Cultivator show up on a Farm's What to grow list; plants another mod adds for picking show
   up on a Forager's Hut's list. Long lists turn pages.
 
+## Can't join a server
+- See [Multiplayer](Multiplayer.md), Joining: a join code only works while the server has crossplay on; without it,
+  join by the server's address (Join IP).
+- "Incompatible version" means a mod is missing or a version differs: start the game from your mod manager, with the
+  server's version of VikingColonies.
+
 ## Removing the mod
 - Without VikingColonies the game can't show what only the mod has: the Town Hall's and the huts' chests (with what's
   in them), the settlers and their cairns disappear from the world while it's gone, and come back when you install
   it again. The pieces the builder put up are the game's own and stay as ordinary buildings.
-- On a server, everyone needs the same version: don't remove it while players use a colony.
+- On a server, everyone needs the mod, with the same first two numbers of its version: don't remove it while players
+  use a colony.
 
 ## Telling us what you think
 Press **Feedback** in the Town Hall's window (beside Report a problem). It opens a small window with two buttons:

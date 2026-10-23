@@ -53,7 +53,10 @@ chests first. The buildings the builder put up are ordinary Valheim pieces and s
 
 ## Multiplayer
 
-The server and every player need the same version of the mod. The server must not use crossplay.
+The server and every player need VikingColonies and Jotunn, with the same first two numbers of VikingColonies'
+version. Crossplay works for PC players who have the mod (they join with the join code), but on a crossplay server
+the game doesn't turn away a player without the mod, so make sure everyone has it. Without crossplay, join by the
+server's address (Join IP). More in the [Multiplayer guide](guide/Multiplayer.md).
 
 ## Licence
 
