@@ -194,7 +194,8 @@
   that fight the leash is the help radius + the chase limit.
 - **Their tower's orders** (1.3): rounds, or holding the post (where a manager put it, or by the tower). While the Town
   Hall's **alarm** sounds they go where it was sounded, each guard of the colony to their own spot round it (3 m apart),
-  and fight any monster within 30 m of it; a call for help within their help radius still brings them (1.4).
+  and fight any monster within 30 m of it; a call for help within their help radius still brings them (1.4). Each takes
+  the nearest open spot they can walk to (1.4.3): never one behind a wall, inside a fenced yard or by the colony's fire.
 - **Ballistas** (1.3): on watch with nothing to fight they keep the colony's ballistas within their patrol loaded: one
   under half full gets what the colony's chests can spare of its ammunition (real items: the ballista uses them up),
   carried over by them ("Loading the ballista"); what's left goes back (with no room, it goes with their load to the

@@ -146,8 +146,12 @@
 ## Other mods
 - Tested together with PlantEverything, PlantEasily, Seasonality, PlanBuild, EpicLoot and Monstrum (with Warfare)
   (2026-10-15): the whole self-test passes with them installed, no errors, no clashing patches.
+- Tested again for 1.4.3 (2026-10-21) with those, MyLittleUI 1.2.31, CraftFromContainers 4.0.70, Quick Stack - Store -
+  Sort - Trash - Restock 1.4.16, MultiUserChest 0.6.2, ExtraSlots 1.2.21 and Gizmo 1.16.0, all at once: no errors, no
+  clashing patches. And with ValheimPlus 10.3.0 on its own, with its settings as it ships them: the same.
 - **MyLittleUI** (checked with 1.2.31, 1.4.2): Shift+E on the Town Hall and the huts opens their window, and their hover
-  says "Manage", not MyLittleUI's "Rename". Before 1.4.2 the chest's rename took over Shift+E (report #1).
+  says "Manage", not MyLittleUI's "Rename". Before 1.4.2 the chest's rename took over Shift+E (report #1). Before 1.4.3
+  a fallen settler's cairn showed only "Cairn" on hover with it; now it says "Here lies …" first.
 - Trees and bushes another mod makes plantable (PlantEverything) are cleared from a building site like wild plants;
   the ones you planted yourself are left alone, and a hut's outline turns red over them.
 - Crops a mod adds to the Cultivator show up on a Farm's What to grow list; plants another mod adds for picking show

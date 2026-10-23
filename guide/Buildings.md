@@ -76,18 +76,19 @@
   Town Hall founds a new colony. With `TownHallGraceDays = 0` a colony ends 30 seconds after its Town Hall is gone.
 
 ## The Town Hall camp (1.4)
-- The place the colony gathers. The builder puts it up round the Town Hall's chest (the chest stays where you put it,
-  at the back of the camp under a lean-to, facing the fire), and it grows with the hall's level:
+- The place the colony gathers: a camp site round one fire. The builder puts it up round the Town Hall's chest (the
+  chest stays where you put it, at the back of the camp under the hall's shelter, facing the fire), and it grows with
+  the hall's level:
 
   | Hall level | What it adds |
   |---|---|
-  | 1 | a fire pit 6 m in front of the chest, a thatched lean-to over the chest, two standing torches |
-  | 2 | three sitting logs round the fire, a maypole beyond it, the first trophy rack (two item stands) |
-  | 3 | the fire becomes a bonfire; a chieftain's stone seat across it; a second trophy rack |
-  | 4 | shingles on the lean-to, dvergr lanterns beyond the side seats, a longer first rack |
-  | 5 | grausten pillars under the lean-to, lava lanterns where the torches stood |
+  | 1 | the hall's shelter over the chest (6 m wide, open to the fire), a fire pit in front of it, two standing torches |
+  | 2 | sitting logs round the fire, a shelter on its left with two trophy stands, the colony's banner pole at the camp's way in |
+  | 3 | the fire becomes a bonfire; a chieftain's stone seat across it; a shelter on its right with two more trophy stands |
+  | 4 | shingles on the shelters, a third trophy stand in each, dvergr lanterns at their fronts |
+  | 5 | grausten pillars under the shelters, lava lanterns where the torches stood |
 
-- **Trophies** hung on its racks are within 10 m of the hall's chest, so they count for raising the hall.
+- **Trophies** hung on the shelters' stands are within 10 m of the hall's chest, so they count for raising the hall.
 - **In the evening** the colony gathers at the camp's fire before any other burning one; settlers keep it fed with wood
   from the colony's chests.
 - **A new Town Hall** orders the camp at once; a builder puts it up after the huts (you can move its order first in
@@ -162,6 +163,10 @@
   Place a marker near the Farm, choose its crop and size, and the Farm takes it: **one field per level** (1 at level 1,
   5 at level 5). With no field the Farm's window says "No field yet" and the farmer says "Needs a field". Crops that grew round a Farm
   before 0.20.1 are yours to harvest.
+- (1.4.3) **A field in the Farm's own yard** (on its site, outside its walls) is worked like any other: a finished
+  Farm's yard is farmland. While the Farm is being built or upgraded its yard is building ground, and the builder clears
+  what grows there (ripe crops are picked first). A Farm whose fields have no free ground says so: "Its field has no
+  free ground (too near a building or water?)".
 - Put **seeds** in its chest (**E**) and a **Cultivator** in it or any of the colony's chests: carrot, turnip or onion seeds, barley, flax — whatever the
   ticked crops need. The harvest comes back to the chest: food the colony eats.
 - **Shift+E**: the worker, how many fields it works per level, and how many crops it grows. **What to grow…** opens
@@ -229,8 +234,9 @@
 
 ## Longhouse
 - Cost: 20 Wood (setting `Longhouse.WoodCost`). Needs a Town Hall nearby. No job: it's where settlers live.
-- The builder puts up its building, a hall round its hearth with **beds**: 2 at level 1, 2 more each level (10 at
-  level 5), along its walls with a clear way to each. Each
+- The builder puts up its building, a hall round its fire with **beds**: 2 at level 1, 2 more each level (10 at
+  level 5), on plank sleeping platforms along its walls, with an earth floor down the middle and a clear way to each.
+  Each
   bed is a settler's home; the colony shares them out by itself, nearest first. A bed that's knocked down frees its
   settler, who gets the next free one. While the Longhouse goes up a level its settlers wait for the new beds.
 - **E**: storage, like every hut's. **Shift+E**: the beds and who sleeps in each.
@@ -262,9 +268,10 @@
   Hall)". Setting `Colony.CarryToStock` (on).
 - Only players who may manage the colony change a list. A building that never had its list changed keeps nothing,
   except the Town Hall (10 food).
-- **A Farm whose fields grow seed carrots, seed turnips or seed onions** plants a Carrot, a Turnip or an Onion for
-  each, and those are food: settlers eat them from its chest like any other. Put a few on the Farm's Keep in stock list
-  so the seed cycle never stalls.
+- (1.4.3) **A Farm keeps the seeds its fields plant**, whether or not they're on its list: one per plot of each field (a
+  field of mixed crops shares its plots among them; a bush regrows, so none for it). Other settlers don't eat, burn,
+  build with or carry off those, only what the chest holds beyond them. A field of seed carrots, seed turnips or seed
+  onions is planted with a Carrot, a Turnip or an Onion, so its Farm keeps that many of them back from the colony's meals.
 
 ## Placing a hut
 - While you place a hut, its building shows as a see-through outline, with a line under the crosshair:
@@ -288,10 +295,14 @@
   building for each hut and level (and the Town Hall's camp), made with our design tool; before 1.4 they were plain
   placeholders.
 - To use your own design: in a test world with `devcommands` on, place the hut's chest, build the building around it,
-  look at the chest and type `vc_blueprint save lumberjack_hut` (or `builder_hut`, `forager_hut`, `farm`, `longhouse`)
-  in the console. It is saved to
-  `BepInEx/config/VikingColonies/blueprints/` and used for new huts of that kind. The command also lists pieces that
-  barely hold.
+  look at the chest and type `vc_blueprint save builder_hut` (or `lumberjack_hut`, `forager_hut`, `farm`, `longhouse`,
+  `watchtower`; add a level, `vc_blueprint save builder_hut 2`, for levels 2-5) in the console. It is saved to
+  `BepInEx/config/VikingColonies/blueprints/` and used for new huts and upgrades of that kind. The command also lists
+  pieces that barely hold.
+- **Your saved designs are yours:** an update replaces only the mod's file (its own designs are inside it) and never
+  writes to that folder, and the mod never deletes anything there. Saving again with the same name and level replaces
+  the design saved before. A design the mod can't use is left as it is, and the mod's own is used instead. Keep a copy
+  of the folder for designs you care about.
 
 ## Levels and upgrades
 - Huts have levels 1–5, following the game's eras: 1 Meadows; 2 Black Forest and Swamp; 3 Mountains and Plains;
@@ -312,10 +323,15 @@
   it a little when the new design's floors would otherwise not rest on it). They change
   nothing before they have a new piece's materials: without them they wait ("Needs …") and the hut stays as it is. The hut
   keeps working at its old level until they are done. You can cancel until they have changed the first piece.
+- Once a building or an upgrade is finished, the ground under its roof becomes trodden earth, as the hoe's path makes
+  it: no grass growing up through an earth floor or a low floor. A building finished before this gets it once too.
 - **Old huts and the new designs (1.4):** a hut built before 1.4 is rebuilt at its next upgrade: the builder takes its
   old building down piece by piece (the materials go back to their hut) and puts up the new design, clearing the
   doorways first so nobody is walled in. A bed you set as your spawn is left standing. On sloping ground a bigger new
   building may need the ground evened out round it; if a site can't be reached, the hut's window says so.
+- **Huts built before 1.4.3:** at their next upgrade the builder takes their back and left walls down and puts them up
+  again turned round, plain side out, and a Longhouse's beds move up onto its new sleeping platforms. It costs a
+  little wood, once.
 - A builder builds and upgrades huts up to their own Builder's Hut's level; their own hut can always go one level higher
   (up to the Town Hall's level, like every hut), so upgrade the Builder's Hut first.
 
