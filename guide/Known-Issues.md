@@ -2,7 +2,7 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 23 October 2026._
+_Last updated 24 October 2026._
 
 VikingColonies 1.4.3 · Works with Valheim 1.0.20 (checked 22 October 2026).
 
@@ -12,6 +12,14 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   after runs from it, and in a colony with no walls or guards, a Neck that keeps hunting can catch them. **Way round:**
   build a Watchtower early (its guards deal with monsters in the colony), put up walls, or clear the Necks near the
   colony yourself. Settlers that stand up to weak animals are coming in 1.5.0.
+- **With StarLevelSystem, settlers with stars can get too big for doors.** That mod makes some settlers bigger along
+  with their stars, and they get stuck outside their hut. Fixed in 1.5.1: settlers keep their own size whatever
+  another mod sets (their stars and the health that comes with them stay). **Way round until then:** give the hut a
+  bigger door.
+- **The builder sometimes walks round the outside of a hut to reach its chest.** When the chest stands against the
+  back wall, the builder can head for the outside of that wall first, then go round to the door, and the same can
+  happen at the Town Hall camp's chest. The work still gets done, only slower. Fixed in 1.5.1: the builder walks
+  straight to the chest's open side.
 
 ## Recently fixed
 
