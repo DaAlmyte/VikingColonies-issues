@@ -4,7 +4,7 @@
 Longhouses and give them jobs. They build your village piece by piece, fell and replant trees, farm, forage, carry
 goods to the colony's storehouse, eat, sleep, shelter from raids and mend what monsters break, while you go adventuring.
 
-**Get it on Thunderstore: [thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/), or on Hexium: [valheim.hexium.gg/mods/DaAlmyte/VikingColonies](https://valheim.hexium.gg/mods/DaAlmyte/VikingColonies)**
+**Get it on Thunderstore: [thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/), on Hexium: [valheim.hexium.gg/mods/DaAlmyte/VikingColonies](https://valheim.hexium.gg/mods/DaAlmyte/VikingColonies), or on Nexus Mods: [nexusmods.com/valheim/mods/4531](https://www.nexusmods.com/valheim/mods/4531)**
 (or search **VikingColonies** in r2modman). It needs BepInEx and Jötunn, which the mod manager installs for you.
 
 This page is for **reporting bugs, giving feedback and sharing ideas**. The mod's code is at
