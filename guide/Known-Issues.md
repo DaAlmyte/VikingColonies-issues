@@ -2,7 +2,7 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 24 October 2026._
+_Last updated 25 October 2026._
 
 VikingColonies 1.5.0 · Works with Valheim 1.0.20 (checked 25 October 2026).
 
