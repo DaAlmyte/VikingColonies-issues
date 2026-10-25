@@ -1,8 +1,8 @@
 # VikingColonies: bug reports, feedback and the player guide
 
 **VikingColonies** is a MineColonies-style colony mod for Valheim. Found a Town Hall, welcome settlers, house them in
-Longhouses and give them jobs. They build your village piece by piece, fell and replant trees, farm, forage, eat, sleep,
-shelter from raids and mend what monsters break, while you go adventuring.
+Longhouses and give them jobs. They build your village piece by piece, fell and replant trees, farm, forage, carry
+goods to the colony's storehouse, eat, sleep, shelter from raids and mend what monsters break, while you go adventuring.
 
 **Get it on Thunderstore: [thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/), or on Hexium: [valheim.hexium.gg/mods/DaAlmyte/VikingColonies](https://valheim.hexium.gg/mods/DaAlmyte/VikingColonies)**
 (or search **VikingColonies** in r2modman). It needs BepInEx and Jötunn, which the mod manager installs for you.
@@ -27,7 +27,7 @@ Or by hand:
 3. It writes `BepInEx/VikingColonies-bugreport.txt` in your mod manager profile (r2modman: Settings › Browse profile
    folder).
 4. [Open a bug report](../../issues/new?template=bug_report.yml) and attach that file, with `BepInEx/LogOutput.log`
-   from the same folder.
+   from the same folder. The game writes your Steam ID into that log: you can delete it before attaching.
 
 The more you tell us about what you did just before it happened, the faster it gets fixed.
 
