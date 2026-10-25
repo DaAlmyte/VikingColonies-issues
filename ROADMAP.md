@@ -25,9 +25,9 @@ No dates from here on: about one update a week, new features one week and fixes 
 - A cook in a Mead Hall: dishes kept ready for you, hot breakfasts for the settlers, and feasts (being built)
 - Saving a hut design under a name you used before keeps a backup of the old one (being built)
 - Your own pieces in a hut (a bench, a lantern, a banner) stay put when the hut is upgraded (being built)
+- Report a problem also offers the Discord, and says where your bug report file is saved (being built)
 - Pastimes: settlers spend their free time at archery, sparring, board games, stories by the fire and more (being built)
 - The builder puts up their own hut first, and says why when they move to another site (being built)
-- Report a problem also offers the Discord, and says where your bug report file is saved
 
 ### 1.7
 
