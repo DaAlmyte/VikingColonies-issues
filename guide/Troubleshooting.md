@@ -190,6 +190,7 @@ see above) and type `vc_bugreport` (no cheats needed): it writes `BepInEx/Viking
 and the game's versions, your other mods, the colonies around you (only what your game has loaded: their buildings and
 orders, each settler's state, what they did lately and anything that went wrong for them), and the mod's last warnings
 and errors. On a server, the player near the settler (or the host) is the one to type it. Send that file with
-`BepInEx/LogOutput.log` from your mod manager profile and describe what you did. The log stays small by default
+`BepInEx/LogOutput.log` from your mod manager profile and describe what you did (the game writes your Steam ID into
+that log: you can delete it before sending). The log stays small by default
 (start-up, deaths, the colony's saga, warnings and errors); for a bug report turn on `Developer.VerboseLog` (see
 [Settings](Settings.md)) and play until it happens again, so every settler's step is in it.
