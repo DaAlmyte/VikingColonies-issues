@@ -10,3 +10,4 @@
 - [Multiplayer](Multiplayer.md) — servers and playing with friends
 - [Troubleshooting](Troubleshooting.md) — common problems, other mods, and how to report bugs
 - [Known issues](Known-Issues.md) — problems we know about, what's being done, and ways round them
+- [Roadmap](../ROADMAP.md) — what's coming: the next update, the ones after it, and ideas for later
