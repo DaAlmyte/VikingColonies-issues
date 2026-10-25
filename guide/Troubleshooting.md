@@ -107,7 +107,8 @@
 - **A new hut doesn't hire** — its building isn't finished. Build a Builder's Hut and give the builder wood, stone, a
   flint axe, an antler pickaxe and a hoe (see [Getting started](Getting-Started.md)), or use `vc_build finish` in a
   test world.
-- **`vc_blueprint save` says it's not allowed** — it's a design tool for test worlds: turn on `devcommands` first.
+- **`vc_blueprint save` says it's not allowed** — it's a design tool for test worlds (a world whose name starts with
+  `VCTest`): turn on `devcommands` first.
 - **The builder says "Something's in the way: …"** — a piece of their plan would go into another building (yours or
   another hut's). Move that, or let the hut count as built with `vc_build done` (test worlds); `vc_build clear` removes
   the pieces they already put up for it.

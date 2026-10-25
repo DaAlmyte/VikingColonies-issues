@@ -4,14 +4,10 @@ Problems in VikingColonies we know about, the worst first: what's being done, an
 
 _Last updated 24 October 2026._
 
-VikingColonies 1.4.3 · Works with Valheim 1.0.20 (checked 22 October 2026).
+VikingColonies 1.5.0 · Works with Valheim 1.0.20 (checked 25 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Town Hall's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
-- **A young colony can lose settlers to Necks and Greylings.** Settlers don't fight back yet: the one a monster is
-  after runs from it, and in a colony with no walls or guards, a Neck that keeps hunting can catch them. **Way round:**
-  build a Watchtower early (its guards deal with monsters in the colony), put up walls, or clear the Necks near the
-  colony yourself. Settlers that stand up to weak animals are coming in 1.5.0.
 - **With StarLevelSystem, settlers with stars can get too big for doors.** That mod makes some settlers bigger along
   with their stars, and they get stuck outside their hut. Fixed in 1.5.1: settlers keep their own size whatever
   another mod sets (their stars and the health that comes with them stay). **Way round until then:** give the hut a
@@ -23,6 +19,8 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 
 ## Recently fixed
 
+- **A young colony could lose settlers to Necks and Greylings**: fixed in 1.5.0: update the mod. Settlers now stand up
+  to weak animals: a Neck, a Greyling or a Boar that goes for a settler is fought off with what's in their hands.
 - **MyLittleUI: the Town Hall's hover says Rename, and Shift+E doesn't open its window**: fixed in 1.4.2: update the mod. ([#1](https://github.com/DaAlmyte/VikingColonies-issues/issues/1))
 - **Guards may not gather when you sound the alarm from inside the Town Hall**: fixed in 1.4.3: update the
   mod. Each guard now takes the nearest open spot round the alarm that they can walk to.

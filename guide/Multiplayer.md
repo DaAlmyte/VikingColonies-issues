@@ -46,4 +46,8 @@
 - **Repairs:** the computer that controls a finished hut checks it against its design every minute; a piece any
   player removes with the hammer is left out for everyone, and only players who may manage the colony can press
   Leave as it is.
+- **Saved designs:** a hut is built from the designs saved on the computer that runs it when its building or upgrade is
+  ordered (for a new hut, the player who placed it), and the order keeps that design. The hut window's upgrade line
+  shows the viewer's own designs' cost. A design one player saved with `vc_blueprint save` is used on others' computers
+  only if they have a copy of it in their own designs folder.
 - A citizen keeps working when you're away only while someone is near it (Valheim only runs areas near players).

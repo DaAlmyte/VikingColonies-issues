@@ -36,6 +36,14 @@
     the next age of huts (huts go as high as the hall). Eikthyr raises it to level 2, The Elder and Bonemass to 3,
     Moder and Yagluth to 4, the Queen to 5. The trophies aren't used up, and a boss your world has already beaten
     counts without its trophy.
+12. **Stop hauling (1.5):** when goods pile up in the huts, build a **Storehouse** (20 Wood, once the colony has a
+    Builder's Hut; one per colony) and hire a courier in its window. Couriers fill what each building keeps in stock and
+    what the builder needs, and take the huts' surplus to the storehouse. After a trip, empty your bag into the
+    storehouse's own chest (the one with its sign): it's put away like with like. Its **Needs** tab says what the
+    colony is short of, and what to bring. See [Buildings](Buildings.md#storehouse).
+
+**Just building?** In a world with the **No build cost** setting, creative mode places colony buildings already built
+and adds Build now, Upgrade now and Add settlers to their windows: see [Creative mode](Buildings.md#creative-mode-15) (1.5).
 
 **Give them somewhere to sit.** The builder puts up the Town Hall's camp (1.4) after the huts: a fire pit by the hall,
 with seats as the hall rises. A few benches and a campfire near each hut help too: settlers with nothing to do sit

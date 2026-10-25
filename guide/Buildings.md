@@ -12,7 +12,8 @@
   The same row has **Report a problem** (the bug form with your versions filled in) and **Feedback** (1.4.2: our Discord
   or the feedback form, opened in your browser; nothing is sent from the game).
   - **Citizens**: the colony at a glance (beds taken, food in this chest, how many are hungry, what the next newcomer
-    waits for), then every citizen (name, job, status, workplace), ten a page. Citizens nobody is near show their last
+    waits for, and, while couriers carry, when the storehouse is full or couriers hold loads with nowhere to put them,
+    with what to do), then every citizen (name, job, status, workplace), ten a page. Citizens nobody is near show their last
     known status; vanished citizens show as *Missing* and drop off after 3 in-game days. Click a citizen to choose
     them, then **Recall** brings them at once to a free spot by the Town Hall, wherever they are in the loaded world (stuck
     somewhere, or just far off); they carry on with their work from there. Only players who may manage the colony (its
@@ -101,6 +102,9 @@
   in the hammer while you stand well inside a Town Hall's colony area (within about 44 m), so the hut lands inside it. A hut outside every colony (its Town Hall was
   destroyed) says "Build near a Town Hall" and joins as soon as a Town Hall is in range.
 - **E**: 18-slot storage where the lumberjack delivers wood and seeds and fetches seeds for replanting.
+- **A workbench** (1.5) inside, along the right wall, raised to level 2 by the chopping block by the door: somewhere to
+  repair your axe. A Lumberjack's Hut built before 1.5 gets it at its next upgrade; one already at level 5 keeps its old
+  layout, its chopping block only for show.
 - Put a **Cultivator** in its storage, or any of the colony's chests, to let the lumberjack replant (it isn't used
   up). The hut window shows "Fells 5 of 6 kinds, replants 3 · Replanting: on" ("needs a Cultivator in the colony's
   chests", "off (setting)").
@@ -133,6 +137,11 @@
 - Hires a builder straight away. They build their own hut first, then every other hut's building in the order the huts
   were placed. **Shift+E**: the worker, what they're working on, and how many buildings wait.
 - **E**: 18-slot storage — put building materials here (they also take from the Town Hall and the other huts).
+- **Its workbench** (1.5) is yours to use. From level 2 it stands in the covered yard, with its chopping block and adze
+  beside it (a level 3 bench). From level 3 the tool shelf hangs inside the workshop on the same wall, making it a level
+  4 bench. The artisan table (level 4) stands inside the workshop, where the bench was. A Builder's Hut built before
+  1.5 gets this at its next upgrade; one already at level 5 keeps its old layout, where the upgrades don't reach the
+  bench and the artisan table, out in the open yard, is too exposed to use.
 - **Hand over** (0.23, on its Hut tab; MineColonies' arrow): what their current order (or the colony's first) still
   needs beyond what the colony's chests hold for them and what they already carry (0.26) goes from your bag into this
   chest, as much as you carry ("Handed over 12 Wood, 4 Stone"). Equipped items stay with you.
@@ -142,7 +151,7 @@
   With nothing else to do they stay at the site and carry on as soon as you have helped.
 - Every hut's window shows its building: "Under construction: 12 of 29 pieces" (or "Being repaired: 2 pieces to put
   back"), the builder's name, what they need, and pieces they left out (underground at this spot, or they kept falling).
-- **Repairs:** with nothing to build, the builder mends damaged colony buildings, and pieces a troll or a fire broke
+- **Repairs:** with nothing to build, the builder mends damaged colony buildings (the worst-damaged first), and pieces a troll or a fire broke
   off a finished hut are put back as a repair order, while the hut keeps working. A piece you take away with your
   hammer stays away. See [Citizens and jobs](Citizens-and-Jobs.md#builder).
 
@@ -225,6 +234,38 @@
   Hire, Fire (one at a time), Auto-hire, Recall, **Role**, **Orders**, **Post here**, what the tower's level gives
   ("keeps watch and holds the border 25 m around the tower"), and Keep in stock.
 
+## Storehouse
+- (1.5) Cost: 20 Wood (setting `Storehouse.WoodCost`). **One per colony**, and it needs a **Builder's Hut** in the colony
+  to build it (placing says so in red otherwise). Within the colony's area, as every hut.
+- **On posts:** a Norse storehouse stands up off the ground, with a stair to its door (levels 1-2; a store room on a stone
+  base behind from level 3). Its outline starts **0.75 m up** while you place it, so it stands on its posts; lower it
+  with Page Down (the Placing keys) if the ground there is higher, and if it turns red as "too high", lower it a step.
+- **The colony's store:** its own chest and **every chest standing inside its walls** — the ones its design brings and
+  any you place in it. Your personal chests, carts and ships don't count, nor do other huts' chests, nor a chest on the
+  ground under its floor. A chest you place
+  inside joins within a few seconds; one you take away leaves. Chests you stand inside don't stop its upgrades: they stay
+  where they are, unless the new level needs that very spot (then the upgrade says another building is in the way).
+- **Used first:** the builder looks in its own hut, then the storehouse, then the Town Hall, then any colony chest.
+  Meals come from the storehouse first, then the Town Hall, then the nearest chest. A worker whose hut chest is full
+  takes the load to the storehouse, and to the Town Hall only when the storehouse is full. Everything that counts the
+  colony's chests counts it too: the lumberjack's Stop at, fires, Keep in stock, a ballista's ammunition.
+- **Shift+E:** four tabs. **Hut**: its level, its couriers, how many chests its store has. **Needs**: the colony's
+  shopping list, one line per building short of something: "Farm: 20 Wood — Ulf is bringing it", "waiting for a
+  courier", "only in the Town Hall, where couriers don't take from", "no room in its chest" or "nobody has it"; under
+  them **Bring: 40 Iron, 10 Food (any)**, what nobody in the colony has. **Keep in stock** (for its own chest, as on
+  every hut). **Stock**: what all the colony's chests hold, most first, each with where most of it lies ("40 Wood (most
+  in the Lumberjack's Hut)").
+- **Take down:** with a courier hired, its couriers first carry what the chests inside hold to the colony's other chests
+  (a building short of it, else the Town Hall, else the nearest with room); the window says "Emptying the store for its
+  take-down: 40 Wood, 12 Stone… left", nothing new goes in meanwhile, and once it's empty a builder takes it down.
+  **Cancel take down** opens the store again. Couriers don't carry gear and tools, and with no courier the window asks
+  you to empty the chests yourself. Its own chest's things go to the Town Hall by themselves, as with every hut.
+- **Hugin** explains the storehouse the first time you place one (one placed already built in creative mode too).
+- **Couriers** (1.5): it hires couriers like a Watchtower hires guards: one at levels 1–2, two at 3–4, three at 5
+  (Hire, Fire, Auto-hire). They carry for the whole colony, see [Citizens and jobs](Citizens-and-Jobs.md#courier).
+  **Its own chest is your drop-off**: empty your bag into it after a trip, and couriers take what stacks to whoever
+  needs it, or into the chests inside. Gear (weapons, armour, tools) stays where you put it.
+
 ## The colony's area
 - The Town Hall's circle (`Colony.ColonyRadius`, 50 m) and a circle round each finished Watchtower of the colony
   (1.1). Huts and field markers can stand anywhere in it, and a hut joins the colony whose area holds it: the Town
@@ -265,7 +306,12 @@
   food only when there's no other food in the colony.
 - **Settlers with free time bring what's missing**: one of them takes it from a colony chest that can spare it and
   carries it over, up to 20 at a time, one settler per building and item. Hover: "(carrying 10 Raspberries to the Town
-  Hall)". Setting `Colony.CarryToStock` (on).
+  Hall)". Setting `Colony.CarryToStock` (on). Once the colony's storehouse has a courier (1.5), couriers do it.
+- **Couriers take the rest: on/off** (1.5), beside Add… on a hut's tab in a colony with a storehouse (not the Town
+  Hall's, a Builder's Hut's or the storehouse's own: couriers never take from the first two). On, couriers may take
+  what the hut doesn't keep: a Lumberjack's, Forager's or Farm's surplus to the storehouse, and what other buildings are
+  short of; off, they leave its chest as you arranged it, and a storehouse being emptied puts nothing in it that it
+  doesn't keep.
 - Only players who may manage the colony change a list. A building that never had its list changed keeps nothing,
   except the Town Hall (10 food).
 - (1.4.3) **A Farm keeps the seeds its fields plant**, whether or not they're on its list: one per plot of each field (a
@@ -294,13 +340,17 @@
 - Each hut's building comes from a blueprint (PlanBuild's `.blueprint` text format). Since 1.4 the mod ships a Viking
   building for each hut and level (and the Town Hall's camp), made with our design tool; before 1.4 they were plain
   placeholders.
-- To use your own design: in a test world with `devcommands` on, place the hut's chest, build the building around it,
+- To use your own design: in a test world (a world whose name starts with `VCTest`, for example `VCTestDesigns`) with
+  `devcommands` on, place the hut's chest, build the building around it,
   look at the chest and type `vc_blueprint save builder_hut` (or `lumberjack_hut`, `forager_hut`, `farm`, `longhouse`,
-  `watchtower`; add a level, `vc_blueprint save builder_hut 2`, for levels 2-5) in the console. It is saved to
+  `watchtower`, `storehouse`; add a level, `vc_blueprint save builder_hut 2`, for levels 2-5) in the console. It is saved to
   `BepInEx/config/VikingColonies/blueprints/` and used for new huts and upgrades of that kind. The command also lists
   pieces that barely hold.
 - **Your saved designs are yours:** an update replaces only the mod's file (its own designs are inside it) and never
-  writes to that folder, and the mod never deletes anything there. Saving again with the same name and level replaces
+  writes to that folder, and the mod never deletes anything there. They live on your computer: on a server, a hut is
+  built from the designs on the computer of the player whose game runs it when its building or upgrade is ordered (for a
+  new hut, the player who placed it), and your hut window's upgrade line shows your own designs' cost. For everyone to
+  get your designs, give the others a copy of the folder. Saving again with the same name and level replaces
   the design saved before. A design the mod can't use is left as it is, and the mod's own is used instead. Keep a copy
   of the folder for designs you care about.
 
@@ -351,3 +401,46 @@
   level 1, 45 m at level 5).
 - **Every hut's chest** has a row more per level (`Storage.RowsPerLevel`); it never shrinks.
 - The hut's window shows what its level gives. A hut gets its new level's perks when the upgrade is finished.
+
+## Creative mode (1.5)
+
+For laying out a village fast, trying huts and levels, or a relaxed building world, the way MineColonies' creative mode
+works. Valheim has no creative mode of its own; ours follows the game's two ways of building for free:
+
+- **A world with No build cost:** in the world's settings (world modifiers) when you make or edit the world, or the
+  Hammer preset. Then creative is on for everyone who may manage a colony in that world.
+- **Debug mode:** `devcommands` in the F5 console, then `debugmode`, then **B** for free building (on a server, only
+  an admin may use debug mode). Then creative is on for you.
+- Setting `Creative.CreativeMode` (Auto): **Off** turns creative off everywhere, whatever the world or debug mode
+  (on a server, the server's).
+
+In creative:
+
+- **Placing a colony building already built:** while you place it, the line under the crosshair says "Creative: goes
+  up at once at level 3"; **=** and **-** (settings `Creative.LevelUpKey` / `LevelDownKey`) change the level, down to
+  "the builder builds it". A hut goes up to the Town Hall's level; a Town Hall to any level, its camp with it.
+- **Beside each colony building's window, a Creative panel:**
+  - **Build now** finishes what the builder is building there at once, **Upgrade now** takes it a level up at once (no
+    Builder's Hut needed, as high as the Town Hall's level allows; not while the next level's site is red, as for the
+    builder: it says what's in the way), **Repair now** puts back every broken piece. Things lying on the site go into
+    the Builder's Hut's chest (or stay where they lie if it's full), and a leftover chest drops what it holds;
+  - on a Builder's Hut, **Supply what's needed** (debug mode, where materials still count; not in a No build cost world,
+    where the builders need nothing): what the colony's orders still need goes into its chest, for its builders to
+    fetch, so you can watch them build without gathering;
+  - on the Town Hall, **Finish all now** (every open order of the colony, two a second; not a hut being taken down),
+    **Town Hall level +1 / −1** (no trophies needed; lowering changes the colony's area, settlers and the huts' limit,
+    and takes nothing built away), **Add a settler / Add 5 settlers** (up to what its level allows, no beds or food
+    needed), **Settlers eat** on or off, and the camp's Build now and Repair now.
+  - Pointing at a button tells what it does. The window's title says "Creative".
+- **In a No build cost world, builders build for free:** they still walk and put the pieces up one by one, but need no
+  materials and no tools; the site is cleared and flattened at once. Nothing asks for materials there: the Work orders,
+  the storehouse's Needs, its couriers and the upgrade line leave builders' materials out. With only debug mode's B, builders need materials
+  as always (your cheat isn't the colony's).
+- **Settlers eat: off** spares that colony its meals only while the world has No build cost; turn the world's setting
+  off and they eat again. Raids and the rest are the world's own settings.
+- Only players who may manage the colony see the buttons, and the building checks every request: in a world without
+  No build cost, a player who isn't an admin gets "Creative mode isn't on for you here".
+- **An admin on a server:** a building is run by the game of a player near it (usually the first who came). Only the
+  server and your own game know you're an admin, so when a friend's game runs the building it can't tell, and says so.
+  Try again when they're away from it, or use a No build cost world.
+

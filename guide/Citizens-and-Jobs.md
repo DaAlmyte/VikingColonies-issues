@@ -10,6 +10,19 @@
 - When a monster comes within 12 m (or a monster nearby is alerted or hunting), or hits them, citizens run to their
   Town Hall or hut (status "Fleeing", with a red "!" over their head), or straight away from the monster if it is by both. They go back to what they
   were doing once no monster has been near for 15 seconds. Deer, birds and sleeping or penned animals don't scare them.
+- **Standing up to weak animals (1.5.0).** A weak creature that goes for a settler is fought off instead: they swing
+  what's in their hands (a lumberjack's axe, a builder's pickaxe), or their fists, and words over their head say
+  "Fighting off a Neck". What's weak grows with the Town Hall's level: Necks, Greylings and Boars always, Greydwarfs
+  from level 2, Skeletons from level 3; one star at most. They still run when hurt to half, from anything stronger (a
+  Troll, a Wolf, a Draugr), from a stone or an arrow thrown from afar, in a raid or while the alarm sounds; and a timid
+  settler still runs. A settler who has run from the same kind three times in ten minutes stands their ground for the
+  next ten. A brave settler also fights one going for someone right beside them. Once it's dead or gone they go back to
+  work. One they can't reach (in the water, up on a rock) they leave be and keep working, and they don't chase one far:
+  past about 8 m from where the fight began, or with no blow landing for a while, they let it go for a minute. At night,
+  in a raid or in bed they don't go out to fight. Guards keep their own way of fighting. The setting
+  `Colony.SettlersFightBack` (on) turned off brings back running from everything, and the guards' driving off below.
+- **Healing (1.5.0).** Every settler heals: a little every few seconds once nothing has hurt them for 20 seconds, and
+  whole again after a night in bed.
 - Citizens jog like a player normally does and only sprint when fleeing.
 - **Doors:** settlers open closed doors on their way — doors inside their colony's area that the colony's owner may open
   (no key, no one else's ward) — walk through, and close them behind them once they are 2 m past. A door they didn't open
@@ -188,6 +201,9 @@
   to (in the water, flying, on a roof), or one that has left their watch and takes no blow from them for 15 seconds, they
   leave alone for a minute. Their swing
   hurts only what they aim at: never a wall, a crop or a tree beside it.
+- **Driving off** (1.5.0): a weak monster (as settlers count them, see above) stirred up inside the colony's area, up to
+  30 m past their patrol, is theirs too before it bites anyone ("Driving off Greyling"). A calm Boar grazing is left be.
+  Off with `Colony.SettlersFightBack`.
 - **Calls for help** (1.3): a monster attacking a settler or a player inside the colony's area (the monster or the one
   it attacks inside) is answered by
   the guards of every tower within 80 m (`Guards.HelpRadius`; at least twice their patrol), even past their patrol; for
@@ -236,6 +252,41 @@
   Greydwarf" in the Saga; a raid held off names the guards on duty.
 - `Guards.Enabled` off: guards don't fight; a guard only stands by their tower, and shelters as anyone.
 
+## Courier
+- (1.5) Works from the **Storehouse** (one at levels 1–2, two at 3–4, three at 5). The storehouse works out the colony's
+  carrying every few seconds and hands each courier the most urgent thing nobody else is carrying:
+  1. **Deliveries:** a building short of its Keep in stock (the Town Hall's food for newcomers too), and the Builder's
+     Hut for its builder's current order. From the storehouse first, else from another hut's spare, the shortest walk.
+  2. **A producer three-quarters full** (a Lumberjack's or Forager's Hut, a Farm): what it doesn't keep goes to the
+     storehouse, so its worker never has to walk off with a full load.
+  3. **The drop-off:** what you put in the storehouse's own chest goes to a building short of it, the rest into the
+     chests inside.
+  4. **Producers' surplus**, the hut with the most first (at least 10 things).
+  5. **Sorting**, from level 3: a kind still kept in two chests inside (put there by you, or before a chest had room)
+     ends in the one with the most of it.
+- **Never taken:** what a building keeps (its Keep in stock), what its worker works with (a Farm's seeds for its
+  fields, a lumberjack's 10 seeds of each kind they replant), anything from the Town Hall or a Builder's Hut, anything
+  from a hut whose **Couriers take the rest** is off (its Keep in stock tab), and anything that doesn't stack (gear keeps
+  its quality where it lies).
+- **A storehouse being taken down** is emptied first: couriers carry what its chests inside hold to a building short of
+  it, else the Town Hall, else the nearest chest with room; then a builder takes it down.
+- **A trip:** 50 things at a level-1 storehouse, 25 more each level, 150 at level 5 (settings `Courier.Carry` and
+  `Courier.CarryPerLevel`). They walk to each chest they take from and each chest they put into, one after another,
+  never reaching through a wall: what goes into the storehouse goes into its chests inside, never its own chest, so
+  your drop-off stays free. **Like with like**, at every level: each kind goes into a chest inside that already holds
+  it (the one with the most first; if you have that chest open, they wait), else into the nearest with room. What
+  they can't put (a full chest, a building gone) goes back to the storehouse, else the Town Hall.
+- Hover: "Delivering (carrying 50 Wood to the Builder's Hut)", "Picking up (at the Farm)", "Sorting the storehouse",
+  "Emptying the storehouse";
+  with nothing to carry, "Nothing to carry" and free time by the storehouse. With their hands full and no chest with
+  room (or none they can get to), "Nowhere to put what they carry": they take no new task until they've put it away,
+  and try again every minute. At dusk they put what they hold in the storehouse first.
+- Their skill is **Hauling**: a higher one takes and puts faster.
+- Couriers on different computers never carry the same thing: the storehouse's owner hands out the tasks and they're
+  saved on the storehouse.
+- The storehouse's **Needs** tab shows who is carrying what to whom, and what nobody has (see
+  [Buildings](Buildings.md#storehouse)).
+
 ## Builder
 - Works from the Builder's Hut. Takes one building at a time: the one you marked **Do first** in the Town Hall's Work
   orders tab, then their own hut, then the oldest waiting one; never one you **set aside** there. When you mark another
@@ -259,8 +310,10 @@
   again later; after three falls it is skipped. Materials from fallen pieces are picked up again (not those lying on
   a roof or a wall top: those are left for you).
 - **Mending.** With nothing to build they mend the colony's damaged buildings: any piece a builder put up (and the
-  huts' own chests) below three quarters of its health, the nearest first. One swing of their hammer mends it, as yours does, and costs
-  nothing. A new order takes them away once the piece in hand is mended.
+  huts' own chests) below three quarters of its health: the worst-damaged building first, finished before the next,
+  and in it the nearest piece first (1.5.0). One swing of their hammer mends it, as yours does, and costs nothing. A big
+  repair, ten pieces of one building or more, goes in the Saga ("Ulf mended 14 pieces of the Longhouse"). A new order
+  takes them away once the piece in hand is mended.
 - **Putting back what's broken.** Every minute a finished colony building is checked against its design. When pieces
   of it are broken (a troll, a fire, a falling tree), its order reopens as a **repair**: those pieces only, at the
   same level. A builder takes it like any order, fetches the materials and puts them back; the hut keeps working
@@ -282,7 +335,7 @@
 ## Skills
 - (0.22, MineColonies: skills make them faster) Every worker learns at their work, as a player does: the lumberjack
   **Woodcutting** (they chop harder), the farmer and the forager **Farming**, the builder **Crafting**, the guard
-  **Fighting** (1.1: they hit harder). Farming and
+  **Fighting** (1.1: they hit harder), the courier **Hauling** (1.5: they take and put faster). Farming and
   Crafting make them faster: a skill of 100 works twice as fast as 0. Practice comes with every action that happened (a plot
   cultivated, planted or harvested, a pick, a piece built, mended or taken down; 0.26: not a failed try) at `Colony.LearningRate` (0.25 of a player's pace per action; it was
   `Lumberjack.LearningRate` before 0.22, and your value moves over).
@@ -397,6 +450,8 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
   that makes the shortest walk). One settler per building and item; it's part of free time, so not at night, and
   `Colony.FreeTime` off stops it too. Hover: "(carrying 10 Raspberries to the Town Hall)". Setting
   `Colony.CarryToStock` (on).
+- **Once the colony's storehouse has a courier** (1.5), couriers carry it instead, with bigger loads, and settlers'
+  free time goes back to resting, chatting and the fire.
 
 ## Full chests
 - (0.21) A lumberjack, forager or farmer whose hut chest is full takes their load to the Town Hall's chest, or the

@@ -18,6 +18,7 @@ server's values are used by everyone.
 | Colony | MaxReach | 150 | 50–500 | how far from the Town Hall the colony's area may reach with its Watchtowers (1.1); of a tower near it only the part of its circle within reach counts |
 | Colony | SettlersSafeFromTrees | true | — | settlers aren't hurt by falling trees and rolling logs (players still are) |
 | Colony | SettlersGoIndoorsAtNight | true | — | settlers stop work at night and sleep inside their huts |
+| Colony | SettlersFightBack | true | — | settlers fight off a weak creature that goes for them (Necks, Greylings, Boars; Greydwarfs and Skeletons as the Town Hall grows) and run only when hurt, and guards drive a weak monster out of the colony before it bites; off: settlers run from everything and guards wait for an attack, as before 1.5.0 |
 | Colony | SettlersShelterInRaids | true | — | during a Valheim raid at the colony, settlers shelter inside their huts |
 | Colony | SettlersEat | true | — | settlers eat one food item a day from the colony's chests; one who finds none is hungry |
 | Colony | HungryWorkSpeed | 0.5 | 0.1–1 | how fast a hungry settler works (1 = as fast as a fed one) |
@@ -43,6 +44,9 @@ server's values are used by everyone.
 | Farm | WoodCost | 20 | 0–500 | at once; on a server, the server's |
 | Field | WoodCost | 4 | 0–500 | a field marker's cost; at once; on a server, the server's |
 | Watchtower | WoodCost | 20 | 0–500 | at once; on a server, the server's (1.1) |
+| Storehouse | WoodCost | 20 | 0–500 | at once; on a server, the server's (1.5) |
+| Courier | Carry | 50 | 1–500 | what a courier carries a trip at a level-1 storehouse; on a server, the server's (1.5) |
+| Courier | CarryPerLevel | 25 | 0–500 | how many more a trip for each storehouse level above 1; on a server, the server's (1.5) |
 | Guards | Enabled | true | — | Watchtower guards fight monsters near the colony; off: a guard shelters like any settler (1.1) |
 | Guards | ChaseBeyondPatrol | 10 | 0–50 | metres past their patrol a guard follows a monster before letting it go |
 | Guards | RetreatHealth | 0.3 | 0–0.75 | below this share of their health a guard goes back to their tower to heal (out again at 80%) |
@@ -64,6 +68,9 @@ server's values are used by everyone.
 | Storage | RowsPerLevel | 1 | 0–3 | rows added to a hut's chest per level above 1 (the Town Hall's too since 1.4); never lower it on a world with upgraded huts: items in the rows it takes away may be lost |
 | Placing | RaiseKey | PageUp | — | raise a hut 0.25 m while placing it (your own key, not the server's) |
 | Placing | LowerKey | PageDown | — | lower a hut 0.25 m while placing it (your own key, not the server's) |
+| Creative | CreativeMode | Auto | Auto, Off | creative mode (1.5): Auto turns it on in a world with No build cost and for an admin with debug mode's free building (B); Off never; on a server, the server's |
+| Creative | LevelUpKey | Equals (=) | — | in creative, one level higher for the colony building you're placing (your own key) |
+| Creative | LevelDownKey | Minus (-) | — | in creative, one level lower, down to "the builder builds it" (your own key) |
 | Messages | DeathMessage | CentreAndChat | CentreAndChat, ChatOnly | how you're told a settler died (your own setting, not the server's) |
 | Messages | HuginTips | true | — | Hugin explains the colony as you play, each tip once per character (with the game's tutorials on); your own setting |
 | Messages | AskForFeedback | true | — | once on this computer, at a good moment, a small window asks what you think of the mod, with links to its Discord and GitHub (nothing is sent from the game); off: it never asks, and the Town Hall's Feedback button stays; on a server, the server's setting |
