@@ -32,6 +32,7 @@ No dates from here on: about one update a week, new features one week and fixes 
 ### 1.7
 
 - Settlers' own gear: each settler carries a real tool, weapon and armour from your chests, which wear and get repaired, and better tools work faster
+- The mod in Spanish, Russian, German and Simplified Chinese
 
 ## Later
 
@@ -45,6 +46,14 @@ Ideas we'd like to build. They may change, move or drop out.
 - Map pins for the camp and your huts
 - A safe way to remove the mod: the colony's chests emptied into ordinary chests first
 - Einherjar: fallen guards return to help at the next big raid (thinking about it)
+
+## Just out: 1.5.0
+
+- A storehouse with couriers who carry goods between huts, so you stop hauling
+- Creative mode: place huts already built, upgrade them at once and add settlers
+- Settlers stand up to weak animals like Necks and Boars instead of hiding over and over
+
+Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
 ## Your ideas
 
