@@ -36,6 +36,11 @@ The more you tell us about what you did just before it happened, the faster it g
 Love something, miss something, or something felt like a chore? [Tell us](../../issues/new?template=feedback.yml).
 Every idea is read.
 
+## What's coming
+
+The [roadmap](ROADMAP.md): the next update, the ones after it, and ideas for later. It changes by itself when the plan
+does; it's in #roadmap on the Discord too.
+
 ## Player guide
 
 - [Getting started](guide/Getting-Started.md): install, and build your first colony
