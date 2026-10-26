@@ -12,6 +12,11 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   with the chests, so they don't show where this guide says. Fixed in 1.5.1: they're in the Misc tab. **Way round
   until then:** look in the **Furniture** tab (with a workbench near for the Town Hall; inside a colony's area for the
   huts).
+- **A Troll can catch a settler.** A brave settler waits until a monster is 6 m away before running, too late for a
+  Troll; and a settler sheltering in a hut runs out when a monster at its door hits them. Fixed in 1.5.1: the brave
+  run from a Troll at 12 m like everyone, and a settler sheltering stays in until hurt to half. Still being worked on
+  after that: now and then a settler running from a Troll to their hut is caught at its door. **Way round until
+  then:** a Watchtower's guard, and walls or a ditch round the colony, keep Trolls off.
 - **Settlers left behind when you move your Town Hall stay where they were.** Once the old one is gone, its colony
   lives on for 3 in-game days; then its settlers have no colony, and only a Town Hall whose area they stand in takes
   them in, so one built far away never does. They stay, hungry, and there's no way yet to send a settler away. Being
