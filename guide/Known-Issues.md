@@ -25,6 +25,10 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   with their stars, and they get stuck outside their hut. Fixed in 1.5.1: settlers keep their own size whatever
   another mod sets (their stars and the health that comes with them stay). **Way round until then:** give the hut a
   bigger door.
+- **A builder can take another hut's materials from its chest.** What you put in a hut's chest for its own build
+  or next level can be taken by the builder of another site, often the Town Hall camp's. If that builder then waits
+  for something else, they keep holding it, and the hut's own build waits too. Fixed in 1.5.1: what a hut's own build
+  still needs stays in its chest for that build's builder.
 - **The builder sometimes walks round the outside of a hut to reach its chest.** When the chest stands against the
   back wall, the builder can head for the outside of that wall first, then go round to the door, and the same can
   happen at the Town Hall camp's chest. The work still gets done, only slower. Fixed in 1.5.1: the builder walks
