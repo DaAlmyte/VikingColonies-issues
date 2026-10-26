@@ -24,11 +24,15 @@ No dates from here on: about one update a week, new features one week and fixes 
 ### 1.6
 
 - A cook in a Mead Hall: roasting that never burns and hot breakfasts for the settlers, in a new hall with five levels (being built)
+- The memorial stone looks like one of Valheim's runestones. (being built)
+- The Chieftain's Camp's Overview gets its proper look: boxes, big numbers and colours. (being built)
 - Saving a hut design under a name you used before keeps a backup of the old one (being built)
 - Your own pieces in a hut (a bench, a lantern, a banner) stay put when the hut is upgraded (being built)
 - Report a problem also offers the Discord, and says where your bug report file is saved (being built)
 - Pastimes: settlers spend their free time at archery, sparring, board games, stories by the fire and more (being built)
 - The builder puts up their own hut first, and says why when they move to another site (being built)
+- Settlers left behind when you move your camp walk to the new one, and you can send a settler away.
+- Settlers running from monsters spread over the colony's huts instead of crowding one door.
 - Settlers running from a Troll no longer get caught at their hut's door.
 
 ### 1.7
@@ -36,6 +40,8 @@ No dates from here on: about one update a week, new features one week and fixes 
 - Every hut gets a richer look at all five levels (being built)
 - Settlers' own gear: each settler carries a real tool, weapon and armour from your chests, which wear and get repaired, and better tools work faster
 - The mod in Spanish, Russian, German and Simplified Chinese
+- Settlers change into their job's outfit when hired: a hat and a colour for every trade, finer as the hut grows
+- Settlers answer each other when they chat.
 
 ## Later
 
