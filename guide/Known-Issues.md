@@ -2,12 +2,16 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 25 October 2026._
+_Last updated 26 October 2026._
 
 VikingColonies 1.5.0 · Works with Valheim 1.0.20 (checked 25 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Town Hall's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
+- **The Town Hall and the huts are in the hammer's Furniture tab, not Misc.** Valheim 1.0's build menu files them
+  with the chests, so they don't show where this guide says. Fixed in 1.5.1: they're in the Misc tab. **Way round
+  until then:** look in the **Furniture** tab (with a workbench near for the Town Hall; inside a colony's area for the
+  huts).
 - **With StarLevelSystem, settlers with stars can get too big for doors.** That mod makes some settlers bigger along
   with their stars, and they get stuck outside their hut. Fixed in 1.5.1: settlers keep their own size whatever
   another mod sets (their stars and the health that comes with them stay). **Way round until then:** give the hut a

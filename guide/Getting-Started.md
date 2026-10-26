@@ -1,7 +1,7 @@
 # Getting started
 
 1. Install with a mod manager: **Jotunn**, then **VikingColonies**. Start the game through the mod manager.
-2. Build a **workbench**. The Town Hall is in the hammer's **Misc** tab and only shows near a workbench.
+2. Build a **workbench**. The Town Hall is in the hammer's **Misc** tab (in 1.5.0: the **Furniture** tab) and only shows near a workbench.
 3. Build a **Town Hall** (20 Wood, 10 Stone). Four settlers hear of it and walk in from the edge of the colony, a
    builder among them. Its chest (**E**) is the colony's store.
 4. Build a **Builder's Hut** (20 Wood) first. Like every hut it is in the hammer's **Misc** tab and shows while you

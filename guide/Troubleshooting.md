@@ -1,6 +1,7 @@
 # Troubleshooting
 
-- **Can't find the buildings in the hammer** — look in the **Misc** tab. The Town Hall needs a workbench nearby;
+- **Can't find the buildings in the hammer** — look in the **Misc** tab (in 1.5.0 they're in the **Furniture** tab:
+  see [Known issues](Known-Issues.md)). The Town Hall needs a workbench nearby;
   the huts show while you stand within about 44 m of a Town Hall.
 - **Hut says "Build near a Town Hall"** — it's more than 50 m from every Town Hall.
 - **Nobody gets hired** — all citizens already have jobs, or auto-hire is off (Shift+E on the hut). More settlers
