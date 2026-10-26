@@ -12,6 +12,11 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   with the chests, so they don't show where this guide says. Fixed in 1.5.1: they're in the Misc tab. **Way round
   until then:** look in the **Furniture** tab (with a workbench near for the Town Hall; inside a colony's area for the
   huts).
+- **Settlers left behind when you move your Town Hall stay where they were.** Once the old one is gone, its colony
+  lives on for 3 in-game days; then its settlers have no colony, and only a Town Hall whose area they stand in takes
+  them in, so one built far away never does. They stay, hungry, and there's no way yet to send a settler away. Being
+  worked on: settlers left behind will walk to your new Town Hall, and you'll be able to send one away. **Way round
+  until then:** none that moves them; setting `Messages.WordsAboveHeads` off quiets what they say above their heads.
 - **With StarLevelSystem, settlers with stars can get too big for doors.** That mod makes some settlers bigger along
   with their stars, and they get stuck outside their hut. Fixed in 1.5.1: settlers keep their own size whatever
   another mod sets (their stars and the health that comes with them stay). **Way round until then:** give the hut a
