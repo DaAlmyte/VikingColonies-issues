@@ -29,6 +29,9 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   back wall, the builder can head for the outside of that wall first, then go round to the door, and the same can
   happen at the Town Hall camp's chest. The work still gets done, only slower. Fixed in 1.5.1: the builder walks
   straight to the chest's open side.
+- **Settlers running from monsters can all head for the same hut.** When monsters turn up close to several settlers,
+  they may all run for the nearest hut and wait at its one door for a few seconds, until some pick another hut.
+  Everyone gets in. Being worked on: settlers spread over the colony's huts when they shelter.
 
 ## Recently fixed
 
