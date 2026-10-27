@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. It's written from the plan we work from, and changes by itself when the plan does.
 
-_Last changed 26 October 2026._
+_Last changed 27 October 2026._
 
 ## Now: 1.5.1
 
@@ -24,6 +24,7 @@ No dates from here on: about one update a week, new features one week and fixes 
 ### 1.6
 
 - A cook in a Mead Hall: roasting that never burns and hot breakfasts for the settlers, in a new hall with five levels (being built)
+- Settlers running from monsters spread over the colony's huts instead of crowding one door. (being built)
 - The memorial stone looks like one of Valheim's runestones. (being built)
 - The Chieftain's Camp's Overview gets its proper look: boxes, big numbers and colours. (being built)
 - Saving a hut design under a name you used before keeps a backup of the old one (being built)
@@ -32,7 +33,7 @@ No dates from here on: about one update a week, new features one week and fixes 
 - Pastimes: settlers spend their free time at archery, sparring, board games, stories by the fire and more (being built)
 - The builder puts up their own hut first, and says why when they move to another site (being built)
 - Settlers left behind when you move your camp walk to the new one, and you can send a settler away.
-- Settlers running from monsters spread over the colony's huts instead of crowding one door.
+- The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
 - Settlers running from a Troll no longer get caught at their hut's door.
 
 ### 1.7
