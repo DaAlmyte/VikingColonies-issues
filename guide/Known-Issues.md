@@ -16,6 +16,10 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   Troll; and a settler sheltering in a hut runs out when a monster at its door hits them. Fixed in 1.5.1: the brave
   run from a Troll at 12 m like everyone, and a settler sheltering stays in until hurt to half. Still being worked on
   after that: now and then a settler running from a Troll to their hut is caught at its door.
+- **A settler sitting on a bench or lying in a bed that the builder takes down can sink under the ground and stay
+  there.** When a hut or the Town Hall's camp goes up a level, its builder may take down a seat or bed someone is
+  using; that settler stays as if still seated and sinks under the ground. Being worked on, with a fix planned for
+  the next update.
 - **Settlers left behind when you move your Town Hall stay where they were.** Once the old one is gone, its colony
   lives on for 3 in-game days; then its settlers have no colony, and only a Town Hall whose area they stand in takes
   them in, so one built far away never does. They stay, hungry, and there's no way yet to send a settler away. Being
