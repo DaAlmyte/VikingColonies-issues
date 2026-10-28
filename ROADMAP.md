@@ -6,7 +6,7 @@ _Last changed 28 October 2026._
 
 ## Now: 1.6.0
 
-Planned for Wednesday 4 November. If something isn't ready in time, it moves to the next update instead of holding the rest back.
+Planned for Sunday 1 November. If something isn't ready in time, it moves to the next update instead of holding the rest back.
 
 - A cook in a Mead Hall: roasting that never burns and hot breakfasts for the settlers, in a new hall with five levels
 - The memorial stone looks like one of Valheim's runestones.
