@@ -11,6 +11,9 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 - **A Troll can catch a settler.** Now and then a settler running from a Troll to their hut is caught at its door.
   Being worked on. (Since 1.5.1 the brave run from a Troll at 12 m like everyone, and a settler sheltering stays in
   until hurt to half.)
+- **Guards kill an animal you're taming inside the colony.** A wild boar (or another animal you can tame) counts as
+  a monster to the guards until it's tame, so a guard who sees it inside the colony's area fights it, even in your
+  pen. Being worked on: guards will leave an animal you can tame alone unless it attacks someone.
 - **Settlers left behind when you move your Chieftain's Camp stay where they were.** Once the old one is gone, its
   colony lives on for 3 in-game days; then its settlers have no colony, and only a camp whose area they stand in takes
   them in, so one built far away never does. They stay, hungry, and there's no way yet to send a settler away. Being
