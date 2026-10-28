@@ -1,7 +1,7 @@
 # VikingColonies wiki
 
 - [Getting started](Getting-Started.md) — install, build your first colony
-- [Buildings](Buildings.md) — Town Hall (its levels and its camp), Builder's Hut, Lumberjack's Hut, Forager's Hut,
+- [Buildings](Buildings.md) — Chieftain's Camp (its levels and its fire, seats and trophy racks), Builder's Hut, Lumberjack's Hut, Forager's Hut,
   Farm, Longhouse, Watchtower, placing huts, designs, levels and upgrades
 - [Citizens and jobs](Citizens-and-Jobs.md) — how citizens live, work and are hired: who they are (trade, trait,
   past), free time, lumberjack, farmer, forager, builder (building, mending and repairs), guards, meals, homes, mood,

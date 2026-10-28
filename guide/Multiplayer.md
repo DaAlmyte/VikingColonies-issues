@@ -7,7 +7,7 @@
   with 1.4.3). Players on Xbox or PlayStation can't install mods, so they can't use the colony.
 - **Make sure everyone has the mod:** on a crossplay server the game doesn't check it for you (without crossplay it
   turns away a player with no mods, saying "Incompatible version"). A player without the mod gets in but can't see
-  the Town Hall or the settlers, and settlers near only that player may stop working.
+  the camp or the settlers, and settlers near only that player may stop working.
 - **Joining:** a join code only exists while crossplay is on, and it changes each time the server starts; it needs no
   router setup. Without crossplay, join with **Join IP** (the server's address and port, usually 2456), from the
   server list, or, for a world a Steam friend hosts from the menu, from the **Friends** tab. A dedicated server in
@@ -18,11 +18,11 @@
 - **The server's settings count:** the colony buildings' costs, and every other colony setting marked as synced, come
   from the server when you join it (the hammer asks the server's cost at once); your own again in a world of your own.
 - The colony's mood, and each settler's mood and its reasons, read the same on every computer.
-- **Who may manage a colony:** the player who built its Town Hall, and the players they put on one of their wards
+- **Who may manage a colony:** the player who built its camp, and the players they put on one of their wards
   covering the hut. Only they can hire, fire, switch auto-hire, change the replanting list, order a building or an
   upgrade, or cancel one, or place a new hut in the colony; for everyone else those buttons are greyed out (and a new
   hut's outline is red) with the reason. Anyone may look.
-  Valheim remembers who built every Town Hall, so this holds for colonies built before 0.4 too: the Town Hall's
+  Valheim remembers who built every Chieftain's Camp, so this holds for colonies built before 0.4 too: the camp's
   builder adds the friends who share the colony to a ward (Guard stone) covering the huts. If that player has left
   the server for good, nobody else can manage the colony.
 - Every request is checked by the computer that controls the building, so two players pressing buttons at once can't
@@ -34,10 +34,10 @@
   still free first — two huts can't hire the same citizen.
 - A building has to be missing for about 30 seconds before citizens treat it as destroyed, so a player still loading
   into a big base doesn't make anyone lose their colony or job.
-- **A lost Town Hall:** each hut and each settler notices on its own (on the computer that runs it) and keeps the
+- **A lost Chieftain's Camp:** each hut and each settler notices on its own (on the computer that runs it) and keeps the
   colony for the grace days (`Colony.TownHallGraceDays`, shared from the server). The huts remember who built the
-  Town Hall, so the same players may still manage them and the settlers still open the colony's doors. A new Town
-  Hall takes the colony over from the huts and settlers the placing player's computer has loaded; whoever builds it
+  Chieftain's Camp, so the same players may still manage them and the settlers still open the colony's doors. A new
+  camp takes the colony over from the huts and settlers the placing player's computer has loaded; whoever builds it
   is the colony's owner from then on.
 - **Cairns:** the computer that ran the settler raises the cairn, once; every player told of the death gets their own
   map pin, and a player's pin goes when that player empties the cairn. Whoever opens it takes it over, like any chest.

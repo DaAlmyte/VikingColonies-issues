@@ -4,15 +4,15 @@
   you who needs something says so above their head ("Needs 12 Wood", "Storage full", "Can't reach the hut", "Hungry";
   setting `Messages.WordsAboveHeads`); plain work shows nothing. In their free time they greet you and make small talk
   (see "Free time").
-- **Jobless** citizens spend their free time near the Town Hall. **No colony** means their Town Hall was destroyed (it must be missing
-  for about 30 seconds); any Town Hall within 50 m adopts them, including a new one you build.
+- **Jobless** citizens spend their free time near the camp. **No colony** means their camp was destroyed (it must be missing
+  for about 30 seconds); any Chieftain's Camp within 50 m adopts them, including a new one you build.
 - Players can't hurt citizens; monsters can. A citizen who dies is gone (see "When a settler dies" below).
 - When a monster comes within 12 m (or a monster nearby is alerted or hunting), or hits them, citizens run to their
-  Town Hall or hut (status "Fleeing", with a red "!" over their head), or straight away from the monster if it is by both. They go back to what they
+  Chieftain's Camp or hut (status "Fleeing", with a red "!" over their head), or straight away from the monster if it is by both. They go back to what they
   were doing once no monster has been near for 15 seconds. Deer, birds and sleeping or penned animals don't scare them.
 - **Standing up to weak animals (1.5.0).** A weak creature that goes for a settler is fought off instead: they swing
   what's in their hands (a lumberjack's axe, a builder's pickaxe), or their fists, and words over their head say
-  "Fighting off a Neck". What's weak grows with the Town Hall's level: Necks, Greylings and Boars always, Greydwarfs
+  "Fighting off a Neck". What's weak grows with the camp's level: Necks, Greylings and Boars always, Greydwarfs
   from level 2, Skeletons from level 3; one star at most. They still run when hurt to half, from anything stronger (a
   Troll, a Wolf, a Draugr), from a stone or an arrow thrown from afar, in a raid or while the alarm sounds; and a timid
   settler still runs. A settler who has run from the same kind three times in ten minutes stands their ground for the
@@ -37,15 +37,15 @@
 - **Getting unstuck:** a settler whose walk doesn't move them (a log, a step, someone in the way) hops after three
   seconds and steps aside after five — twice, then they leave it to their job to find something else to do. One who keeps
   trying to walk for two minutes without getting out of a few metres of ground (boxed in by walls) is moved to a free
-  spot by the Town Hall, out of sight, when no player is within 30 m (after five minutes, whoever is near); never at
+  spot by the camp, out of sight, when no player is within 30 m (after five minutes, whoever is near); never at
   night or in a raid, and at most twice in ten minutes. Waiting somewhere on purpose doesn't count. A monster in a
   doorway is never waited for. The backstop (1.4): one who has wanted to be somewhere else for four minutes without
   getting more than 10 m from where it started is moved the same way, whatever held them up (a door tried again and
   again, a way that ends short, going to and fro round a small place they can't get out of).
 - **Up on a roof** (1.4): a settler standing on a roof more than 1.5 m above the ground for 8 seconds (a step
-  out of a door under a low eave can land them there) is put back down by the Town Hall.
+  out of a door under a low eave can land them there) is put back down by the camp.
 - **Burning** (1.4): one who keeps burning where they stand for four seconds (squeezed between a wall and a fire)
-  is moved to a spot by the Town Hall clear of any fire, and the fire on them is put out.
+  is moved to a spot by the camp clear of any fire, and the fire on them is put out.
 - **Wedged inside a hut** (0.20): one who tries to walk for half a minute inside a hut without getting anywhere is moved
   to just inside its door, behind its walls, at any time (at most twice in ten minutes, with the rescue above).
 - **Turned huts** (0.20): inside a hut, which side of its door a settler is on comes from the hut's shape. Before 0.20
@@ -61,14 +61,15 @@
   - hardworking (10% faster) or lazy (10% slower, they'd rather sit, and tend the fires half as often);
   - cheerful or grumpy;
   - chatty (talks and chats twice as often) or quiet (never starts a chat, sits by the fire instead);
-  - brave (runs only when a monster is within 6 m) or timid (runs from 20 m).
+  - brave (runs only when a monster is within 9 m, or a strong one, like a Troll, within 12 m) or timid (runs from 20 m).
 - **Where they came from:** "from the coast", "from a farm in the Meadows", "from over the mountains"… The Saga says so:
   "Day 12: Astrid came from the coast: a forager, cheerful."
 - **Hover** over them: a third line with their trait and trade ("Cheerful · good at foraging").
-- **Out of sight:** in the Citizens tab a settler not loaded on your computer shows their last status and "(far
+- **Out of sight:** on the People tab a settler not loaded on your computer shows their last status and "(far
   away)", or "(seen day 12)" when the colony last saw them on an earlier day. One not where they should be is Missing.
-- **Town Hall:** choose them in the Citizens tab and the line under the header says who they are, how long they've been
-  here and where they sleep ("Home: Longhouse bed 2."), and how they feel.
+- **Chieftain's Camp:** choose them on the People tab and their page says who they are, how long they've been here,
+  where they sleep ("Home: Longhouse bed 2."), how they feel and why, their skills, what they carry and their newest
+  lines in the Saga (1.5.1).
 - **The hut's window** says when its worker is good at its trade: "Astrid (good at foraging) — Picking".
 - **Clothes:** settlers dress by trade, in the game's own clothes:
   - the jobless in rags;
@@ -81,7 +82,7 @@
   from the day you first play 0.16.
 
 ## Free time
-- A settler with nothing to do spends free time within 15 m of their hut (the Town Hall for the jobless). That means a
+- A settler with nothing to do spends free time within 15 m of their hut (the camp for the jobless). That means a
   jobless settler, or a worker whose job has nothing to do just now: "No trees nearby", "Crops growing", "Nothing to
   pick", or the builder's "No work". Every 30–90 seconds they pick one of these:
   - **A seat:** any free piece you can sit on (bench, chair, stool, throne, a mod's seat), one near a burning fire
@@ -102,12 +103,12 @@
   - What they talk about follows the colony: a settler who died in the last two days, the weather, a newcomer or a new
     building today, a raid held off in the last two days, or their job's wait. Then their own trade (the lumberjack's
     trees, the farmer's crops, the guard's watch), their temper (cheerful or grumpy), and a boss fallen in your world:
-    the Town Hall's saga tells when the colony hears of it, and they talk of it for two days (1.4.2).
+    the camp's saga tells when the colony hears of it, and they talk of it for two days (1.4.2).
   - A need ("Needs 12 Wood") always comes first. "Hungry" shows for a few seconds every half minute, with their talk in
     between; their hover always says it.
   - Setting `Messages.SmallTalk` (your own).
 - Setting `Colony.FreeTime` turns free time off: they wait standing, as before 0.14.
-- Give them somewhere to go: a few benches and a fire near the Town Hall and each hut. Hugin says so the first time a
+- Give them somewhere to go: a few benches and a fire near the camp and each hut. Hugin says so the first time a
   settler has free time with nothing to use.
 
 ## Lumberjack
@@ -183,9 +184,9 @@
   wood and flint can feed the builder. Food someone dropped by a bush stays too: they
   gather only what fell from the plant they picked.
 - Food goes to the colony; what isn't food (dandelions, thistles) waits in their chest for you. When their chest is full they
-  take their load to the Town Hall's chest, or the nearest colony chest with room (0.21, see
+  take their load to the camp's chest, or the nearest colony chest with room (0.21, see
   [Full chests](#full-chests)).
-- What they bring home feeds the colony: settlers eat from every colony chest. Newcomers need food in the Town Hall's
+- What they bring home feeds the colony: settlers eat from every colony chest. Newcomers need food in the camp's
   chest, so move some there.
 - At dusk they deliver what they carry, then go indoors. A full chest sends their load to another chest with room (0.21).
 
@@ -208,18 +209,18 @@
   it attacks inside) is answered by
   the guards of every tower within 80 m (`Guards.HelpRadius`; at least twice their patrol), even past their patrol; for
   that fight the leash is the help radius + the chase limit.
-- **Their tower's orders** (1.3): rounds, or holding the post (where a manager put it, or by the tower). While the Town
-  Hall's **alarm** sounds they go where it was sounded, each guard of the colony to their own spot round it (3 m apart),
+- **Their tower's orders** (1.3): rounds, or holding the post (where a manager put it, or by the tower). While the
+  camp's **alarm** sounds they go where it was sounded, each guard of the colony to their own spot round it (3 m apart),
   and fight any monster within 30 m of it; a call for help within their help radius still brings them (1.4). Each takes
   the nearest open spot they can walk to (1.4.3): never one behind a wall, inside a fenced yard or by the colony's fire.
 - **Ballistas** (1.3): on watch with nothing to fight they keep the colony's ballistas within their patrol loaded: one
   under half full gets what the colony's chests can spare of its ammunition (real items: the ballista uses them up),
   carried over by them ("Loading the ballista"); what's left goes back (with no room, it goes with their load to the
-  Town Hall). Only on rounds: a guard holding a post, or at the alarm, leaves them be. A ballista never takes a settler
+  Chieftain's Camp). Only on rounds: a guard holding a post, or at the alarm, leaves them be. A ballista never takes a settler
   for its target, nor (inside a colony's area) a player, and its bolts never hurt a settler. Setting `Guards.LoadBallistas`.
 - **Raiders called out** (1.3): in a raid at the colony, the first guard to go for a raider calls out where they come
   from ("Ulf: raiders coming from the north-east!").
-- **Their tally** (1.3): the monsters they killed, on their tower's window and the Town Hall's Citizens tab.
+- **Their tally** (1.3): the monsters they killed, on their tower's window and the camp's People tab.
 - **Never a target**: players, settlers, tames, the Dvergr and other neutral creatures, and animals (deer, boars,
   necks…) unless one is attacking someone of the colony. The game's own rules also keep their swings off players,
   settlers and tames.
@@ -255,7 +256,7 @@
 ## Courier
 - (1.5) Works from the **Storehouse** (one at levels 1–2, two at 3–4, three at 5). The storehouse works out the colony's
   carrying every few seconds and hands each courier the most urgent thing nobody else is carrying:
-  1. **Deliveries:** a building short of its Keep in stock (the Town Hall's food for newcomers too), and the Builder's
+  1. **Deliveries:** a building short of its Keep in stock (the camp's food for newcomers too), and the Builder's
      Hut for its builder's current order. From the storehouse first, else from another hut's spare, the shortest walk.
   2. **A producer three-quarters full** (a Lumberjack's or Forager's Hut, a Farm): what it doesn't keep goes to the
      storehouse, so its worker never has to walk off with a full load.
@@ -265,17 +266,18 @@
   5. **Sorting**, from level 3: a kind still kept in two chests inside (put there by you, or before a chest had room)
      ends in the one with the most of it.
 - **Never taken:** what a building keeps (its Keep in stock), what its worker works with (a Farm's seeds for its
-  fields, a lumberjack's 10 seeds of each kind they replant), anything from the Town Hall or a Builder's Hut, anything
+  fields, a lumberjack's 10 seeds of each kind they replant), what a hut's own open build order still needs (1.5.1),
+  anything from the camp or a Builder's Hut, anything
   from a hut whose **Couriers take the rest** is off (its Keep in stock tab), and anything that doesn't stack (gear keeps
   its quality where it lies).
 - **A storehouse being taken down** is emptied first: couriers carry what its chests inside hold to a building short of
-  it, else the Town Hall, else the nearest chest with room; then a builder takes it down.
+  it, else the camp, else the nearest chest with room; then a builder takes it down.
 - **A trip:** 50 things at a level-1 storehouse, 25 more each level, 150 at level 5 (settings `Courier.Carry` and
   `Courier.CarryPerLevel`). They walk to each chest they take from and each chest they put into, one after another,
   never reaching through a wall: what goes into the storehouse goes into its chests inside, never its own chest, so
   your drop-off stays free. **Like with like**, at every level: each kind goes into a chest inside that already holds
   it (the one with the most first; if you have that chest open, they wait), else into the nearest with room. What
-  they can't put (a full chest, a building gone) goes back to the storehouse, else the Town Hall.
+  they can't put (a full chest, a building gone) goes back to the storehouse, else the camp.
 - Hover: "Delivering (carrying 50 Wood to the Builder's Hut)", "Picking up (at the Farm)", "Sorting the storehouse",
   "Emptying the storehouse";
   with nothing to carry, "Nothing to carry" and free time by the storehouse. With their hands full and no chest with
@@ -288,7 +290,7 @@
   [Buildings](Buildings.md#storehouse)).
 
 ## Builder
-- Works from the Builder's Hut. Takes one building at a time: the one you marked **Do first** in the Town Hall's Work
+- Works from the Builder's Hut. Takes one building at a time: the one you marked **Do first** in the camp's Work
   orders tab, then their own hut, then the oldest waiting one; never one you **set aside** there. When you mark another
   order first they leave their site for it within seconds. A site that waits on you for a minute is set aside by them for
   five minutes while they work elsewhere.
@@ -304,7 +306,7 @@
 - Fells a tree from behind it, opposite the way it will fall, steps clear after the blow and waits for the logs to
   settle, like the lumberjack.
 - Dropped items on a new site are picked up only if they're plain (wood, stone, berries…); a player's own gear stays.
-- Fetches materials (their hut, the Town Hall, then the other huts' storage), then works from spots just outside the
+- Fetches materials (their hut, the camp, then the other huts' storage), then works from spots just outside the
   building: they reach 15 m (setting `Builder.Reach`) and never go inside, so they can't shut themselves in.
 - Checks every piece with the game's support rule before placing it; lowest pieces first. A piece that falls is tried
   again later; after three falls it is skipped. Materials from fallen pieces are picked up again (not those lying on
@@ -320,10 +322,10 @@
   meanwhile. Not during a raid there or with monsters by the hut: it waits until they're gone.
 - A piece you take away with your hammer is left out, never put back, so you can knock a doorway into a hut. So are
   pieces already missing when you first play 0.13, and a piece that falls again soon after it was put back three
-  times. To stop a repair under way, press **Leave as it is** on it in the Town Hall's Work orders tab. The setting
+  times. To stop a repair under way, press **Leave as it is** on it in the camp's Work tab. The setting
   `Builder.RebuildMissingPieces` turns putting back off.
 - **Takes huts down** (0.23) when you ask on a hut's window: every piece from the top, the materials to their hut; the
-  hut's chest goes last (its contents to the Town Hall). A take-down needs no site preparation. Status "Taking down
+  hut's chest goes last (its contents to the camp). A take-down needs no site preparation. Status "Taking down
   <hut> (12 pieces left)".
 - Statuses: Building <hut> (12/29), Repairing <hut> (30/32), Taking down <hut>, Mending the <hut>, Fetching materials, Needs 6 Fine
   wood, Waiting for space, Can't reach the building site, Can't place: no support for <piece>, No work, Clearing the
@@ -339,11 +341,11 @@
   Crafting make them faster: a skill of 100 works twice as fast as 0. Practice comes with every action that happened (a plot
   cultivated, planted or harvested, a pick, a piece built, mended or taken down; 0.26: not a failed try) at `Colony.LearningRate` (0.25 of a player's pace per action; it was
   `Lumberjack.LearningRate` before 0.22, and your value moves over).
-- Shift+E on their hut shows their skill ("Farming 12"); the Town Hall's Citizens tab shows every skill they have when you
+- Shift+E on their hut shows their skill ("Farming 12"); the camp's People tab shows every skill they have when you
   choose them. A settler brought back keeps their skills.
 
 ## When a settler dies
-- Players in the colony's area (the Town Hall's `ColonyRadius`) or within 50 m of the spot see
+- Players in the colony's area (the camp's `ColonyRadius`) or within 50 m of the spot see
   "Ingrid the Lumberjack has died (hit by a falling tree)" in the middle of the screen and as a line in the chat.
   With `Messages.DeathMessage = ChatOnly` it shows only in the chat (each player's own setting).
 - Causes: killed by *a monster's name*, attacked (the attacker is gone), hit by a falling tree, crushed, fell from a
@@ -354,7 +356,21 @@
   damage it, and once it's empty it crumbles away. Every player who got the death message has a pin "Ingrid's cairn"
   on the map; it goes when you empty the cairn (or remove it by hand). Tools they had borrowed were copies: the
   originals are still in the chests. A settler who carried nothing leaves no cairn.
-- The Town Hall takes the settler off its list, and a hut with auto-hire hires the next jobless settler, as before.
+- The camp takes the settler off its list, and a hut with auto-hire hires the next jobless settler, as before.
+- **The memorial stone** (1.5.1): the colony remembers everyone it has lost, with no limit (the Saga keeps only its last
+  60 lines). Raise a **Memorial stone** from the hammer's Misc tab, one per colony, inside its area (20 Stone,
+  `Memorial.StoneCost`). Hover over it for how many it remembers; press E to read it, like a runestone: "Here the colony
+  remembers: Ulf, Forager, day 39, killed by Greydwarf …", newest first, 20 a page (E again for the next). An older
+  colony's stone starts with the deaths its Saga still holds. The words are kept on the stone too, so a camp that takes
+  over a lost one gets them back.
+- **The fallen return** (1.5.1, off by default; `Colony.FallenReturn`, a server's choice): a settler who dies while it's
+  on walks back in from the colony's edge a few days later (`Colony.FallenReturnDays`, 3), as themselves: their name,
+  looks, trait, trade and skills, not their home, their hut or what they carried (that's in their cairn). One comes back
+  a day, the earliest death first, while the colony has room for another settler; food, beds and mood don't hold them
+  back. The Saga says "Day 42: Ulf returned from beyond the veil", the colony stops mourning them, and the memorial
+  stone shows them greyed, "(returned on day 42)". A death while it was off stays final, even if you turn it on later.
+  Their way back is kept by the camp: if the camp is lost (or taken down) before they return, they don't, though the
+  memorial stone still names them.
 - Falling trees and rolling logs don't hurt settlers while `Colony.SettlersSafeFromTrees` is on (the default); they
   still hurt players.
 
@@ -365,31 +381,31 @@
   workplace, as before.
 - **A meal a day, at the table:** after dawn, before work, each settler goes to breakfast, at their own moment within the
   first minute (so they don't all crowd one chest). They walk to the colony chest
-  that holds the food they'll eat (the nearest; the Town Hall's when as near) and take one. They eat it on a free seat
+  that holds the food they'll eat (the nearest; the camp's when as near) and take one. They eat it on a free seat
   within 8 m of that chest, or standing by the chest. Hover: "Eating (at breakfast)". If they can't get to the chest and
   take their food within a minute (a player has it open, no way there), they eat where they are.
 - **What they eat:** the plainest food there is that isn't what they had last time (when there's a choice), so raspberries
   and mushrooms go before cooked meat, meals vary, and your best food is left for you. Any food a player can eat counts; meads and potions don't. Keep food you don't want eaten out of the colony's
   chests, or on a building's Keep in stock list (0.21: then it's eaten only when there's nothing else). Breakfast takes
-  only food no building keeps. A table with benches by the Town Hall makes a fine breakfast place.
+  only food no building keeps. A table with benches by the camp makes a fine breakfast place.
 - **Hungry:** a settler who finds nothing is hungry. Hovering over them says "Hungry", and they work at half speed
   (`Colony.HungryWorkSpeed`): they chop weaker and build slower. By day a hungry settler looks again every half minute,
   so food you put in a chest later is eaten the same day (1.4.2). Nobody starves or leaves. A new settler comes fed, so
   their first meal is due the next morning.
 - Turn meals off with `Colony.SettlersEat`.
 - **Newcomers:** once a day, in daylight, while the colony has a free bed (more Longhouse beds than settlers), at least
-  5 food in the Town Hall's chest, and isn't unhappy (see [Mood](#mood)), a newcomer comes and eats that food (the
+  5 food in the camp's chest, and isn't unhappy (see [Mood](#mood)), a newcomer comes and eats that food (the
   plainest first). One a day (`Colony.NewcomersPerDay`; one more for a joyful colony), up to 30 settlers
-  (`Colony.MaxSettlers`). So: build Longhouses, keep food in the Town Hall and your settlers content, and the colony
+  (`Colony.MaxSettlers`). So: build Longhouses, keep food in the camp and your settlers content, and the colony
   grows.
-- **Walking in:** a newcomer appears at the edge of the colony and walks to the Town Hall:
+- **Walking in:** a newcomer appears at the edge of the colony and walks to the camp:
   - They come from about 35 m out, on dry ground with a way in, where no player is looking (behind you, or past a wall
     or a hill), on the game's walkable ground (never inside a rock or under a floor). Only if every such spot is in
     view do they come into view, as far from every player as can be.
-  - With no way in, they appear by the Town Hall.
+  - With no way in, they appear by the camp.
   - Players in the colony are told: "Astrid is coming to live in the colony: a forager from the coast."
-  - Hover: "Arriving (from the coast)". At the Town Hall they wave.
-  - The first settlers of a new Town Hall walk in together the same way.
+  - Hover: "Arriving (from the coast)". At the camp they wave.
+  - The first settlers of a new camp walk in together the same way.
   - Setting `Colony.NewcomersWalkIn` (on).
 
 ## Mood
@@ -417,9 +433,9 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
 | Unhappy | 20 | 15% slower |
 | Miserable | 0 | 30% slower |
 
-- **Seeing it:** hover over a settler ("Cheerful · good at foraging · Content"), or choose them in the Town Hall's
-  Citizens tab: "Content (62): +5 home, +5 cosy bed, +5 ate, -10 Ingrid died". The tab's top line shows the colony's
-  mood (the settlers' average).
+- **Seeing it:** hover over a settler ("Cheerful · good at foraging · Content"), or choose them in the camp's
+  People tab: "Content (62): +5 home, +5 cosy bed, +5 ate, -10 Ingrid died". The Overview shows the colony's
+  mood (the settlers' average) and the reasons that weigh most across it.
 - **Words:** an unhappy settler says their worst reason now and then ("Nowhere to lay my head.", "Same food every day.",
   "We lost Ingrid."). Hugin explains mood the first time one is unhappy near you.
 - **Newcomers:** nobody joins an unhappy colony ("Next newcomer: nobody wants to join an unhappy colony"); a joyful one
@@ -431,8 +447,8 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
 ## The evening
 - From 0.70 of the day (about a minute and a half before night), work stops the way it does at nightfall: the
   lumberjack delivers what they carry, the builder leaves their site. Then the settlers gather at the colony's fire: the
-  burning campfire or hearth inside the colony nearest the Town Hall (one under a roof first). With none burning,
-  they gather at the Town Hall, and Hugin says so the first time.
+  burning campfire or hearth inside the colony nearest the camp (one under a roof first). With none burning,
+  they gather at the camp, and Hugin says so the first time.
 - Each takes a free seat within 6 m of the fire, or their place on a ring round it, a metre from the next, facing it.
   Every other one sits on the ground (in rain all stand). Those standing raise a toast, laugh or cheer now and then,
   and they make evening small talk ("Good fire tonight.").
@@ -442,25 +458,25 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
 ## Keep in stock
 - (0.21) Each building's **Keep in stock** list (see [Buildings](Buildings.md#keep-in-stock)) is what its chest keeps.
   Other settlers leave those items there: breakfast, meals, feeding fires and builders take only what's beyond the
-  kept amount. The building's own worker uses all of it, and the Town Hall feeds newcomers from its own 10 food.
+  kept amount. The building's own worker uses all of it, and the camp feeds newcomers from its own 10 food.
 - **Hungry rather than not:** a settler whose meal is due eats spare food first; only when the colony has no other food
   do they eat kept food (the log says "… ate kept food: nothing else in the colony").
 - **Carrying in free time:** a settler with nothing to do looks over the whole colony for a building short of a kept
   item and a chest that can spare it, takes up to 20 and brings them over (the nearest shortage first, from the chest
   that makes the shortest walk). One settler per building and item; it's part of free time, so not at night, and
-  `Colony.FreeTime` off stops it too. Hover: "(carrying 10 Raspberries to the Town Hall)". Setting
+  `Colony.FreeTime` off stops it too. Hover: "(carrying 10 Raspberries to the camp)". Setting
   `Colony.CarryToStock` (on).
 - **Once the colony's storehouse has a courier** (1.5), couriers carry it instead, with bigger loads, and settlers'
   free time goes back to resting, chatting and the fire.
 
 ## Full chests
-- (0.21) A lumberjack, forager or farmer whose hut chest is full takes their load to the Town Hall's chest, or the
+- (0.21) A lumberjack, forager or farmer whose hut chest is full takes their load to the camp's chest, or the
   nearest colony chest with room, and goes back to work. Status: "Delivering (the hut's chest is full)". They wait by their
   hut with "Storage full" only when every chest in the colony is full. The lumberjack keeps the seeds they hold for
-  replanting. A settler without a job whose load won't fit in the Town Hall's chest takes it to another chest too.
+  replanting. A settler without a job whose load won't fit in the camp's chest takes it to another chest too.
 
 ## Keeping fires fed
-- A settler in free time feeds a colony fire (campfire, hearth, bonfire) within 18 m of their hut (or the Town Hall)
+- A settler in free time feeds a colony fire (campfire, hearth, bonfire) within 18 m of their hut (or the camp)
   that is below half full: they take its fuel (wood for most) from the nearest colony chest that has it, carry it there
   and put it in, enough to take it past half. They never take the last 10 of it from the colony's chests, nor what a
   building keeps (0.21), and only one settler goes to each fire. Hover: "(tending the fire)".
@@ -472,7 +488,8 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
   leaves their site till morning. At dawn they come out and carry on.
 - **When a monster hunts them** they run into the nearest colony hut the monster isn't nearer to ("Sheltering") and
   come out 15 seconds after the last monster is gone. A monster that follows one inside makes them leave for another
-  hut, or run.
+  hut, or run, as does one hitting them through a back or side wall. One outside at the door, reaching in (a Troll),
+  they stay inside from, since going out would be going into it, until they are hurt to half, when they run for it (1.5.1).
 - **During one of Valheim's raids** at the colony every settler stays indoors ("Sheltering") until it ends.
 - **An armed guard** (1.1) does none of this: they stay out on watch, day and night, and fights (see [Guard](#guard)).
 - They use their own hut when its building is finished and its door stands; otherwise (and without a job) the nearest
@@ -481,5 +498,5 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
   Once inside, a settler never gives their hut up: if someone stands on their place, they stay where they are after a moment
   (not by the door).
 - With no hut to go into, they behave as before: the lumberjack rests by their hut at night, the builder works on, and
-  a settler a monster hunts runs to the Town Hall or their hut.
+  a settler a monster hunts runs to the camp or their hut.
 - Settings: `Colony.SettlersGoIndoorsAtNight` and `Colony.SettlersShelterInRaids` (both on).

@@ -1,35 +1,42 @@
 # Buildings
 
-## Town Hall
+## Chieftain's Camp
+- The colony's start: a camp round a fire (called the Town Hall before 1.5.1; only the name changed).
 - Cost: 20 Wood, 10 Stone (settings `Town Hall.WoodCost`, `Town Hall.StoneCost`). Needs a workbench nearby.
 - Founds a colony. On first build it adopts nearby citizens without a colony, then tops up to the starting citizen
   count (4 by default). Later, any citizen without a colony who comes inside its area joins too.
 - **E**: 24-slot colony chest; keep food here for newcomers (settlers eat from any colony chest). It keeps 10 food of
   any kind for them to start (its [Keep in stock](#keep-in-stock) list): settlers eat food beyond that first.
-- **Shift+E**: the colony's window, in five tabs (the fifth, **Hall**, since 1.4: see Levels below), and **Sound the alarm** (1.3) beside Close: everyone of the colony
+- **Shift+E**: the colony's window, in five tabs: **Overview** (it opens there, 1.5.1), **People**, **Work**, **Saga** and
+  **The camp**. Along the bottom: **Sound the alarm** (1.3) on the left: everyone of the colony
   shelters indoors as in a raid, and the guards gather round where you stood (each at their own spot) and fight any
   monster within 30 m of it (a call for help still brings them), for 5 minutes or until **All clear**. Players in the colony's area are told when it starts and ends.
-  The same row has **Report a problem** (the bug form with your versions filled in) and **Feedback** (1.4.2: our Discord
-  or the feedback form, opened in your browser; nothing is sent from the game).
-  - **Citizens**: the colony at a glance (beds taken, food in this chest, how many are hungry, what the next newcomer
-    waits for, and, while couriers carry, when the storehouse is full or couriers hold loads with nowhere to put them,
-    with what to do), then every citizen (name, job, status, workplace), ten a page. Citizens nobody is near show their last
-    known status; vanished citizens show as *Missing* and drop off after 3 in-game days. Click a citizen to choose
-    them, then **Recall** brings them at once to a free spot by the Town Hall, wherever they are in the loaded world (stuck
+  **Close** is in the middle, and **Report a problem** (the bug form with your versions filled in) and **Feedback**
+  (1.4.2: our Discord or the feedback form, opened in your browser; nothing is sent from the game) smaller on the right.
+  The window's size is a setting of your own, `Windows.Scale` (1.5.1).
+  - **Overview** (1.5.1): the colony at a glance: its settlers (how many, of how many it may have, and the free beds);
+    food in the camp's chest, what it keeps for newcomers and who is hungry; the colony's mood and the reasons that
+    weigh most across it; what the next newcomer waits for; what the builders still need, with **Hand over**; and,
+    while couriers carry, when the storehouse is full or couriers hold loads with nowhere to put them, with what to do.
+    With the game's raven hints on (Settings, "Enable raven hints"), and since 1.5.1, **Hugin's next step** too: seven steps for a new colony (a Builder's Hut, a
+    job for a settler, a Longhouse, food in the camp's chest, a Watchtower, the camp's level 2), the last one done and
+    the next, with what Hugin says of it. Each is read from the colony as it stands, so an older colony starts with
+    what it has ticked off, and the block goes once all are done.
+  - **People**: every citizen (name, job, status, workplace), ten a page. Citizens nobody is near show their last
+    known status; vanished citizens show as *Missing* and drop off after 3 in-game days. Click a citizen to see their
+    page above the list (1.5.1): who they are, their mood and why, their skills, their home, what they carry and their
+    newest lines in the Saga. Then **Recall** brings them at once to a free spot by the camp, wherever they are in the loaded world (stuck
     somewhere, or just far off); they carry on with their work from there. Only players who may manage the colony (its
     owner, or players on a ward covering it) can recall. A settler marked *Missing* (their body is lost) gets **Bring
-    back** instead: the Town Hall keeps what it needs of every member (name, looks, job, home, skills) and brings them
+    back** instead: the camp keeps what it needs of every member (name, looks, job, home, skills) and brings them
     back as themselves, empty-handed, if their body isn't anywhere in the world. The window tells how it went: back, back but gone indoors
-    again (night or a raid), or why not (no free spot by the Town Hall, not your colony).
-  - **Saga**: what happened in the colony, newest first, twelve lines a page: who came to live here, who died and
-    how, which huts were built or went up a level, who started or left work where, and who was called back or got
-    boxed in and was moved out. The last 60 lines are kept with the Town Hall.
-  - **Work orders**: every building, upgrade and repair the colony has ordered and not finished, in the order
+    again (night or a raid), or why not (no free spot by the camp, not your colony).
+  - **Work** (called Work orders before 1.5.1): every building, upgrade and repair the colony has ordered and not finished, in the order
     builders take them, eight a page: the hut, what it becomes ("new", "level 2" or "repair"), pieces up of all, and how it stands (who is building it, what it
     needs, waiting for a builder, set aside). At the top, what all open orders still need that the colony's chests
     don't hold and the builders don't already carry ("Still to bring: 15 Wood, 12 Stone"), with **Hand over** beside it
     (0.23): what the chosen order (or the first) still needs beyond the colony's chests and its builder's load goes from
-    your bag into the Town Hall's chest ("Handed over 12 Wood, 4 Stone"); when the Town Hall keeps one of those items in
+    your bag into the camp's chest ("Handed over 12 Wood, 4 Stone"); when the camp keeps one of those items in
     stock, its own amount is topped up first, so the builder can still take what's short (0.26). Click an order to see its full description, then:
     - **Do first**: builders take it before everything else, even their own hut; a builder busy elsewhere comes over
       within seconds. If it waits on you (materials, a tool, a higher Builder's Hut), they still set it aside after a
@@ -38,13 +45,20 @@
       order you can't supply yet.
     - **Cancel upgrade**: as in the hut's window, only before the builder has changed anything.
     - **Leave as it is** (in its place for a repair): the missing pieces aren't put back, and aren't asked for again.
-  - **Keep in stock** (0.21): what its chest keeps, as on every hut (below). To start, Food (any) × 10, for newcomers.
+  - **Saga**: what happened in the colony, newest first, twelve lines a page: who came to live here, who died and
+    how, which huts were built or went up a level, who started or left work where, and who was called back or got
+    boxed in and was moved out. The last 60 lines are kept with the camp. Beside it, **the colony's deeds** (1.5.1),
+    today and all time: trees felled, harvested and foraged, items carried, pieces mended, buildings built, raids held
+    off and settlers lost. Counting began with 1.5.1, so an older colony starts at 0.
+  - **The camp**: two parts, one at a time. **Levels**: the camp's level and its next (below), and What's built
+    round its chest. **Keep in stock** (0.21): what its chest keeps, as on every hut (below). To start, Food (any)
+    × 10, for newcomers.
 - Its colony area is a 50 m circle at level 1 (setting `Colony.ColonyRadius`), 10 m more per level. Job huts can only
   be built inside it.
-- **Levels (1.4, the Hall of Trophies):** the Town Hall goes from level 1 to 5. **Shift+E › Hall** shows its level,
+- **Levels (1.4, the Hall of Trophies):** the camp goes from level 1 to 5. **Shift+E › The camp** shows its level,
   what it gives, and what the next level needs and gives:
 
-  | Level | Show the hall | Materials (from its chest, used up) | Colony area | Settlers | Huts up to |
+  | Level | Show the camp | Materials (from its chest, used up) | Colony area | Settlers | Huts up to |
   |---|---|---|---|---|---|
   | 1 | — | — | 50 m | 10 | level 1 |
   | 2 | Eikthyr's trophy | 40 Wood, 20 Stone, 10 Deer Hide | 60 m | 15 | level 2 |
@@ -52,55 +66,55 @@
   | 4 | Moder's and Yagluth's trophies | 40 Fine Wood, 30 Silver, 20 Black Metal | 80 m | 25 | level 4 |
   | 5 | The Queen's trophy | 30 Yggdrasil Wood, 40 Black Marble, 10 Refined Eitr | 90 m | 30 | level 5 |
 
-  - **Showing a trophy:** hang it on an item stand within 10 m of the Town Hall, or put it in its chest (levels 3 and
+  - **Showing a trophy:** hang it on an item stand within 10 m of the camp, or put it in its chest (levels 3 and
     4 need two trophies), then press **Raise to level N**. A Forsaken your world has already beaten counts without
     its trophy ("beaten in this world"), so trophies already on the sacrificial stones needn't be won again
-    (`Town Hall.BeatenBossesCount`). It isn't used up: take it to the sacrificial stones afterwards if you like. The Hall tab
-    also lists every Forsaken's trophy shown in the hall now.
+    (`Town Hall.BeatenBossesCount`). It isn't used up: take it to the sacrificial stones afterwards if you like. The camp tab
+    also lists every Forsaken's trophy shown at the camp now.
   - **Settlers:** newcomers stop at the level's number (never past `Colony.MaxSettlers`); nobody leaves.
-  - **Huts:** a hut can be upgraded to the Town Hall's level at most ("Upgrading to level 3 needs a level 3 Town
-    Hall"), besides needing a Builder's Hut of that level: each hall level opens the next age of huts. Huts already
+  - **Huts:** a hut can be upgraded to the camp's level at most ("Upgrading to level 3 needs a level 3
+    Chieftain's Camp"), besides needing a Builder's Hut of that level: each camp level opens the next age of huts. Huts already
     higher keep their level.
-  - The Town Hall's chest gets a row more per level (`Storage.RowsPerLevel`).
+  - The camp's chest gets a row more per level (`Storage.RowsPerLevel`).
   - Only players who may manage the colony can raise it. The Saga records it, and everyone in the colony's area is
     told. Costs and numbers are settings (`Town Hall.Level2Cost` …, see [Settings](Settings.md)); `Town Hall.Levels =
     false` turns levels off (the colony as before 1.4).
-  - A Town Hall from before 1.4 is level 1. A new Town Hall that takes over a colony keeps the level it had reached.
+  - A Chieftain's Camp from before 1.4 is level 1. A new camp that takes over a colony keeps the level it had reached.
 - Colony buildings aren't destroyed by falling trees or rolling logs; monsters can still damage them.
-- **Only players can damage the Town Hall chest**: monsters, raids, fire and stray rocks can't break it. You can still
+- **Only players can damage the camp's chest**: monsters, raids, fire and stray rocks can't break it. You can still
   remove it with the hammer; the Ashlands' heat and lava, the Deep North's cold and a collapse (no support) can still
   destroy it, like any building.
 - **If it's lost anyway**, the colony lives on for 3 in-game days (setting `Colony.TownHallGraceDays`, 0–10): its
-  settlers keep their jobs and its huts keep working, and the huts say "The Town Hall is gone: build a new one here
-  within N days to keep the colony". A new Town Hall built among them in that time takes the colony over — the same
+  settlers keep their jobs and its huts keep working, and the huts say "The Chieftain's Camp is gone: raise a new one here
+  within N days to keep the colony". A new camp raised among them in that time takes the colony over — the same
   settlers, huts and orders, and no newcomers. After that, settlers lose their colony and job as before, and the next
-  Town Hall founds a new colony. With `TownHallGraceDays = 0` a colony ends 30 seconds after its Town Hall is gone.
+  Chieftain's Camp founds a new colony. With `TownHallGraceDays = 0` a colony ends 30 seconds after its camp is gone.
 
-## The Town Hall camp (1.4)
-- The place the colony gathers: a camp site round one fire. The builder puts it up round the Town Hall's chest (the
-  chest stays where you put it, at the back of the camp under the hall's shelter, facing the fire), and it grows with
-  the hall's level:
+## The camp's fire, seats and trophy racks (1.4)
+- The place the colony gathers: a camp site round one fire. The builder puts it up round the camp's chest (the
+  chest stays where you put it, at the back of the camp under its shelter, facing the fire), and it grows with
+  the camp's level:
 
-  | Hall level | What it adds |
+  | Camp level | What it adds |
   |---|---|
-  | 1 | the hall's shelter over the chest (6 m wide, open to the fire), a fire pit in front of it, two standing torches |
+  | 1 | a shelter over the chest (6 m wide, open to the fire), a fire pit in front of it, two standing torches |
   | 2 | sitting logs round the fire, a shelter on its left with two trophy stands, the colony's banner pole at the camp's way in |
   | 3 | the fire becomes a bonfire; a chieftain's stone seat across it; a shelter on its right with two more trophy stands |
   | 4 | shingles on the shelters, a third trophy stand in each, dvergr lanterns at their fronts |
   | 5 | grausten pillars under the shelters, lava lanterns where the torches stood |
 
-- **Trophies** hung on the shelters' stands are within 10 m of the hall's chest, so they count for raising the hall.
+- **Trophies** hung on the shelters' stands are within 10 m of the camp's chest, so they count for raising the camp.
 - **In the evening** the colony gathers at the camp's fire before any other burning one; settlers keep it fed with wood
   from the colony's chests.
-- **A new Town Hall** orders the camp at once; a builder puts it up after the huts (you can move its order first in
-  Work orders). **A Town Hall from before 1.4** gets no camp until you press **Build the camp** in its Hall tab.
-- Raising the hall orders the camp's next level. It **waits** while pieces of yours stand where it goes (the builder
-  never takes down your buildings), or for a Builder's Hut of that level; the Hall tab says what it waits for.
+- **A new Chieftain's Camp** orders its fire and seats at once; a builder puts it up after the huts (you can move its order first in
+  Work orders). **A Chieftain's Camp from before 1.4** gets none until you press **Build the camp** in its window's The camp tab.
+- Raising the camp a level orders what's built for it. It **waits** while pieces of yours stand where it goes (the builder
+  never takes down your buildings), or for a Builder's Hut of that level; The camp tab says what it waits for.
 
 ## Lumberjack's Hut
-- Cost: 20 Wood (setting `Lumberjack Hut.WoodCost`). Needs a Town Hall nearby instead of a workbench: it only shows
-  in the hammer while you stand well inside a Town Hall's colony area (within about 44 m), so the hut lands inside it. A hut outside every colony (its Town Hall was
-  destroyed) says "Build near a Town Hall" and joins as soon as a Town Hall is in range.
+- Cost: 20 Wood (setting `Lumberjack Hut.WoodCost`). Needs a Chieftain's Camp nearby instead of a workbench: it only shows
+  in the hammer while you stand well inside a colony's area (within about 44 m), so the hut lands inside it. A hut outside every colony (its camp was
+  destroyed) says "Build near a Chieftain's Camp" and joins as soon as a Chieftain's Camp is in range.
 - **E**: 18-slot storage where the lumberjack delivers wood and seeds and fetches seeds for replanting.
 - **A workbench** (1.5) inside, along the right wall, raised to level 2 by the chopping block by the door: somewhere to
   repair your axe. A Lumberjack's Hut built before 1.5 gets it at its next upgrade; one already at level 5 keeps its old
@@ -124,19 +138,19 @@
   from the top (with any leftovers of an older level), as they take old pieces away in an upgrade, and the materials go
   to their hut; they clear nothing round it first. It is ordered only when all of the hut is loaded ("Come closer…"), so
   no piece stays standing out of reach (0.26). When the last piece is down, what still lies of its materials on the
-  hut's own ground goes to the Town Hall's chest (a pile of yours beside it stays), and the hut's chest goes too: its contents into the Town Hall's chest (what doesn't fit drops by the hut), its worker is
+  hut's own ground goes to the camp's chest (a pile of yours beside it stays), and the hut's chest goes too: its contents into the camp's chest (what doesn't fit drops by the hut), its worker is
   let go, and the saga says "the Forager's Hut was taken down". The window says "Being taken down (12 of 30 pieces
-  left)"; Work orders shows it as "take down". Only for players who may manage the colony; never the Town Hall.
+  left)"; Work orders shows it as "take down". Only for players who may manage the colony; never the camp.
   **Cancel take down** (on its window or Work orders) stops it, and what came down is put back as a repair. While it
   is taken down it can't be upgraded.
 - A new hut only hires once the builder has finished its building; huts from before 0.3.0 keep working and have a
   **Build** button.
 
 ## Builder's Hut
-- Cost: 20 Wood (setting `Builder Hut.WoodCost`). Needs a Town Hall nearby, like the Lumberjack's Hut.
+- Cost: 20 Wood (setting `Builder Hut.WoodCost`). Needs a Chieftain's Camp nearby, like the Lumberjack's Hut.
 - Hires a builder straight away. They build their own hut first, then every other hut's building in the order the huts
   were placed. **Shift+E**: the worker, what they're working on, and how many buildings wait.
-- **E**: 18-slot storage — put building materials here (they also take from the Town Hall and the other huts).
+- **E**: 18-slot storage — put building materials here (they also take from the camp and the other huts).
 - **Its workbench** (1.5) is yours to use. From level 2 it stands in the covered yard, with its chopping block and adze
   beside it (a level 3 bench). From level 3 the tool shelf hangs inside the workshop on the same wall, making it a level
   4 bench. The artisan table (level 4) stands inside the workshop, where the bench was. A Builder's Hut built before
@@ -156,7 +170,7 @@
   hammer stays away. See [Citizens and jobs](Citizens-and-Jobs.md#builder).
 
 ## Forager's Hut
-- Cost: 20 Wood (setting `Forager Hut.WoodCost`). Needs a Town Hall nearby.
+- Cost: 20 Wood (setting `Forager Hut.WoodCost`). Needs a Chieftain's Camp nearby.
 - Hires a forager once its building stands (see [Citizens and jobs](Citizens-and-Jobs.md#forager)). They pick what
   grows wild within 40 m (10 m more per level) and grows back, and fill the hut's chest: food the colony eats, and
   herbs such as dandelions and thistles for you.
@@ -166,7 +180,7 @@
   hut has its own list).
 
 ## Farm
-- Cost: 20 Wood (setting `Farm.WoodCost`). Needs a Town Hall nearby.
+- Cost: 20 Wood (setting `Farm.WoodCost`). Needs a Chieftain's Camp nearby.
 - Hires a farmer once its building stands (see [Citizens and jobs](Citizens-and-Jobs.md#farmer)). They work **only the
   fields you mark** with **field markers** (below), as in MineColonies: a Farm has no ground of its own (since 0.20.1).
   Place a marker near the Farm, choose its crop and size, and the Farm takes it: **one field per level** (1 at level 1,
@@ -189,6 +203,12 @@
   leaves it to regrow (a bush takes its plot for good; take it away with the hammer to plant crops there again).
 - **Fields**: its window's **Fields** tab says "Fields: 2 of 3", then lists every field of the colony, nearest first,
   with **Assign** / **Leave**, and a tick: **New fields join this Farm by themselves** (on).
+
+## Memorial stone (1.5.1)
+- Where the colony remembers its fallen: every settler it has lost, their trade, the day and how. From the hammer's
+  Misc tab, inside a colony you may manage (the camp is its station), **one per colony** ("The colony already has a
+  memorial stone"); 20 Stone (`Memorial.StoneCost`). E reads it like a runestone, 20 lines a page, newest first. See
+  [Citizens and jobs](Citizens-and-Jobs.md) for the fallen return.
 
 ## Field markers
 - A wooden sign in the hammer's **Misc** tab (setting `Field.WoodCost`, 4 Wood), placed inside a colony's area like
@@ -222,7 +242,7 @@
 - **It pushes the colony's border out**, as MineColonies' guard towers do: once its building stands, the ground 25 m
   round it (5 m more per level, 45 m at level 5) is part of the colony's area, so you can build huts by it. A
   Watchtower in the area can stand at its edge, and the next one at the edge of that: the colony grows tower by tower,
-  up to `Colony.MaxReach` (150 m) from the Town Hall: of a tower near that edge only the part of its circle within
+  up to `Colony.MaxReach` (150 m) from the camp: of a tower near that edge only the part of its circle within
   reach counts (none when less than 10 m is left; its guard still keeps watch). Upgrading or repairing a tower never
   takes its ground away.
 - **Orders** (1.3, its window): **Patrol** (to start: rounds of the colony's buildings) or **Hold post** (no rounds: a
@@ -245,21 +265,21 @@
   ground under its floor. A chest you place
   inside joins within a few seconds; one you take away leaves. Chests you stand inside don't stop its upgrades: they stay
   where they are, unless the new level needs that very spot (then the upgrade says another building is in the way).
-- **Used first:** the builder looks in its own hut, then the storehouse, then the Town Hall, then any colony chest.
-  Meals come from the storehouse first, then the Town Hall, then the nearest chest. A worker whose hut chest is full
-  takes the load to the storehouse, and to the Town Hall only when the storehouse is full. Everything that counts the
+- **Used first:** the builder looks in its own hut, then the storehouse, then the camp, then any colony chest.
+  Meals come from the storehouse first, then the camp, then the nearest chest. A worker whose hut chest is full
+  takes the load to the storehouse, and to the camp only when the storehouse is full. Everything that counts the
   colony's chests counts it too: the lumberjack's Stop at, fires, Keep in stock, a ballista's ammunition.
 - **Shift+E:** four tabs. **Hut**: its level, its couriers, how many chests its store has. **Needs**: the colony's
   shopping list, one line per building short of something: "Farm: 20 Wood — Ulf is bringing it", "waiting for a
-  courier", "only in the Town Hall, where couriers don't take from", "no room in its chest" or "nobody has it"; under
+  courier", "only in the camp, where couriers don't take from", "no room in its chest" or "nobody has it"; under
   them **Bring: 40 Iron, 10 Food (any)**, what nobody in the colony has. **Keep in stock** (for its own chest, as on
   every hut). **Stock**: what all the colony's chests hold, most first, each with where most of it lies ("40 Wood (most
   in the Lumberjack's Hut)").
 - **Take down:** with a courier hired, its couriers first carry what the chests inside hold to the colony's other chests
-  (a building short of it, else the Town Hall, else the nearest with room); the window says "Emptying the store for its
+  (a building short of it, else the camp, else the nearest with room); the window says "Emptying the store for its
   take-down: 40 Wood, 12 Stone… left", nothing new goes in meanwhile, and once it's empty a builder takes it down.
   **Cancel take down** opens the store again. Couriers don't carry gear and tools, and with no courier the window asks
-  you to empty the chests yourself. Its own chest's things go to the Town Hall by themselves, as with every hut.
+  you to empty the chests yourself. Its own chest's things go to the camp by themselves, as with every hut.
 - **Hugin** explains the storehouse the first time you place one (one placed already built in creative mode too).
 - **Couriers** (1.5): it hires couriers like a Watchtower hires guards: one at levels 1–2, two at 3–4, three at 5
   (Hire, Fire, Auto-hire). They carry for the whole colony, see [Citizens and jobs](Citizens-and-Jobs.md#courier).
@@ -267,14 +287,14 @@
   needs it, or into the chests inside. Gear (weapons, armour, tools) stays where you put it.
 
 ## The colony's area
-- The Town Hall's circle (`Colony.ColonyRadius`, 50 m) and a circle round each finished Watchtower of the colony
-  (1.1). Huts and field markers can stand anywhere in it, and a hut joins the colony whose area holds it: the Town
-  Hall's circle first, then the nearest tower's. While you place a hut, rings on the ground show every circle near you.
-- Where settlers live — their free time, the evening, doors, newcomers walking in, death messages — is still the Town
-  Hall's circle.
+- The camp's circle (`Colony.ColonyRadius`, 50 m) and a circle round each finished Watchtower of the colony
+  (1.1). Huts and field markers can stand anywhere in it, and a hut joins the colony whose area holds it: the
+  camp's circle first, then the nearest tower's. While you place a hut, rings on the ground show every circle near you.
+- Where settlers live — their free time, the evening, doors, newcomers walking in, death messages — is still the
+  camp's circle.
 
 ## Longhouse
-- Cost: 20 Wood (setting `Longhouse.WoodCost`). Needs a Town Hall nearby. No job: it's where settlers live.
+- Cost: 20 Wood (setting `Longhouse.WoodCost`). Needs a Chieftain's Camp nearby. No job: it's where settlers live.
 - The builder puts up its building, a hall round its fire with **beds**: 2 at level 1, 2 more each level (10 at
   level 5), on plank sleeping platforms along its walls, with an earth floor down the middle and a clear way to each.
   Each
@@ -292,28 +312,35 @@
   worker line shows their skill ("Astrid (good at foraging, Farming 12)").
 
 ## Keep in stock
-- (0.21, MineColonies' minimum stock.) Every hut, the Longhouse and the Town Hall have a **Keep in stock** tab: a list
+- (0.21, MineColonies' minimum stock.) Every hut, the Longhouse and the camp have a **Keep in stock** tab (on the camp,
+  a part of its The camp tab, 1.5.1): a list
   of items, each with an amount, that its chest keeps. "Keep in stock: 2 of 5", then a row per item with what the
   chest holds of what it keeps ("8 / 10", orange while short), **−** / **+** (by 5; with Shift by a whole stack) and
   **×** to take it off. **Add…** lists **Food (any)** (any food a settler eats) and every item the colony's chests
   hold that stacks; tick one to keep a whole stack of it. Weapons, armour and tools aren't on it (1.4.1): a settler
   can't carry one without losing its quality, wear and maker, so move those by hand.
-- Room on the list: 5 items per level on a job hut, 10 per level on the Longhouse, 10 on the Town Hall. A full list
+- Room on the list: 5 items per level on a job hut, 10 per level on the Longhouse, 10 on the camp. A full list
   greys Add… and says "The list is full (5 at level 1)".
 - **Other settlers leave kept items alone**: breakfast, meals, feeding fires and builders take only what a chest holds
   beyond what it keeps. The building's own worker uses all of it (the farmer's and lumberjack's seeds, the builder's
-  materials in their Builder's Hut); the Town Hall feeds newcomers from its food. A settler whose meal is due eats kept
+  materials in their Builder's Hut); the camp feeds newcomers from its food. A settler whose meal is due eats kept
   food only when there's no other food in the colony.
+- **A hut's chest holds what its own build still needs** (1.5.1): while a hut has an open build order (being built,
+  upgraded or repaired), what its chest holds of that order's materials is left for the builder building it; other
+  builders, couriers and settlers take only what's beyond it (and beyond its Keep in stock). So the materials you put
+  in a hut's chest for its own next level stay there. The camp's and the storehouse's chests are the colony's stores
+  and hold nothing back. **Set aside** an order (the camp's Work tab) and its hut holds nothing until you resume it.
+  A builder short of something says where it's held: "(more Resin is held in the Lumberjack's Hut for its own build)".
 - **Settlers with free time bring what's missing**: one of them takes it from a colony chest that can spare it and
-  carries it over, up to 20 at a time, one settler per building and item. Hover: "(carrying 10 Raspberries to the Town
-  Hall)". Setting `Colony.CarryToStock` (on). Once the colony's storehouse has a courier (1.5), couriers do it.
-- **Couriers take the rest: on/off** (1.5), beside Add… on a hut's tab in a colony with a storehouse (not the Town
-  Hall's, a Builder's Hut's or the storehouse's own: couriers never take from the first two). On, couriers may take
+  carries it over, up to 20 at a time, one settler per building and item. Hover: "(carrying 10 Raspberries to the
+  Chieftain's Camp)". Setting `Colony.CarryToStock` (on). Once the colony's storehouse has a courier (1.5), couriers do it.
+- **Couriers take the rest: on/off** (1.5), beside Add… on a hut's tab in a colony with a storehouse (not the
+  camp's, a Builder's Hut's or the storehouse's own: couriers never take from the first two). On, couriers may take
   what the hut doesn't keep: a Lumberjack's, Forager's or Farm's surplus to the storehouse, and what other buildings are
   short of; off, they leave its chest as you arranged it, and a storehouse being emptied puts nothing in it that it
   doesn't keep.
 - Only players who may manage the colony change a list. A building that never had its list changed keeps nothing,
-  except the Town Hall (10 food).
+  except the camp (10 food).
 - (1.4.3) **A Farm keeps the seeds its fields plant**, whether or not they're on its list: one per plot of each field (a
   field of mixed crops shares its plots among them; a bush regrows, so none for it). Other settlers don't eat, burn,
   build with or carry off those, only what the chest holds beyond them. A field of seed carrots, seed turnips or seed
@@ -330,7 +357,7 @@
   - **Red** — the hut can't go here: another building or another hut's site is in the way, a rock nothing can break
     (a cliff, or a boulder no pickaxe breaks) stands where it goes, a grave or a crate from a ship stands there (it goes
     once it's emptied), it's outside the colony
-    area (the Town Hall's circle and its Watchtowers'), it's someone else's colony (you need to be on its owner's ward there), inside someone else's ward, in a place where building isn't allowed, below the water line, too steep (the
+    area (the camp's circle and its Watchtowers'), it's someone else's colony (you need to be on its owner's ward there), inside someone else's ward, in a place where building isn't allowed, below the water line, too steep (the
     ground varies more than 4 m), or raised higher than the design's posts reach. Red huts can't be placed.
 - **Page Up / Page Down** raise or lower the hut 25 cm at a time, up to 2 m (settings `Placing.RaiseKey` and
   `Placing.LowerKey`). A raised hut stands on its design's posts; a design without posts can't be raised.
@@ -338,7 +365,7 @@
 
 ## Blueprints
 - Each hut's building comes from a blueprint (PlanBuild's `.blueprint` text format). Since 1.4 the mod ships a Viking
-  building for each hut and level (and the Town Hall's camp), made with our design tool; before 1.4 they were plain
+  building for each hut and level (and the camp), made with our design tool; before 1.4 they were plain
   placeholders.
 - To use your own design: in a test world (a world whose name starts with `VCTest`, for example `VCTestDesigns`) with
   `devcommands` on, place the hut's chest, build the building around it,
@@ -383,7 +410,7 @@
   again turned round, plain side out, and a Longhouse's beds move up onto its new sleeping platforms. It costs a
   little wood, once.
 - A builder builds and upgrades huts up to their own Builder's Hut's level; their own hut can always go one level higher
-  (up to the Town Hall's level, like every hut), so upgrade the Builder's Hut first.
+  (up to the camp's level, like every hut), so upgrade the Builder's Hut first.
 
 ### What a level gives
 - **Lumberjack's Hut:** the lumberjack works 10 m further out per level (40 m at level 1, 80 m at level 5;
@@ -418,17 +445,17 @@ In creative:
 
 - **Placing a colony building already built:** while you place it, the line under the crosshair says "Creative: goes
   up at once at level 3"; **=** and **-** (settings `Creative.LevelUpKey` / `LevelDownKey`) change the level, down to
-  "the builder builds it". A hut goes up to the Town Hall's level; a Town Hall to any level, its camp with it.
+  "the builder builds it". A hut goes up to the camp's level; a Chieftain's Camp to any level, its fire and seats with it.
 - **Beside each colony building's window, a Creative panel:**
   - **Build now** finishes what the builder is building there at once, **Upgrade now** takes it a level up at once (no
-    Builder's Hut needed, as high as the Town Hall's level allows; not while the next level's site is red, as for the
+    Builder's Hut needed, as high as the camp's level allows; not while the next level's site is red, as for the
     builder: it says what's in the way), **Repair now** puts back every broken piece. Things lying on the site go into
     the Builder's Hut's chest (or stay where they lie if it's full), and a leftover chest drops what it holds;
   - on a Builder's Hut, **Supply what's needed** (debug mode, where materials still count; not in a No build cost world,
     where the builders need nothing): what the colony's orders still need goes into its chest, for its builders to
     fetch, so you can watch them build without gathering;
-  - on the Town Hall, **Finish all now** (every open order of the colony, two a second; not a hut being taken down),
-    **Town Hall level +1 / −1** (no trophies needed; lowering changes the colony's area, settlers and the huts' limit,
+  - on the camp, **Finish all now** (every open order of the colony, two a second; not a hut being taken down),
+    **Camp level +1 / −1** (no trophies needed; lowering changes the colony's area, settlers and the huts' limit,
     and takes nothing built away), **Add a settler / Add 5 settlers** (up to what its level allows, no beds or food
     needed), **Settlers eat** on or off, and the camp's Build now and Repair now.
   - Pointing at a button tells what it does. The window's title says "Creative".
