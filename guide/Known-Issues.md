@@ -11,6 +11,12 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 - **A Troll can catch a settler.** Now and then a settler running from a Troll to their hut is caught at its door.
   Being worked on. (Since 1.5.1 the brave run from a Troll at 12 m like everyone, and a settler sheltering stays in
   until hurt to half.)
+- **With a terrain mod like Tunnelheim, ground you level yourself can say "A rock nothing can break".** A hut placed
+  or upgraded on ground you flattened with the hoe is refused, and a builder levelling a site can use up a lot of stone
+  in two swings without the ground rising. The terrain mod turns the levelled ground into its own rock, and the mod
+  reads that rock as a boulder. Being worked on: such ground will count as ground, and the builder will only pay for
+  ground that really rises. **Way round until then:** place huts on ground the terrain mod hasn't reshaped; if a
+  builder is stuck levelling, logging out and back in has let the builder finish.
 - **Guards kill an animal you're taming inside the colony.** A wild boar (or another animal you can tame) counts as
   a monster to the guards until it's tame, so a guard who sees it inside the colony's area fights it, even in your
   pen. Being worked on: guards will leave an animal you can tame alone unless it attacks someone.
