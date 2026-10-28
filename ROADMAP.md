@@ -25,12 +25,12 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 ### 1.7
 
 - Guards leave an animal you're taming alone unless it attacks someone (being built)
+- Building works with terrain mods such as Tunnelheim and Dig Deeper. (being built)
+- Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post. (being built)
 - Settlers running from monsters spread over the colony's huts instead of crowding one door. (being built)
 - Settlers left behind when you move your camp walk to the new one, and you can send a settler away.
-- Building works with terrain mods such as Tunnelheim and Dig Deeper.
 - Small fixes from earlier versions, checked and tidied.
 - Hugin speaks one line at a time in a new colony, each when it makes sense
-- Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post.
 - The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
 - Settlers running from a Troll no longer get caught at their hut's door.
 
