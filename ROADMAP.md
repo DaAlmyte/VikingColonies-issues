@@ -20,7 +20,7 @@ Planned for Wednesday 4 November. If something isn't ready in time, it moves to 
 
 ## Next
 
-No dates from here on: about one update a week, new features one week and fixes the next.
+No dates from here on: two updates a week, new features on Sundays and fixes on Wednesdays.
 
 ### 1.7
 
