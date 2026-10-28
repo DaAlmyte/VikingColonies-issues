@@ -9,7 +9,6 @@ _Last changed 28 October 2026._
 Planned for Wednesday 4 November. If something isn't ready in time, it moves to the next update instead of holding the rest back.
 
 - A cook in a Mead Hall: roasting that never burns and hot breakfasts for the settlers, in a new hall with five levels
-- Settlers running from monsters spread over the colony's huts instead of crowding one door.
 - The memorial stone looks like one of Valheim's runestones.
 - The Chieftain's Camp's Overview gets its proper look: boxes, big numbers and colours.
 - Saving a hut design under a name you used before keeps a backup of the old one
@@ -17,13 +16,6 @@ Planned for Wednesday 4 November. If something isn't ready in time, it moves to 
 - Report a problem also offers the Discord, and says where your bug report file is saved
 - Pastimes: settlers spend their free time at archery, sparring, board games, stories by the fire and more
 - The builder puts up their own hut first, and says why when they move to another site
-- Settlers left behind when you move your camp walk to the new one, and you can send a settler away.
-- Building works with terrain mods such as Tunnelheim and Dig Deeper.
-- Small fixes from earlier versions, checked and tidied.
-- Hugin speaks one line at a time in a new colony, each when it makes sense
-- Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post.
-- The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
-- Settlers running from a Troll no longer get caught at their hut's door.
 - Fixes for problems players reported: see the [known issues](guide/Known-Issues.md).
 
 ## Next
@@ -32,34 +24,34 @@ No dates from here on: about one update a week, new features one week and fixes 
 
 ### 1.7
 
-- Every hut gets a richer look at all five levels (being built)
-- Settlers' own gear: each settler carries a real tool, weapon and armour from your chests, which wear and get repaired, and better tools work faster
-- The mod in Spanish, Russian, German and Simplified Chinese
-- Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
-- The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
-- Settlers answer each other when they chat.
+- Guards leave an animal you're taming alone unless it attacks someone (being built)
+- Settlers running from monsters spread over the colony's huts instead of crowding one door. (being built)
+- Settlers left behind when you move your camp walk to the new one, and you can send a settler away.
+- Building works with terrain mods such as Tunnelheim and Dig Deeper.
+- Small fixes from earlier versions, checked and tidied.
+- Hugin speaks one line at a time in a new colony, each when it makes sense
+- Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post.
+- The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
+- Settlers running from a Troll no longer get caught at their hut's door.
 
 ### 1.8
 
-- The camp's window lists every settler who isn't working, and why: stuck, no tool, hungry, no bed or nothing to do
-- Choose which settler works each hut, see how fast each would work there and why, and every hut gets a clearer window that says why a worker is idle
-- Seeds, animal feed and brewing honey stay with the job that needs them, so the cook can't eat the farm's seed
-- One colony difficulty setting, Relaxed, Normal or Hardcore, sets yields, risk and upkeep at once
-- See what a gathering hut can reach before you place it, and workers with nothing to do help out instead of standing around
-- Gathering huts grow their own: a forager's berry and mushroom patch, a lumberjack's grove and a miner's mine, so a colony works wherever you build it
+- Every hut gets a richer look at all five levels (being built)
+- Settlers' own gear: each settler carries a real tool, weapon and armour from your chests, which wear and get repaired, and better tools work faster
+- Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
 
 ## Later
 
 Ideas we'd like to build. They may change, move or drop out.
 
+- The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
 - The Deep North in the colony's progression: its boss's trophy at the camp, new tools and weapons for settlers and guards, its building pieces on your huts
 - Huts that need you show a small sign you can see from across the colony
+- The camp's window lists every settler who isn't working, and why: stuck, no tool, hungry, no bed or nothing to do
+- Choose which settler works each hut, see how fast each would work there and why, and every hut gets a clearer window that says why a worker is idle
 - A fisher, with different fish in each biome
-- A hunter, who brings home meat, hides and trophies
-- A Keeper's Hut: a keeper empties your beehives, sap collectors and other pieces that fill up over time
-- A Herder's Pen: the herder feeds and breeds your tamed animals and butchers only the surplus
 
 ## Just out: 1.5.0
 
