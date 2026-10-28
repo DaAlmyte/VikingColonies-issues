@@ -45,6 +45,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 Ideas we'd like to build. They may change, move or drop out.
 
+- Our own memorial stone, with each fallen settler's name carved on it in runes.
 - Every hut gets a richer look at all five levels
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
@@ -52,7 +53,6 @@ Ideas we'd like to build. They may change, move or drop out.
 - One order raises every hut to the colony's new age after a boss
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
-- The Deep North in the colony's progression: its boss's trophy at the camp, new tools and weapons for settlers and guards, its building pieces on your huts
 
 ## Just out: 1.5.0
 
