@@ -2,9 +2,9 @@
 
 - [Getting started](Getting-Started.md) — install, build your first colony
 - [Buildings](Buildings.md) — Chieftain's Camp (its levels and its fire, seats and trophy racks), Builder's Hut, Lumberjack's Hut, Forager's Hut,
-  Farm, Longhouse, Watchtower, placing huts, designs, levels and upgrades
+  Farm, Longhouse, Watchtower, Storehouse, the memorial stone, placing huts, designs, levels and upgrades
 - [Citizens and jobs](Citizens-and-Jobs.md) — how citizens live, work and are hired: who they are (trade, trait,
-  past), free time, lumberjack, farmer, forager, builder (building, mending and repairs), guards, meals, homes, mood,
+  past), free time, lumberjack, farmer, forager, builder (building, mending and repairs), guards, couriers, meals, homes, mood,
   the evening, nights and raids, getting unstuck
 - [Settings](Settings.md) — every option and what it does
 - [Multiplayer](Multiplayer.md) — servers and playing with friends
