@@ -7,7 +7,9 @@ body:
     attributes:
       value: |
         Thanks for reporting! Is it already on the [known issues](https://github.com/DaAlmyte/VikingColonies-issues/blob/main/guide/Known-Issues.md)?
-        There may be a way round it. Before you start: stand near the settler or building with the trouble, press **F5** and
+        There may be a way round it. The quickest way to fill this in: **Report a problem** in the Chieftain's Camp's
+        window (Shift+E) fills in the versions and copies the whole report for you. Or by hand: stand near the settler or
+        building with the trouble, press **F5** and
         type `vc_bugreport` (no cheats needed). It writes `BepInEx/VikingColonies-bugreport.txt` in your mod manager
         profile. Attach that file below, with `BepInEx/LogOutput.log` from the same folder.
         The game's own log has your Steam ID in it (a long number starting with 7656): you can delete it before attaching.
@@ -55,7 +57,7 @@ body:
     attributes:
       label: Versions
       description: VikingColonies and Valheim (the bug report file has them too)
-      placeholder: "VikingColonies 1.4.2, Valheim 1.0.20"
+      placeholder: "VikingColonies 1.5.1, Valheim 1.0.21"
   - type: textarea
     id: mods
     attributes:
