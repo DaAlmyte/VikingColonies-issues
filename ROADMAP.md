@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. It's written from the plan we work from, and changes by itself when the plan does.
 
-_Last changed 28 October 2026._
+_Last changed 29 October 2026._
 
 ## Now: 1.6.0
 
@@ -54,11 +54,15 @@ Ideas we'd like to build. They may change, move or drop out.
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
 
-## Just out: 1.5.0
+## Just out: 1.5.1
 
-- A storehouse with couriers who carry goods between huts, so you stop hauling
-- Creative mode: place huts already built, upgrade them at once and add settlers
-- Settlers stand up to weak animals like Necks and Boars instead of hiding over and over
+- The Town Hall becomes the Chieftain's Camp, with a new window: an overview, a page for each settler, the colony's saga and a size setting
+- A memorial stone that names the settlers your colony has lost, and a setting that lets the fallen walk back in after a few days
+- Hugin the raven guides you through your first colony, one step at a time
+- Settlers break off a fight the moment they're hurt to half, and brave settlers run from Trolls in time
+- Settlers head straight for a hut's door instead of walking round the back first
+- A settler sheltering from a monster stays inside instead of walking out past it
+- Materials you put in a hut's chest stay there for that hut's own upgrade
 
 Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
