@@ -25,9 +25,12 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.6.1
 
-- Building works with terrain mods such as Tunnelheim and Dig Deeper (in 1.6.0 if it's ready in time). (being built)
+- At breakfast settlers spread out round the chest instead of crowding into one spot (1.6.1). (being built)
+- Sparring settlers stand closer to the training dummy (1.6.1). (being built)
+- Building works with terrain mods such as Tunnelheim and Dig Deeper (1.6.1, Wednesday 4 November). (being built)
 - Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post. (being built)
 - Settlers running from monsters spread over the colony's huts instead of crowding one door. (being built)
+- Hugin, the raven, no longer blocks a settler's way to a hut's door.
 - Small fixes from earlier versions, checked and tidied.
 - Hugin speaks one line at a time in a new colony, each when it makes sense
 - A settler whose bed is taken away at night lies down again.
@@ -45,14 +48,14 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 Ideas we'd like to build. They may change, move or drop out.
 
+- Every colony window gets the same clear look as the camp's: boxes, tables and buttons where you need them
 - Our own memorial stone, with each fallen settler's name carved on it in runes.
+- The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
 - Every hut gets a richer look at all five levels
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
 - The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
-- Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
-- Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
 
 ## Just out: 1.5.1
 
