@@ -4,7 +4,7 @@ Problems in VikingColonies we know about, the worst first: what's being done, an
 
 _Last updated 29 October 2026._
 
-VikingColonies 1.5.1 · Works with Valheim 1.0.20 (checked 28 October 2026).
+VikingColonies 1.5.1 · Works with Valheim 1.0.21 (checked 29 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Chieftain's Camp's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
