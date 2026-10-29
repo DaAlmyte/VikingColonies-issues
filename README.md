@@ -1,6 +1,6 @@
 # VikingColonies: bug reports, feedback and the player guide
 
-**VikingColonies** is a MineColonies-style colony mod for Valheim. Found a Town Hall, welcome settlers, house them in
+**VikingColonies** is a MineColonies-style colony mod for Valheim. Found a Chieftain's Camp, welcome settlers, house them in
 Longhouses and give them jobs. They build your village piece by piece, fell and replant trees, farm, forage, carry
 goods to the colony's storehouse, eat, sleep, shelter from raids and mend what monsters break, while you go adventuring.
 
@@ -14,7 +14,7 @@ This page is for **reporting bugs, giving feedback and sharing ideas**. The mod'
 
 ## Found a bug?
 
-The quickest way (1.4 and later): stand near the settler or building with the trouble, open a Town Hall's window
+The quickest way (1.4 and later): stand near the settler or building with the trouble, open the Chieftain's Camp's window
 (Shift+E) and press **Report a problem**. Your browser opens the bug form with the versions filled in, and the whole
 report is copied: click in the form's last box, press Ctrl+V, and say what happened. Nothing is sent until you press
 Submit. See the [known issues](guide/Known-Issues.md) first.
@@ -52,7 +52,7 @@ does; it's in #roadmap on the Discord too.
 
 ## Before you remove the mod
 
-Without VikingColonies, the Town Hall's and huts' chests (and what's in them), the settlers and their cairns disappear
+Without VikingColonies, the Chieftain's Camp's and huts' chests (and what's in them), the settlers and their cairns disappear
 from your world. They come back if you install it again. To keep those items for good, take them out of the colony's
 chests first. The buildings the builder put up are ordinary Valheim pieces and stay.
 

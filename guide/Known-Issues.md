@@ -2,7 +2,7 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 28 October 2026._
+_Last updated 29 October 2026._
 
 VikingColonies 1.5.1 · Works with Valheim 1.0.20 (checked 28 October 2026).
 
@@ -32,6 +32,13 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 - **Settlers running from monsters can all head for the same hut.** When monsters turn up close to several settlers,
   they may all run for the nearest hut and wait at its one door for a few seconds, until some pick another hut.
   Everyone gets in. Being worked on: settlers spread over the colony's huts when they shelter.
+- **Hugin the raven can stand in a settler's way by a door.** When you stand near a hut's door while Hugin brings a
+  tip, he lands by you, and a settler walking in or out can stop against him for a while. Being worked on: Hugin will
+  keep out of settlers' way. **Way round until then:** step away from the door, or turn `Messages.HuginTips` off once
+  you know the colony.
+- **On a colony's first day, every settler talks about the same newcomer.** With everyone arriving at once, the small
+  talk names one of them again and again (and the same for the newest of the fallen). Only the words; nothing else is
+  affected. Being worked on: each settler will pick their own.
 
 ## Recently fixed
 
