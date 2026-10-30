@@ -2,7 +2,7 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 29 October 2026._
+_Last updated 30 October 2026._
 
 VikingColonies 1.5.1 · Works with Valheim 1.0.21 (checked 29 October 2026).
 
@@ -39,6 +39,10 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 - **On a colony's first day, every settler talks about the same newcomer.** With everyone arriving at once, the small
   talk names one of them again and again (and the same for the newest of the fallen). Only the words; nothing else is
   affected. Being worked on: each settler will pick their own.
+- **At breakfast, settlers crowd together at the chest.** When several settlers go to breakfast at the same moment
+  (after you sleep through the night, say), they all walk to the chest they eat from and stand inside each other in
+  front of it while they eat. Only how it looks: everyone eats. Being worked on: each settler will take a place of
+  their own by the chest, with a short queue behind when they're all taken.
 
 ## Recently fixed
 
