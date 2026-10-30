@@ -43,6 +43,9 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   (after you sleep through the night, say), they all walk to the chest they eat from and stand inside each other in
   front of it while they eat. Only how it looks: everyone eats. Being worked on: each settler will take a place of
   their own by the chest, with a short queue behind when they're all taken.
+- **Now and then a worker can't find the way to their hut's door and stays outside at night.** At some spots the
+  ground just outside a hut's door isn't on the game's walking map, so a worker (often the lumberjack) can't get in
+  and spends the night outside. Being worked on.
 
 ## Recently fixed
 
