@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. It's written from the plan we work from, and changes by itself when the plan does.
 
-_Last changed 29 October 2026._
+_Last changed 31 October 2026._
 
 ## Now: 1.6.0
 
@@ -29,14 +29,15 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - At breakfast settlers spread out round the chest instead of crowding into one spot (1.6.1). (being built)
 - Sparring settlers stand closer to the training dummy (1.6.1). (being built)
 - Building works with terrain mods such as Tunnelheim and Dig Deeper (1.6.1, Wednesday 4 November). (being built)
+- Small fixes from earlier versions, checked and tidied. (being built)
 - Hugin speaks one line at a time in a new colony, each when it makes sense (being built)
+- The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole (being built)
 - Settlers running from monsters spread over the colony's huts instead of crowding one door. (being built)
+- Settlers running from a Troll no longer get caught at their hut's door. (being built)
+- Name tags stay over a sitting settler's head. (being built)
+- Workers always find the way in through their hut's door.
 - Hugin, the raven, no longer blocks a settler's way to a hut's door.
-- Small fixes from earlier versions, checked and tidied.
 - A settler whose bed is taken away at night lies down again.
-- The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
-- Settlers running from a Troll no longer get caught at their hut's door.
-- Name tags stay over a sitting settler's head.
 
 ### 1.7
 
