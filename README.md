@@ -10,7 +10,7 @@ goods to the colony's storehouse, eat, sleep, shelter from raids and mend what m
 This page is for **reporting bugs, giving feedback and sharing ideas**. The mod's code is at
 [DaAlmyte/VikingColonies-source](https://github.com/DaAlmyte/VikingColonies-source).
 
-**Chat, quick help and colony pictures: [the VikingColonies Discord](https://discord.gg/yCzDUPQA3D).**
+**See what's coming before it's out, vote on what gets built next, and get help: [the VikingColonies Discord](https://discord.gg/yCzDUPQA3D).**
 
 ## Found a bug?
 
