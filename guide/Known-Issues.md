@@ -2,7 +2,7 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 30 October 2026._
+_Last updated 31 October 2026._
 
 VikingColonies 1.5.1 · Works with Valheim 1.0.21 (checked 29 October 2026).
 
@@ -46,6 +46,11 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 - **Now and then a worker can't find the way to their hut's door and stays outside at night.** At some spots the
   ground just outside a hut's door isn't on the game's walking map, so a worker (often the lumberjack) can't get in
   and spends the night outside. Being worked on.
+- **A hut you've just placed can be broken by an animal before its builder starts.** Until the builder starts it, a
+  placed hut is only its chest, and a passing Boar or monster can break it: the hut is gone from the colony with no
+  word, and its wood drops on the ground. Being worked on: monsters will leave a placed hut alone, and you'll be told
+  if a colony building breaks. **Way round until then:** place huts where you can keep an eye on them, or place the
+  hut again (pick up the dropped wood first).
 
 ## Recently fixed
 
