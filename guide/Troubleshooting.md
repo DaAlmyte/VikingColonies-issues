@@ -184,11 +184,19 @@ felt like a chore and what broke all help. The same window comes by itself once,
 turns that off.
 
 ## Reporting a bug
-The quickest way: press **Report a problem** in the camp's window (beside Close). It writes the report below,
-copies it, and opens the bug form on GitHub with the versions and the report's first lines filled in: click the
-form's last box, paste (Ctrl+V), say what happened, and press Submit. Nothing is sent before you press Submit, and you
-see everything first (folder names that could hold your Windows account's name are shortened). The colony around the
-Chieftain's Camp is in the report; for trouble elsewhere, use the console as below and type `vc_bugreport form`.
+The quickest way: press **Report a problem** in the camp's window (beside Close). A small window opens and writes
+the report below, and says where the file is saved (`VikingColonies-bugreport.txt`, with `LogOutput.log` beside it;
+the start of the folder, your Windows account's own folder, shows as `%USERPROFILE%`, which also works typed into File
+Explorer's address bar). Then pick one (since 1.6):
+- **Bug form on GitHub** copies the report and opens the bug form with the versions and the report's first lines
+  filled in: click the form's last box, paste (Ctrl+V), say what happened, and press Submit.
+- **Ask on Discord** copies the report and opens our Discord: start a post in #bug-reports, say what happened, and
+  paste (Ctrl+V; Discord turns a long paste into a file), or drag the file in. No GitHub account needed.
+- **Show the file** opens the folder with the file picked out, ready to drag into your post or the form.
+
+Nothing is sent from the game: you see everything first and post it yourself (folder names that could hold your
+Windows account's name are shortened in the report). The colony around the Chieftain's Camp is in the report; for
+trouble elsewhere, use the console as below and type `vc_bugreport form` (straight to the bug form).
 
 Stand near the settler or building with the trouble, open the console (F5; it needs the `-console` launch option,
 see above) and type `vc_bugreport` (no cheats needed): it writes `BepInEx/VikingColonies-bugreport.txt`: the mod's

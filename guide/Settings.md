@@ -33,6 +33,7 @@ server's values are used by everyone.
 | Colony | LearningRate | 0.25 | 0.01–5 | practice per action at work (Woodcutting, Farming, Crafting, Fighting) compared with a player's per hit (1 = as fast); was Lumberjack.LearningRate before 0.22 |
 | Colony | CarryToStock | true | none | settlers with nothing to do carry what a building keeps in stock and lacks from chests that can spare it (off: kept items are still left alone) |
 | Colony | NewcomersWalkIn | true | none | newcomers and the first settlers walk in from the edge of the colony (off: they appear at the camp) |
+| Colony | Pastimes | true | none | in free time settlers also take pastimes: archery, the training dummy, board games and toasts at a table, dancing round a banner pole or maypole, stories at a fire, trophies, the map table, stretching, sparring, naps, petting tame animals (1.6); on a server, the server's; off: free time as before 1.6 |
 | Colony | CallingBonus | 0.2 | 0–1 | how much faster a settler works in the trade they're good at (0.2 = 20% faster) |
 | Colony | Mood | true | none | settlers have a mood that speeds or slows their work and decides whether newcomers come (off: everyone content) |
 | Colony | FreeTime | true | none | settlers with nothing to do sit on seats, sit by fires, chat and stroll near their hut or the camp; off: they wait standing |
@@ -50,6 +51,8 @@ server's values are used by everyone.
 | Storehouse | WoodCost | 20 | 0–500 | at once; on a server, the server's (1.5) |
 | Courier | Carry | 50 | 1–500 | what a courier carries a trip at a level-1 storehouse; on a server, the server's (1.5) |
 | Courier | CarryPerLevel | 25 | 0–500 | how many more a trip for each storehouse level above 1; on a server, the server's (1.5) |
+| Mead Hall | WoodCost | 20 | 0–500 | at once; on a server, the server's (1.6) |
+| Cook | CarryCapacity | 20 | 1–100 | how much raw food the Mead Hall's cook carries to the cooking station at once; on a server, the server's (1.6) |
 | Guards | Enabled | true | none | Watchtower guards fight monsters near the colony; off: a guard shelters like any settler (1.1) |
 | Guards | ChaseBeyondPatrol | 10 | 0–50 | metres past their patrol a guard follows a monster before letting it go |
 | Guards | RetreatHealth | 0.3 | 0–0.75 | below this share of their health a guard goes back to their tower to heal (out again at 80%) |
@@ -83,4 +86,4 @@ server's values are used by everyone.
 | Developer | VerboseLog | false | none | write every settler's step to the log (for a bug report); always on in test worlds; your own setting |
 
 The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`) are for testing the
-mod; leave them off when playing.
+mod; leave them off when playing (see the [Developer guide](Developer-Guide.md)).

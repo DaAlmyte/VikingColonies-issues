@@ -11,10 +11,12 @@
   **The camp**. Along the bottom: **Sound the alarm** (1.3) on the left: everyone of the colony
   shelters indoors as in a raid, and the guards gather round where you stood (each at their own spot) and fight any
   monster within 30 m of it (a call for help still brings them), for 5 minutes or until **All clear**. Players in the colony's area are told when it starts and ends.
-  **Close** is in the middle, and **Report a problem** (the bug form with your versions filled in) and **Feedback**
+  **Close** is in the middle, and **Report a problem** (1.6: a small window with the bug form on GitHub or our Discord's
+  #bug-reports, and where your bug report file is saved) and **Feedback**
   (1.4.2: our Discord or the feedback form, opened in your browser; nothing is sent from the game) smaller on the right.
   The window's size is a setting of your own, `Windows.Scale` (1.5.1).
-  - **Overview** (1.5.1): the colony at a glance: its settlers (how many, of how many it may have, and the free beds);
+  - **Overview** (1.5.1): the colony at a glance, a box for each part (1.6.0: big numbers, a bar of how full the camp
+    is, green for what's well and orange for what needs you): its settlers (how many, of how many it may have, and the free beds);
     food in the camp's chest, what it keeps for newcomers and who is hungry; the colony's mood and the reasons that
     weigh most across it; what the next newcomer waits for; what the builders still need, with **Hand over**; and,
     while couriers carry, when the storehouse is full or couriers hold loads with nowhere to put them, with what to do.
@@ -142,14 +144,19 @@
   let go, and the saga says "the Forager's Hut was taken down". The window says "Being taken down (12 of 30 pieces
   left)"; Work orders shows it as "take down". Only for players who may manage the colony; never the camp.
   **Cancel take down** (on its window or Work orders) stops it, and what came down is put back as a repair. While it
-  is taken down it can't be upgraded.
+  is taken down it can't be upgraded. Your own pieces resting on the building (a bench on its floor, a torch on its
+  wall) fall when it comes down, as in the game; the first click says so ("Your Bench and 2 more rest on the building
+  and will fall when it comes down: move them first to keep them"), so you can move them first (1.6).
 - A new hut only hires once the builder has finished its building; huts from before 0.3.0 keep working and have a
   **Build** button.
 
 ## Builder's Hut
 - Cost: 20 Wood (setting `Builder Hut.WoodCost`). Needs a Chieftain's Camp nearby, like the Lumberjack's Hut.
 - Hires a builder straight away. They build their own hut first, then every other hut's building in the order the huts
-  were placed. **Shift+E**: the worker, what they're working on, and how many buildings wait.
+  were placed. Until their own hut first stands, they stay at it while it waits on you (1.6), as a MineColonies builder
+  does; they go elsewhere meanwhile only when another site has everything it needs, or when the wait isn't one you can
+  answer there (a tree or rock above level 1, no support, out of reach). **Do first** or **Set aside** in the camp's
+  Work tab sends them elsewhere at once. **Shift+E**: the worker, what they're working on, and how many buildings wait.
 - **E**: 18-slot storage: put building materials here (they also take from the camp and the other huts).
 - **Its workbench** (1.5) is yours to use. From level 2 it stands in the covered yard, with its chopping block and adze
   beside it (a level 3 bench). From level 3 the tool shelf hangs inside the workshop on the same wall, making it a level
@@ -160,9 +167,13 @@
   needs beyond what the colony's chests hold for them and what they already carry (0.26) goes from your bag into this
   chest, as much as you carry ("Handed over 12 Wood, 4 Stone"). Equipped items stay with you.
 - A site that waits on you (a tree or rock above their level, a tool, materials, something in the way) holds them for a
-  minute at most when there is other work: they build another hut (their own first) and come back after five minutes,
-  once they are free or that hut waits on you too.
-  With nothing else to do they stay at the site and carry on as soon as you have helped.
+  minute at most when there is other work (their own hut before it first stands: see above): they build another hut (their own first) and come back after five minutes,
+  once they are free or that hut waits on you too. They say why (1.6): a player nearby (in multiplayer, the one whose game runs that builder) is told "Ragnar leaves the
+  Lumberjack's Hut for now: it needs Flint. Back in 5 minutes", and for those five minutes their hover says "Waiting
+  for Flint at the Lumberjack's Hut, working here meanwhile" (the Work tab's row says what it needs). If only a
+  builder from a higher Builder's Hut can go on with it, they leave even with nothing else to do, and their hover says
+  "The Lumberjack's Hut waits for a builder from a higher Builder's Hut". Otherwise, with nothing else to do, they stay
+  at the site and carry on as soon as you have helped.
 - Every hut's window shows its building: "Under construction: 12 of 29 pieces" (or "Being repaired: 2 pieces to put
   back"), the builder's name, what they need, and pieces they left out (underground at this spot, or they kept falling).
 - **Repairs:** with nothing to build, the builder mends damaged colony buildings (the worst-damaged first), and pieces a troll or a fire broke
@@ -205,7 +216,7 @@
   with **Assign** / **Leave**, and a tick: **New fields join this Farm by themselves** (on).
 
 ## Memorial stone (1.5.1)
-- Where the colony remembers its fallen: every settler it has lost, their trade, the day and how. From the hammer's
+- Where the colony remembers its fallen, a runestone like the game's own (1.6.0; a plain pillar before): every settler it has lost, their trade, the day and how. From the hammer's
   Misc tab, inside a colony you may manage (the camp is its station), **one per colony** ("The colony already has a
   memorial stone"); 20 Stone (`Memorial.StoneCost`). E reads it like a runestone, 20 lines a page, newest first. See
   [Citizens and jobs](Citizens-and-Jobs.md) for the fallen return.
@@ -263,8 +274,10 @@
 - **The colony's store:** its own chest and **every chest standing inside its walls**: the ones its design brings and
   any you place in it. Your personal chests, carts and ships don't count, nor do other huts' chests, nor a chest on the
   ground under its floor. A chest you place
-  inside joins within a few seconds; one you take away leaves. Chests you stand inside don't stop its upgrades: they stay
-  where they are, unless the new level needs that very spot (then the upgrade says another building is in the way).
+  inside joins within a few seconds; one you take away leaves. Chests you place inside don't stop its upgrades: like all
+  your own pieces (1.6, "Levels and upgrades" below) they stay where they are, or the builder takes an empty one down
+  and puts it back. The upgrade waits only for one where a new piece goes, or a full one that would have to come down,
+  and its window names it.
 - **Used first:** the builder looks in its own hut, then the storehouse, then the camp, then any colony chest.
   Meals come from the storehouse first, then the camp, then the nearest chest. A worker whose hut chest is full
   takes the load to the storehouse, and to the camp only when the storehouse is full. Everything that counts the
@@ -285,6 +298,30 @@
   (Hire, Fire, Auto-hire). They carry for the whole colony, see [Citizens and jobs](Citizens-and-Jobs.md#courier).
   **Its own chest is your drop-off**: empty your bag into it after a trip, and couriers take what stacks to whoever
   needs it, or into the chests inside. Gear (weapons, armour, tools) stays where you put it.
+
+## Mead Hall
+- (1.6) Cost: 20 Wood (setting `Mead Hall.WoodCost`). **One per colony** (placing says so in red otherwise). Within the
+  colony's area, as every hut.
+- **The colony's kitchen and table.** It hires a **cook** (Hire, Fire, Auto-hire in its window), see
+  [Citizens and jobs](Citizens-and-Jobs.md#cook). The cook works the **cooking stations inside it**: the ones its design
+  brings, and any you put inside its walls (a cooking station over a fire; while it has no design yet, any within 8 m of
+  its chest).
+- **Its chest is the larder:** everything the cook roasts goes there. Settlers eat their breakfast at its table when
+  its chest has their food.
+- **Its building grows with each level**, bringing the stations of that level's age:
+  - level 1: a hall with a fire pit and a cooking station over it;
+  - level 2: the cauldron over its own fire, and the long table with its benches along the wall;
+  - level 3: a kitchen behind on a stone course, with the hearth and its iron cooking station, the food preparation
+    table and the butcher's table;
+  - level 4: the stone oven, the pots and the mortar;
+  - level 5: the rolling pins and a long oak table.
+
+  The butcher's table, pots, mortar and rolling pins raise the cauldron's level. A **spice rack** isn't in the design
+  (it costs food your settlers eat): set one by the cauldron yourself for one level more.
+- **Nothing burns** on a cooking station inside a Mead Hall that has a cook: a piece that's done waits on the station,
+  even at night or while the cook is away, until the cook takes it off. Without a cook, the stations burn food as the
+  game's always do.
+- **Hugin** explains the Mead Hall the first time you place one.
 
 ## The colony's area
 - The camp's circle (`Colony.ColonyRadius`, 50 m) and a circle round each finished Watchtower of the colony
@@ -359,6 +396,11 @@
     once it's emptied), it's outside the colony
     area (the camp's circle and its Watchtowers'), it's someone else's colony (you need to be on its owner's ward there), inside someone else's ward, in a place where building isn't allowed, below the water line, too steep (the
     ground varies more than 4 m), or raised higher than the design's posts reach. Red huts can't be placed.
+- **Leave room to grow:** the colour only checks the hut as it is when placed, and most huts get bigger as they level
+  up, mostly to one side (a Longhouse only grows backwards). A grey line under it says which way and how far, seen from
+  where you stand, for example "By level 5 it grows about 13 m toward you: leave room there"; turn the hut and the line
+  turns with it. If another building stands there, the upgrade stops later with "Another building is in the way". The
+  same goes the other way: a new hut placed right behind a Longhouse can block that Longhouse's next level.
 - **Page Up / Page Down** raise or lower the hut 25 cm at a time, up to 2 m (settings `Placing.RaiseKey` and
   `Placing.LowerKey`). A raised hut stands on its design's posts; a design without posts can't be raised.
 - While you hold the hammer, unfinished buildings within 50 m show the pieces still to come as a light outline.
@@ -377,9 +419,14 @@
   writes to that folder, and the mod never deletes anything there. They live on your computer: on a server, a hut is
   built from the designs on the computer of the player whose game runs it when its building or upgrade is ordered (for a
   new hut, the player who placed it), and your hut window's upgrade line shows your own designs' cost. For everyone to
-  get your designs, give the others a copy of the folder. Saving again with the same name and level replaces
-  the design saved before. A design the mod can't use is left as it is, and the mod's own is used instead. Keep a copy
-  of the folder for designs you care about.
+  get your designs, give the others a copy of the folder. A design the mod can't use is left as it is, and the mod's
+  own is used instead. Keep a copy of the folder for designs you care about.
+- **Saving again keeps the design before (since 1.6):** saving with the same name and level uses the new design, and
+  the one saved before stays beside it as a copy: the first copy is `builder_hut.blueprint.bak`, the next
+  `builder_hut.blueprint.bak2`, then `.bak3` …, so the highest number is the newest (the console names it too). To go
+  back to a copy, move the new `builder_hut.blueprint` out of the folder first, then rename the copy to
+  `builder_hut.blueprint`. Saving the very same building again keeps no copy. Copies are never deleted and never used
+  as designs; delete them yourself when you don't want them.
 
 ## Levels and upgrades
 - Huts have levels 1–5, following the game's eras: 1 Meadows; 2 Black Forest and Swamp; 3 Mountains and Plains;
@@ -400,6 +447,26 @@
   it a little when the new design's floors would otherwise not rest on it). They change
   nothing before they have a new piece's materials: without them they wait ("Needs …") and the hut stays as it is. The hut
   keeps working at its old level until they are done. You can cancel until they have changed the first piece.
+- **Your own pieces stay (1.6).** What you built yourself in or on a hut (a bench, a chest of your own, a torch on a
+  wall, an item stand, a rug) doesn't stop its upgrade. Each piece stays where you put it, or, when the part it rests
+  on or hangs from is replaced, the builder takes it down just before that part comes down and puts the very same piece
+  back in its place once the old parts are gone and the new level's pieces there stand. It stays yours, and nothing
+  drops: it keeps its own materials, and a sign keeps its text, a portal its name, a torch, fire or smelter its fuel.
+  The window says so before you order it ("The builder takes down 2 of your pieces and puts them back after"). The
+  upgrade waits, and the window says which piece and what to do, only when:
+  - a new piece goes right where yours stands ("Your Bench is where the new level's Wood wall goes: move it");
+  - a piece that would come down holds something: a chest with things in it, an item stand or armour stand with
+    something on it, a smelter, kiln or fermenter still at work or with something in it, a cooking station with food
+    on it, a beehive with honey ("Empty your Chest first …", "Take what hangs on your Item stand off first …");
+  - it is a ward or a map table with a map, which would lose what it keeps ("… move it first");
+  - it is a bed someone sleeps in;
+  - nothing of the new level would hold it there ("Nothing of the new level would hold your Wall torch there: move it").
+
+  A piece that can't go back (something else stands in its place now) is tried three times, then left out, its
+  materials on the ground where it stood. If you fill one or sleep in it after ordering, the builder leaves the part
+  under it until you empty or move it, and the window names it. Once one of your pieces is down, the upgrade can't be
+  cancelled, so it can't be lost. Pieces you add while an upgrade or a repair runs aren't checked: if one stands where
+  a new piece goes, the builder waits for it ("in the way").
 - Once a building or an upgrade is finished, the ground under its roof becomes trodden earth, as the hoe's path makes
   it: no grass growing up through an earth floor or a low floor. A building finished before this gets it once too.
 - **Old huts and the new designs (1.4):** a hut built before 1.4 is rebuilt at its next upgrade: the builder takes its

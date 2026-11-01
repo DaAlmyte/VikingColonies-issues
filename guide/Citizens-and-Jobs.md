@@ -86,11 +86,36 @@
   jobless settler, or a worker whose job has nothing to do just now: "No trees nearby", "Crops growing", "Nothing to
   pick", or the builder's "No work". Every 30–90 seconds they pick one of these:
   - **A seat:** any free piece you can sit on (bench, chair, stool, throne, a mod's seat), one near a burning fire
-    first. They sit there 40–90 seconds and now and then laugh or raise a toast.
+    first. They sit there 40–90 seconds and now and then laugh or raise a toast. With a table pushed up to the seat,
+    they sit down from across the table, as you can (never across a wall).
   - **The fire:** a burning campfire, hearth or bonfire (not a torch). They sit on the ground 2–3 m from it, facing it.
+    Not a fire in the Mead Hall with a cooking station or cauldron over it: that one is the cook's.
   - **A chat** with another settler in free time within 20 m. They meet halfway, face each other and take turns talking
     with their hands.
   - **A stroll** to somewhere near, or **sitting down** on the ground for a while.
+  - **A pastime** (1.6), below.
+- **Pastimes** (1.6): fun in free time, mostly at things you build within 30 m of their hut (or of the camp, when it
+  stands within 60 m). They keep at one for a minute or two. Nothing is made or hurt: practice shots and blows are for
+  show, and nothing is left behind.
+  - **Archery** at an archery target (two at a time, standing 9 m off with a practice bow, no arrows).
+  - **Practice** at a training dummy (two at a time), with their tool or fists.
+  - **A board game** for two on a table with two chairs or more; at the end one cheers and the other shrugs.
+  - **A toast** for two to four standing round such a table.
+  - **Dancing round a pole**: a maypole, or a banner pole (a 4 m log pole with a banner hung near its top, like the
+    camp's). Up to six.
+  - **A story** at a burning fire: one tells it, one to three listen.
+  - **Admiring a trophy** on an item stand, or an armour stand.
+  - **The map table** (one at a time).
+  - **Stretching** and **sparring** with another settler, anywhere; **a nap** in the open; **petting** one of the
+    colony's tame animals.
+  - In the evening some of those standing at the colony's fire **dance** for a while.
+  - In rain only pastimes under a roof go on (and stretching).
+  - Each trait has a **favourite**, taken twice as often: lazy a nap, chatty a board game, brave sparring, timid the
+    map table, hardworking archery, cheerful any dance, grumpy the dummy, quiet the trophies.
+  - Their mood: three kinds of pastime in the last two days "varied free time" (+5), four or more (+10); their
+    favourite today "did what they love" (+3).
+  - Hover: "Jobless (practising archery)", "Jobless (playing hnefatafl with Astrid)", "(listening to Ulf's story)".
+  - Setting `Colony.Pastimes` (on); off, free time is as before 1.6.
 - In rain or snow nobody sits on the open ground; seats and fires with a roof over them are still used.
 - A seat you sit or stand on is yours: settlers leave it, and get up if you sit down there.
 - They get up and go the moment their job has work again, a monster comes, night falls or you recall them.
@@ -104,6 +129,8 @@
     building today, a raid held off in the last two days, or their job's wait. Then their own trade (the lumberjack's
     trees, the farmer's crops, the guard's watch), their temper (cheerful or grumpy), and a boss fallen in your world:
     the camp's saga tells when the colony hears of it, and they talk of it for two days (1.4.2).
+  - At a pastime they talk about it, half the time, after a death or hunger: "Bullseye!", "Your move, Astrid.",
+    "Again!" (1.6).
   - A need ("Needs 12 Wood") always comes first. "Hungry" shows for a few seconds every half minute, with their talk in
     between; their hover always says it.
   - Setting `Messages.SmallTalk` (your own).
@@ -289,6 +316,24 @@
 - The storehouse's **Needs** tab shows who is carrying what to whom, and what nobody has (see
   [Buildings](Buildings.md#storehouse)).
 
+## Cook
+- (1.6) Works at the **Mead Hall**. The cook keeps **a hot meal for every settler and two more** in the hall's chest:
+  they take the raw meat and fish the colony's chests can spare (never what a building keeps in stock, its working
+  stock or what a hut's build order holds), the plainest first and a different kind when there's a choice, carry up
+  to 20 at a time (setting `Cook.CarryCapacity`), put them on a cooking station inside the hall, and take each piece
+  off when it's done into the hall's chest. Once the chest holds enough, they rest by the hall.
+- **The hearth:** a station only cooks over a burning fire. When it's out the cook feeds it with wood the colony can
+  spare; with no wood they wait, and hovering over them says "The hearth is out: wood in the chests?". No food goes on a
+  cold station. A fire that has wood and still won't burn (rain on the hearth, or the station not over its flames)
+  isn't helped by more: the cook takes their wood back to the chest, puts raw food only on a station that burns, and says
+  "No fire burns under the cooking station: is it over a hearth's flames, out of the rain?".
+- **Never burnt:** while the hall has a cook, a piece that's done waits on the station, at night or while the cook is
+  away, until the cook takes it off. What the station drops when a piece comes off is picked up and taken to the
+  hall's chest, never left on the floor; every done piece comes off first, then one walk to the chest with them all.
+- Hover: "Roasting Deer meat", "Fetching Deer meat", "Taking the cooked food off", "Needs raw food in the colony's
+  chests", "Needs a cooking station in the Mead Hall", "The Mead Hall has hot food for everyone".
+- They learn **Cooking**: a skill of 100 takes food on and off twice as fast as 0.
+
 ## Builder
 - Works from the Builder's Hut. Takes one building at a time: the one you marked **Do first** in the camp's Work
   orders tab, then their own hut, then the oldest waiting one; never one you **set aside** there. When you mark another
@@ -337,7 +382,8 @@
 ## Skills
 - (0.22, MineColonies: skills make them faster) Every worker learns at their work, as a player does: the lumberjack
   **Woodcutting** (they chop harder), the farmer and the forager **Farming**, the builder **Crafting**, the guard
-  **Fighting** (1.1: they hit harder), the courier **Hauling** (1.5: they take and put faster). Farming and
+  **Fighting** (1.1: they hit harder), the courier **Hauling** (1.5: they take and put faster), the cook **Cooking** (1.6:
+  they take food on and off the station faster). Farming and
   Crafting make them faster: a skill of 100 works twice as fast as 0. Practice comes with every action that happened (a plot
   cultivated, planted or harvested, a pick, a piece built, mended or taken down; 0.26: not a failed try) at `Colony.LearningRate` (0.25 of a player's pace per action; it was
   `Lumberjack.LearningRate` before 0.22, and your value moves over).
@@ -385,7 +431,10 @@
   within 8 m of that chest, or standing by the chest. Hover: "Eating (at breakfast)". If they can't get to the chest and
   take their food within a minute (a player has it open, no way there), they eat where they are.
 - **What they eat:** the plainest food there is that isn't what they had last time (when there's a choice), so raspberries
-  and mushrooms go before cooked meat, meals vary, and your best food is left for you. Any food a player can eat counts; meads and potions don't. Keep food you don't want eaten out of the colony's
+  and mushrooms go before cooked meat, meals vary, and your best food is left for you. The Mead Hall's hot food (its cook's
+  roasts in its chest) comes first among what they haven't had lately (1.6), and breakfast is at its table when its
+  chest has their food; with one kind of hot food they still eat varied meals. Hot food you keep elsewhere (your stews
+  in the camp's chest) is just food: the plainest still goes first, so your best is left for you. Any food a player can eat counts; meads and potions don't. Keep food you don't want eaten out of the colony's
   chests, or on a building's Keep in stock list (0.21: then it's eaten only when there's nothing else). Breakfast takes
   only food no building keeps. A table with benches by the camp makes a fine breakfast place.
 - **Hungry:** a settler who finds nothing is hungry. Hovering over them says "Hungry", and they work at half speed
@@ -418,6 +467,7 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
 | Ate today / hungry | +5 / −20 |
 | Varied food: 3+ / 4+ different foods in their last 5 meals | +5 / +10 |
 | The same food 5 meals running | −5 |
+| A hot meal: their last meal was cooked (a Mead Hall cook's, 1.6), while they're fed | +5 |
 | Last evening by a burning fire / with at least two others | +5 / +5 |
 | Works in the trade they're good at | +5 |
 | Jobless for 2 days or more | −5 |
@@ -447,7 +497,8 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
 ## The evening
 - From 0.70 of the day (about a minute and a half before night), work stops the way it does at nightfall: the
   lumberjack delivers what they carry, the builder leaves their site. Then the settlers gather at the colony's fire: the
-  burning campfire or hearth inside the colony nearest the camp (one under a roof first). With none burning,
+  burning campfire or hearth inside the colony nearest the camp (one under a roof first), never a hut's own hearth or
+  a fire in the Mead Hall with a cooking station or cauldron over it (1.6: that one is the cook's). With no such fire burning,
   they gather at the camp, and Hugin says so the first time.
 - Each takes a free seat within 6 m of the fire, or their place on a ring round it, a metre from the next, facing it.
   Every other one sits on the ground (in rain all stand). Those standing raise a toast, laugh or cheer now and then,
