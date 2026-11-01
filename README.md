@@ -1,23 +1,24 @@
 # VikingColonies: bug reports, feedback and the player guide
 
-**VikingColonies** is a MineColonies-style colony mod for Valheim. Found a Chieftain's Camp, welcome settlers, house them in
+VikingColonies is a MineColonies-style colony mod for Valheim. Found a Chieftain's Camp, welcome settlers, house them in
 Longhouses and give them jobs. They build your village piece by piece, fell and replant trees, farm, forage, carry
 goods to the colony's storehouse, eat, sleep, shelter from raids and mend what monsters break, while you go adventuring.
 
-**Get it on Thunderstore: [thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/), on Hexium: [valheim.hexium.gg/mods/DaAlmyte/VikingColonies](https://valheim.hexium.gg/mods/DaAlmyte/VikingColonies), or on Nexus Mods: [nexusmods.com/valheim/mods/4531](https://www.nexusmods.com/valheim/mods/4531)**
-(or search **VikingColonies** in r2modman). It needs BepInEx and Jötunn, which the mod manager installs for you.
+You can get it on Thunderstore ([thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/)), on Hexium ([valheim.hexium.gg/mods/DaAlmyte/VikingColonies](https://valheim.hexium.gg/mods/DaAlmyte/VikingColonies)) or on Nexus Mods ([nexusmods.com/valheim/mods/4531](https://www.nexusmods.com/valheim/mods/4531)),
+or search for VikingColonies in r2modman. It needs BepInEx and Jötunn, which the mod manager installs for you.
 
-This page is for **reporting bugs, giving feedback and sharing ideas**. The mod's code is at
+This page is for reporting bugs, giving feedback and sharing ideas. The mod's code is at
 [DaAlmyte/VikingColonies-source](https://github.com/DaAlmyte/VikingColonies-source).
 
-**See what's coming before it's out, vote on what gets built next, and get help: [the VikingColonies Discord](https://discord.gg/yCzDUPQA3D).**
+On [the VikingColonies Discord](https://discord.gg/yCzDUPQA3D) you can see what's coming before it's out, vote on what
+gets built next and get help.
 
 ## Found a bug?
 
-The quickest way (1.4 and later): stand near the settler or building with the trouble, open the Chieftain's Camp's window
-(Shift+E) and press **Report a problem**. Your browser opens the bug form with the versions filled in, and the whole
-report is copied: click in the form's last box, press Ctrl+V, and say what happened. Nothing is sent until you press
-Submit. See the [known issues](guide/Known-Issues.md) first.
+The quickest way (1.4 and later) is to stand near the settler or building with the trouble, open the Chieftain's Camp's
+window (Shift+E) and press **Report a problem**. Your browser opens the bug form with the versions filled in, and the
+whole report is copied. Click in the form's last box, press Ctrl+V, and say what happened. Nothing is sent until you
+press Submit. Have a look at the [known issues](guide/Known-Issues.md) first.
 
 Or by hand:
 
@@ -27,7 +28,7 @@ Or by hand:
 3. It writes `BepInEx/VikingColonies-bugreport.txt` in your mod manager profile (r2modman: Settings › Browse profile
    folder).
 4. [Open a bug report](../../issues/new?template=bug_report.yml) and attach that file, with `BepInEx/LogOutput.log`
-   from the same folder. The game writes your Steam ID into that log: you can delete it before attaching.
+   from the same folder. The game writes your Steam ID into that log, so you can delete it before attaching.
 
 The more you tell us about what you did just before it happened, the faster it gets fixed.
 
@@ -38,17 +39,17 @@ Every idea is read.
 
 ## What's coming
 
-The [roadmap](ROADMAP.md): the next update, the ones after it, and ideas for later. It changes by itself when the plan
-does; it's in #roadmap on the Discord too.
+The [roadmap](ROADMAP.md) lists the next update, the ones after it and ideas for later. It changes by itself when the
+plan does, and it's in #roadmap on the Discord too.
 
 ## Player guide
 
-- [Getting started](guide/Getting-Started.md): install, and build your first colony
-- [Buildings](guide/Buildings.md): every building, placing huts, levels and upgrades
-- [Citizens and jobs](guide/Citizens-and-Jobs.md): how settlers live, work, eat, sleep and feel
-- [Settings](guide/Settings.md): every option and what it does
-- [Multiplayer](guide/Multiplayer.md): servers and playing with friends
-- [Troubleshooting](guide/Troubleshooting.md): common questions, other mods, and removing the mod
+- [Getting started](guide/Getting-Started.md) takes you through the install and your first colony.
+- [Buildings](guide/Buildings.md) covers every building, placing huts, levels and upgrades.
+- [Citizens and jobs](guide/Citizens-and-Jobs.md) explains how settlers live, work, eat, sleep and feel.
+- [Settings](guide/Settings.md) lists every option and what it does.
+- [Multiplayer](guide/Multiplayer.md) is about servers and playing with friends.
+- [Troubleshooting](guide/Troubleshooting.md) answers common questions and covers other mods and removing the mod.
 
 ## Before you remove the mod
 
@@ -61,7 +62,7 @@ chests first. The buildings the builder put up are ordinary Valheim pieces and s
 The server and every player need VikingColonies and Jotunn, with the same first two numbers of VikingColonies'
 version. Crossplay works for PC players who have the mod (they join with the join code), but on a crossplay server
 the game doesn't turn away a player without the mod, so make sure everyone has it. Without crossplay, join by the
-server's address (Join IP). More in the [Multiplayer guide](guide/Multiplayer.md).
+server's address (Join IP). There is more in the [Multiplayer guide](guide/Multiplayer.md).
 
 ## Licence
 

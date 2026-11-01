@@ -1,18 +1,18 @@
 # Settings
 
-File: `BepInEx/config/daalmyte.vikingcolonies.cfg` (or press F1 with a configuration manager mod). On a server the
-server's values are used by everyone.
+The settings live in `BepInEx/config/daalmyte.vikingcolonies.cfg` (or press F1 with a configuration manager mod). On a
+server, everyone uses the server's values.
 
 | Section | Setting | Default | Range | Notes |
 |---|---|---|---|---|
 | Town Hall | WoodCost | 20 | 0–500 | at once; on a server, the server's |
 | Town Hall | StoneCost | 10 | 0–500 | at once; on a server, the server's |
-| Town Hall | Levels | true | none | the camp has levels 1–5, raised with the Forsaken's trophies, each widening the colony (1.4); off: as before 1.4 (area `Colony.ColonyRadius`, settlers up to `Colony.MaxSettlers`, huts limited by the Builder's Hut only) |
+| Town Hall | Levels | true | none | the camp has levels 1–5, raised with the Forsaken's trophies, and each one widens the colony (1.4); off: as before 1.4 (area `Colony.ColonyRadius`, settlers up to `Colony.MaxSettlers`, huts limited by the Builder's Hut only) |
 | Town Hall | RadiusPerLevel | 10 | 0–50 | metres added to the colony's area per camp level above 1 |
 | Town Hall | SettlersAtLevel1 | 10 | 1–100 | settlers a level-1 colony grows to (never past `Colony.MaxSettlers`) |
 | Town Hall | SettlersPerLevel | 5 | 0–50 | more settlers per level above 1 |
-| Town Hall | Level2Cost … Level5Cost | see [Buildings](Buildings.md#chieftains-camp) | text | materials raising the camp uses up from its chest, as `Prefab:count` by commas (e.g. `Wood:40, Stone:20, DeerHide:10`); empty: only the trophies |
-| Town Hall | BeatenBossesCount | true | none | a Forsaken the world has already beaten counts as if its trophy were shown at the camp (a trophy on the sacrificial stones can't be taken back); off: only trophies shown at the camp |
+| Town Hall | Level2Cost … Level5Cost | see [Buildings](Buildings.md#chieftains-camp) | text | materials the camp uses up from its chest when it is raised, written as `Prefab:count` separated by commas (e.g. `Wood:40, Stone:20, DeerHide:10`); empty: only the trophies |
+| Town Hall | BeatenBossesCount | true | none | a Forsaken the world has already beaten counts as if its trophy were shown at the camp (a trophy on the sacrificial stones can't be taken back); off: only trophies shown at the camp count |
 | Colony | StartingCitizens | 4 | 0–10 | citizens who arrive when a Chieftain's Camp is founded |
 | Colony | ColonyRadius | 50 | 20–150 | metres around a level-1 Chieftain's Camp (more per level: `Town Hall.RadiusPerLevel`) |
 | Colony | MaxReach | 150 | 50–500 | how far from the camp the colony's area may reach with its Watchtowers (1.1); of a tower near it only the part of its circle within reach counts |
@@ -79,11 +79,11 @@ server's values are used by everyone.
 | Creative | LevelDownKey | Minus (-) | none | in creative, one level lower, down to "the builder builds it" (your own key) |
 | Messages | DeathMessage | CentreAndChat | CentreAndChat, ChatOnly | how you're told a settler died (your own setting, not the server's) |
 | Messages | HuginTips | true | none | Hugin explains the colony as you play, each tip once per character (with the game's raven hints on: Settings, "Enable raven hints"); your own setting |
-| Messages | AskForFeedback | true | none | once on this computer, at a good moment, a small window asks what you think of the mod, with links to its Discord and GitHub (nothing is sent from the game); off: it never asks, and the camp's Feedback button stays; on a server, the server's setting |
+| Messages | AskForFeedback | true | none | once on this computer, at a good moment, a small window asks what you think of the mod and links to its Discord and GitHub (nothing is sent from the game); off: it never asks, and the camp's Feedback button stays; on a server, the server's setting |
 | Messages | WordsAboveHeads | true | none | a settler near you who needs you says so above their head; your own setting |
 | Windows | Scale | 1.0 | 0.75–1.5 | the size of VikingColonies' windows on your screen (1.5.1); a window too tall for the screen is made to fit; your own setting |
 | Messages | SmallTalk | true | none | settlers greet you once a day and make small talk above their heads in their free time (needs come first); your own setting |
 | Developer | VerboseLog | false | none | write every settler's step to the log (for a bug report); always on in test worlds; your own setting |
 
-The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`) are for testing the
-mod; leave them off when playing (see the [Developer guide](Developer-Guide.md)).
+The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`) are for testing
+the mod. Leave them off when playing (see the [Developer guide](Developer-Guide.md)).
