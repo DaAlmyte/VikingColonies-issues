@@ -40,6 +40,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post. (being built)
 - Settlers left behind when you move your camp walk to the new one, and you can send a settler away. (being built)
 - The Farm's field marker becomes a scarecrow. (being built)
+- The forager can pick the bushes you planted yourself
 - In creative mode, a Longhouse levelled up at once lets every settler walk to their bed
 - A felled tree no longer lands on the end of a long wall or beam a few steps away
 - Settlers swing their weapons and tools smoothly, without shaking
