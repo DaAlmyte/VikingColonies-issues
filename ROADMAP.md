@@ -25,6 +25,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.6.1
 
+- With a planting mod, the farmer pays a crop's full price in seeds (being built)
 - With a planting mod, the lumberjack no longer plants Ashlands trees from beech seeds (being built)
 - Do first can be taken off: on the order that is first, the button reads Not first (being built)
 - Report a problem says what to do next in its own window, in fewer words (being built)
@@ -39,7 +40,6 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Hugin speaks one line at a time in a new colony, each when it makes sense (being built)
 - The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole (being built)
 - Settlers running from monsters spread over the colony's huts instead of crowding one door. (being built)
-- Settlers running from a Troll no longer get caught at their hut's door. (being built)
 - Name tags stay over a sitting settler's head. (being built)
 - Workers always find the way in through their hut's door.
 - Hugin, the raven, no longer blocks a settler's way to a hut's door.
