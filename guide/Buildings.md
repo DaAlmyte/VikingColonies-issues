@@ -25,7 +25,7 @@
     need, with **Hand over**; and, while couriers carry, when the storehouse is full or couriers hold loads with
     nowhere to put them, with what to do.
 
-    With the game's raven hints on (Settings, "Enable raven hints"), **Hugin's next step** shows too (since 1.5.1).
+    With the game's raven hints on (Settings, "Enable raven hints"), **Hugin's next step** shows too. It came in with 1.5.1.
     It runs through seven steps for a new colony (a Builder's Hut, a job for a settler, a Longhouse, food in the camp's
     chest, a Watchtower, the camp's level 2), the last one done and the next, with what Hugin says of it. Each is read
     from the colony as it stands, so an older colony starts with what it has ticked off, and the block goes once all
@@ -494,7 +494,7 @@
   the builder waits for it ("in the way").
 - Once a building or an upgrade is finished, the ground under its roof becomes trodden earth, as the hoe's path makes
   it, so no grass grows up through an earth floor or a low floor. A building finished before this gets it once too.
-- A hut built before 1.4 is rebuilt at its next upgrade (1.4). The builder takes its old building down piece by piece
+- A hut built before 1.4 is rebuilt at its next upgrade. This came in with 1.4. The builder takes its old building down piece by piece
   (the materials go back to their hut) and puts up the new design, clearing the doorways first so nobody is walled in.
   A bed you set as your spawn is left standing. On sloping ground a bigger new building may need the ground evened out
   round it; if a site can't be reached, the hut's window says so.

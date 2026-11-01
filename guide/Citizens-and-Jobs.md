@@ -176,7 +176,7 @@ A tower's orders (1.3) are rounds, or holding the post (where a manager put it, 
 
 On watch with nothing to fight, guards keep the colony's ballistas within their patrol loaded (1.3). A ballista under half full gets what the colony's chests can spare of its ammunition (real items: the ballista uses them up), carried over by them ("Loading the ballista"). What's left goes back (with no room, it goes with their load to the Chieftain's Camp). They do this only on rounds: a guard holding a post, or at the alarm, leaves the ballistas be. A ballista never takes a settler for its target, nor (inside a colony's area) a player, and its bolts never hurt a settler. Setting `Guards.LoadBallistas`.
 
-In a raid at the colony, the first guard to go for a raider calls out where they come from ("Ulf: raiders coming from the north-east!") (1.3). The monsters each guard killed are tallied on their tower's window and the camp's People tab (1.3).
+In a raid at the colony (1.3), the first guard to go for a raider calls out where they come from ("Ulf: raiders coming from the north-east!"). The monsters each guard killed are tallied on their tower's window and the camp's People tab (1.3).
 
 Guards never target players, settlers, tames, the Dvergr and other neutral creatures, or animals (deer, boars, necks…), unless one is attacking someone of the colony. The game's own rules also keep their swings off players, settlers and tames.
 
@@ -243,7 +243,7 @@ While building, they clear whatever grows or falls into the site. What they can'
 
 They fetch materials (their hut, the camp, then the other huts' storage), then work from spots just outside the building. They reach 15 m (setting `Builder.Reach`) and never go inside, so they can't shut themselves in. They check every piece with the game's support rule before placing it, lowest pieces first. A piece that falls is tried again later, and after three falls it is skipped. Materials from fallen pieces are picked up again (not those lying on a roof or a wall top, which are left for you).
 
-With nothing to build they mend the colony's damaged buildings: any piece a builder put up (and the huts' own chests) below three quarters of its health. The worst-damaged building comes first, finished before the next, and in it the nearest piece first (1.5.0). One swing of their hammer mends it, as yours does, and costs nothing. A big repair, ten pieces of one building or more, goes in the Saga ("Ulf mended 14 pieces of the Longhouse"). A new order takes them away once the piece in hand is mended.
+With nothing to build they mend the colony's damaged buildings: any piece a builder put up (and the huts' own chests) below three quarters of its health (1.5.0). The worst-damaged building comes first, finished before the next, and in it the nearest piece first. One swing of their hammer mends it, as yours does, and costs nothing. A big repair, ten pieces of one building or more, goes in the Saga ("Ulf mended 14 pieces of the Longhouse"). A new order takes them away once the piece in hand is mended.
 
 Every minute a finished colony building is checked against its design. When pieces of it are broken (a troll, a fire, a falling tree), its order reopens as a **repair** for those pieces only, at the same level. A builder takes it like any order, fetches the materials and puts them back, while the hut keeps working. Not during a raid there or with monsters by the hut: it waits until they're gone.
 
