@@ -24,8 +24,8 @@
 - **Healing (1.5.0).** Every settler heals: a little every few seconds once nothing has hurt them for 20 seconds, and
   whole again after a night in bed.
 - Citizens jog like a player normally does and only sprint when fleeing.
-- **Doors:** settlers open closed doors on their way — doors inside their colony's area that the colony's owner may open
-  (no key, no one else's ward) — walk through, and close them behind them once they are 2 m past. A door they didn't open
+- **Doors:** settlers open closed doors on their way (doors inside their colony's area that the colony's owner may open:
+  no key, no one else's ward), walk through, and close them behind them once they are 2 m past. A door they didn't open
   is left as it is, and a door is never closed on someone standing in the doorway. A chest behind a wall or a window
   isn't reached through it: they walk round and in. A settler whose way is cut off by a wall looks for a door near them
   straight away, rather than first walking to where the way ends.
@@ -35,7 +35,7 @@
   another computer in multiplayer) is waited for, up to 12 seconds. A door with a stair or a bump right in front of
   it is used from further out, at the stair's foot.
 - **Getting unstuck:** a settler whose walk doesn't move them (a log, a step, someone in the way) hops after three
-  seconds and steps aside after five — twice, then they leave it to their job to find something else to do. One who keeps
+  seconds and steps aside after five. They do this twice, then they leave it to their job to find something else to do. One who keeps
   trying to walk for two minutes without getting out of a few metres of ground (boxed in by walls) is moved to a free
   spot by the camp, out of sight, when no player is within 30 m (after five minutes, whoever is near); never at
   night or in a raid, and at most twice in ten minutes. Waiting somewhere on purpose doesn't count. A monster in a
@@ -70,7 +70,7 @@
 - **Chieftain's Camp:** choose them on the People tab and their page says who they are, how long they've been here,
   where they sleep ("Home: Longhouse bed 2."), how they feel and why, their skills, what they carry and their newest
   lines in the Saga (1.5.1).
-- **The hut's window** says when its worker is good at its trade: "Astrid (good at foraging) — Picking".
+- **The hut's window** says when its worker is good at its trade: "Astrid (good at foraging): Picking".
 - **Clothes:** settlers dress by trade, in the game's own clothes:
   - the jobless in rags;
   - lumberjacks in leather;
@@ -224,7 +224,7 @@
 - **Never a target**: players, settlers, tames, the Dvergr and other neutral creatures, and animals (deer, boars,
   necks…) unless one is attacking someone of the colony. The game's own rules also keep their swings off players,
   settlers and tames.
-- **Their gear**, by their tower's **Role** (1.2) — copies, as every worker's tools; the items stay in the chest, and a
+- **Their gear**, by their tower's **Role** (1.2), are copies, as every worker's tools; the items stay in the chest, and a
   copy is of the first quality:
   - A **warrior** takes the best melee weapon in their tower's chest (else the colony's other chests) and a shield with a
     one-handed weapon. They hold the shield up while a monster is near, when it starts a blow and a moment after each of
@@ -296,7 +296,7 @@
   five minutes while they work elsewhere.
 - Before building they prepare the site: pick up items, remove plants (picking berries and the like first), fell
   trees away from the site, chop logs and stumps, break rocks and take down leftovers of old colony buildings, then
-  flatten the ground — to 30 cm under the floor for a design with posts (the natural ground for a raised hut), or to
+  flatten the ground: to 30 cm under the floor for a design with posts (the natural ground for a raised hut), or to
   the floors' underside for a design without posts. What they gather goes to their hut.
 - Tools stay in the colony's chests: they work with a copy of the best axe, pickaxe and hoe there, and fetch stone
   for raising low ground. The hoe levels the ground; a pickaxe is only needed for rocks and for ground more than half a

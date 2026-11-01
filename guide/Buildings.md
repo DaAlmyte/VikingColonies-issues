@@ -60,7 +60,7 @@
 
   | Level | Show the camp | Materials (from its chest, used up) | Colony area | Settlers | Huts up to |
   |---|---|---|---|---|---|
-  | 1 | — | — | 50 m | 10 | level 1 |
+  | 1 | none | none | 50 m | 10 | level 1 |
   | 2 | Eikthyr's trophy | 40 Wood, 20 Stone, 10 Deer Hide | 60 m | 15 | level 2 |
   | 3 | The Elder's and Bonemass's trophies | 40 Core Wood, 40 Stone, 20 Bronze, 20 Iron | 70 m | 20 | level 3 |
   | 4 | Moder's and Yagluth's trophies | 40 Fine Wood, 30 Silver, 20 Black Metal | 80 m | 25 | level 4 |
@@ -86,7 +86,7 @@
   destroy it, like any building.
 - **If it's lost anyway**, the colony lives on for 3 in-game days (setting `Colony.TownHallGraceDays`, 0–10): its
   settlers keep their jobs and its huts keep working, and the huts say "The Chieftain's Camp is gone: raise a new one here
-  within N days to keep the colony". A new camp raised among them in that time takes the colony over — the same
+  within N days to keep the colony". A new camp raised among them in that time takes the colony over: the same
   settlers, huts and orders, and no newcomers. After that, settlers lose their colony and job as before, and the next
   Chieftain's Camp founds a new colony. With `TownHallGraceDays = 0` a colony ends 30 seconds after its camp is gone.
 
@@ -128,11 +128,11 @@
   plant the ticked kinds' saplings in turn (greyed for a kind with no sapling, that doesn't grow there, or whose
   grown tree needs a better axe: "replanting needs a level 3 hut"). Your
   replanting choices from before 0.22 are the Replant ticks.
-- **Stop at** (0.22): "no limit", 200, 500 or 1000 Wood — with that much Wood in the colony's chests they rest
+- **Stop at** (0.22): "no limit", 200, 500 or 1000 Wood. With that much Wood in the colony's chests they rest
   ("Enough wood") and start again below it.
-- **Shift+E**: the worker (name and status), **Hire**, **Fire**, **Auto-hire** (on by default — a hut without a
+- **Shift+E**: the worker (name and status), **Hire**, **Fire**, **Auto-hire** (on by default: a hut without a
   worker hires a jobless citizen by itself). Firing switches auto-hire off so the same citizen isn't re-hired at once.
-- Destroying the hut makes its worker jobless (after about 30 seconds — a building has to be missing that long to
+- Destroying the hut makes its worker jobless (after about 30 seconds: a building has to be missing that long to
   count as gone, so one that is still loading isn't mistaken for a destroyed one).
 - **Take down** (0.23, any finished hut's window; click twice, "Sure? Take it down"): a builder takes its building down
   from the top (with any leftovers of an older level), as they take old pieces away in an upgrade, and the materials go
@@ -150,7 +150,7 @@
 - Cost: 20 Wood (setting `Builder Hut.WoodCost`). Needs a Chieftain's Camp nearby, like the Lumberjack's Hut.
 - Hires a builder straight away. They build their own hut first, then every other hut's building in the order the huts
   were placed. **Shift+E**: the worker, what they're working on, and how many buildings wait.
-- **E**: 18-slot storage — put building materials here (they also take from the camp and the other huts).
+- **E**: 18-slot storage: put building materials here (they also take from the camp and the other huts).
 - **Its workbench** (1.5) is yours to use. From level 2 it stands in the covered yard, with its chopping block and adze
   beside it (a level 3 bench). From level 3 the tool shelf hangs inside the workshop on the same wall, making it a level
   4 bench. The artisan table (level 4) stands inside the workshop, where the bench was. A Builder's Hut built before
@@ -190,7 +190,7 @@
   Farm's yard is farmland. While the Farm is being built or upgraded its yard is building ground, and the builder clears
   what grows there (ripe crops are picked first). A Farm whose fields have no free ground says so: "Its field has no
   free ground (too near a building or water?)".
-- Put **seeds** in its chest (**E**) and a **Cultivator** in it or any of the colony's chests: carrot, turnip or onion seeds, barley, flax — whatever the
+- Put **seeds** in its chest (**E**) and a **Cultivator** in it or any of the colony's chests: carrot, turnip or onion seeds, barley, flax: whatever the
   ticked crops need. The harvest comes back to the chest: food the colony eats.
 - **Shift+E**: the worker, how many fields it works per level, and how many crops it grows. **What to grow…** opens
   its list: one tick per crop the game's Cultivator can plant, with its seed; crops that don't grow where the Farm
@@ -228,9 +228,9 @@
 ## Watchtower
 - (1.1) Cost: 20 Wood (setting `Watchtower.WoodCost`). Needs the colony nearby, as every hut: within the colony's
   area (see [The colony's area](#the-colonys-area)).
-- Hires a guard once its building stands (see [Citizens and jobs](Citizens-and-Jobs.md#guard)) — **two at level 3–4,
+- Hires a guard once its building stands (see [Citizens and jobs](Citizens-and-Jobs.md#guard)), with **two at level 3–4,
   three at level 5** (1.2), each at their own place by the door. They keep watch and fight monsters that come near the
-  colony with the best gear in its chest — copies, the items stay in the chest:
+  colony with the best gear in its chest (copies, the items stay in the chest):
   - **Role** (its window's button, 1.2): **Warrior** (to start) takes the best melee weapon (a club, an axe, a sword, a
     spear, an atgeir, a mace…) and a shield with a one-handed one; **Archer** takes the best bow or crossbow that has
     its ammunition in the chests (arrows, bolts), and that ammunition (never used up). Tools, torches and things thrown
@@ -250,7 +250,7 @@
   tower** puts it back.
 - **No monsters spring up** within a finished tower's circle (1.3), as by a workbench or a fire (setting
   `Watchtower.StopsSpawns`).
-- **E**: storage (the guards' armoury). **Shift+E**: its guards ("2 of 2: Ulf (Fighting 12, 7 kills) — On watch; …"),
+- **E**: storage (the guards' armoury). **Shift+E**: its guards ("2 of 2: Ulf (Fighting 12, 7 kills): On watch; …"),
   Hire, Fire (one at a time), Auto-hire, Recall, **Role**, **Orders**, **Post here**, what the tower's level gives
   ("keeps watch and holds the border 25 m around the tower"), and Keep in stock.
 
@@ -260,7 +260,7 @@
 - **On posts:** a Norse storehouse stands up off the ground, with a stair to its door (levels 1-2; a store room on a stone
   base behind from level 3). Its outline starts **0.75 m up** while you place it, so it stands on its posts; lower it
   with Page Down (the Placing keys) if the ground there is higher, and if it turns red as "too high", lower it a step.
-- **The colony's store:** its own chest and **every chest standing inside its walls** — the ones its design brings and
+- **The colony's store:** its own chest and **every chest standing inside its walls**: the ones its design brings and
   any you place in it. Your personal chests, carts and ships don't count, nor do other huts' chests, nor a chest on the
   ground under its floor. A chest you place
   inside joins within a few seconds; one you take away leaves. Chests you stand inside don't stop its upgrades: they stay
@@ -270,7 +270,7 @@
   takes the load to the storehouse, and to the camp only when the storehouse is full. Everything that counts the
   colony's chests counts it too: the lumberjack's Stop at, fires, Keep in stock, a ballista's ammunition.
 - **Shift+E:** four tabs. **Hut**: its level, its couriers, how many chests its store has. **Needs**: the colony's
-  shopping list, one line per building short of something: "Farm: 20 Wood — Ulf is bringing it", "waiting for a
+  shopping list, one line per building short of something: "Farm: 20 Wood: Ulf is bringing it", "waiting for a
   courier", "only in the camp, where couriers don't take from", "no room in its chest" or "nobody has it"; under
   them **Bring: 40 Iron, 10 Food (any)**, what nobody in the colony has. **Keep in stock** (for its own chest, as on
   every hut). **Stock**: what all the colony's chests hold, most first, each with where most of it lies ("40 Wood (most
@@ -290,7 +290,7 @@
 - The camp's circle (`Colony.ColonyRadius`, 50 m) and a circle round each finished Watchtower of the colony
   (1.1). Huts and field markers can stand anywhere in it, and a hut joins the colony whose area holds it: the
   camp's circle first, then the nearest tower's. While you place a hut, rings on the ground show every circle near you.
-- Where settlers live — their free time, the evening, doors, newcomers walking in, death messages — is still the
+- Where settlers live (their free time, the evening, doors, newcomers walking in, death messages) is still the
   camp's circle.
 
 ## Longhouse
@@ -348,13 +348,13 @@
 
 ## Placing a hut
 - While you place a hut, its building shows as a see-through outline, with a line under the crosshair:
-  - **Green** — ready: the builder can start building straight away.
-  - **Yellow** — the builder clears or flattens the site first. The line says what ("2 trees, 1 rock, flatten the
-    ground (about 12 stone)") and which tools they need in the colony's chests (an axe, a pickaxe, a hoe) — or clear it
+  - **Green**: ready: the builder can start building straight away.
+  - **Yellow**: the builder clears or flattens the site first. The line says what ("2 trees, 1 rock, flatten the
+    ground (about 12 stone)") and which tools they need in the colony's chests (an axe, a pickaxe, a hoe), or clear it
     yourself. A tree or rock that needs a better Builder's Hut than the colony has gets a second line: "1 tree needs a
-    level 2 Builder's Hut — or clear it yourself". The ground in front of each door counts too: they level it and
+    level 2 Builder's Hut, or clear it yourself". The ground in front of each door counts too: they level it and
     clear what grows or lies there (bushes, small trees, stumps, rocks, logs), never items or anyone's building.
-  - **Red** — the hut can't go here: another building or another hut's site is in the way, a rock nothing can break
+  - **Red**: the hut can't go here: another building or another hut's site is in the way, a rock nothing can break
     (a cliff, or a boulder no pickaxe breaks) stands where it goes, a grave or a crate from a ship stands there (it goes
     once it's emptied), it's outside the colony
     area (the camp's circle and its Watchtowers'), it's someone else's colony (you need to be on its owner's ward there), inside someone else's ward, in a place where building isn't allowed, below the water line, too steep (the
@@ -418,7 +418,7 @@
   Berserkir (5). They borrow a copy of the best allowed axe in the colony's chests (the axe stays in the chest). Their
   Trees list fells the kinds that axe can fell.
 - **Builder's Hut:** the builder may use axes and pickaxes up to the same ladder (pickaxes: antler, iron, black metal).
-  A tree or rock that needs a better tool than their level allows: they say which Builder's Hut level it takes — or
+  A tree or rock that needs a better tool than their level allows: they say which Builder's Hut level it takes, or
   clear it yourself. A level-1 builder uses only a flint axe and an antler pickaxe, so keep one in a chest; birch and
   oak on their sites wait for a level-2 Builder's Hut (they work on other sites meanwhile).
 - **Longhouse:** two more beds per level.

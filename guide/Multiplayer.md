@@ -31,7 +31,7 @@
   the settler's computer reloads them before changing the chest, so what a friend just put in or took out is kept.
   While a friend has a hut chest open, a settler who needs it waits by it until it's closed.
 - Hiring, firing and joining a colony are applied by the computer that runs the citizen, which checks the citizen is
-  still free first — two huts can't hire the same citizen.
+  still free first, so two huts can't hire the same citizen.
 - A building has to be missing for about 30 seconds before citizens treat it as destroyed, so a player still loading
   into a big base doesn't make anyone lose their colony or job.
 - **A lost Chieftain's Camp:** each hut and each settler notices on its own (on the computer that runs it) and keeps the
