@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. It's written from the plan we work from, and changes by itself when the plan does.
 
-_Last changed 31 October 2026._
+_Last changed 1 November 2026._
 
 ## Now: 1.6.0
 
@@ -25,6 +25,12 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.6.1
 
+- With a planting mod, the lumberjack no longer plants Ashlands trees from beech seeds (being built)
+- Do first can be taken off: on the order that is first, the button reads Not first (being built)
+- Report a problem says what to do next in its own window, in fewer words (being built)
+- A lumberjack's work speed (hunger, calling, nature and mood) counts on every axe blow (being built)
+- A settler sits down on their place by the fire, not right up against it (being built)
+- A hut you've just placed can't be broken by a passing animal before its builder starts (being built)
 - On a colony's first day, settlers talk about different newcomers instead of all the same one. (being built)
 - At breakfast settlers spread out round the chest instead of crowding into one spot (1.6.1). (being built)
 - Sparring settlers stand closer to the training dummy (1.6.1). (being built)
@@ -41,10 +47,14 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.7
 
+- More workbench and cauldron upgrades in the huts, and a roomier Mead Hall (being built)
 - Guards leave an animal you're taming alone unless it attacks someone (being built)
 - Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post. (being built)
 - Settlers left behind when you move your camp walk to the new one, and you can send a settler away. (being built)
 - The Farm's field marker becomes a scarecrow. (being built)
+- In creative mode, a Longhouse levelled up at once lets every settler walk to their bed
+- A felled tree no longer lands on the end of a long wall or beam a few steps away
+- Settlers swing their weapons and tools smoothly, without shaking
 
 ## Later
 
