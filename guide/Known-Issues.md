@@ -2,15 +2,23 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 31 October 2026._
+_Last updated 2 November 2026._
 
-VikingColonies 1.5.1 · Works with Valheim 1.0.21 (checked 29 October 2026).
+VikingColonies 1.6.0 · Works with Valheim 1.0.21 (checked 30 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Chieftain's Camp's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
 - **A Troll can catch a settler.** Now and then a settler running from a Troll to their hut is caught at its door.
   Being worked on. (Since 1.5.1 the brave run from a Troll at 12 m like everyone, and a settler sheltering stays in
   until hurt to half.)
+- **If every settler dies before the first Longhouse stands, no new ones come.** Newcomers need a free bed in a
+  Longhouse, and with nobody left there's no one to build it. Being worked on: a camp left empty will get new
+  settlers the next morning. **Way round until then:** take the Chieftain's Camp down with the hammer, wait 3 in-game
+  days (sleeping counts), then build a camp again. It starts a new colony with new settlers, and any huts you'd placed
+  join it.
+- **A settler can end up with a ring of campfires round the Chieftain's Camp marker and burn on them.** One player saw
+  a settler place many campfires in a circle round the marker and then step into them. We haven't found the cause yet;
+  it's being looked into. If you see it, a Report a problem file from that moment helps a lot.
 - **With a terrain mod like Tunnelheim, ground you level yourself can say "A rock nothing can break".** A hut placed
   or upgraded on ground you flattened with the hoe is refused, and a builder levelling a site can use up a lot of stone
   in two swings without the ground rising. The terrain mod turns the levelled ground into its own rock, and the mod
