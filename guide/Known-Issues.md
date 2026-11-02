@@ -16,9 +16,10 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   settlers the next morning. **Way round until then:** take the Chieftain's Camp down with the hammer, wait 3 in-game
   days (sleeping counts), then build a camp again. It starts a new colony with new settlers, and any huts you'd placed
   join it.
-- **A settler can end up with a ring of campfires round the Chieftain's Camp marker and burn on them.** One player saw
-  a settler place many campfires in a circle round the marker and then step into them. We haven't found the cause yet;
-  it's being looked into. If you see it, a Report a problem file from that moment helps a lot.
+- **A ring of campfires can build up round the Chieftain's Camp, and settlers burn on them.** It happens when the camp
+  is placed again or turned: the builder puts up a new fire for it and the old one stays. A fire knocked a little out of
+  place can also get a second one built beside it. Until the fix is out, knock the extra fires down with the hammer and
+  keep the one in front of the camp. The fix is planned for 1.6.1 and takes the extra fires away by itself.
 - **With a terrain mod like Tunnelheim, ground you level yourself can say "A rock nothing can break".** A hut placed
   or upgraded on ground you flattened with the hoe is refused, and a builder levelling a site can use up a lot of stone
   in two swings without the ground rising. The terrain mod turns the levelled ground into its own rock, and the mod
