@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 1 November 2026._
+_Last changed 2 November 2026._
 
 ## Now: 1.6.1
 
@@ -21,12 +21,11 @@ Planned for Wednesday 4 November. Anything that isn't ready in time moves to the
 - Building works with terrain mods such as Tunnelheim and Dig Deeper (1.6.1, Wednesday 4 November).
 - Small fixes from earlier versions, checked and tidied.
 - Hugin speaks one line at a time in a new colony, each when it makes sense
+- A settler whose bed is taken away at night lies down again.
 - The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
 - Settlers running from monsters spread over the colony's huts instead of crowding one door.
 - Name tags stay over a sitting settler's head.
-- Workers always find the way in through their hut's door.
 - Hugin, the raven, no longer blocks a settler's way to a hut's door.
-- A settler whose bed is taken away at night lies down again.
 - Fixes for problems players reported: see the [known issues](guide/Known-Issues.md).
 
 ## Next
@@ -47,6 +46,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.7.1
 
+- Workers always find the way in through their hut's door.
 - Settlers running from a Troll no longer get caught at their hut's door.
 
 ## Later
@@ -62,15 +62,17 @@ Ideas I'd like to build. They may change, move or drop out.
 - The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
 
-## Just out: 1.5.1
+## Just out: 1.6.0
 
-- The Town Hall becomes the Chieftain's Camp, with a new window: an overview, a page for each settler, the colony's saga and a size setting
-- A memorial stone that names the settlers your colony has lost, and a setting that lets the fallen walk back in after a few days
-- Hugin the raven guides you through your first colony, one step at a time
-- Settlers break off a fight the moment they're hurt to half, and brave settlers run from Trolls in time
-- Settlers head straight for a hut's door instead of walking round the back first
-- A settler sheltering from a monster stays inside instead of walking out past it
-- Materials you put in a hut's chest stay there for that hut's own upgrade
+- A cook in a Mead Hall: roasting that never burns and hot breakfasts for the settlers, in a new hall with five levels
+- Placing a hut says which way and how far it will grow, so you leave room for its upgrades.
+- The memorial stone looks like one of Valheim's runestones.
+- The Chieftain's Camp's Overview gets its proper look: boxes, big numbers and colours.
+- Saving a hut design under a name you used before keeps a backup of the old one
+- Your own pieces in a hut (a bench, a lantern, a banner) stay put when the hut is upgraded
+- Report a problem also offers the Discord, and says where your bug report file is saved
+- Pastimes: settlers spend their free time at archery, sparring, board games, stories by the fire and more
+- The builder puts up their own hut first, and says why when they move to another site
 
 Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
