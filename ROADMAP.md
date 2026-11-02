@@ -35,6 +35,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 ### 1.7
 
 - More workbench and cauldron upgrades in the huts, and a roomier Mead Hall (being built)
+- Every colony window gets the same clear look as the camp's: boxes, tables and buttons where you need them (being built)
 - Guards leave an animal you're taming alone unless it attacks someone (being built)
 - Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post. (being built)
 - Settlers left behind when you move your camp walk to the new one, and you can send a settler away. (being built)
