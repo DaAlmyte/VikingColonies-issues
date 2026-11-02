@@ -25,7 +25,6 @@ Planned for Wednesday 4 November. Anything that isn't ready in time moves to the
 - The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
 - Settlers running from monsters spread over the colony's huts instead of crowding one door.
 - Name tags stay over a sitting settler's head.
-- Hugin, the raven, no longer blocks a settler's way to a hut's door.
 - Fixes for problems players reported: see the [known issues](guide/Known-Issues.md).
 
 ## Next
@@ -48,6 +47,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 ### 1.7.1
 
 - Workers always find the way in through their hut's door.
+- Hugin, the raven, no longer blocks a settler's way to a hut's door.
 - Settlers running from a Troll no longer get caught at their hut's door.
 
 ## Later
