@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 2 November 2026._
+_Last changed 3 November 2026._
 
 ## Now: 1.6.1
 
@@ -39,13 +39,16 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post. (being built)
 - Settlers left behind when you move your camp walk to the new one, and you can send a settler away. (being built)
 - The Farm's field marker becomes a scarecrow. (being built)
-- The forager can pick the bushes you planted yourself
 - In creative mode, a Longhouse levelled up at once lets every settler walk to their bed
 - A felled tree no longer lands on the end of a long wall or beam a few steps away
 - Settlers swing their weapons and tools smoothly, without shaking
 
 ### 1.7.1
 
+- Another player's camp can no longer take over your colony while its camp is down (being built)
+- Settlers moving to a new camp leave ore and metal behind, as a portal would (being built)
+- A camp taken down and put up again no longer brings four new settlers each time (being built)
+- The forager can pick the bushes you planted yourself (being built)
 - Workers always find the way in through their hut's door.
 - Hugin, the raven, no longer blocks a settler's way to a hut's door.
 - Settlers running from a Troll no longer get caught at their hut's door.
@@ -54,6 +57,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 Ideas I'd like to build. They may change, move or drop out.
 
+- Your own settings (tips, small talk, language, window size) in the camp's window, no config file needed
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs.
 - Our own memorial stone, with each fallen settler's name carved on it in runes.
 - The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
@@ -61,7 +65,6 @@ Ideas I'd like to build. They may change, move or drop out.
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
 - The mod in Spanish, Russian, German and Simplified Chinese
-- One order raises every hut to the colony's new age after a boss
 
 ## Just out: 1.6.0
 
