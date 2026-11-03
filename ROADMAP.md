@@ -8,6 +8,12 @@ _Last changed 3 November 2026._
 
 Planned for Sunday 8 November. Anything that isn't ready in time moves to the next update, so it doesn't hold up the rest.
 
+- The camp's window lists every settler who isn't working, and why: stuck, no tool, hungry, no bed or nothing to do
+- The camp's and the huts' windows work with a controller
+- A camp taken down and put up again no longer brings four new settlers each time
+- The forager can pick the bushes you planted yourself
+- Your own settings (tips, small talk, language, window size) in the camp's window, no config file needed
+- A language file, so players can translate the mod into their own language
 - More workbench and cauldron upgrades in the huts, and a roomier Mead Hall
 - Every colony window gets the same clear look as the camp's: boxes, tables and buttons where you need them
 - Guards leave an animal you're taming alone unless it attacks someone
@@ -27,15 +33,12 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 - Another player's camp can no longer take over your colony while its camp is down (being built)
 - Settlers moving to a new camp leave ore and metal behind, as a portal would (being built)
-- A camp taken down and put up again no longer brings four new settlers each time (being built)
-- The forager can pick the bushes you planted yourself (being built)
+- Hugin, the raven, no longer blocks a settler's way to a hut's door. (being built)
 - Workers always find the way in through their hut's door.
-- Hugin, the raven, no longer blocks a settler's way to a hut's door.
 - Settlers running from a Troll no longer get caught at their hut's door.
 
 ### 1.8
 
-- A language file, so players can translate the mod into their own language (being built)
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs. (being built)
 - Every hut gets a richer look at all five levels (being built)
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
@@ -48,13 +51,13 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 Ideas I'd like to build. They may change, move or drop out.
 
 - Huts that need you show a small sign you can see from across the colony
-- The camp's window lists every settler who isn't working, and why: stuck, no tool, hungry, no bed or nothing to do
-- The camp's and the huts' windows work with a controller
-- Your own settings (tips, small talk, language, window size) in the camp's window, no config file needed
 - Our own memorial stone, with each fallen settler's name carved on it in runes.
 - The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
 - The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
+- Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
+- Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
+- The Deep North in the colony's progression: Kall's fall counted at the camp and celebrated, the Deep North's lands for trips, its tools, weapons and armour used by settlers and guards
 
 ## Just out: 1.6.0
 
