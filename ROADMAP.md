@@ -57,14 +57,14 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 Ideas I'd like to build. They may change, move or drop out.
 
+- The camp's and the huts' windows work with a controller
 - Your own settings (tips, small talk, language, window size) in the camp's window, no config file needed
+- A language file, so players can translate the mod into their own language
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs.
 - Our own memorial stone, with each fallen settler's name carved on it in runes.
 - The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
 - Every hut gets a richer look at all five levels
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
-- Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
-- The mod in Spanish, Russian, German and Simplified Chinese
 
 ## Just out: 1.6.0
 
