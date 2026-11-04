@@ -50,8 +50,9 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   keep out of settlers' way. **Way round until then:** step away from the door, or turn `Messages.HuginTips` off once
   you know the colony.
 - **The Farm's own beehive at levels 4 and 5 makes no honey.** It stands too far under the roof for the bees ("bees
-  need more space"). The Forager's Hut's beehive and the Farm's at level 3 work. Being worked on: planned for 1.7.1.
-  **Way round until then:** a beehive of your own placed in the open works as usual.
+  need more space"). The Forager's Hut's beehive and the Farm's at level 3 work. Fixed in 1.7.0 (due Sunday 8 November): the
+  hive moves out from under the roof, and a Farm you already have moves its own hive when the world loads. **Way round
+  until then:** a beehive of your own placed in the open works as usual.
 - **On a colony's first day, every settler talks about the same newcomer.** With everyone arriving at once, the small
   talk names one of them again and again (and the same for the newest of the fallen). Only the words; nothing else is
   affected. Being worked on: each settler will pick their own.
