@@ -33,20 +33,20 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 - Another player's camp can no longer take over your colony while its camp is down (being built)
 - Settlers moving to a new camp leave ore and metal behind, as a portal would (being built)
+- Two settlers meeting at a hut's door from its two sides no longer wait for each other all night. (being built)
 - Hugin, the raven, no longer blocks a settler's way to a hut's door. (being built)
 - Settlers running from a Troll no longer get caught at their hut's door. (being built)
 - A new settler no longer appears inside a tree at the colony's edge, and one left behind no longer arrives in one. (being built)
-- Workers always find the way in through their hut's door.
 
 ### 1.8
 
+- Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is (being built)
+- Quick start: one button on a new camp lays out its first huts on good spots, for you to accept or move (being built)
+- Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands (being built)
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs. (being built)
 - Every hut gets a richer look at all five levels (being built)
-- Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
-- Quick start: one button on a new camp lays out its first huts on good spots, for you to accept or move
 - Settlers sometimes take a long way round a hut just after using its door: we're measuring how often before changing anything.
-- Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands
 
 ## Later
 
