@@ -34,8 +34,9 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Another player's camp can no longer take over your colony while its camp is down (being built)
 - Settlers moving to a new camp leave ore and metal behind, as a portal would (being built)
 - Hugin, the raven, no longer blocks a settler's way to a hut's door. (being built)
+- Settlers running from a Troll no longer get caught at their hut's door. (being built)
+- A new settler no longer appears inside a tree at the colony's edge, and one left behind no longer arrives in one. (being built)
 - Workers always find the way in through their hut's door.
-- Settlers running from a Troll no longer get caught at their hut's door.
 
 ### 1.8
 
@@ -44,6 +45,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
 - Quick start: one button on a new camp lays out its first huts on good spots, for you to accept or move
+- Settlers sometimes take a long way round a hut just after using its door: we're measuring how often before changing anything.
 - Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands
 
 ## Later
@@ -58,6 +60,28 @@ Ideas I'd like to build. They may change, move or drop out.
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
 - The Deep North in the colony's progression: Kall's fall counted at the camp and celebrated, the Deep North's lands for trips, its tools, weapons and armour used by settlers and guards
+
+## Just out: 1.6.1
+
+- With a planting mod, the farmer pays a crop's full price in seeds
+- With a planting mod, the lumberjack no longer plants Ashlands trees from beech seeds
+- Do first can be taken off: on the order that is first, the button reads Not first
+- Report a problem says what to do next in its own window, in fewer words
+- A lumberjack's work speed (hunger, calling, nature and mood) counts on every axe blow
+- A settler sits down on their place by the fire, not right up against it
+- A hut you've just placed can't be broken by a passing animal before its builder starts
+- On a colony's first day, settlers talk about different newcomers instead of all the same one.
+- At breakfast settlers spread out round the chest instead of crowding into one spot (1.6.1).
+- Sparring settlers stand closer to the training dummy (1.6.1).
+- Building works with terrain mods such as Tunnelheim and Dig Deeper (1.6.1, Wednesday 4 November).
+- Small fixes from earlier versions, checked and tidied.
+- Hugin speaks one line at a time in a new colony, each when it makes sense
+- A settler whose bed is taken away at night lies down again.
+- The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
+- Settlers running from monsters spread over the colony's huts instead of crowding one door.
+- Name tags stay over a sitting settler's head.
+
+Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
 ## Your ideas
 
