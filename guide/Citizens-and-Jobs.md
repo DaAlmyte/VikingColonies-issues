@@ -10,7 +10,7 @@ Players can't hurt citizens, but monsters can. A citizen who dies is gone (see "
 
 When a monster comes within 12 m (or a monster nearby is alerted or hunting), or hits them, citizens run to their Chieftain's Camp or hut (status "Fleeing", with a red "!" over their head). If the monster is by both, they run straight away from it. They go back to what they were doing once no monster has been near for 15 seconds. Deer, birds and sleeping or penned animals don't scare them.
 
-Settlers stand up to weak animals (1.5.0). A weak creature that goes for a settler is fought off instead of fled from. They swing what's in their hands (a lumberjack's axe, a builder's pickaxe) or their fists, and the words over their head say "Fighting off a Neck". What counts as weak grows with the camp's level: Necks, Greylings and Boars always, Greydwarfs from level 2, Skeletons from level 3, one star at most.
+Settlers stand up to weak animals (1.5.0). A weak creature that goes for a settler is fought off instead of fled from. They swing what's in their hands (a lumberjack's axe, a builder's pickaxe) or their fists, and the words over their head say "Fighting off a Neck". What counts as weak grows with the camp's level: Necks, Greylings and Boars always, Greydwarfs from level 2, Skeletons from level 3, those two with no star (1.6.1); the others with one star at most.
 
 They still run when hurt to half, from anything stronger (a Troll, a Wolf, a Draugr), from a stone or an arrow thrown from afar, in a raid or while the alarm sounds, and a timid settler still runs. A settler who has run from the same kind three times in ten minutes stands their ground for the next ten. A brave settler also fights one going for someone right beside them. Once it's dead or gone they go back to work.
 
@@ -178,7 +178,7 @@ On watch with nothing to fight, guards keep the colony's ballistas within their 
 
 In a raid at the colony (1.3), the first guard to go for a raider calls out where they come from ("Ulf: raiders coming from the north-east!"). The monsters each guard killed are tallied on their tower's window and the camp's People tab (1.3).
 
-Guards never target players, settlers, tames, the Dvergr and other neutral creatures, or animals (deer, boars, necks…), unless one is attacking someone of the colony. The game's own rules also keep their swings off players, settlers and tames.
+Guards never target players, settlers, tames, the Dvergr and other neutral creatures, or animals (deer, boars, necks…), unless one is attacking someone of the colony. The animals you can tame (boars, wolves, lox…) count as animals here (1.6.1): a wolf that goes for a settler or a player is fought, and one wandering by is left alone until it does. A raid's wolves are always fought. An animal you are taming (fed recently, or its taming has begun) is left alone, even while it charges at you over the fence, and settlers get out of its way instead of swinging at it (1.6.1). Once it bites a settler or a player (out of its pen), it is fought like any other. The game's own rules also keep their swings off players, settlers and tames.
 
 Their gear depends on their tower's **Role** (1.2). Like every worker's tools it is copies: the items stay in the chest, and a copy is of the first quality.
 
@@ -281,7 +281,7 @@ Falling trees and rolling logs don't hurt settlers while `Colony.SettlersSafeFro
 
 Every bed in a Longhouse is a settler's home (see [Buildings](Buildings.md#longhouse)). At night a settler with a home lies down in their bed (`Colony.SleepInBeds`; off, they stand by it). They don't use a bed a player lies in, or one a player has claimed as their own (their spawn point); then they stand by it. One without a home sleeps in their workplace, as before.
 
-After dawn, before work, each settler goes to breakfast at their own moment within the first minute, so they don't all crowd one chest. They walk to the colony chest that holds the food they'll eat (the nearest; the camp's when as near) and take one. They eat it on a free seat within 8 m of that chest, or standing by the chest. The hover reads "Eating (at breakfast)". If they can't get to the chest and take their food within a minute (a player has it open, no way there), they eat where they are.
+After dawn, before work, each settler goes to breakfast at their own moment within the first minute, so they don't all crowd one chest. They walk to the colony chest that holds the food they'll eat (the nearest; the camp's when as near) and take one, each from a place of their own round the chest, a step apart (1.6.1). When every place is taken, the rest wait their turn a little further out. They eat it on a free seat within 8 m of that chest, or standing in their place by the chest. The hover reads "Eating (at breakfast)". If they can't get to the chest and take their food within a minute (a player has it open, no way there), they eat where they are.
 
 They eat the plainest food there is that isn't what they had last time (when there's a choice), so raspberries and mushrooms go before cooked meat, meals vary, and your best food is left for you. The Mead Hall's hot food (its cook's roasts in its chest) comes first among what they haven't had lately (1.6), and breakfast is at its table when its chest has their food. With one kind of hot food they still eat varied meals. Hot food you keep elsewhere (your stews in the camp's chest) is just food: the plainest still goes first, so your best is left for you. Any food a player can eat counts; meads and potions don't.
 
@@ -292,6 +292,8 @@ A settler who finds nothing is hungry. Hovering over them says "Hungry", and the
 ### Newcomers and walking in
 
 Once a day, in daylight, a newcomer comes and eats that food (the plainest first), as long as the colony has a free bed (more Longhouse beds than settlers), at least 5 food in the camp's chest, and isn't unhappy (see [Mood](#mood)). That's one a day (`Colony.NewcomersPerDay`; one more for a joyful colony), up to 30 settlers (`Colony.MaxSettlers`). So build Longhouses, keep food in the camp and your settlers content, and the colony grows.
+
+If every settler dies before the first Longhouse stands, nobody is left to build one and no newcomer has a bed to come to. So the morning after, new settlers walk in to start again, as many as a new camp gets (`Colony.StartingCitizens`), without needing food. The camp's window says so ("Next newcomer: nobody is left: new settlers come to start again the next morning"), and the saga tells it (1.6.1).
 
 A newcomer appears at the edge of the colony and walks to the camp. They come from about 35 m out, on dry ground with a way in, where no player is looking (behind you, or past a wall or a hill), on the game's walkable ground (never inside a rock or under a floor). Only if every such spot is in view do they come into view, as far from every player as can be. With no way in, they appear by the camp.
 

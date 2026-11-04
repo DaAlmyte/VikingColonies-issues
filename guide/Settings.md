@@ -85,5 +85,5 @@ server, everyone uses the server's values.
 | Messages | SmallTalk | true | none | settlers greet you once a day and make small talk above their heads in their free time (needs come first); your own setting |
 | Developer | VerboseLog | false | none | write every settler's step to the log (for a bug report); always on in test worlds; your own setting |
 
-The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`) are for testing
+The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`, `TestFrameCap`) are for testing
 the mod. Leave them off when playing (see the [Developer guide](Developer-Guide.md)).

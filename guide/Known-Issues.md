@@ -2,45 +2,20 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 3 November 2026._
+_Last updated 4 November 2026._
 
-VikingColonies 1.6.0 · Works with Valheim 1.0.21 (checked 30 October 2026).
+VikingColonies 1.6.1 · Works with Valheim 1.0.21 (checked 30 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Chieftain's Camp's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
 - **A Troll can catch a settler.** Now and then a settler running from a Troll to their hut is caught at its door.
   Being worked on. (Since 1.5.1 the brave run from a Troll at 12 m like everyone, and a settler sheltering stays in
   until hurt to half.)
-- **If every settler dies before the first Longhouse stands, no new ones come.** Newcomers need a free bed in a
-  Longhouse, and with nobody left there's no one to build it. Being worked on: a camp left empty will get new
-  settlers the next morning. **Way round until then:** take the Chieftain's Camp down with the hammer, wait 3 in-game
-  days (sleeping counts), then build a camp again. It starts a new colony with new settlers, and any huts you'd placed
-  join it.
-- **A ring of campfires can build up round the Chieftain's Camp, and settlers burn on them.** It happens when the camp
-  is placed again or turned: the builder puts up a new fire for it and the old one stays. A fire knocked a little out of
-  place can also get a second one built beside it. Until the fix is out, knock the extra fires down with the hammer and
-  keep the one in front of the camp. The fix is planned for 1.6.1 and takes the extra fires away by itself.
-- **With a terrain mod like Tunnelheim, ground you level yourself can say "A rock nothing can break".** A hut placed
-  or upgraded on ground you flattened with the hoe is refused, and a builder levelling a site can use up a lot of stone
-  in two swings without the ground rising. The terrain mod turns the levelled ground into its own rock, and the mod
-  reads that rock as a boulder. Being worked on: such ground will count as ground, and the builder will only pay for
-  ground that really rises. **Way round until then:** place huts on ground the terrain mod hasn't reshaped; if a
-  builder is stuck levelling, logging out and back in has let the builder finish.
-- **Guards kill an animal you're taming inside the colony.** A wild boar (or another animal you can tame) counts as
-  a monster to the guards until it's tame, so a guard who sees it inside the colony's area fights it, even in your
-  pen. Being worked on: guards will leave an animal you can tame alone unless it attacks someone.
 - **Settlers left behind when you move your Chieftain's Camp stay where they were.** Once the old one is gone, its
   colony lives on for 3 in-game days; then its settlers have no colony, and only a camp whose area they stand in takes
-  them in, so one built far away never does. They stay, hungry, and there's no way yet to send a settler away. Being
-  worked on: settlers left behind will walk to your new camp, and you'll be able to send one away. **Way round until
+  them in, so one built far away never does. They stay, hungry, and there's no way yet to send a settler away. Fixed in
+  1.7.0 (due Sunday 8 November): settlers left behind will walk to your new camp, and you'll be able to send one away. **Way round until
   then:** none that moves them; setting `Messages.WordsAboveHeads` off quiets what they say above their heads.
-- **A hut built from your own design can leave a few pieces out until its next level.** When a piece hangs from
-  pieces whose middle sits higher than its own lower edge (a roof's eave tiles on a log wall's top logs), the builder
-  can put it up first; it falls, and after three falls it's left out until the hut's next level. The mod's own designs
-  don't have it. Being worked on: the builder puts a piece up only after what holds it.
-- **Settlers running from monsters can all head for the same hut.** When monsters turn up close to several settlers,
-  they may all run for the nearest hut and wait at its one door for a few seconds, until some pick another hut.
-  Everyone gets in. Being worked on: settlers spread over the colony's huts when they shelter.
 - **A settler can take a long way round a hut just after its door was used.** For a few seconds after a door
   opens or shuts, the game works out the paths round that hut again, and a settler setting off just then can
   loop several metres out before coming back to where they were going. They still get there. Being worked on:
@@ -53,24 +28,28 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
   need more space"). The Forager's Hut's beehive and the Farm's at level 3 work. Fixed in 1.7.0 (due Sunday 8 November): the
   hive moves out from under the roof, and a Farm you already have moves its own hive when the world loads. **Way round
   until then:** a beehive of your own placed in the open works as usual.
-- **On a colony's first day, every settler talks about the same newcomer.** With everyone arriving at once, the small
-  talk names one of them again and again (and the same for the newest of the fallen). Only the words; nothing else is
-  affected. Being worked on: each settler will pick their own.
-- **At breakfast, settlers crowd together at the chest.** When several settlers go to breakfast at the same moment
-  (after you sleep through the night, say), they all walk to the chest they eat from and stand inside each other in
-  front of it while they eat. Only how it looks: everyone eats. Being worked on: each settler will take a place of
-  their own by the chest, with a short queue behind when they're all taken.
 - **Now and then a worker can't find the way to their hut's door and stays outside at night.** At some spots the
   ground just outside a hut's door isn't on the game's walking map, so a worker (often the lumberjack) can't get in
   and spends the night outside. Being worked on.
-- **A hut you've just placed can be broken by an animal before its builder starts.** Until the builder starts it, a
-  placed hut is only its chest, and a passing Boar or monster can break it: the hut is gone from the colony with no
-  word, and its wood drops on the ground. Being worked on: monsters will leave a placed hut alone, and you'll be told
-  if a colony building breaks. **Way round until then:** place huts where you can keep an eye on them, or place the
-  hut again (pick up the dropped wood first).
 
 ## Recently fixed
 
+- **If every settler dies before the first Longhouse stands, no new ones come**: fixed in 1.6.1: update the mod. The
+  morning after, new settlers walk in to start again.
+- **A ring of campfires can build up round the Chieftain's Camp**: fixed in 1.6.1: update the mod. The extra fires
+  are taken down by themselves.
+- **With a terrain mod like Tunnelheim, levelled ground can say "A rock nothing can break"**: fixed in 1.6.1: update
+  the mod. Such ground counts as ground, and the builder pays stone only for ground that rises.
+- **Guards kill an animal you're taming inside the colony**: fixed in 1.6.1: update the mod. An animal you're taming
+  is left alone until it bites someone.
+- **A hut built from your own design can leave a few pieces out**: fixed in 1.6.1: update the mod. The builder puts
+  a piece up only after what holds it.
+- **Settlers running from monsters can all head for the same hut**: fixed in 1.6.1: update the mod. They spread over
+  the colony's huts.
+- **On a colony's first day, every settler talks about the same newcomer**: fixed in 1.6.1: update the mod.
+- **At breakfast, settlers crowd together at the chest**: fixed in 1.6.1: update the mod. Each takes a place of their
+  own by the chest.
+- **A hut you've just placed can be broken by an animal before its builder starts**: fixed in 1.6.1: update the mod.
 - **The Town Hall and the huts were in the hammer's Furniture tab, not Misc**: fixed in 1.5.1: update the mod. The
   colony's buildings, now with the Chieftain's Camp (the Town Hall's new name), are in the Misc tab.
 - **A settler sitting on a bench or lying in a bed that the builder takes down could sink under the ground**: fixed

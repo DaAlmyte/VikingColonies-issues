@@ -54,8 +54,11 @@
 
     Click an order to see its full description, with its buttons:
     - **Do first** makes builders take it before everything else, even their own hut. A builder busy elsewhere comes
-      over within seconds. If it waits on you (materials, a tool, a higher Builder's Hut), they still set it aside after
-      a minute and work on something else; press Do first again once you've helped.
+      over within seconds. The order builders take first is tagged in the list. On an order marked first the button reads
+      **Not first**: press it to take the mark off, and builders take it in its usual place again (an order you marked
+      earlier, if any, is then the first one). If it waits on you (materials, a tool, a higher Builder's Hut), they still
+      set it aside after a minute and work on something else, and the button reads Do first again meanwhile. Press Do
+      first once you've helped and they come back at once.
     - **Set aside** means no builder takes it until you press **Resume** (a builder on it leaves it at once). Handy for
       an order you can't supply yet.
     - **Cancel upgrade** works as in the hut's window, only before the builder has changed anything.
@@ -362,6 +365,9 @@
   level 5), on plank sleeping platforms along its walls, with an earth floor down the middle and a clear way to each.
   Each bed is a settler's home, and the colony shares them out by itself, nearest first. A bed that's knocked down
   frees its settler, who gets the next free one. While the Longhouse goes up a level its settlers wait for the new beds.
+  Only the Longhouse's own beds are homes. A bed you place yourself, in a Longhouse or anywhere else, adds none, so for
+  more homes raise a Longhouse a level or build another. If you take one of its beds down with the hammer, the builder
+  leaves it out on purpose and doesn't put it back, and that Longhouse has one home fewer.
 - **E** opens storage, like every hut's. **Shift+E** shows the beds and who sleeps in each.
 
 ## Hut windows
