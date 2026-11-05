@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 4 November 2026._
+_Last changed 5 November 2026._
 
 ## Now: 1.7.0
 
@@ -54,12 +54,12 @@ Ideas I'd like to build. They may change, move or drop out.
 
 - Huts that need you show a small sign you can see from across the colony
 - Our own memorial stone, with each fallen settler's name carved on it in runes.
+- Put a hut's chest in a room of a house you built, and that room becomes the hut. Nothing of yours gets taken down.
 - The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
 - The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
-- The Deep North in the colony's progression: Kall's fall counted at the camp and celebrated, the Deep North's lands for trips, its tools, weapons and armour used by settlers and guards
 
 ## Just out: 1.6.1
 
