@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 6 November 2026._
+_Last changed 7 November 2026._
 
 ## Now: 1.7.0
 
@@ -22,6 +22,7 @@ Planned for Sunday 8 November. Anything that isn't ready in time moves to the ne
 - A language file, so players can translate the mod into their own language
 - More workbench and cauldron upgrades in the huts, and a roomier Mead Hall
 - Every colony window gets the same clear look as the camp's: boxes, tables and buttons where you need them
+- Speech bubbles of their own over settlers' heads
 - Guards leave an animal you're taming alone unless it attacks someone
 - The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
 - Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post.
@@ -30,7 +31,6 @@ Planned for Sunday 8 November. Anything that isn't ready in time moves to the ne
 - In creative mode, a Longhouse levelled up at once lets every settler walk to their bed
 - A felled tree no longer lands on the end of a long wall or beam a few steps away
 - Settlers swing their weapons and tools smoothly, without shaking
-- Speech bubbles of their own over settlers' heads
 - Fixes for problems players reported: see the [known issues](guide/Known-Issues.md).
 
 ## Next
@@ -39,6 +39,8 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.7.1
 
+- The Mead Hall's cook finds a place to stand inside the hall at every station, so a station by a wall or the door no longer leaves them stuck. (being built)
+- A settler's last swing when a fight ends no longer lands on an animal or a wall that happens to be in its way. Fixed in 1.7.1. (being built)
 - Settlers no longer talk about the stars or the sun on their face in the rain. (being built)
 - A guard whose post they can't quite reach no longer steps back and forth at it. (being built)
 - A settler standing in a doorway now steps aside when someone needs to get through. (being built)
@@ -58,6 +60,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands (being built)
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs. (being built)
 - Every hut gets a richer look at all five levels (being built)
+- Guards walk real rounds of the colony, past several huts, before they go back to their post
 
 ## Later
 
