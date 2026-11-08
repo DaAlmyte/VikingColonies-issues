@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 7 November 2026._
+_Last changed 8 November 2026._
 
 ## Now: 1.7.0
 
@@ -39,6 +39,9 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.7.1
 
+- A quick double click with the hammer no longer puts a second hut down on the first one's spot. (being built)
+- A lumberjack no longer stands waiting again and again by a log that won't stop rocking. (being built)
+- Settlers who sat down from on top of a bench get up onto the floor, not back onto the bench. (being built)
 - The Mead Hall's cook finds a place to stand inside the hall at every station, so a station by a wall or the door no longer leaves them stuck. (being built)
 - A settler's last swing when a fight ends no longer lands on an animal or a wall that happens to be in its way. Fixed in 1.7.1. (being built)
 - Settlers no longer talk about the stars or the sun on their face in the rain. (being built)
@@ -54,7 +57,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is (being built)
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work (being built)
 - Quick start: one button on a new camp lays out its first huts on good spots, for you to accept or move (being built)
-- Farmers hold their cultivator and swing it when they work new farmland. (being built)
+- Farmers hold their own cultivator and swing it when they work new farmland and plant. (being built)
 - Guards on watch look around, and turn to you when you come near. (being built)
 - Each settler goes to the fire, to bed and out in the morning at their own moment. (being built)
 - Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands (being built)
