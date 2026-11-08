@@ -18,6 +18,9 @@ Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies
 - **Now and then a worker can't find the way to their hut's door and stays outside at night.** At some spots the
   ground just outside a hut's door isn't on the game's walking map, so a worker (often the lumberjack) can't get in
   and spends the night outside. Being worked on.
+- **A settler can step onto a lit fire while meeting for a chat.** Now and then the spot settlers pick for a chat is on a
+  burning fire. The settler standing there catches fire and is moved clear, with no lasting harm. Being fixed for
+  1.8.0.
 
 ## Recently fixed
 

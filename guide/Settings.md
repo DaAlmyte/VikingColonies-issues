@@ -93,7 +93,7 @@ of 5%. A change is saved at once, and a server never changes these for you.
 | Developer | VerboseLog | false | none | write every settler's step to the log (for a bug report); always on in test worlds; your own setting |
 
 The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`, `TestFrameCap`) are for testing
-the mod. Leave them off when playing (see the [Developer guide](Developer-Guide.md)).
+the mod. Leave them off when playing.
 
 ## Your own words
 
