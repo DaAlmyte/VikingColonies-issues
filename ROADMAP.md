@@ -8,6 +8,7 @@ _Last changed 8 November 2026._
 
 Planned for Wednesday 11 November. Anything that isn't ready in time moves to the next update, so it doesn't hold up the rest.
 
+- A quick double click with the hammer no longer raises two memorial stones in one colony.
 - A lumberjack no longer stands waiting again and again by a log that won't stop rocking.
 - Settlers who sat down from on top of a bench get up onto the floor, not back onto the bench.
 - The Mead Hall's cook finds a place to stand inside the hall at every station, so a station by a wall or the door no longer leaves them stuck.
@@ -30,13 +31,13 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is (being built)
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work (being built)
 - Quick start: one button on a new camp lays out its first huts on good spots, for you to accept or move (being built)
+- Guards walk real rounds of the colony, past several huts, before they go back to their post (being built)
 - Farmers hold their own cultivator and swing it when they work new farmland and plant. (being built)
 - Guards on watch look around, and turn to you when you come near. (being built)
 - Each settler goes to the fire, to bed and out in the morning at their own moment. (being built)
 - Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands (being built)
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs. (being built)
 - Every hut gets a richer look at all five levels (being built)
-- Guards walk real rounds of the colony, past several huts, before they go back to their post
 
 ### 1.9
 
@@ -51,12 +52,12 @@ Ideas I'd like to build. They may change, move or drop out.
 
 - Our own memorial stone, with each fallen settler's name carved on it in runes.
 - Put a hut's chest in a room of a house you built, and that room becomes the hut. Nothing of yours gets taken down.
+- Send settlers on trips to biomes you've visited: they come back with what doesn't grow at home
 - The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
 - The Deep North in the colony's progression: Kall's fall counted at the camp and celebrated, the Deep North's lands for trips, its tools, weapons and armour used by settlers and guards
-- Choose which settler works each hut, see how fast each would work there and why, and every hut gets a clearer window that says why a worker is idle
 
 ## Just out: 1.6.1
 
