@@ -3,6 +3,11 @@
 The settings live in `BepInEx/config/daalmyte.vikingcolonies.cfg` (or press F1 with a configuration manager mod). On a
 server, everyone uses the server's values.
 
+Six of them are each player's own, and since 1.7.0 you can change them in the game: open the camp's window, go to The
+camp tab and use the Your settings box under Keep in stock. Hugin's tips, words over heads and small talk are ticks. A
+death and Language are buttons that show your choice, and a click goes to the next. Window size has − and + in steps
+of 5%. A change is saved at once, and a server never changes these for you.
+
 | Section | Setting | Default | Range | Notes |
 |---|---|---|---|---|
 | Town Hall | WoodCost | 20 | 0–500 | at once; on a server, the server's |
@@ -53,6 +58,7 @@ server, everyone uses the server's values.
 | Courier | CarryPerLevel | 25 | 0–500 | how many more a trip for each storehouse level above 1; on a server, the server's (1.5) |
 | Mead Hall | WoodCost | 20 | 0–500 | at once; on a server, the server's (1.6) |
 | Cook | CarryCapacity | 20 | 1–100 | how much raw food the Mead Hall's cook carries to the cooking station at once; on a server, the server's (1.6) |
+| Cook | ReserveDays | 2 | 0–10 | days of the settlers' meals the Mead Hall's Kitchen list never uses: the cook makes your dishes only from the food beyond this (0: nothing kept back); on a server, the server's (1.7) |
 | Guards | Enabled | true | none | Watchtower guards fight monsters near the colony; off: a guard shelters like any settler (1.1) |
 | Guards | ChaseBeyondPatrol | 10 | 0–50 | metres past their patrol a guard follows a monster before letting it go |
 | Guards | RetreatHealth | 0.3 | 0–0.75 | below this share of their health a guard goes back to their tower to heal (out again at 80%) |
@@ -83,7 +89,40 @@ server, everyone uses the server's values.
 | Messages | WordsAboveHeads | true | none | a settler near you who needs you says so above their head; your own setting |
 | Windows | Scale | 1.0 | 0.75–1.5 | the size of VikingColonies' windows on your screen (1.5.1); a window too tall for the screen is made to fit; your own setting |
 | Messages | SmallTalk | true | none | settlers greet you once a day and make small talk above their heads in their free time (needs come first); your own setting |
+| Messages | Language | Game | Game, English, or the name of your own file's language | the language of the mod's words (1.7.0): Game follows Valheim's; English keeps the mod in English whatever the game is set to; see [Your own words](#your-own-words) below; your own setting |
 | Developer | VerboseLog | false | none | write every settler's step to the log (for a bug report); always on in test worlds; your own setting |
 
 The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`, `TestFrameCap`) are for testing
 the mod. Leave them off when playing (see the [Developer guide](Developer-Guide.md)).
+
+## Your own words
+
+The mod speaks English for now. Since 1.7.0 you can change any of its words, or put the whole mod in your language, with
+a file of your own. Updates never touch it.
+
+1. Open your profile's folder (r2modman: Settings, Browse profile folder) and make the folder
+   `BepInEx/config/VikingColonies/Translations`.
+2. In it, make a file named after the language your Valheim is set to, by Valheim's English name for it: `German.json`,
+   `Russian.json`, `French.json`. Save it as UTF-8.
+3. Put in the lines you want to change, copied from the mod's English file (`translations/English.json` on the
+   [issues page](https://github.com/DaAlmyte/VikingColonies-issues)) and with your words after the colon:
+
+   ```json
+   {
+     "vc_tab_people": "Leute",
+     "vc_close": "Schließen"
+   }
+   ```
+
+4. Start the game. The log (`BepInEx/LogOutput.log`) has a line for your file each time the game sets up its language:
+   how many of its lines the mod took, and which it left out and why.
+
+Keep each `{0}`, `{1}` and `<color=...>` of the English line in yours, in any order: the game fills them in. In a line
+with them, a `{` or `}` of your own is written twice (`{{`). A line without them is left out, so the game never shows a wrong number, and the English one shows instead. Every line you
+leave out stays English too. Only the mod's own words (the keys starting `vc_`) can be changed this way.
+
+With Messages.Language set to English the mod stays English whatever the game is set to. Set it to your file's name
+(`French`) to see your file while the game is in another language.
+
+A file you'd like everyone to have is welcome on the [issues page](https://github.com/DaAlmyte/VikingColonies-issues)
+or on Discord.

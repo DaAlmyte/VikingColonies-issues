@@ -2,7 +2,15 @@
 
 Citizens are vikings with random looks and Norse names. Hover one to see its name, job and status. A settler near you who needs something says so above their head ("Needs 12 Wood", "Storage full", "Can't reach the hut", "Hungry"; setting `Messages.WordsAboveHeads`), while plain work shows nothing. In their free time they greet you and make small talk (see "Free time").
 
-**Jobless** citizens spend their free time near the camp. **No colony** means their camp was destroyed (it must be missing for about 30 seconds). Any Chieftain's Camp within 50 m adopts them, including a new one you build.
+**Jobless** citizens spend their free time near the camp. **No colony** means their camp was taken down or destroyed (it must be missing for about 30 seconds) and the grace days to raise it again (`Colony.TownHallGraceDays`, 3) are over. Those settlers stand where they are, with no work, no meals and no shelter at night or in a raid. Their mood stays as it was, and they don't starve, since hunger only slows work. They're on no camp's People tab. Any Chieftain's Camp within 50 m takes them in, including a new one you build there.
+
+### Moving your camp (1.7.0)
+
+Settlers left behind find your new camp by themselves. If you've founded a camp since the old one went, they set out at once. If not, they wait out the grace days (a camp raised among the old huts in that time takes the colony over, settlers and all) and then go to the nearest of your camps. Near you, they walk there ("On their way to the camp"). Far from everyone, they turn up at its edge once the walk's time is over (2 m a second, 1 to 30 minutes) and walk in. They keep their name, skills, mood and what they carry. Their old job and bed stay behind, so hire them again. Only your own camps take them, never a friend's. They come even when the new camp is full: its Overview then shows the count over the limit (12 of 10) and says no newcomers come until there's room.
+
+The order counts. Take the old camp down first and then found the new one, and they set out at once. Found the new camp first and then take the old one down, and they wait out the grace days (3 in-game days) before they go. Nobody ever appears in front of you: one moved to the camp's edge comes in where no player is within 60 m, and waits while there's none.
+
+If a camp is taken down and never placed again, the settlers stay "No colony" (above) after the grace days, until you found a Chieftain's Camp anywhere in the world. Within a minute they set out for it. If nobody knows whose they are (an old save where more than one player built camps), they stay until a camp is raised beside them.
 
 ### Danger and healing
 
@@ -84,7 +92,7 @@ Pastimes are fun in free time, mostly at things you build within 30 m of their h
 - Practice at a training dummy (two at a time), with their tool or fists.
 - A board game for two on a table with two chairs or more. At the end one cheers and the other shrugs.
 - A toast for two to four standing round such a table.
-- Dancing round a pole: a maypole, or a banner pole (a 4 m log pole with a banner hung near its top, like the camp's). Up to six can dance.
+- Dancing round a pole: a maypole always, or a banner pole that stands on its own like the camp's (a 4 m log pole with a banner hung near its top, with no wall, floor or roof against it or within about 3 m of it). Up to six can dance.
 - A story at a burning fire: one tells it, one to three listen.
 - Admiring a trophy on an item stand or an armour stand.
 - The map table (one at a time).
@@ -111,6 +119,8 @@ The setting `Colony.FreeTime` turns free time off, and they wait standing, as be
 The first time each day you come within 6 m of a settler, they say "Hail, <your name>!" (and wave, if they're in free time).
 
 Settlers in free time within 10 m say things above their heads. A chatting pair takes turns; others say a line every few minutes. What they talk about follows the colony: a settler who died in the last two days, the weather, a newcomer or a new building today, a raid held off in the last two days, or their job's wait. After that come their own trade (the lumberjack's trees, the farmer's crops, the guard's watch), their temper (cheerful or grumpy), and a boss fallen in your world: the camp's saga tells when the colony hears of it, and they talk of it for two days (1.4.2). At a pastime they talk about it, half the time, after a death or hunger: "Bullseye!", "Your move, Astrid.", "Again!" (1.6).
+
+Their words show in a soft bubble with their name and job on its top line (1.7), just above the name over their head. A line of talk stays as long as it takes to read. Bubbles keep apart: a need goes in front, two settlers chatting lean away from each other, and when more than six are up at once the farthest show a small "…" until there's room. They fade with distance, wait while a wall is in the way, and hide while the map, your bag or one of the mod's windows is open.
 
 A need ("Needs 12 Wood") always comes first. "Hungry" shows for a few seconds every half minute, with their talk in between, and their hover always says it. The setting `Messages.SmallTalk` is your own.
 
@@ -154,9 +164,9 @@ With PlantEverything, a berry bush, mushroom, thistle or dandelion that mod make
 
 ## Forager
 
-Foragers work from a Forager's Hut. They walk to the nearest wild plant on their hut's list that's ready within their area (40 m around the hut, 10 m more per level), pick it as a player does, gather what drops and carry it home: up to 20 items, then they deliver to the hut's chest. With nothing ready they wait by the hut ("Nothing to pick") and look again every 10 seconds. Bushes grow back on their own, as in the game. Hungry, they pick at half speed.
+Foragers work from a Forager's Hut. They walk to the nearest plant on their hut's list that's ready within their area (40 m around the hut, 10 m more per level), pick it as a player does, gather what drops and carry it home: up to 20 items, then they deliver to the hut's chest. With nothing ready they wait by the hut ("Nothing to pick") and look again every 10 seconds. Bushes grow back on their own, as in the game. Hungry, they pick at half speed.
 
-They pick only what grows wild and grows back, and only the kinds ticked on the hut's **What to pick** list (everything but flint and branches to start): raspberries, blueberries, cloudberries, mushrooms, dandelions, thistles … The list comes from the game itself, so a kind a mod adds that grows back shows up too. Your planted crops (carrots, turnips, barley …) don't grow back once picked, so they never touch them, nor anything a player placed or that grows on cultivated ground. They also leave what never grows back (stones, wild seeds, the Mistlands mushrooms), or they would strip the land for good.
+They pick only what grows back, and only the kinds ticked on the hut's **What to pick** list (everything but flint and branches to start): raspberries, blueberries, cloudberries, mushrooms, dandelions, thistles … The list comes from the game itself, so a kind a mod adds that grows back shows up too. Your planted crops (carrots, turnips, barley …) don't grow back once picked, so they never touch them. A bush or flower you planted that grows back (with a planting mod such as Plant Everything) they pick as if it were wild (1.7.1), since picking takes nothing for good, but never one on a Farm's field. To keep a kind for yourself, untick it on the hut's **What to pick** list. They also leave what never grows back (stones, wild seeds, the Mistlands mushrooms), or they would strip the land for good.
 
 Flint and branches grow back too. They're on the list but unticked until you tick them, and their wood and flint can feed the builder. Food someone dropped by a bush stays too: they gather only what fell from the plant they picked.
 
@@ -221,7 +231,7 @@ Couriers on different computers never carry the same thing: the storehouse's own
 
 ## Cook
 
-The cook works at the **Mead Hall** (1.6) and keeps a hot meal for every settler and two more in the hall's chest. They take the raw meat and fish the colony's chests can spare (never what a building keeps in stock, its working stock or what a hut's build order holds), the plainest first and a different kind when there's a choice. They carry up to 20 at a time (setting `Cook.CarryCapacity`), put them on a cooking station inside the hall, and take each piece off when it's done into the hall's chest. Once the chest holds enough, they rest by the hall.
+The cook works at the **Mead Hall** (1.6) and keeps a hot meal for every settler and two more in the hall's chest. They take the raw meat and fish the colony's chests can spare (never what a building keeps in stock, its working stock or what a hut's build order holds), the plainest first and a different kind when there's a choice. They carry up to 20 at a time (setting `Cook.CarryCapacity`), put them on a cooking station inside the hall, and take each piece off when it's done into the hall's chest. Once the chest holds enough, they rest by the hall. To keep raw meat or fish for your own cooking (sausages, say), put it on a building's Keep in stock list (Shift+E › Keep in stock › Add…): the cook leaves it raw.
 
 A station only cooks over a burning fire. When it's out the cook feeds it with wood the colony can spare. With no wood they wait, and hovering over them says "The hearth is out: wood in the chests?". No food goes on a cold station. A fire that has wood and still won't burn (rain on the hearth, or the station not over its flames) isn't helped by more: the cook takes their wood back to the chest, puts raw food only on a station that burns, and says "No fire burns under the cooking station: is it over a hearth's flames, out of the rain?".
 
@@ -230,6 +240,10 @@ Food is never burnt. While the hall has a cook, a piece that's done waits on the
 Hover shows "Roasting Deer meat", "Fetching Deer meat", "Taking the cooked food off", "Needs raw food in the colony's chests", "Needs a cooking station in the Mead Hall", "The Mead Hall has hot food for everyone".
 
 They learn **Cooking**, and a skill of 100 takes food on and off twice as fast as 0.
+
+The Kitchen list (1.7): once the settlers' hot meals are ready, the cook makes the dishes you ask for in the Mead Hall's Kitchen tab ([Buildings](Buildings.md#mead-hall)) and keeps them in the hall's chest: roasts on the stations, bread through the food preparation table and the oven, stews and jams at the cauldron. Breakfast always comes first, then a feast you asked for, then the list. They never use the settlers' last two days of food (`Cook.ReserveDays`), and never take from the list for breakfast or the other way round. A roast on the list that breakfast makes too (cooked meat) feeds the settlers first, and only what's beyond their hot meals is kept for you. The cauldron needs its fire burning and, as for you, a roof over it.
+
+Hover (1.7) shows "Stirring Queen's jam", "Preparing Bread dough", "Baking Bread", "Taking the dishes to the hall's chest", "Needs Thistle", "The colony's food is low: kept for the settlers", "The cauldron's fire is out: wood in the chests?", "Needs a roof over the cauldron", "Laying a feast", "Needs a table in the Mead Hall", "The hall's chest is full: the dishes need room in it", "Every dish on the Kitchen list is ready".
 
 ## Builder
 
@@ -293,7 +307,7 @@ A settler who finds nothing is hungry. Hovering over them says "Hungry", and the
 
 Once a day, in daylight, a newcomer comes and eats that food (the plainest first), as long as the colony has a free bed (more Longhouse beds than settlers), at least 5 food in the camp's chest, and isn't unhappy (see [Mood](#mood)). That's one a day (`Colony.NewcomersPerDay`; one more for a joyful colony), up to 30 settlers (`Colony.MaxSettlers`). So build Longhouses, keep food in the camp and your settlers content, and the colony grows.
 
-If every settler dies before the first Longhouse stands, nobody is left to build one and no newcomer has a bed to come to. So the morning after, new settlers walk in to start again, as many as a new camp gets (`Colony.StartingCitizens`), without needing food. The camp's window says so ("Next newcomer: nobody is left: new settlers come to start again the next morning"), and the saga tells it (1.6.1).
+If every settler dies before the first Longhouse stands, nobody is left to build one and no newcomer has a bed to come to. So the morning after, new settlers walk in to start again (1.6.1), as many as a new camp gets (`Colony.StartingCitizens`), without needing food. The camp's window says so ("Next newcomer: nobody is left: new settlers come to start again the next morning"), and the saga tells it. Since 1.7.0 they make the number up with your settlers at your other camps, as a new camp's do: a second camp left empty while your first still has its settlers gets none, and grows once it has a Longhouse.
 
 A newcomer appears at the edge of the colony and walks to the camp. They come from about 35 m out, on dry ground with a way in, where no player is looking (behind you, or past a wall or a hill), on the game's walkable ground (never inside a rock or under a floor). Only if every such spot is in view do they come into view, as far from every player as can be. With no way in, they appear by the camp.
 
@@ -311,6 +325,7 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
 | Varied food: 3+ / 4+ different foods in their last 5 meals | +5 / +10 |
 | The same food 5 meals running | −5 |
 | A hot meal: their last meal was cooked (a Mead Hall cook's, 1.6), while they're fed | +5 |
+| A feast: they took a serving at the Mead Hall's feast in the last two days (1.7) | +10 |
 | Last evening by a burning fire / with at least two others | +5 / +5 |
 | Works in the trade they're good at | +5 |
 | Jobless for 2 days or more | −5 |

@@ -39,7 +39,14 @@
   the Chieftain's Camp, so the same players may still manage them and the settlers still open the colony's doors. A new
   camp takes the colony over from the huts and settlers the placing player's computer has loaded, and whoever builds it
   is the colony's owner from then on.
-
+- Settlers left behind (1.7.0) are handled by the server (or the player hosting), which sees every settler, loaded or
+  not. Once a minute it sends the ones whose camp is gone on to their owner's newest camp, never to a friend's camp. A
+  settler someone is near is asked on that player's computer and walks. One nobody is near is changed by the server and
+  turns up at the camp's edge when the walk's time is over. They're moved, never copied. The camp's builder is told
+  once, if online: "3 settlers left behind at your old camp are on their way to your new one."
+- Send away (1.7.0) goes like this. The camp's computer checks the request (who may manage the colony), the server
+  finds the settler wherever they are and asks the computer that runs them, and that computer hands their load back to
+  the camp's chest.
 - The computer that ran the settler raises the cairn, once. Every player told of the death gets their own map pin, and
   a player's pin goes when that player empties the cairn. Whoever opens the cairn takes it over, like any chest.
 - Settlers run by one computer take turns at a door. A settler waits up to 12 seconds for anyone else standing in the

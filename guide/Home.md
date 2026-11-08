@@ -10,5 +10,8 @@
 - [Settings](Settings.md) lists every option and what it does.
 - [Multiplayer](Multiplayer.md) is about servers and playing with friends.
 - [Troubleshooting](Troubleshooting.md) covers common problems, other mods, and how to report bugs.
-- [Known issues](Known-Issues.md) lists the problems we know about, what's being done, and ways round them. 
-- [Roadmap](../ROADMAP.md) shows the next update, the ones after it, and ideas for later. 
+- [Known issues](Known-Issues.md) lists the problems we know about, what's being done, and ways round them. It is on
+  the issues page only, and the mod hub keeps it.
+- [Roadmap](../ROADMAP.md) shows the next update, the ones after it, and ideas for later. It is on the issues page
+  only, and the mod hub keeps it.
+- [Developer guide](Developer-Guide.md) is for building and testing the mod.

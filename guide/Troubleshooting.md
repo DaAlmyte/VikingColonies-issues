@@ -213,12 +213,13 @@ turns that off.
 The quickest way is to press **Report a problem** in the camp's window (beside Close). A small window opens and writes
 the report below, and it says where the file is saved: `VikingColonies-bugreport.txt`, with `LogOutput.log` beside it.
 The start of the folder, your Windows account's own folder, shows as `%USERPROFILE%`, which also works typed into File
-Explorer's address bar. Then pick one of three buttons (since 1.6):
+Explorer's address bar. **Show the file** under it opens the folder with the file picked out, ready to drag into
+your post or the form. Then pick a way to send it (since 1.6):
 - **Bug form on GitHub** copies the report and opens the bug form with the versions and the report's first lines
   filled in. Click the form's last box, paste (Ctrl+V), say what happened, and press Submit.
 - **Ask on Discord** copies the report and opens our Discord. Start a post in #bug-reports, say what happened, and
   paste (Ctrl+V; Discord turns a long paste into a file), or drag the file in. You don't need a GitHub account.
-- **Show the file** opens the folder with the file picked out, ready to drag into your post or the form.
+What the button did shows under them in the window, which stays open.
 
 Nothing is sent from the game. You see everything first and post it yourself (folder names that could hold your
 Windows account's name are shortened in the report). The report covers the colony around the Chieftain's Camp; for

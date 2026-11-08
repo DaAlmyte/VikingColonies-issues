@@ -4,6 +4,9 @@
 2. Build a **workbench**. The Chieftain's Camp is in the hammer's **Misc** tab and only shows near a workbench.
 3. Build a **Chieftain's Camp** (20 Wood, 10 Stone; called the Town Hall before 1.5.1). Four settlers hear of it and
    walk in from the edge of the colony, and one of them is a builder. The camp's chest (**E**) is the colony's store.
+   A new camp brings settlers only until you have that many in all (four, unless the server changed it): a second camp, or one put up again after you moved,
+   grows by newcomers and by the settlers who walk over from your old camp. Your colony belongs to the character who
+   founded it; a new character starts a new one.
 4. Build a **Builder's Hut** (20 Wood) first. Like every hut it is in the hammer's **Misc** tab, and it shows while you
    stand inside the colony's area (rings mark that area while you place a hut). A citizen becomes the builder
    straight away and puts up their own hut's building first, piece by piece.
@@ -30,8 +33,8 @@
    (tick flint and branches there if you want them too). Later, a **Farm** (20 Wood) with a Cultivator and seeds in its
    chest grows crops on the fields you mark. Put a **field marker** (Misc tab) near it, then press **E** on the marker
    to choose a crop and a size (one field per Farm level). That is the colony's steady food.
-10. Press **Shift+E** on a hut to manage its worker, its level and upgrades. On the camp it opens on the **Overview**
-    (the colony at a glance) and has more tabs: **People** (everyone, with a page each and Recall), **Work**
+10. Press **Shift+E** on a hut to manage its worker, its level and upgrades (with a controller, the game's alternate
+    use button and Use together, as its hover line says). On the camp it opens on the **Overview** (the colony at a glance) and has more tabs: **People** (everyone, with a page each and Recall), **Work**
     (everything the builders have to do, what it still needs, and Do first / Set aside), the **Saga** (what happened
     in the colony, and its deeds) and **The camp** (its levels and its Keep in stock).
 11. The colony grows with your journey. Once you have beaten the Forsaken, hang their trophies on item stands by the

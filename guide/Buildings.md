@@ -1,5 +1,9 @@
 # Buildings
 
+A button whose name doesn't say everything (Sound the alarm, Hand over, Auto-hire, Do first, Send away, the guards'
+Role and Orders, Keep in stock's − / + / × and others) tells what it does when you rest the pointer on it, in the
+game's own tooltip box (1.7).
+
 ## Chieftain's Camp
 - The colony's start: a camp round a fire (called the Town Hall before 1.5.1; only the name changed).
 - Cost: 20 Wood, 10 Stone (settings `Town Hall.WoodCost`, `Town Hall.StoneCost`). Needs a workbench nearby.
@@ -18,6 +22,11 @@
   our Discord's #bug-reports, and where your bug report file is saved) and **Feedback** (1.4.2: our Discord or the
   feedback form, opened in your browser; nothing is sent from the game) are smaller, on the right. The window's size is
   a setting of your own, `Windows.Scale` (1.5.1).
+
+  **With a controller** (1.7.0) the windows work as the game's own: the d-pad (or the left stick) moves a gold frame
+  from button to button, A presses the framed one, LB and RB change the tab and B closes the window. The framed
+  button's tooltip shows on its own, and a line under the window names the buttons. Pick up the mouse and the frame
+  goes.
   - **Overview** (1.5.1) shows the colony at a glance, with a box for each part (1.6.0: big numbers, a bar of how full
     the camp is, green for what's well and orange for what needs you). The boxes cover its settlers (how many, of how
     many it may have, and the free beds); food in the camp's chest, what it keeps for newcomers and who is hungry; the
@@ -25,34 +34,67 @@
     need, with **Hand over**; and, while couriers carry, when the storehouse is full or couriers hold loads with
     nowhere to put them, with what to do.
 
+    Since 1.7.0 the settlers' box also says who isn't working: "3 not working: 1 without a tool, 2 with nothing to
+    do", orange when one of them needs you. A settler shows there once the same reason has lasted 30 seconds, so a
+    short pause never counts. Click the line to see them on the People tab.
+
+    **Signs over huts** (1.7.0): a hut whose work waits on you shows a small sign a metre above its roof, seen from up to 60 m (the
+    nearest six). It shows the tool its worker needs (a sword over a Watchtower whose guard has no weapon), what a
+    building site waits for (its wood), a full chest, or an orange mark over a hut with no worker while someone is free
+    to take the job. A worker who is stuck, has nothing to do or has no job gives no sign. The signs hide while one of the mod's windows is open. A
+    hut's own window says why its worker isn't working, in the same words as the People tab.
+
     With the game's raven hints on (Settings, "Enable raven hints"), **Hugin's next step** shows too. It came in with 1.5.1.
     It runs through seven steps for a new colony (a Builder's Hut, a job for a settler, a Longhouse, food in the camp's
     chest, a Watchtower, the camp's level 2), the last one done and the next, with what Hugin says of it. Each is read
     from the colony as it stands, so an older colony starts with what it has ticked off, and the block goes once all
-    are done.
-  - **People** lists every citizen (name, job, status, workplace), ten a page. Citizens nobody is near show their last
-    known status. Vanished citizens show as *Missing* and drop off after 3 in-game days.
+    are done. Under the boxes (1.7.0) there's a small line, "Ideas, sneak peeks, help: our Discord"; a click opens the
+    mod's Discord in your browser.
+  - **People** is a table of every citizen (1.7.0: name, job, what they're doing, where they work and their mood; a
+    newcomer's reads *Settling in* for about a minute), ten a page. Citizens nobody is near show their last known
+    status. Vanished citizens show as *Missing* and drop off after 3 in-game days.
 
-    Click a citizen to see their page above the list (1.5.1): who they are, their mood and why, their skills, their
-    home, what they carry and their newest lines in the Saga. **Recall** then brings them at once to a free spot by the
-    camp, wherever they are in the loaded world (stuck somewhere, or just far off), and they carry on with their work
-    from there. Only players who may manage the colony (its owner, or players on a ward covering it) can recall.
+    **Sort** (1.7.0) can also put the list in **needs you** order: those who can't work until you help come first,
+    and their Doing column says why ("Needs a weapon in the Watchtower's chest", "No job: give them one in a hut's
+    window"), orange when it's yours to fix. **Show me**, beside Send away, closes the window and pins your own map for
+    a minute where the chosen settler is, or was last seen. Only you see the pin.
+
+    Click a citizen to see their page in the box under the list (1.5.1): who they are, their mood and why, their
+    skills, their home, what they carry and their newest lines in the Saga. **Recall**, in that box, brings them at once
+    to a free spot by the camp, wherever they are in the loaded world (stuck somewhere, or just far off), and they
+    carry on with their work from there. Only players who may manage the colony (its owner, or players on a ward
+    covering it) can recall.
 
     A settler marked *Missing* (their body is lost) gets **Bring back** instead. The camp keeps what it needs of every
     member (name, looks, job, home, skills) and brings them back as themselves, empty-handed, if their body isn't
     anywhere in the world. The window tells how it went: back, back but gone indoors again (night or a raid), or why not
     (no free spot by the camp, not your colony).
-  - **Work** (called Work orders before 1.5.1) lists every building, upgrade and repair the colony has ordered and not
-    finished, in the order builders take them, eight a page: the hut, what it becomes ("new", "level 2" or "repair"),
-    pieces up of all, and how it stands (who is building it, what it needs, waiting for a builder, set aside).
 
-    At the top it shows what all open orders still need that the colony's chests don't hold and the builders don't
-    already carry ("Still to bring: 15 Wood, 12 Stone"), with **Hand over** beside it (0.23). Hand over moves what the
-    chosen order (or the first) still needs beyond the colony's chests and its builder's load from your bag into the
+    Settlers left behind by an old camp show here at once as "On the way from the old camp (here in about 4 min)"
+    (1.7.0).
+
+    **Send away** (1.7.0), beside Recall, says goodbye to a settler for good. Press it and it asks "Sure? Astrid leaves
+    for good"; press again within 5 seconds. What they carry goes into the camp's chest first. If the chest has no room,
+    nothing happens and the window says what to make room for. Then they walk out of the colony and are gone once
+    nobody is near. A settler far away is gone at once; what they carried still comes to the chest, and anything that
+    doesn't fit is put down beside it, as is anything while a player keeps the chest open. If the window says to try
+    again, the settler or the camp was just changing hands between players' computers. The Saga says "Astrid left the
+    colony." They don't come back, and there's no Bring back for them. Their clothes and a guard's armour were made for
+    them, so they keep those. Only players who may manage the colony can send someone away, and not a settler marked
+    *Missing*. A settler with "No colony" is on no camp's list: raise a camp beside them first, then send them away from
+    its People tab.
+  - **Work** (called Work orders before 1.5.1) lists every building, upgrade and repair the colony has ordered and not
+    finished, in the order builders take them, eight a page, in a table (1.7.0): the order, what it becomes ("new",
+    "level 2" or "repair"), pieces up of all, and how it stands (who is building it, what it needs, waiting for a
+    builder, set aside).
+
+    At the top, in a box, it shows what all open orders still need that the colony's chests don't hold and the builders
+    don't already carry ("Still to bring: 15 Wood, 12 Stone"), with **Hand over** beside it (0.23). Hand over moves what
+    the chosen order (or the first) still needs beyond the colony's chests and its builder's load from your bag into the
     camp's chest ("Handed over 12 Wood, 4 Stone"). When the camp keeps one of those items in stock, its own amount is
     topped up first, so the builder can still take what's short (0.26).
 
-    Click an order to see its full description, with its buttons:
+    Click an order to see its full description in the box under the list, with its buttons:
     - **Do first** makes builders take it before everything else, even their own hut. A builder busy elsewhere comes
       over within seconds. The order builders take first is tagged in the list. On an order marked first the button reads
       **Not first**: press it to take the mark off, and builders take it in its usual place again (an order you marked
@@ -61,17 +103,17 @@
       first once you've helped and they come back at once.
     - **Set aside** means no builder takes it until you press **Resume** (a builder on it leaves it at once). Handy for
       an order you can't supply yet.
-    - **Cancel upgrade** works as in the hut's window, only before the builder has changed anything.
+    - **Cancel the upgrade** works as in the hut's window, only before the builder has changed anything.
     - **Leave as it is** (in its place for a repair) means the missing pieces aren't put back, and aren't asked for
       again.
-  - **Saga** shows what happened in the colony, newest first, twelve lines a page: who came to live here, who died and
-    how, which huts were built or went up a level, who started or left work where, and who was called back or got
-    boxed in and was moved out. The last 60 lines are kept with the camp. Beside it sits **the colony's deeds** (1.5.1),
-    today and all time: trees felled, harvested and foraged, items carried, pieces mended, buildings built, raids held
-    off and settlers lost. Counting began with 1.5.1, so an older colony starts at 0.
-  - **The camp** has two parts, shown one at a time. **Levels** shows the camp's level and its next (below), and
-    What's built round its chest. **Keep in stock** (0.21) shows what its chest keeps, as on every hut (below). To
-    start, it holds Food (any) × 10, for newcomers.
+  - **Saga** shows, in a box, what happened in the colony, newest first, twelve lines a page: who came to live here, who
+    died and how, which huts were built or went up a level, who started or left work where, and who was called back or
+    got boxed in and was moved out. The last 60 lines are kept with the camp. Beside it sits **the colony's deeds**
+    (1.5.1), a table of today and all time: trees felled, harvested and foraged, items carried, pieces mended,
+    buildings built, raids held off and settlers lost. Counting began with 1.5.1, so an older colony starts at 0.
+  - **The camp** has two boxes side by side (1.7.0; before, two parts one at a time). **Levels** shows the camp's level
+    and its next (below), and What's built round its chest. **Keep in stock** (0.21) shows what its chest keeps, as on
+    every hut (below). To start, it holds Food (any) × 10, for newcomers.
 - Its colony area is a 50 m circle at level 1 (setting `Colony.ColonyRadius`), 10 m more per level. Job huts can only
   be built inside it.
 - The camp goes from level 1 to 5 (1.4, the Hall of Trophies). **Shift+E › The camp** shows its level, what it gives,
@@ -139,10 +181,11 @@
 - **E** opens 18-slot storage, where the lumberjack delivers wood and seeds and fetches seeds for replanting.
 - Inside, along the right wall, is a workbench (1.5), raised to level 2 by the chopping block by the door, so you have
   somewhere to repair your axe. A Lumberjack's Hut built before 1.5 gets it at its next upgrade; one already at level 5
-  keeps its old layout, its chopping block only for show.
+  keeps its old layout, its chopping block only for show. From level 2 (1.7) the adze stands in the woodshed, and from
+  level 3 the tool shelf hangs on the cabin's left wall, making it a level 3, then a level 4 bench.
 - Put a Cultivator in its storage, or any of the colony's chests, to let the lumberjack replant (it isn't used up). The
   hut window shows "Fells 5 of 6 kinds, replants 3 · Replanting: on" ("needs a Cultivator in the colony's chests", "off
-  (setting)").
+  in the settings").
 - **Trees…** (0.22, in place of the replanting list; MineColonies' Saplings tab) gives a line per tree kind (Beech,
   Birch, Fir, Pine, Oak, Ancient tree…, and a mod's trees by name) with two ticks. **Fell** lets the lumberjack cut
   that kind down; it's ticked for every kind their axe allows, and if you untick one they leave those trees standing.
@@ -180,11 +223,12 @@
   camp's Work tab sends them elsewhere at once. **Shift+E** shows the worker, what they're working on, and how many
   buildings wait.
 - **E** opens 18-slot storage. Put building materials here; they also take from the camp and the other huts.
-- Its workbench (1.5) is yours to use. From level 2 it stands in the covered yard, with its chopping block and adze
-  beside it (a level 3 bench). From level 3 the tool shelf hangs inside the workshop on the same wall, making it a level
-  4 bench. The artisan table (level 4) stands inside the workshop, where the bench was. A Builder's Hut built before 1.5
-  gets this at its next upgrade. One already at level 5 keeps its old layout, where the upgrades don't reach the bench
-  and the artisan table, out in the open yard, is too exposed to use.
+- Its workbench (1.5) is yours to use. From level 2 it stands in the covered yard, with its chopping block, adze and
+  (1.7) tanning rack beside it (a level 4 bench). From level 3 the tool shelf hangs inside the workshop on the same
+  wall, making it a level 5 bench. The artisan table (level 4) stands inside the workshop, where the bench was, and at
+  level 5 (1.7) the artisan press beside it raises it to level 2. A Builder's Hut built before 1.5 gets this at its next
+  upgrade. One already at level 5 keeps its old layout, where the upgrades don't reach the bench and the artisan table,
+  out in the open yard, is too exposed to use.
 - **Hand over** (0.23, on its Hut tab; MineColonies' arrow) moves what their current order (or the colony's first)
   still needs beyond what the colony's chests hold for them and what they already carry (0.26) from your bag into this
   chest, as much as you carry ("Handed over 12 Wood, 4 Stone"). Equipped items stay with you.
@@ -231,8 +275,8 @@
 - **Shift+E** shows the worker, how many fields it works per level, and how many crops it grows. **What to grow…**
   opens its list, with one tick per crop the game's Cultivator can plant, and its seed. Crops that don't grow where the
   Farm stands are greyed. Everything that grows there is ticked to start. Like every hut's list it shows 12 lines a
-  page; **< Prev** / **Next >** turn the pages. A carrot is also the seed of the carrot-seed crop, so with both ticked
-  the Farm keeps itself going.
+  page, with how many are ticked and the page under them ("8 of 12 ticked · page 1 of 2"); **< Prev** / **Next >** turn
+  the pages. Tick both Carrot and Carrot seeds and the Farm grows its own seed.
 - With PlantEverything (or another mod that lets the Cultivator place bushes), its berry bushes, mushrooms, thistle and
   dandelions are on the list too, unticked until you tick them, with their price ("seed: 5 Raspberries"). Ticked, the
   farmer plants a bush on a free plot for that price from the Farm's chest, picks it whenever it's ripe and leaves it to
@@ -248,14 +292,15 @@
   [Citizens and jobs](Citizens-and-Jobs.md) for the fallen return.
 
 ## Field markers
-- A wooden sign in the hammer's **Misc** tab (setting `Field.WoodCost`, 4 Wood), placed inside a colony's area like
-  the huts. It marks a square field round it, turned with it: plots 1.25 m apart, the sign's own spot left out. While
-  you place one, and while you look at one with the hammer or the Cultivator, its square shows on the ground.
-- The sign shows the field's crop ("Carrots", or "Mixed crops" for the Farm's list).
-- **E** on it opens its window. **Crop…** gives the Farm's list, or one crop; crops that don't grow there are greyed, a
-  bush shows its price. **−** / **+** set the size: 3×3, 5×5, 7×7, 9×9 or 11×11 plots, 8 to 120; a new one is 5×5.
-  **Assign to a Farm** / **Leave it** set the Farm that works it. The window also shows how its plots stand (growing,
-  ripe, bare).
+- A **scarecrow** (1.7.0; a sign before) in the hammer's **Misc** tab (setting `Field.WoodCost`, 4 Wood), placed inside
+  a colony's area like the huts. It marks a square field round it, turned with it: plots 1.25 m apart, its own spot
+  left out. While you place one, and while you look at one with the hammer or the Cultivator, its square shows on the
+  ground.
+- Look at it to read the field's crop ("Carrots", or "Mixed crops" for the Farm's list), its size and its Farm.
+- **E** on it opens its window, with how its plots stand under the title (growing, ripe, bare). **The field** sets the
+  crop (**Crop…** gives the Farm's list, or one crop; crops that don't grow there are greyed, a bush shows its price)
+  and the size (**−** / **+**: 3×3, 5×5, 7×7, 9×9 or 11×11 plots, 8 to 120; a new one is 5×5). **Worked by** names the
+  Farm that works it, or why none does, with **Assign to a Farm** / **Leave it**.
 - A new marker joins the nearest Farm of its colony that takes new fields by itself and has room. With none, it says
   "No Farm" until one has room (upgrade a Farm, or build another; a Farm being upgraded takes fields too).
 - A field you took from its Farm with **Leave it**, or gave a Farm with **Assign**, stays as you set it, and new fields
@@ -284,12 +329,21 @@
   (none when less than 10 m is left; its guard still keeps watch). Upgrading or repairing a tower never takes its
   ground away.
 - **Orders** (1.3, its window): **Patrol** (to start: rounds of the colony's buildings) or **Hold post** (no rounds, a
-  gatehouse). **Post here** puts its guards' post where you stand (within the tower's patrol circle); **Post by the
-  tower** puts it back.
+  gatehouse). With Hold post the guards stand in front of the tower's door, or at its guard post.
+- **Guard post** (the hammer's Misc tab, Wood 4 and a Leather scrap): a round shield on a pole with two spears crossed
+  behind it, on a small stone base, built where a tower's guards should stand. While you place it, the circle of the tower it would join shows on the ground. It joins
+  the nearest Watchtower whose circle reaches it and that has no post yet; a tower has one post. With Hold post its
+  guards stand side by side in front of it; on rounds they come back to it between rounds. Hurt or unarmed, they go
+  back to the tower. **E** on the post shows which tower it belongs to, with **Next tower** to give it to another one
+  that reaches it. **Guards to the tower** in the tower's window sends the guards back to its door; the post then stays with
+  no tower until you press Next tower on it. Outside your colony a guard post can't be placed. Take the post down and the guards stand by the tower again; take the tower down and the post waits
+  for the next tower built near it. A post someone chose with the old Post here (before 1.7.0) keeps working until you
+  build a guard post for that tower.
 - No monsters spring up within a finished tower's circle (1.3), as by a workbench or a fire (setting
   `Watchtower.StopsSpawns`).
 - **E** opens storage (the guards' armoury). **Shift+E** shows its guards ("2 of 2: Ulf (Fighting 12, 7 kills): On
-  watch; …"), Hire, Fire (one at a time), Auto-hire, Recall, **Role**, **Orders**, **Post here**, what the tower's level
+  watch; …"), Hire, Fire (one at a time), Auto-hire, Recall, **Role**, **Orders**, where its guards stand (with **Guards to the tower** while
+  they stand at a post), what the tower's level
   gives ("keeps watch and holds the border 25 m around the tower"), and Keep in stock.
 
 ## Storehouse
@@ -310,8 +364,8 @@
   too: the lumberjack's Stop at, fires, Keep in stock, a ballista's ammunition.
 - **Shift+E** opens four tabs.
   - **Hut** shows its level, its couriers, and how many chests its store has.
-  - **Needs** is the colony's shopping list, one line per building short of something: "Farm: 20 Wood: Ulf is bringing
-    it", "waiting for a courier", "only in the camp, where couriers don't take from", "no room in its chest" or "nobody
+  - **Needs** is the colony's shopping list, one line per building short of something: "Farm: 20 Wood, Ulf is bringing
+    it", "waiting for a courier", "only in the camp, which couriers don't take from", "no room in its chest" or "nobody
     has it". Under them is **Bring: 40 Iron, 10 Food (any)**, what nobody in the colony has.
   - **Keep in stock** is for its own chest, as on every hut.
   - **Stock** shows what all the colony's chests hold, most first, each with where most of it lies ("40 Wood (most in
@@ -337,18 +391,50 @@
 - Its chest is the larder, and everything the cook roasts goes there. Settlers eat their breakfast at its table when its
   chest has their food.
 - Its building grows with each level, bringing the stations of that level's age:
-  - level 1: a hall with a fire pit and a cooking station over it;
+  - level 1: a hall (8 by 10 m since 1.7, 2 m longer, so the table and benches have room) with a fire pit and a
+    cooking station over it;
   - level 2: the cauldron over its own fire, and the long table with its benches along the wall;
   - level 3: a kitchen behind on a stone course, with the hearth and its iron cooking station, the food preparation
-    table and the butcher's table;
+    table, the butcher's table and (1.7) a spice rack behind the cauldron;
   - level 4: the stone oven, the pots and the mortar;
   - level 5: the rolling pins and a long oak table.
 
-  The butcher's table, pots, mortar and rolling pins raise the cauldron's level. A spice rack isn't in the design (it
-  costs food your settlers eat), but you can set one by the cauldron yourself for one level more.
+  The butcher's table, spice rack, pots, mortar and rolling pins raise the cauldron's level. The spice rack costs food,
+  and its builder takes only what the colony's chests can spare (beyond what a Longhouse or the Chieftain's Camp keeps).
+  The spice rack costs 5 Mushrooms, 2 Carrots, 3 Turnips, 3 Dandelions and 3 Thistles.
+
+  A Mead Hall built before 1.7 gets the longer hall and the new layout at its next upgrade; one already at level 5 stays
+  as built. That upgrade grows the hall 2 m out of its door, so leave that ground free. Its fire, cauldron and some of
+  the cauldron's upgrades move. The builder brings their materials again before the old ones come down (10 Tin for the
+  cauldron, for one) and gets them back as they do, so the upgrade asks for more than the cost table says. A shingle
+  roof piece resting on a moved one comes down and goes up again, and the game gives back its Wood but not its Tar, so
+  the builder may ask for a Tar or two more, and for a hoe in the colony's chests if the ground where the hall grows at
+  its door isn't level. If you set up a spice rack by the cauldron yourself (the 1.6 guide said to), take it up before
+  the upgrade: the builder waits for it if it stands where a new piece goes, and puts up its own anyway.
 - Nothing burns on a cooking station inside a Mead Hall that has a cook. A piece that's done waits on the station, even
   at night or while the cook is away, until the cook takes it off. Without a cook, the stations burn food as the game's
   always do.
+- The Kitchen tab (1.7) is your order for the cook. It lists every dish the stations inside the hall can make (cooking
+  stations, the iron cooking station, the oven, the cauldron at its level, the food preparation table). Click a dish to
+  see what it takes, and set with − / + how many to keep ready in the hall's chest (by 5, with Shift by a stack). The
+  cook makes them one dish at a time, the one furthest from its amount first, and stops at the amount.
+  - The dishes you keep are yours: settlers never eat them and couriers never move them. The one exception is a roast
+    the cook also makes for breakfast (cooked meat, cooked deer meat). The settlers' hot meals come first, so while
+    breakfast is short, that many of those roasts in the chest are the settlers'; the rest are yours.
+  - The cook uses only what the colony's chests can spare, and never the settlers' last two days of food (setting
+    `Cook.ReserveDays`). When food is short the row says "the colony's food is low: kept for the settlers".
+  - A dish that waits says why: "needs Thistle", "needs the cauldron's fire", "needs a roof over the cauldron", "the
+    hall's chest is full" (the cook makes nothing the chest has no room for). A dish with a rare ingredient (thistle,
+    entrails, bloodbags and the like) says "uses …", so you know before you ask for it.
+  - "For the colony" shows the settlers' hot meals ready and the food kept back for them.
+- Feasts (1.7) come from hall level 3, with a food preparation table inside. The Kitchen tab's **Feasts…** page lists
+  the feasts the table can make. Click one and **Lay a feast**: the cook starts at once, making the stews and other
+  dishes the feast takes, from the colony's spare food (keeping the food set by for the settlers), and may use the
+  dishes your Kitchen list keeps, making them again after. Whatever the cook can't make (a spice from the trader, food
+  the colony hasn't got) shows all together, on the Feasts page and when you look at the cook. Then the feast goes on the
+  hall's table (with no table in the hall it goes into the hall's chest). That evening the settlers gather at
+  it and each takes one serving, which lifts their mood ("a feast", +10 for two days). The last two servings are always
+  left for you. One feast at a time; **Cancel** takes back the ask before it's made.
 - Hugin explains the Mead Hall the first time you place one.
 
 ## The colony's area
@@ -371,13 +457,24 @@
 - **E** opens storage, like every hut's. **Shift+E** shows the beds and who sleeps in each.
 
 ## Hut windows
-- **Shift+E** on a job hut opens its window. The Lumberjack's Hut's Hut tab has **Trees…**, **Stop at** and **Recall**
-  in a row. A Farm's window has three tabs: **Hut**, **Fields** and **Keep in stock**. The other huts' (and the
-  Longhouse's) have two: **Hut** and **Keep in stock**.
-- The Hut tab shows its level and what it gives, its worker (and what they're good at) with **Hire**, **Fire**,
-  **Auto-hire** and **Recall** (0.20: brings them back to just outside their hut's door, wherever they are in the
-  loaded world; only for players who may manage the colony), its list (Trees, What to pick, What to grow), its building
-  and upgrade. The worker line shows their skill ("Astrid (good at foraging, Farming 12)").
+- **Shift+E** on a job hut opens its window (1.7.0: the camp's size and look). The hut's level is under the title. A
+  Farm's window has three tabs: **Hut**, **Fields** and **Keep in stock**. A storehouse's has four: **Hut**, **Needs**,
+  **Keep in stock** and **Stock**. A Mead Hall's has three: **Hut**, **Kitchen** (see the Mead Hall
+  above) and **Keep in stock**. The other huts' (and the Longhouse's) have two: **Hut** and **Keep in stock**. The
+  open tab is lit in gold.
+- The Hut tab is four boxes, each with its buttons:
+  - **Worker** (Guards on a Watchtower, Couriers on a storehouse, Beds on a Longhouse) shows who works there, what
+    they're good at and their skill ("Astrid (good at foraging, Farming 12)"), with **Hire**, **Fire**, **Auto-hire**
+    and **Recall**. Recall (0.20) brings them back to just outside their hut's door, wherever they are in the loaded
+    world, and only works for players who may manage the colony.
+  - **The job** holds the hut's list with **Trees…** and **Stop at** (a Lumberjack's Hut), **What to pick…** (a
+    Forager's), **What to grow…** (a Farm), the builder's work with **Hand over** (a Builder's Hut), or **Role**,
+    **Orders** and the post (a Watchtower). A storehouse's shows its store.
+  - **Level** shows anything wrong first, in orange (no camp near it, the camp gone, not your colony), then what the
+    level gives and what the next one needs (or why it can't happen yet), with **Upgrade**.
+  - **The building** shows how it stands, with **Build** and **Take down**.
+  - A line under the boxes answers a click (a recall, a hand-over, a take-down's "Sure?").
+- **Fields** is a table of each field's crop, size, how far and who works it, with **Assign** or **Leave**.
 
 ## Keep in stock
 - (0.21, MineColonies' minimum stock.) Every hut, the Longhouse and the camp have a **Keep in stock** tab (on the camp,
@@ -421,7 +518,7 @@
   - **Yellow** means the builder clears or flattens the site first. The line says what ("2 trees, 1 rock, flatten the
     ground (about 12 stone)") and which tools they need in the colony's chests (an axe, a pickaxe, a hoe), or you can
     clear it yourself. A tree or rock that needs a better Builder's Hut than the colony has gets a second line: "1 tree
-    needs a level 2 Builder's Hut, or clear it yourself". The ground in front of each door counts too: they level it and
+    needs a level 2 Builder's Hut (or clear it yourself)". The ground in front of each door counts too: they level it and
     clear what grows or lies there (bushes, small trees, stumps, rocks, logs), never items or anyone's building.
   - **Red** means the hut can't go here. Red huts can't be placed. The reasons are another building or another hut's
     site in the way; a rock nothing can break (a cliff, or a boulder no pickaxe breaks) where it goes; a grave or a
@@ -435,7 +532,11 @@
   turns with it. If another building stands there, the upgrade stops later with "Another building is in the way". The
   same goes the other way: a new hut placed right behind a Longhouse can block that Longhouse's next level.
 - **Page Up / Page Down** raise or lower the hut 25 cm at a time, up to 2 m (settings `Placing.RaiseKey` and
-  `Placing.LowerKey`). A raised hut stands on its design's posts; a design without posts can't be raised.
+  `Placing.LowerKey`). A raised hut stands on its design's posts; a design without posts can't be raised. The line
+  under the crosshair says so while you place one, with your own keys (1.7).
+- A hut starts with its floor resting on the ground as it is, a hand's width up, so on flat ground the builder digs
+  nothing, and a hut placed where another stood sits as high as that one did (1.7.0; before, each hut placed again on
+  the same spot sat a little lower).
 - While you hold the hammer, unfinished buildings within 50 m show the pieces still to come as a light outline.
 
 ## Blueprints
@@ -556,7 +657,8 @@ In creative:
     **Camp level +1 / −1** (no trophies needed; lowering changes the colony's area, settlers and the huts' limit, and
     takes nothing built away), **Add a settler / Add 5 settlers** (up to what its level allows, no beds or food needed),
     **Settlers eat** on or off, and the camp's Build now and Repair now.
-  - Pointing at a button tells what it does. The window's title says "Creative".
+  - Pointing at a button tells what it does, in the panel's "What it does" box at its foot. The window's title says
+    "Creative".
 - In a No build cost world, builders build for free. They still walk and put the pieces up one by one, but need no
   materials and no tools, and the site is cleared and flattened at once. Nothing asks for materials there: the Work
   orders, the storehouse's Needs, its couriers and the upgrade line leave builders' materials out. With only debug mode's
