@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 8 November 2026._
+_Last changed 9 November 2026._
 
 ## Now: 1.7.1
 
@@ -60,25 +60,27 @@ Ideas I'd like to build. They may change, move or drop out.
 - The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
 
-## Just out: 1.6.1
+## Just out: 1.7.0
 
-- With a planting mod, the farmer pays a crop's full price in seeds
-- With a planting mod, the lumberjack no longer plants Ashlands trees from beech seeds
-- Do first can be taken off: on the order that is first, the button reads Not first
-- Report a problem says what to do next in its own window, in fewer words
-- A lumberjack's work speed (hunger, calling, nature and mood) counts on every axe blow
-- A settler sits down on their place by the fire, not right up against it
-- A hut you've just placed can't be broken by a passing animal before its builder starts
-- On a colony's first day, settlers talk about different newcomers instead of all the same one.
-- At breakfast settlers spread out round the chest instead of crowding into one spot (1.6.1).
-- Sparring settlers stand closer to the training dummy (1.6.1).
-- Building works with terrain mods such as Tunnelheim and Dig Deeper (1.6.1, Wednesday 4 November).
-- Small fixes from earlier versions, checked and tidied.
-- Hugin speaks one line at a time in a new colony, each when it makes sense
-- A settler whose bed is taken away at night lies down again.
-- The builder puts each piece up only after the pieces that hold it, so your own hut designs go up whole
-- Settlers running from monsters spread over the colony's huts instead of crowding one door.
-- Name tags stay over a sitting settler's head.
+- Huts that need you show a small sign you can see from across the colony
+- The camp's window lists every settler who isn't working, and why: stuck, no tool, hungry, no bed or nothing to do
+- The camp's and the huts' windows work with a controller
+- A builder who stands up to a weak monster now hurts it; before, their blows never landed. Fixed in 1.7.0.
+- A guard post you build where a Watchtower's guards should stand: a round shield on a pole with two crossed spears.
+- Settlers sometimes took a long way round a hut that stands across an edge of the game's walking map. Fixed in 1.7.0.
+- Another player's camp can no longer take over your colony while its camp is down
+- Settlers moving to a new camp leave ore and metal behind, as a portal would
+- A camp taken down and put up again no longer brings four new settlers each time
+- The forager can pick the bushes you planted yourself
+- Your own settings (tips, small talk, language, window size) in the camp's window, no config file needed
+- A language file, so players can translate the mod into their own language
+- More workbench and cauldron upgrades in the huts, and a roomier Mead Hall
+- Every colony window gets the same clear look as the camp's: boxes, tables and buttons where you need them
+- Speech bubbles of their own over settlers' heads
+- The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
+- Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post.
+- Settlers left behind when you move your camp walk to the new one, and you can send a settler away.
+- The Farm's field marker becomes a scarecrow.
 
 Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
