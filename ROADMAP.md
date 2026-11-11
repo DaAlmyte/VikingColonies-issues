@@ -37,17 +37,18 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Farmers hold their own cultivator and swing it when they work new farmland and plant. (being built)
 - Guards on watch look around, and turn to you when you come near. (being built)
 - Each settler goes to the fire, to bed and out in the morning at their own moment. (being built)
+- Hang a sign by a hut's door and leave it empty: it gets the hut's mark and name. Your own words on a sign stay. (being built)
 - Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands (being built)
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs. (being built)
 - Every hut gets a richer look at all five levels (being built)
+- A felled tree no longer lands on the end of a long wall or beam a few steps away
 
 ### 1.9
 
-- The cook takes free time like everyone else when the meals are done. (being built)
 - Our own memorial stone, with each fallen settler's name carved on it in runes. (being built)
 - A settler who stops right outside a door now shuts it behind them.
-- Settlers earn bynames from what they do, like Ulf Tree-feller or Bjorn Troll-bane
-- Settlers answer each other when they chat.
+- In creative mode, a Longhouse levelled up at once lets every settler walk to their bed
+- Settlers swing their weapons and tools smoothly, without shaking
 
 ## Later
 
