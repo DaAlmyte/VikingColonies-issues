@@ -72,9 +72,10 @@
 - **Settlers don't eat breakfast from the camp**: the camp's food is kept for newcomers (Food (any) × 10 to start; the
   camp's window says how much it keeps), so breakfast takes only food beyond that. Their daily meal still comes from
   it when there's no other food.
-- **A settler sleeps beside their bed, not in it**: either a player lies in it or has claimed it as a spawn point, or
-  `Colony.SleepInBeds` is off.
-- **A settler says "Sleeping" or "Sheltering"**: it's night, a monster hunted them, or a raid is on at the colony. They
+- **A settler sleeps beside their bed, not in it**: either a player lies in it, or `Colony.SleepInBeds` is off.
+- **A Longhouse has fewer beds for settlers than it shows**: a player claimed one as a spawn point, and it's theirs now.
+  Take it down with the hammer and the builder puts up a new one for the settlers.
+- **A settler says "Sleeping", "Resting" or "Sheltering"**: it's night, a monster hunted them, or a raid is on at the colony. They
   come out at dawn, 15 seconds after the last monster, or when the raid ends.
 - **Settlers stand outside at night**: either their hut isn't finished or has no door (they use the nearest finished
   hut with a door; with none, they stay out as before), or `Colony.SettlersGoIndoorsAtNight` is off.

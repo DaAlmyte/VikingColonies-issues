@@ -2,28 +2,27 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 8 November 2026._
+_Last updated 11 November 2026._
 
-VikingColonies 1.7.0 · Works with Valheim 1.0.21 (checked 30 October 2026).
+VikingColonies 1.7.1 · Works with Valheim 1.0.21 (checked 30 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Chieftain's Camp's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
-- **A Troll can catch a settler.** Now and then a settler running from a Troll to their hut is caught at its door.
-  Being worked on. (Since 1.5.1 the brave run from a Troll at 12 m like everyone, and a settler sheltering stays in
-  until hurt to half.)
-- **Hugin the raven can stand in a settler's way by a door.** When you stand near a hut's door while Hugin brings a
-  tip, he lands by you, and a settler walking in or out can stop against him for a while. Being worked on: Hugin will
-  keep out of settlers' way. **Way round until then:** step away from the door, or turn `Messages.HuginTips` off once
-  you know the colony.
-- **Now and then a worker can't find the way to their hut's door and stays outside at night.** At some spots the
-  ground just outside a hut's door isn't on the game's walking map, so a worker (often the lumberjack) can't get in
-  and spends the night outside. Being worked on.
+- **A courier sometimes ends up outside the storehouse's back wall.** They wait there instead of going round to the
+  door. After about two minutes they drop that trip, and the next one usually goes in normally. A fix is coming in
+  1.7.2.
 - **A settler can step onto a lit fire while meeting for a chat.** Now and then the spot settlers pick for a chat is on a
   burning fire. The settler standing there catches fire and is moved clear, with no lasting harm. Being fixed for
   1.8.0.
 
 ## Recently fixed
 
+- **A Troll can catch a settler at their hut's door**: fixed in 1.7.1: update the mod. From a Troll, settlers go in only
+  when they'll be through the door well before it reaches them, and otherwise keep running.
+- **Hugin the raven can stand in a settler's way by a door**: fixed in 1.7.1: update the mod. Hugin keeps out of
+  settlers' way by the doors.
+- **Now and then a worker can't find the way to their hut's door and stays outside at night**: fixed in 1.7.1: update
+  the mod.
 - **Settlers left behind when you move your Chieftain's Camp stay where they were**: fixed in 1.7.0: update the mod. They
   walk to your new camp, and you can send a settler away.
 - **A settler can take a long way round a hut just after its door was used**: fixed in 1.7.0: update the mod.

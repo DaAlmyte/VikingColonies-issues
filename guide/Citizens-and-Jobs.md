@@ -293,7 +293,7 @@ Falling trees and rolling logs don't hurt settlers while `Colony.SettlersSafeFro
 
 ## Homes and meals
 
-Every bed in a Longhouse is a settler's home (see [Buildings](Buildings.md#longhouse)). At night a settler with a home lies down in their bed (`Colony.SleepInBeds`; off, they stand by it). They don't use a bed a player lies in, or one a player has claimed as their own (their spawn point); then they stand by it. One without a home sleeps in their workplace, as before.
+Every bed in a Longhouse is a settler's home (see [Buildings](Buildings.md#longhouse)). At night a settler with a home lies down in their bed (`Colony.SleepInBeds`; off, they stand by it). They don't use a bed a player lies in; then they stand by it. A bed a player has claimed as their own (their spawn point) isn't a settler's home at all from 1.7.1: whoever had it moves to a free bed, and it doesn't count as room for newcomers. To give it back, take it down with the hammer: the builder puts up a new one, free for the settlers. One without a home sleeps in their workplace, as before.
 
 After dawn, before work, each settler goes to breakfast at their own moment within the first minute, so they don't all crowd one chest. They walk to the colony chest that holds the food they'll eat (the nearest; the camp's when as near) and take one, each from a place of their own round the chest, a step apart (1.6.1). When every place is taken, the rest wait their turn a little further out. They eat it on a free seat within 8 m of that chest, or standing in their place by the chest. The hover reads "Eating (at breakfast)". If they can't get to the chest and take their food within a minute (a player has it open, no way there), they eat where they are.
 
@@ -377,9 +377,9 @@ Setting `Colony.TendFires` (on). It is part of free time, so `Colony.FreeTime` o
 
 ## Night, attacks and raids
 
-At night settlers stop work and go into their hut through its door, which they shut behind them; hovering over one shows "Sleeping". A settler with a home lies down in their Longhouse bed and gets up beside it at dawn. The lumberjack delivers what they carry first, and the builder puts their borrowed tool away and leaves their site till morning. At dawn they come out and carry on.
+At night settlers stop work and go into their hut through its door, which they shut behind them; hovering over one shows "Sleeping" once they are in bed and "Resting" until then, or all night if they have no bed. A settler with a home lies down in their Longhouse bed and gets up beside it at dawn. The lumberjack delivers what they carry first, and the builder puts their borrowed tool away and leaves their site till morning. At dawn they come out and carry on.
 
-When a monster hunts them they run into the nearest colony hut the monster isn't nearer to ("Sheltering") and come out 15 seconds after the last monster is gone. A monster that follows one inside makes them leave for another hut, or run, as does one hitting them through a back or side wall. If a monster is outside the door, reaching in (a Troll), they stay inside, since going out would be going into it, until they are hurt to half, when they run for it (1.5.1).
+When a monster hunts them they run into the nearest colony hut the monster isn't nearer to ("Sheltering") and come out 15 seconds after the last monster is gone. From a monster too strong for the colony, such as a Troll, they go in only when they will be through the door well before it could reach them. A Troll runs about as fast as they do, so they mostly keep running in the open, away from it, rather than stop at a door (1.7.1). A monster that follows one inside makes them leave for another hut, or run, as does one hitting them through a back or side wall. If a monster is outside the door, reaching in (a Troll), they stay inside, since going out would be going into it, until they are hurt to half, when they run for it (1.5.1).
 
 During one of Valheim's raids at the colony every settler stays indoors ("Sheltering") until it ends. An armed guard (1.1) does none of this: they stay out on watch, day and night, and fight (see [Guard](#guard)).
 
