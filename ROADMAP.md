@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 9 November 2026._
+_Last changed 11 November 2026._
 
 ## Now: 1.7.1
 
@@ -31,7 +31,9 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is (being built)
 - Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work (being built)
 - Quick start: one button on a new camp lays out its first huts on good spots, for you to accept or move (being built)
+- Settlers pick better places to stand: out of a fire's reach, and not in a doorway, in a rock or on a bench. (being built)
 - Guards walk real rounds of the colony, past several huts, before they go back to their post (being built)
+- See where your colony's border runs: on the map, on the ground, and how far a Watchtower pushes it out (being built)
 - Farmers hold their own cultivator and swing it when they work new farmland and plant. (being built)
 - Guards on watch look around, and turn to you when you come near. (being built)
 - Each settler goes to the fire, to bed and out in the morning at their own moment. (being built)
@@ -41,8 +43,8 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.9
 
-- See where your colony's border runs: on the map, on the ground, and how far a Watchtower pushes it out (being built)
 - The cook takes free time like everyone else when the meals are done. (being built)
+- Our own memorial stone, with each fallen settler's name carved on it in runes. (being built)
 - A settler who stops right outside a door now shuts it behind them.
 - Settlers earn bynames from what they do, like Ulf Tree-feller or Bjorn Troll-bane
 - Settlers answer each other when they chat.
@@ -54,11 +56,11 @@ Ideas I'd like to build. They may change, move or drop out.
 - The Deep North in the colony's progression: Kall's fall counted at the camp and celebrated, the Deep North's lands for trips, its tools, weapons and armour used by settlers and guards
 - When you come home after a day or more, Hugin tells you what happened while you were away, what needs you first; the mine catches up on the days nobody was near
 - Your settlers' trips under way pinned on your own map, and a Far work list in the camp window
-- Our own memorial stone, with each fallen settler's name carved on it in runes.
 - Put a hut's chest in a room of a house you built, and that room becomes the hut. Nothing of yours gets taken down.
 - Send settlers on trips to biomes you've visited: they come back with what doesn't grow at home
 - The mod in Spanish, Russian, German and Simplified Chinese
 - One order raises every hut to the colony's new age after a boss
+- Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 
 ## Just out: 1.7.0
 
