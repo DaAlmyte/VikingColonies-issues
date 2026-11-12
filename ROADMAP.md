@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 11 November 2026._
+_Last changed 12 November 2026._
 
 ## Now: 1.8.0
 
@@ -59,27 +59,20 @@ Ideas I'd like to build. They may change, move or drop out.
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
 - Choose which settler works each hut, see how fast each would work there and why, and every hut gets a clearer window that says why a worker is idle
 
-## Just out: 1.7.0
+## Just out: 1.7.1
 
-- Huts that need you show a small sign you can see from across the colony
-- The camp's window lists every settler who isn't working, and why: stuck, no tool, hungry, no bed or nothing to do
-- The camp's and the huts' windows work with a controller
-- A builder who stands up to a weak monster now hurts it; before, their blows never landed. Fixed in 1.7.0.
-- A guard post you build where a Watchtower's guards should stand: a round shield on a pole with two crossed spears.
-- Settlers sometimes took a long way round a hut that stands across an edge of the game's walking map. Fixed in 1.7.0.
-- Another player's camp can no longer take over your colony while its camp is down
-- Settlers moving to a new camp leave ore and metal behind, as a portal would
-- A camp taken down and put up again no longer brings four new settlers each time
-- The forager can pick the bushes you planted yourself
-- Your own settings (tips, small talk, language, window size) in the camp's window, no config file needed
-- A language file, so players can translate the mod into their own language
-- More workbench and cauldron upgrades in the huts, and a roomier Mead Hall
-- Every colony window gets the same clear look as the camp's: boxes, tables and buttons where you need them
-- Speech bubbles of their own over settlers' heads
-- The Mead Hall's kitchen: dishes you ask the cook to keep ready, and feasts.
-- Settlers dance only round a pole that stands on its own, or a maypole, not round a house's corner post.
-- Settlers left behind when you move your camp walk to the new one, and you can send a settler away.
-- The Farm's field marker becomes a scarecrow.
+- A quick double click with the hammer no longer raises two memorial stones in one colony.
+- A lumberjack no longer stands waiting again and again by a log that won't stop rocking.
+- Settlers who sat down from on top of a bench get up onto the floor, not back onto the bench.
+- The Mead Hall's cook finds a place to stand inside the hall at every station, so a station by a wall or the door no longer leaves them stuck.
+- A settler's last swing when a fight ends no longer lands on an animal or a wall that happens to be in its way. Fixed in 1.7.1.
+- Settlers no longer talk about the stars or the sun on their face in the rain.
+- A guard whose post they can't quite reach no longer steps back and forth at it.
+- A settler standing in a doorway now steps aside when someone needs to get through.
+- Two settlers meeting at a hut's door from its two sides no longer wait for each other all night.
+- Hugin, the raven, no longer blocks a settler's way to a hut's door.
+- Settlers running from a Troll no longer get caught at their hut's door.
+- A new settler no longer appears inside a tree at the colony's edge, and one left behind no longer arrives in one.
 
 Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
