@@ -16,16 +16,16 @@ Planned for Sunday 15 November. Anything that isn't ready in time moves to the n
 - Guards walk real rounds of the colony, past several huts, before they go back to their post
 - See where your colony's border runs: on the map, on the ground, and how far a Watchtower pushes it out
 - Farmers hold their own cultivator and swing it when they work new farmland and plant.
+- The cook takes free time like everyone else when the meals are done.
 - Guards on watch look around, and turn to you when you come near.
 - Each settler goes to the fire, to bed and out in the morning at their own moment.
 - Hang a sign by a hut's door and leave it empty: it gets the hut's mark and name. Your own words on a sign stay.
+- Settlers earn bynames from what they do, like Ulf Tree-feller or Bjorn Troll-bane
 - Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands
 - Every hut's window gets the camp window's clear look: boxes, tables and lit tabs.
+- Settlers answer each other when they chat.
 - Every hut gets a richer look at all five levels
 - A felled tree no longer lands on the end of a long wall or beam a few steps away
-- The cook takes free time like everyone else when the meals are done.
-- Settlers earn bynames from what they do, like Ulf Tree-feller or Bjorn Troll-bane
-- Settlers answer each other when they chat.
 - Fixes for problems players reported: see the [known issues](guide/Known-Issues.md).
 
 ## Next
