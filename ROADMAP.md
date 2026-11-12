@@ -41,10 +41,10 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.10
 
+- One order raises every hut to the colony's new age after a boss (being built)
+- Guard posts can stand anywhere in your colony, and the guards keep watch around the post. (being built)
+- Your colony celebrates when you come home with a boss's trophy, and one order raises every hut to the new age (being built)
 - The mod in Spanish, Russian, German and Simplified Chinese
-- One order raises every hut to the colony's new age after a boss
-- Guard posts can stand anywhere in your colony, and the guards keep watch around the post.
-- Your colony celebrates when you come home with a boss's trophy, and one order raises every hut to the new age
 
 ## Later
 
