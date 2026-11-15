@@ -19,8 +19,10 @@
    go, **Place them** puts them down for the hammer's cost (60 Wood in all), and **Move** gives you the hammer to place
    one yourself.
 5. Give the builder what they need, in the camp's chest or their hut's chest:
-   - Wood for the buildings: about 170 for the builder's own hut, 100 for a Lumberjack's Hut and 150 for a Longhouse,
-     about 530 in all for the first hour, plus some Stone for flattening the ground.
+   - Wood for the buildings: <!-- cost: Builder's Hut 1 -->about 170<!-- /cost --> for the builder's own hut,
+     <!-- cost: Lumberjack's Hut 1 -->about 100<!-- /cost --> for a Lumberjack's Hut and
+     <!-- cost: Longhouse 1 -->about 150<!-- /cost --> for a Longhouse, about 530 in all for the first hour, plus
+     some Stone for flattening the ground.
    - A flint axe, an antler pickaxe and a hoe to clear and flatten sites. The builder takes them as their own and keeps
      them, so put in spare ones, not the ones you carry.
    - 10 Flint for the Lumberjack's Hut (its chopping block), and Resin for the torches: 2 each for the Builder's Hut and
