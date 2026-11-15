@@ -9,8 +9,8 @@ VikingColonies 1.8.0 · Works with Valheim 1.0.21 (checked 30 October 2026).
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Chieftain's Camp's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
 - **A courier sometimes ends up outside the storehouse's back wall.** They wait there instead of going round to the
-  door. After about two minutes they drop that trip, and the next one usually goes in normally. A fix is coming in
-  1.8.1.
+  door. After about two minutes they drop that trip, and the next one usually goes in normally. We're working on a
+  fix: it goes in 1.8.1 (Wednesday 18 November) if it's ready by then, otherwise in the release after.
 
 ## Recently fixed
 
