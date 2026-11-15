@@ -16,7 +16,6 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.9
 
-- A felled tree no longer lands on the end of a long wall or beam a few steps away (being built)
 - Our own memorial stone, with each fallen settler's name carved on it in runes. (being built)
 - A settler who stops right outside a door now shuts it behind them.
 - In creative mode, a Longhouse levelled up at once lets every settler walk to their bed
@@ -27,6 +26,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - One order raises every hut to the colony's new age after a boss (being built)
 - Guard posts can stand anywhere in your colony, and the guards keep watch around the post. (being built)
 - Your colony celebrates when you come home with a boss's trophy, and one order raises every hut to the new age (being built)
+- Mark a garden for the forager or a wood for the lumberjack with two posts, or a place nobody touches. Coming in 1.10.0. (being built)
 - The mod in Spanish, Russian, German and Simplified Chinese
 
 ## Later
