@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 12 November 2026._
+_Last changed 15 November 2026._
 
 ## Now: 1.8.0
 
@@ -58,23 +58,6 @@ Ideas I'd like to build. They may change, move or drop out.
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
 - Choose which settler works each hut, see how fast each would work there and why, and every hut gets a clearer window that says why a worker is idle
-
-## Just out: 1.7.1
-
-- A quick double click with the hammer no longer raises two memorial stones in one colony.
-- A lumberjack no longer stands waiting again and again by a log that won't stop rocking.
-- Settlers who sat down from on top of a bench get up onto the floor, not back onto the bench.
-- The Mead Hall's cook finds a place to stand inside the hall at every station, so a station by a wall or the door no longer leaves them stuck.
-- A settler's last swing when a fight ends no longer lands on an animal or a wall that happens to be in its way. Fixed in 1.7.1.
-- Settlers no longer talk about the stars or the sun on their face in the rain.
-- A guard whose post they can't quite reach no longer steps back and forth at it.
-- A settler standing in a doorway now steps aside when someone needs to get through.
-- Two settlers meeting at a hut's door from its two sides no longer wait for each other all night.
-- Hugin, the raven, no longer blocks a settler's way to a hut's door.
-- Settlers running from a Troll no longer get caught at their hut's door.
-- A new settler no longer appears inside a tree at the colony's edge, and one left behind no longer arrives in one.
-
-Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
 ## Your ideas
 
