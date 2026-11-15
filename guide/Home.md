@@ -14,4 +14,3 @@
   the issues page only, and the mod hub keeps it.
 - [Roadmap](../ROADMAP.md) shows the next update, the ones after it, and ideas for later. It is on the issues page
   only, and the mod hub keeps it.
-- [Developer guide](Developer-Guide.md) is for building and testing the mod.
