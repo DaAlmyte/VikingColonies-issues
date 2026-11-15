@@ -16,9 +16,9 @@ gets built next and get help.
 ## Found a bug?
 
 The quickest way (1.4 and later) is to stand near the settler or building with the trouble, open the Chieftain's Camp's
-window (Shift+E) and press **Report a problem**. Your browser opens the bug form with the versions filled in, and the
-whole report is copied. Click in the form's last box, press Ctrl+V, and say what happened. Nothing is sent until you
-press Submit. Have a look at the [known issues](guide/Known-Issues.md) first.
+window (Shift+E) and press **Report a problem**. A small window opens with the report and two ways to send it: the bug form on
+GitHub (the versions filled in and the report copied: click the form's last box, press Ctrl+V and say what happened)
+or our Discord. Nothing is sent until you press Submit or post it. Have a look at the [known issues](guide/Known-Issues.md) first.
 
 Or by hand:
 

@@ -22,7 +22,7 @@
   test world.
 - **The upgrade button says it needs a higher Builder's Hut**: upgrade the Builder's Hut first. Its builder may raise
   their own hut one level above itself.
-- **An upgrade waits with "Needs: …"**: the new design's materials aren't in the colony's chests yet (iron for level
+- **An upgrade waits with "Needs: …"**: the new design's materials aren't in the colony's chests yet (bronze for level
   2, for example). Put them in any colony chest.
 - **A hut says "The Chieftain's Camp is gone: raise a new one here within N days"**: its camp was removed or broken.
   Raise a new camp among the colony's huts before the days run out, and it takes the colony over.
@@ -33,7 +33,8 @@
   settlers come by themselves if you build a Longhouse (free beds) and keep 5 food in the camp's chest. A newcomer
   then arrives each day.
 - **No newcomers though there's a bed and food**: the colony may be unhappy, and the camp's Overview says so. Choose a
-  settler there to see their reasons. A home, meals of several kinds and an evening fire help.
+  settler there to see their reasons. A home, meals of several kinds and an evening fire help. Or the camp is full: a
+  level 1 camp has room for 10 settlers, so raise it a level (The camp tab).
 - **New settlers appear far off and walk in**: that's how newcomers come (0.16). When there's no way in, they appear by
   the Chieftain's Camp. With `Colony.NewcomersWalkIn` off they always appear there.
 - **"Settlers can't come: the settler body didn't load"**: the mod couldn't make its settler body at start-up, often
@@ -49,7 +50,7 @@
 - **A worker stays inside their hut**: this was fixed in 0.20 for huts turned off the compass. One still wedged inside
   is moved to just inside the door after half a minute, and Recall on the hut's window brings them out at once.
 - **A settler shows as *Missing* in the camp**: nobody saw them where they were last, though that area is loaded, so
-  their body is lost (another mod removed it, or a bug). Choose them on the People tab and press **Bring back**, and
+  their body is lost (another mod removed it, or a bug). From the next day on, choose them on the People tab and press **Bring back**, and
   they come back to the camp as themselves (same name, looks, job, home and skills), empty-handed. If their body is
   still somewhere in the world, the window says so instead. Go near them and use Recall.
 - **A cairn on the map that you can't find**: it floats if they died in water, and it's gone once someone emptied it.
@@ -112,7 +113,7 @@
 - **"No trees to fell (see Trees…)"**: the hut's level can't fell the kinds in reach (birch and oak need a level 2 hut),
   or you unticked them in the hut's Trees… list.
 - **"Needs a better axe in the colony's chests"**: the hut's level lets them fell these trees, but they only have their
-  flint axe. Put an axe the hut's level allows (bronze at level 2) in a chest of the colony's huts; they work with a copy and it stays there.
+  flint axe. Put an axe the hut's level allows (bronze at level 2) in a chest of the colony's huts; they take it as their own.
 - **The lumberjack doesn't replant**: put a Cultivator in the Lumberjack's Hut's storage (Shift+E on the hut shows
   whether replanting is on), and check the kind's Replant tick on its Trees list.
 - **The lumberjack leaves a tree standing**: one of four things is going on. The kind is unticked from Fell on the
@@ -127,7 +128,7 @@
 
 - **The farmer says "Needs a field"**: a Farm works only the fields you mark (0.20.1), so put a field marker (hammer,
   Misc tab) near it. If the marker says "No Farm", see "A field nobody works" below.
-- **The farmer waits by the Farm saying "Needs seeds" or "Needs Cultivator"**: put a Cultivator and seeds for a ticked
+- **The farmer waits by the Farm saying "Needs seeds" or "Needs a Cultivator"**: put a Cultivator and seeds for a ticked
   crop that grows there (carrot, turnip or onion seeds, barley, flax) in the Farm's chest. "Crops growing" means every
   plot is planted, and the farmer waits for the harvest. A seed crop (carrot seeds) is only sown while fewer than 6 of
   its seeds are stored.
@@ -158,8 +159,8 @@
   gone to another site meanwhile. `vc_build ready` (test worlds) skips the rest of the clearing and flattening.
 - **The builder says "Needs …"**: put that in their hut's storage or any colony storage. They look again every few
   seconds.
-- **The builder says "Needs an axe" (or a pickaxe, a hoe, stone)**: put one in their hut's or any colony storage. The
-  tool stays there and they work with a copy.
+- **The builder says "Needs an axe" (or a pickaxe, a hoe, stone)**: put one in their hut's or any colony storage.
+  They take it as their own and keep it.
 - **The builder says "Needs Builder's Hut level 2 for a tree" (with "or clear it yourself" after it)**: their level's tools can't
   fell it. Birch and oak need a bronze axe, and a level-1 builder may use only a flint axe. Fell it yourself, or
   upgrade the Builder's Hut and put a bronze or iron axe in a chest. Meanwhile they work on other huts.
@@ -184,6 +185,8 @@
   clashing patches. ValheimPlus 10.3.0 on its own, with its settings as it ships them, gave the same result.
 - Tested again for 1.5.1 (2026-10-28) with all of those and WackysDatabase 2.6.10, 16 mods at once. No errors, no
   clashing patches. ValheimPlus 10.4.0 on its own, with its settings as it ships them, gave the same result.
+- Tested again for 1.7.1 (2026-11-10) and 1.8.0 (2026-11-13), the same 16 mods at once and ValheimPlus on its own: no
+  errors, no clashing patches.
 - **MyLittleUI** (checked with 1.2.31, 1.4.2): Shift+E on the camp and the huts opens their window, and their hover
   says "Manage", not MyLittleUI's "Rename". Before 1.4.2 the chest's rename took over Shift+E (report #1). Before 1.4.3
   a fallen settler's cairn showed only "Cairn" on hover with it; now it says "Here lies …" first.
@@ -196,7 +199,7 @@
   10% a star and could get stuck outside a hut; replacing the door with a bigger one was the way round it.
 
 ## Can't join a server
-- See [Multiplayer](Multiplayer.md), Joining. A join code only works while the server has crossplay on; without it,
+- See [Multiplayer](Multiplayer.md). A join code only works while the server has crossplay on; without it,
   join by the server's address (Join IP).
 - "Incompatible version" means a mod is missing or a version differs. Start the game from your mod manager, with the
   server's version of VikingColonies.
@@ -207,6 +210,7 @@
   it again. The pieces the builder put up are the game's own and stay as ordinary buildings.
 - On a server, everyone needs the mod, with the same first two numbers of its version, so don't remove it while
   players use a colony.
+- Don't go back to 1.7 once a world has run with 1.8: a 1.7 game that opens a 1.8 world loses the settlers' tools.
 
 ## Telling us what you think
 Press **Feedback** in the camp's window (beside Report a problem). It opens a small window with two buttons. **Tell us

@@ -5,7 +5,7 @@
   Hut, Lumberjack's Hut, Forager's Hut, Farm, Longhouse, Watchtower, Storehouse, Mead Hall, the memorial stone, placing
   huts, designs, levels and upgrades.
 - [Settlers and jobs](Settlers-and-Jobs.md) explains how settlers live, work and are hired. It covers who they are
-  (trade, trait, past), free time and pastimes, lumberjack, farmer, forager, builder (building, mending and repairs),
+  (trade, trait, past), free time and pastimes, tools, outfits and bynames, lumberjack, farmer, forager, builder (building, mending and repairs),
   guards, couriers, the cook, meals, homes, mood, the evening, nights and raids, and getting unstuck.
 - [Settings](Settings.md) lists every option and what it does.
 - [Multiplayer](Multiplayer.md) is about servers and playing with friends.

@@ -32,7 +32,8 @@ game's own tooltip box (1.7).
     many it may have, and the free beds); food in the camp's chest, what it keeps for newcomers and who is hungry; the
     colony's mood and the reasons that weigh most across it; what the next newcomer waits for; what the builders still
     need, with **Hand over**; and, while couriers carry, when the storehouse is full or couriers hold loads with
-    nowhere to put them, with what to do.
+    nowhere to put them, with what to do. A **Danger** box shows while monsters are near, and a **Quick start** box
+    until your first hut (1.8.0; see [Getting started](Getting-Started.md)).
 
     Since 1.7.0 the settlers' box also says who isn't working: "3 not working: 1 without a tool, 2 with nothing to
     do", orange when one of them needs you. A settler shows there once the same reason has lasted 30 seconds, so a
@@ -52,7 +53,7 @@ game's own tooltip box (1.7).
     at a colony they may manage. Nothing of the mod's is saved with the sign, so it keeps its words if the mod goes.
 
     With the game's raven hints on (Settings, "Enable raven hints"), **Hugin's next step** shows too. It came in with 1.5.1.
-    It runs through seven steps for a new colony (a Builder's Hut, a job for a settler, a Longhouse, food in the camp's
+    It runs through six steps for a new colony (a Builder's Hut, a job for a settler, a Longhouse, food in the camp's
     chest, a Watchtower, the camp's level 2), the last one done and the next, with what Hugin says of it. Each is read
     from the colony as it stands, so an older colony starts with what it has ticked off, and the block goes once all
     are done. Under the boxes (1.7.0) there's a small line, "Ideas, sneak peeks, help: our Discord"; a click opens the
@@ -72,7 +73,7 @@ game's own tooltip box (1.7).
     carry on with their work from there. Only players who may manage the colony (its owner, or players on a ward
     covering it) can recall.
 
-    A settler marked *Missing* (their body is lost) gets **Bring back** instead. The camp keeps what it needs of every
+    A settler marked *Missing* (their body is lost) gets **Bring back** instead, from the day after they went missing. The camp keeps what it needs of every
     member (name, looks, job, home, skills) and brings them back as themselves, empty-handed, if their body isn't
     anywhere in the world. The window tells how it went: back, back but gone indoors again (night or a raid), or why not
     (no free spot by the camp, not your colony).
@@ -318,6 +319,7 @@ game's own tooltip box (1.7).
 ## Watchtower
 - (1.1) Cost: 20 Wood (setting `Watchtower.WoodCost`). Needs the colony nearby, as every hut: within the colony's area
   (see [The colony's area](#the-colonys-area)).
+- While you place one (1.8.0), a white ring shows the land it would add to the colony and a blue one its guards' watch.
 - It hires a guard once its building stands (see [Settlers and jobs](Settlers-and-Jobs.md#guard)), with two at level
   3–4, three at level 5 (1.2), each at their own place by the door. They keep watch and fight monsters that come near
   the colony with the best gear in its chest (copies, the items stay in the chest):

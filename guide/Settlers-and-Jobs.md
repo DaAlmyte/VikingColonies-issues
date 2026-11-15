@@ -14,7 +14,7 @@ If a camp is taken down and never placed again, the settlers stay "No colony" (a
 
 ### Danger and healing
 
-Players can't hurt settlers, but monsters can. A settler who dies is gone (see "When a settler dies" below).
+Players can't hurt settlers, but monsters can. A settler who dies is gone (see "When a settler dies" below). Until your first Longhouse stands, a settler who falls is only knocked out (1.8.0): they get up once it's calm (half a minute to three minutes), or at once when you look at them and press E with no monster within 20 m.
 
 When a monster comes within 12 m (or a monster nearby is alerted or hunting), or hits them, settlers run to their Chieftain's Camp or hut (status "Fleeing", with a red "!" over their head). If the monster is by both, they run straight away from it. They go back to what they were doing once no monster has been near for 15 seconds. Deer, birds and sleeping or penned animals don't scare them.
 
@@ -22,7 +22,7 @@ Settlers stand up to weak animals (1.5.0). A weak creature that goes for a settl
 
 They still run when hurt to half, from anything stronger (a Troll, a Wolf, a Draugr), from a stone or an arrow thrown from afar, in a raid or while the alarm sounds, and a timid settler still runs. A settler who has run from the same kind three times in ten minutes stands their ground for the next ten. A brave settler also fights one going for someone right beside them. Once it's dead or gone they go back to work.
 
-An animal they can't reach (in the water, up on a rock) they leave be while they keep working. They don't chase one far either: past about 8 m from where the fight began, or with no blow landing for a while, they let it go for a minute. At night, in a raid or in bed they don't go out to fight. Guards keep their own way of fighting. With the setting `Colony.SettlersFightBack` (on) turned off, settlers run from everything again, and the guards' driving off (below) stops too.
+An animal they can't reach (in the water, up on a rock) they leave be while they keep working. They don't chase one far either: past about 10 m from where the fight began, or with no blow landing for a while, they let it go for a minute. At night, in a raid or in bed they don't go out to fight. Guards keep their own way of fighting. With the setting `Colony.SettlersFightBack` (on) turned off, settlers run from everything again, and the guards' driving off (below) stops too.
 
 Every settler heals (1.5.0): a little every few seconds once nothing has hurt them for 20 seconds, and whole again after a night in bed.
 
@@ -47,7 +47,7 @@ A few special cases have their own rescue:
 
 ## Who they are
 
-Each settler is good at one trade, their calling: woodcutting, building, foraging or farming. One in five is a jack of all trades. In its trade a settler works 20% faster (`Colony.CallingBonus`). A hut hires a jobless settler good at its trade first, and newcomers often bring the trade an empty hut needs.
+Each settler is good at one trade, their calling: woodcutting, building, foraging, farming, fighting, carrying or cooking. One in five is a jack of all trades. In its trade a settler works 20% faster (`Colony.CallingBonus`). A hut hires a jobless settler good at its trade first, and newcomers often bring the trade an empty hut needs.
 
 Every settler also has a trait:
 
@@ -182,7 +182,7 @@ Farmers work from a Farm, on the **fields** assigned to it (see [Buildings](Buil
 
 They take seeds for every plot waiting for that crop at once (0.20), up to 20, and hold them apart from their harvest. What's left goes back in the chest when they deliver. A field set to one crop is sown whenever its seed is in the chest (the seed-crop limit below is the Farm's list's).
 
-They deal with things in this order: night and danger as for everyone, a full load home, what they just picked, a ripe crop, planting an empty cultivated plot, and last cultivating a new one. With nothing to do they wait by the Farm: "Crops growing", "Needs seeds" or "Needs Cultivator" (also above their head when you're near).
+They deal with things in this order: night and danger as for everyone, a full load home, what they just picked, a ripe crop, planting an empty cultivated plot, and last cultivating a new one. With nothing to do they wait by the Farm: "Crops growing", "Needs seeds" or "Needs a Cultivator in the colony's chests" (also above their head when you're near).
 
 A crop is theirs when it stands on one of their plots. They never touch crops elsewhere, so your own garden stays yours. Crops grow by the game's own rules (sun, room, the right biome): barley and flax only in the Plains. They plant each plot only with a crop that grows on that very spot (a Farm by a biome's edge has plots in two).
 
@@ -222,7 +222,7 @@ In a raid at the colony (1.3), the first guard to go for a raider calls out wher
 
 Guards never target players, settlers, tames, the Dvergr and other neutral creatures, or animals (deer, boars, necks…), unless one is attacking someone of the colony. The animals you can tame (boars, wolves, lox…) count as animals here (1.6.1): a wolf that goes for a settler or a player is fought, and one wandering by is left alone until it does. A raid's wolves are always fought. An animal you are taming (fed recently, or its taming has begun) is left alone, even while it charges at you over the fence, and settlers get out of its way instead of swinging at it (1.6.1). Once it bites a settler or a player (out of its pen), it is fought like any other. The game's own rules also keep their swings off players, settlers and tames.
 
-Their gear depends on their tower's **Role** (1.2). Like every worker's tools it is copies: the items stay in the chest, and a copy is of the first quality.
+Their gear depends on their tower's **Role** (1.2). A guard's gear is copies: the items stay in the chest, and a copy has the same quality, so an upgraded sword or armour counts.
 
 - A **warrior** takes the best melee weapon in their tower's chest (else the colony's other chests) and a shield with a one-handed weapon. They hold the shield up while a monster is near, when it starts a blow and a moment after each of theirs, and it blocks as a player's does. After three blocks within 3 seconds they lower it for a moment (they have no stamina to spend). They never go more than 2.5 seconds within reach without striking.
 - An **archer** takes the best bow or crossbow that has its ammunition in the chests, and that ammunition (it is never used up). They shoot a monster they can see within 25 m, fully drawn (a crossbow loaded between shots), from where they stand. One they can't see (behind a wall, a rock) they walk towards until they can; one closer than 5 m makes them step back, and cornered they shoot anyway. An archer also shoots what a sword can't reach: a monster that swims or flies, or one standing up to 15 m above the ground (1.4.2). Without a bow and ammunition they fight with a melee weapon from the chests, if any.
@@ -233,7 +233,7 @@ Below 30% health (`Guards.RetreatHealth`) a guard is off duty. A monster after t
 
 Armed, they stay out. At night, in a raid and when monsters come they keep watch while everyone else shelters. They skip the breakfast table and the evening fire (they still eat, from the colony's chests). In a raid at the colony they fight raiders 1.5 times as far out.
 
-**Fighting** grows with every hit they land (arrows too) and makes their hits stronger (as Woodcutting makes the lumberjack's), at `Colony.LearningRate`. It makes them tougher too: half again their health at 100 (1.2). Armour adds to it: 2 health for each point of the colony's armour they wear (1.8.0), so a guard in bronze has about 50 more and one in iron about 120 more.
+**Fighting** grows with every hit they land (arrows too) and makes their hits stronger (as Woodcutting makes the lumberjack's), at `Colony.LearningRate`. It makes them tougher too: half again their health at 100 (1.2). Armour adds to it: 2 health for each point of the colony's armour they wear (1.8.0), so a guard in bronze has about 50 more, one in iron about 85, and in iron upgraded all the way about 120.
 
 Everyone in a colony with a guard on duty is glad of it ("+3 a guard on watch"; one without a weapon doesn't count). Being hit doesn't sadden a guard, since it is their work. A guard killed by a monster "fell defending the colony against Greydwarf" in the Saga, and a raid held off names the guards on duty.
 
@@ -307,7 +307,7 @@ Since 1.8.0 lumberjacks, builders and farmers work with tools of their own. A lu
 
 A better tool works faster. An axe's quality counts as it does for you, and the hut window's level box says about how much faster the next level's best axe chops.
 
-Tools wear as they work, as yours do. Once one is below a quarter, the settler walks between tasks to a station in the colony that can repair it, the same one the game would use for you (a workbench for flint and antler tools, a forge for bronze and iron ones, at the level the tool's recipe asks for), and comes back with it as new. It costs nothing. With no such station in the colony their hover says so ("Axe worn: needs a Forge") and they keep working until the tool breaks. A broken tool stops them, and Hugin tells you why.
+Tools wear as they work, as yours do. Once one is below a quarter, the settler walks between tasks to a station in the colony that can repair it, the same one the game would use for you (a workbench for flint and antler tools, a forge for bronze and iron ones, at the level the tool's recipe asks for), and comes back with it as new. It costs nothing. With no such station in the colony their hover says so ("Axe worn: needs a Forge") and they keep working until the tool breaks. Then they put the broken one in a chest and take a spare; with no spare in the chests it stops them, and Hugin tells you why.
 
 How fast tools wear is the server's setting `Colony.GearWear`, in percent: at 100 a tool needs a trip to a station about every two or three game days of work, at 200 twice as often, and at 0 nothing wears. The world's own tool wear (a world modifier) counts too, so a world with no wear wears nothing for settlers either. In creative mode nothing wears.
 
@@ -327,7 +327,7 @@ Players in the colony's area (the camp's `ColonyRadius`) or within 50 m of the s
 
 The cause shown is one of these: killed by *a monster's name*, attacked (the attacker is gone), hit by a falling tree, crushed, fell from a height, drowned, burned, froze, poisoned, choked on smoke, shot, fell off the edge of the world, struck by lightning, unknown cause.
 
-A settler who dies carrying anything leaves a cairn where they fell, holding what they carried. Hover over it for "Here lies Ingrid the Lumberjack: killed by Greydwarf, day 37". Open it with E, like a chest. Nothing can damage it, and once it's empty it crumbles away. Every player who got the death message has a pin "Ingrid's cairn" on the map, and it goes when you empty the cairn (or remove it by hand). Tools they had borrowed were copies, so the originals are still in the chests. A settler who carried nothing leaves no cairn.
+A settler who dies carrying anything leaves a cairn where they fell, holding what they carried. Hover over it for "Here lies Ingrid the Lumberjack: killed by Greydwarf, day 37". Open it with E, like a chest. Nothing can damage it, and once it's empty it crumbles away. Every player who got the death message has a pin "Ingrid's cairn" on the map, and it goes when you empty the cairn (or remove it by hand). A worker's own tools are in the cairn too (1.8.0). A guard's weapons and armour were copies, so those are still in the chests. A settler who carried nothing leaves no cairn.
 
 The camp takes the settler off its list, and a hut with auto-hire hires the next jobless settler, as before.
 
@@ -351,7 +351,7 @@ A settler who finds nothing is hungry. Hovering over them says "Hungry", and the
 
 ### Newcomers and walking in
 
-Once a day, in daylight, a newcomer comes and eats that food (the plainest first), as long as the colony has a free bed (more Longhouse beds than settlers), at least 5 food in the camp's chest, and isn't unhappy (see [Mood](#mood)). That's one a day (`Colony.NewcomersPerDay`; one more for a joyful colony), up to 30 settlers (`Colony.MaxSettlers`). So build Longhouses, keep food in the camp and your settlers content, and the colony grows.
+Once a day, in daylight, a newcomer comes and eats that food (the plainest first), as long as the colony has a free bed (more Longhouse beds than settlers), at least 5 food in the camp's chest, and isn't unhappy (see [Mood](#mood)). That's one a day (`Colony.NewcomersPerDay`; one more for a joyful colony), up to 30 settlers (`Colony.MaxSettlers`), and never more than the camp's level allows: 10 at level 1, 5 more each level. So build Longhouses, keep food in the camp and your settlers content, and the colony grows.
 
 If every settler dies before the first Longhouse stands, nobody is left to build one and no newcomer has a bed to come to. So the morning after, new settlers walk in to start again (1.6.1), as many as a new camp gets (`Colony.StartingCitizens`), without needing food. The camp's window says so ("Next newcomer: nobody is left: new settlers come to start again the next morning"), and the saga tells it. Since 1.7.0 they make the number up with your settlers at your other camps, as a new camp's do: a second camp left empty while your first still has its settlers gets none, and grows once it has a Longhouse.
 
@@ -374,6 +374,9 @@ Each settler has a mood from 0 to 100. It starts at 50 (content), and each of th
 | A feast: they took a serving at the Mead Hall's feast in the last two days (1.7) | +10 |
 | Last evening by a burning fire / with at least two others | +5 / +5 |
 | Works in the trade they're good at | +5 |
+| Varied free time: 3 / 4+ kinds of pastime in the last two days | +5 / +10 |
+| Did what they love today (their favourite pastime) | +3 |
+| A guard on watch in the colony | +3 |
 | Jobless for 2 days or more | −5 |
 | A settler of the colony died in the last 3 days | −10 |
 | A monster hit them yesterday or today | −5 |
@@ -423,7 +426,7 @@ Setting `Colony.TendFires` (on). It is part of free time, so `Colony.FreeTime` o
 
 ## Night, attacks and raids
 
-At night settlers stop work and go into their hut through its door, which they shut behind them; hovering over one shows "Sleeping" once they are in bed and "Resting" until then, or all night if they have no bed. A settler with a home lies down in their Longhouse bed and gets up beside it at dawn. The lumberjack delivers what they carry first, and the builder puts their borrowed tool away and leaves their site till morning. At dawn they come out and carry on.
+At night settlers stop work and go into their hut through its door, which they shut behind them; hovering over one shows "Sleeping" once they are in bed and "Resting" until then, or all night if they have no bed. A settler with a home lies down in their Longhouse bed and gets up beside it at dawn. The lumberjack delivers what they carry first, and the builder puts their tool away and leaves their site till morning. At dawn they come out and carry on.
 
 When a monster hunts them they run into the nearest colony hut the monster isn't nearer to ("Sheltering") and come out 15 seconds after the last monster is gone. From a monster too strong for the colony, such as a Troll, they go in only when they will be through the door well before it could reach them. A Troll runs about as fast as they do, so they mostly keep running in the open, away from it, rather than stop at a door (1.7.1). A monster that follows one inside makes them leave for another hut, or run, as does one hitting them through a back or side wall. If a monster is outside the door, reaching in (a Troll), they stay inside, since going out would be going into it, until they are hurt to half, when they run for it (1.5.1).
 
