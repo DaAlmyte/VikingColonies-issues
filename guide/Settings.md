@@ -18,7 +18,7 @@ of 5%. A change is saved at once, and a server never changes these for you.
 | Town Hall | SettlersPerLevel | 5 | 0–50 | more settlers per level above 1 |
 | Town Hall | Level2Cost … Level5Cost | see [Buildings](Buildings.md#chieftains-camp) | text | materials the camp uses up from its chest when it is raised, written as `Prefab:count` separated by commas (e.g. `Wood:40, Stone:20, DeerHide:10`); empty: only the trophies |
 | Town Hall | BeatenBossesCount | true | none | a Forsaken the world has already beaten counts as if its trophy were shown at the camp (a trophy on the sacrificial stones can't be taken back); off: only trophies shown at the camp count |
-| Colony | StartingCitizens | 4 | 0–10 | citizens who arrive when a Chieftain's Camp is founded |
+| Colony | StartingCitizens | 4 | 0–10 | settlers who arrive when a Chieftain's Camp is founded |
 | Colony | ColonyRadius | 50 | 20–150 | metres around a level-1 Chieftain's Camp (more per level: `Town Hall.RadiusPerLevel`) |
 | Colony | MaxReach | 150 | 50–500 | how far from the camp the colony's area may reach with its Watchtowers (1.1); of a tower near it only the part of its circle within reach counts |
 | Colony | SettlersSafeFromTrees | true | none | settlers aren't hurt by falling trees and rolling logs (players still are) |
@@ -32,6 +32,7 @@ of 5%. A change is saved at once, and a server never changes these for you.
 | Colony | MaxSettlers | 30 | 1–100 | no newcomers past this many settlers, whatever the camp's level |
 | Colony | FallenReturn | false | none | dead settlers come back at the camp after a few days, with their name, trait, trade and skills (1.5.1); off: death is final. Only a settler who died while it was on comes back |
 | Colony | FallenReturnDays | 3 | 0–30 | with `Colony.FallenReturn` on: the days before they walk back in, one a day, in daylight, while the colony has room for another settler; 0: the same day |
+| Colony | GearWear | 100 | 0–500 | how fast settlers' own tools wear, in percent (1.8.0): at 100 a working settler takes a tool to a station about every two or three game days; 0: nothing wears; on a server, the server's |
 | Colony | EveningGathering | true | none | in the evening, before night, settlers stop work and gather round the colony's fire (the camp with none) |
 | Colony | SleepInBeds | true | none | at night a settler with a home lies in their Longhouse bed (off: they stand by it) |
 | Colony | TendFires | true | none | settlers with nothing to do keep the colony's fires fed from its chests (always leaving 10 of the fuel) |
@@ -93,7 +94,7 @@ of 5%. A change is saved at once, and a server never changes these for you.
 | Developer | VerboseLog | false | none | write every settler's step to the log (for a bug report); always on in test worlds; your own setting |
 
 The other Developer settings (`CommandFile`, `SkipIntro`, `AutoStartCharacter`, `AutoStartWorld`, `TestFrameCap`) are for testing
-the mod. Leave them off when playing.
+the mod. Leave them off when playing (see the [Developer guide](Developer-Guide.md)).
 
 ## Your own words
 

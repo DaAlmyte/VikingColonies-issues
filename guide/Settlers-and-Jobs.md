@@ -1,8 +1,8 @@
-# Citizens and jobs
+# Settlers and jobs
 
-Citizens are vikings with random looks and Norse names. Hover one to see its name, job and status. A settler near you who needs something says so above their head ("Needs 12 Wood", "Storage full", "Can't reach the hut", "Hungry"; setting `Messages.WordsAboveHeads`), while plain work shows nothing. In their free time they greet you and make small talk (see "Free time").
+Settlers are vikings with random looks and Norse names. Hover one to see their name, job and status. A settler near you who needs something says so above their head ("Needs 12 Wood", "Storage full", "Can't reach the hut", "Hungry"; setting `Messages.WordsAboveHeads`), while plain work shows nothing. In their free time they greet you and make small talk (see "Free time").
 
-**Jobless** citizens spend their free time near the camp. **No colony** means their camp was taken down or destroyed (it must be missing for about 30 seconds) and the grace days to raise it again (`Colony.TownHallGraceDays`, 3) are over. Those settlers stand where they are, with no work, no meals and no shelter at night or in a raid. Their mood stays as it was, and they don't starve, since hunger only slows work. They're on no camp's People tab. Any Chieftain's Camp within 50 m takes them in, including a new one you build there.
+**Jobless** settlers spend their free time near the camp. **No colony** means their camp was taken down or destroyed (it must be missing for about 30 seconds) and the grace days to raise it again (`Colony.TownHallGraceDays`, 3) are over. Those settlers stand where they are, with no work, no meals and no shelter at night or in a raid. Their mood stays as it was, and they don't starve, since hunger only slows work. They're on no camp's People tab. Any Chieftain's Camp within 50 m takes them in, including a new one you build there.
 
 ### Moving your camp (1.7.0)
 
@@ -14,9 +14,9 @@ If a camp is taken down and never placed again, the settlers stay "No colony" (a
 
 ### Danger and healing
 
-Players can't hurt citizens, but monsters can. A citizen who dies is gone (see "When a settler dies" below).
+Players can't hurt settlers, but monsters can. A settler who dies is gone (see "When a settler dies" below).
 
-When a monster comes within 12 m (or a monster nearby is alerted or hunting), or hits them, citizens run to their Chieftain's Camp or hut (status "Fleeing", with a red "!" over their head). If the monster is by both, they run straight away from it. They go back to what they were doing once no monster has been near for 15 seconds. Deer, birds and sleeping or penned animals don't scare them.
+When a monster comes within 12 m (or a monster nearby is alerted or hunting), or hits them, settlers run to their Chieftain's Camp or hut (status "Fleeing", with a red "!" over their head). If the monster is by both, they run straight away from it. They go back to what they were doing once no monster has been near for 15 seconds. Deer, birds and sleeping or penned animals don't scare them.
 
 Settlers stand up to weak animals (1.5.0). A weak creature that goes for a settler is fought off instead of fled from. They swing what's in their hands (a lumberjack's axe, a builder's pickaxe) or their fists, and the words over their head say "Fighting off a Neck". What counts as weak grows with the camp's level: Necks, Greylings and Boars always, Greydwarfs from level 2, Skeletons from level 3, those two with no star (1.6.1); the others with one star at most.
 
@@ -26,7 +26,7 @@ An animal they can't reach (in the water, up on a rock) they leave be while they
 
 Every settler heals (1.5.0): a little every few seconds once nothing has hurt them for 20 seconds, and whole again after a night in bed.
 
-Citizens jog like a player normally does and only sprint when fleeing.
+Settlers jog like a player normally does and only sprint when fleeing.
 
 ### Doors, queues and getting unstuck
 
@@ -62,21 +62,51 @@ Hover over a settler for a third line with their trait and trade ("Cheerful · g
 
 In the Chieftain's Camp, choose a settler on the People tab and their page says who they are, how long they've been here, where they sleep ("Home: Longhouse bed 2."), how they feel and why, their skills, what they carry and their newest lines in the Saga (1.5.1). The hut's window says when its worker is good at its trade: "Astrid (good at foraging): Picking".
 
-Settlers dress by trade, in the game's own clothes:
+### What they wear (1.8.0)
 
-- the jobless in rags
-- lumberjacks in leather
-- builders in leather with a cap
-- farmers in rags and leather trousers
-- foragers in rags and troll-hide trousers
+Every settler wears their trade's outfit, so you can tell who does what from across the colony. The hat says the trade and the colour says the kind of work: madder rust for work out in the wild, weld ochre for fields and animals, undyed cloth for the hearth, woad blue for those who serve the whole colony, leather for the crafts. The tunics are the game's own (Hildir's), toned down to natural dyes.
 
-The clothes give no armour, and they never go in their cairn.
+| Trade | Hat | Tunic | Trousers |
+|---|---|---|---|
+| No job yet | none | Rags | Rags |
+| Lumberjack | Brown fur cap | Rust | Leather |
+| Forager | Green twisted headscarf | Rust | Troll hide |
+| Farmer | Straw hat | Ochre | Leather |
+| Builder | Leather helmet | Leather | Leather |
+| Guard | none (a cape by the tower's level) | Woad blue | Leather |
+| Courier | Simple red cap | Woad blue | Leather |
+| Cook | Yellow tied headscarf | Undyed | Rags |
+
+Hired, a settler changes into the trade's outfit on the spot. Let go, they're back in rags at once. When their hut reaches level 3, the lumberjack's, forager's, farmer's and courier's tunics get a short cape. The guard's cape follows the tower's level and the age it opens: a deer hide cape at level 1, troll hide at 2, wolf fur at 3, a feather cape at 4 and an ashen cape at 5.
+
+The outfit is for looks. It gives no armour or effects (a feather cape doesn't slow a guard's fall, the straw hat gives no Harvest bonus), it never wears out, and it never goes into a cairn or a chest. A guard's armour from the chests shows in its slot instead of the outfit's piece and protects them as before. Settlers never take tunics, hats or rags from the chests as armour. Every player sees the same outfit on the same settler.
 
 Settlers from before 0.16 get a trade, trait and origin from who they are (always the same), and their days count from the day you first play 0.16.
 
+### Bynames (1.8.0)
+
+A settler who keeps at one kind of work earns a byname from the colony and keeps it for life. You get a message and a
+line in the Saga when it happens, and the name shows wherever the colony names them: the name tag, the People tab, a
+hut's window and the memorial stone. Each settler earns one at most. If two come due at once, the rarer deed wins.
+
+| Byname | For |
+|---|---|
+| Tree-feller | felling trees |
+| the Sower | bringing in the harvest |
+| Berry-hand | foraging berries and mushrooms |
+| Hall-raiser | building, piece by piece |
+| Mend-hand | mending what broke |
+| the Walker | carrying goods between the huts |
+| Hearth-keeper | cooking hot meals |
+| the Steadfast | striking down foes |
+| Troll-bane | the last blow on a Troll, at once |
+
+The first seven take about two weeks of steady work at that job. A byname gives no bonus. Hover the name in the People
+tab to see what it was for and since which day.
+
 ## Free time
 
-A settler with nothing to do spends free time within 15 m of their hut (the camp for the jobless). That means a jobless settler, or a worker whose job has nothing to do just now: "No trees nearby", "Crops growing", "Nothing to pick", or the builder's "No work". Every 30–90 seconds they pick one of these:
+A settler with nothing to do spends free time within 15 m of their hut (the camp for the jobless). That means a jobless settler, or a worker whose job has nothing to do just now: "No trees nearby", "Leaving the trees by your buildings", "No trees to fell", "Needs a better axe in the colony's chests", "Crops growing", "Nothing to pick", the builder's "No work", or the cook's "The Mead Hall has hot food for everyone". Every 30–90 seconds they pick one of these:
 
 - They take a seat on any free piece you can sit on (bench, chair, stool, throne, a mod's seat), one near a burning fire first. They stay 40–90 seconds and now and then laugh or raise a toast. With a table pushed up to the seat, they sit down from across the table, as you can (never across a wall).
 - They sit by a burning campfire, hearth or bonfire (not a torch), on the ground 2–3 m from it, facing it. A fire in the Mead Hall with a cooking station or cauldron over it is the cook's and doesn't count.
@@ -118,7 +148,7 @@ The setting `Colony.FreeTime` turns free time off, and they wait standing, as be
 
 The first time each day you come within 6 m of a settler, they say "Hail, <your name>!" (and wave, if they're in free time).
 
-Settlers in free time within 10 m say things above their heads. A chatting pair takes turns; others say a line every few minutes. What they talk about follows the colony: a settler who died in the last two days, the weather, a newcomer or a new building today, a raid held off in the last two days, or their job's wait. After that come their own trade (the lumberjack's trees, the farmer's crops, the guard's watch), their temper (cheerful or grumpy), and a boss fallen in your world: the camp's saga tells when the colony hears of it, and they talk of it for two days (1.4.2). At a pastime they talk about it, half the time, after a death or hunger: "Bullseye!", "Your move, Astrid.", "Again!" (1.6).
+Settlers in free time within 10 m say things above their heads. Two settlers chatting stand close together and talk in short exchanges (1.8.0): one says something, the other answers, and now and then the first has a last word. How they answer depends on who they are and how they feel, and an unhappy settler answers glumly. You can follow it from across the camp: the one who speaks waves, points or cheers to fit what they say, the one who answers laughs, gives a thumbs up or shrugs, and both stay still when they talk of the dead. When their free time is up, they finish what they were saying before they go, unless work, night or danger calls. Others say a line every few minutes. What they talk about follows the colony: a settler who died in the last two days, the weather, a newcomer or a new building today, a settler who earned a byname, a raid held off in the last two days, or their job's wait. After that come their own trade (the lumberjack's trees, the farmer's crops, the guard's watch), their temper (cheerful or grumpy), and a boss fallen in your world: the camp's saga tells when the colony hears of it, and they talk of it for two days (1.4.2). At a pastime they talk about it, half the time, after a death or hunger: "Bullseye!", "Your move, Astrid.", "Again!" (1.6).
 
 Their words show in a soft bubble with their name and job on its top line (1.7), just above the name over their head. A line of talk stays as long as it takes to read. Bubbles keep apart: a need goes in front, two settlers chatting lean away from each other, and when more than six are up at once the farthest show a small "…" until there's room. They fade with distance, wait while a wall is in the way, and hide while the map, your bag or one of the mod's windows is open.
 
@@ -126,9 +156,9 @@ A need ("Needs 12 Wood") always comes first. "Hungry" shows for a few seconds ev
 
 ## Lumberjack
 
-Lumberjacks work within 40 m of their hut (setting `Lumberjack.WorkRadius`; 10 m more per hut level, `Lumberjack.RadiusPerLevel`). They chop trees with the best axe their hut's level allows (a flint axe of their own, or a copy of a better one in the colony's chests), then the logs and stump, pick up wood and seeds, and deliver to the hut when carrying 50 items (`Lumberjack.CarryCapacity`) or at night. Their hover says what they are doing (1.4.2): "Felling trees", "Gathering wood", or "Keeping clear of falling logs" while a felled tree comes down.
+Lumberjacks work within 40 m of their hut (setting `Lumberjack.WorkRadius`; 10 m more per hut level, `Lumberjack.RadiusPerLevel`). They chop trees with an axe of their own, the best their hut's level allows (1.8.0, see [Tools](#tools)), then the logs and stump, pick up wood and seeds, and deliver to the hut when carrying 50 items (`Lumberjack.CarryCapacity`) or at night. Their hover says what they are doing (1.4.2): "Felling trees", "Gathering wood", or "Keeping clear of falling logs" while a felled tree comes down.
 
-They replant a sapling where the tree stood, using a dropped seed or one from the hut's storage, while a **Cultivator** is in the hut's storage or another of the colony's chests (`Lumberjack.Replant`, `Lumberjack.ReplantNeedsCultivator`). Without one, seeds are delivered.
+They replant a sapling where the tree stood, using a dropped seed or one from the hut's storage, while a **Cultivator** is in the hut's storage or another of the colony's chests, or a settler owns one (`Lumberjack.Replant`, `Lumberjack.ReplantNeedsCultivator`). Without one, seeds are delivered.
 
 The **Trees…** list in the hut's window (0.22) has a line per tree kind with **Fell** and **Replant** ticks. They fell only the kinds ticked Fell, and plant the kinds ticked Replant in turn, each only where it grows and when they have its seed, so the forest becomes mixed. A kind is greyed when their level's axe can't fell it ("needs a level 2 hut"), it has no sapling, or it doesn't grow where the hut stands. Every kind the hut allows starts ticked, and the hut remembers what you untick.
 
@@ -144,11 +174,11 @@ After the blow that fells a tree they step back to the side, out of the trunk's 
 
 Lumberjacks have a **Woodcutting skill** like the player's. They start as strong as a new character and improve with practice, at a quarter of a player's pace per hit since they chop all day (`Colony.LearningRate`; Shift+E on the hut shows their level). See [Skills](#skills) for the other workers'.
 
-Statuses: Working, Delivering, Delivering (the hut's chest is full), Planting, Resting (night), No trees nearby, Enough wood, Storage full.
+Statuses: Working, Delivering, Delivering (the hut's chest is full), Planting, Resting (night), No trees nearby, Leaving the trees by your buildings, No trees to fell (see Trees…: their level or your ticks keep them off), Needs a better axe in the colony's chests (the hut's level allows one, but none of the colony's chests holds it), Enough wood, Storage full.
 
 ## Farmer
 
-Farmers work from a Farm, on the **fields** assigned to it (see [Buildings](Buildings.md#field-markers)). A Farm has no ground of its own (0.20.1, as in MineColonies), and with no field they say "Needs a field". They farm as a player does: they cultivate a plot (with a copy of a Cultivator in the Farm's chest or another of the colony's), plant a seed there (the field's crop, or the Farm's list's ticked crops in turn), pick what's ripe on their plots and carry the harvest home (up to 20 items).
+Farmers work from a Farm, on the **fields** assigned to it (see [Buildings](Buildings.md#field-markers)). A Farm has no ground of its own (0.20.1, as in MineColonies), and with no field they say "Needs a field". They farm as a player does: they cultivate a plot (with a Cultivator of their own, see [Tools](#tools)), plant a seed there (the field's crop, or the Farm's list's ticked crops in turn), pick what's ripe on their plots and carry the harvest home (up to 20 items).
 
 They take seeds for every plot waiting for that crop at once (0.20), up to 20, and hold them apart from their harvest. What's left goes back in the chest when they deliver. A field set to one crop is sown whenever its seed is in the chest (the seed-crop limit below is the Farm's list's).
 
@@ -174,9 +204,11 @@ Food goes to the colony, and what isn't food (dandelions, thistles) waits in the
 
 ## Guard
 
-Guards work from a Watchtower (1.1), up to three guards to a tower (1.2). They stand at their post by its door, looking out (a tower's second and third guards beside them), and every 2–4 minutes walk a round to a spot outside one of the colony's buildings within their patrol (25 m round the tower, 5 m more per level) and back ("On watch", "Patrolling").
+Guards work from a Watchtower (1.1), up to three guards to a tower (1.2). They stand at their post by its door, looking out (a tower's second and third guards beside them), and every 2–4 minutes walk a round of the colony and back ("On watch", "Patrolling").
 
-They fight a monster within their patrol that comes within 30 m of a colony building, a settler or a player: one attacking someone of the colony first, else the nearest ("Fighting Greyling"). They walk up and swing their weapon (the game's own attack, as the lumberjack swings their axe) until it is dead. They never follow it further than their patrol + 10 m from their tower (`Guards.ChaseBeyondPatrol`). Past that (or running out so fast they would stop past it) they let it go and walk back. A monster they can't walk up to (in the water, flying, on a roof), or one that has left their watch and takes no blow from them for 15 seconds, they leave alone for a minute. Their swing hurts only what they aim at, never a wall, a crop or a tree beside it.
+A round (1.8.0) goes round the colony's outer huts: the furthest hut in each of eight directions from the camp, within 80 m of their tower (`Guards.HelpRadius`, as far as they come to help). They start at the outer hut nearest their post (now and then the next one along), go sunwise or against the sun, and walk the whole way round, or now and then half way and back past the camp. A round is never the same as their last one. At each hut they stop outside on its far side, and at about half of them they stand a few seconds looking out over the land, glancing along it. If you walk up while they stand there, they turn their head to you. A monster met on the way they fight, then carry on to the hut they were heading for. On a round they watch for monsters round where they are, not round the tower. Only one of a tower's guards is out at a time, counted until they're back at their post, and the one at home doesn't run off to a mate's fight. They do still run to help other settlers or you, as they always have, so a tower can stand empty for a moment then. The alarm, Hold post, a wound or losing their weapon ends a round at once. A hut they can't stand by they pass over. Night or day, rounds go on.
+
+They fight a monster within their patrol that comes within 30 m of a colony building, a settler or a player: one attacking someone of the colony first, else the nearest ("Fighting Greyling"). They walk up and swing their weapon (the game's own attack, as the lumberjack swings their axe) until it is dead. They never follow it further than their patrol + 10 m from their tower, or on a round from the stop they're heading for (`Guards.ChaseBeyondPatrol`). Past that (or running out so fast they would stop past it) they let it go and walk back. A monster they can't walk up to (in the water, flying, on a roof), or one that has left their watch and takes no blow from them for 15 seconds, they leave alone for a minute. Their swing hurts only what they aim at, never a wall, a crop or a tree beside it.
 
 Guards also drive off weak monsters (1.5.0). A weak monster (as settlers count them, see above) stirred up inside the colony's area, up to 30 m past their patrol, is theirs too before it bites anyone ("Driving off Greyling"). A calm Boar grazing is left be. Turn it off with `Colony.SettlersFightBack`.
 
@@ -194,14 +226,14 @@ Their gear depends on their tower's **Role** (1.2). Like every worker's tools it
 
 - A **warrior** takes the best melee weapon in their tower's chest (else the colony's other chests) and a shield with a one-handed weapon. They hold the shield up while a monster is near, when it starts a blow and a moment after each of theirs, and it blocks as a player's does. After three blocks within 3 seconds they lower it for a moment (they have no stamina to spend). They never go more than 2.5 seconds within reach without striking.
 - An **archer** takes the best bow or crossbow that has its ammunition in the chests, and that ammunition (it is never used up). They shoot a monster they can see within 25 m, fully drawn (a crossbow loaded between shots), from where they stand. One they can't see (behind a wall, a rock) they walk towards until they can; one closer than 5 m makes them step back, and cornered they shoot anyway. An archer also shoots what a sword can't reach: a monster that swims or flies, or one standing up to 15 m above the ground (1.4.2). Without a bow and ammunition they fight with a melee weapon from the chests, if any.
-- Armour is the best helmet, chest, legs and cape in the chests, worn in place of their trade's clothes. It protects them as a player's does (other settlers' work clothes are for looks).
+- Armour is the best helmet, chest, legs and cape in the chests, worn in place of their trade's outfit in that slot. It protects them as a player's does. A slot still in the outfit counts as the guard's old leather clothes did (a leather tunic, leather trousers, a deer hide cape; nothing for the head). Tunics, hats and rags are never taken as armour.
 - With nothing to fight with anywhere, they say "Needs a weapon in the Watchtower's chest" (an archer: "a bow and arrows"), and they are a settler like any other (they shelter, go in at night).
 
 Below 30% health (`Guards.RetreatHealth`) a guard is off duty. A monster after them makes them shelter or run as anyone, and otherwise they go back to their tower and rest ("Resting (hurt)"), healing in about a minute. At 80% they are on watch again.
 
 Armed, they stay out. At night, in a raid and when monsters come they keep watch while everyone else shelters. They skip the breakfast table and the evening fire (they still eat, from the colony's chests). In a raid at the colony they fight raiders 1.5 times as far out.
 
-**Fighting** grows with every hit they land (arrows too) and makes their hits stronger (as Woodcutting makes the lumberjack's), at `Colony.LearningRate`. It makes them tougher too: half again their health at 100 (1.2).
+**Fighting** grows with every hit they land (arrows too) and makes their hits stronger (as Woodcutting makes the lumberjack's), at `Colony.LearningRate`. It makes them tougher too: half again their health at 100 (1.2). Armour adds to it: 2 health for each point of the colony's armour they wear (1.8.0), so a guard in bronze has about 50 more and one in iron about 120 more.
 
 Everyone in a colony with a guard on duty is glad of it ("+3 a guard on watch"; one without a weapon doesn't count). Being hit doesn't sadden a guard, since it is their work. A guard killed by a monster "fell defending the colony against Greydwarf" in the Saga, and a raid held off names the guards on duty.
 
@@ -237,7 +269,7 @@ A station only cooks over a burning fire. When it's out the cook feeds it with w
 
 Food is never burnt. While the hall has a cook, a piece that's done waits on the station, at night or while the cook is away, until the cook takes it off. What the station drops when a piece comes off is picked up and taken to the hall's chest, never left on the floor. Every done piece comes off first, then it's one walk to the chest with them all.
 
-Hover shows "Roasting Deer meat", "Fetching Deer meat", "Taking the cooked food off", "Needs raw food in the colony's chests", "Needs a cooking station in the Mead Hall", "The Mead Hall has hot food for everyone".
+Hover shows "Roasting Deer meat", "Fetching Deer meat", "Taking the cooked food off", "Needs raw food in the colony's chests", "Needs a cooking station in the Mead Hall", "The Mead Hall has hot food for everyone". Once that's so and nothing is on the fire, the cook takes free time near the Mead Hall, and goes back when there's cooking to do.
 
 They learn **Cooking**, and a skill of 100 takes food on and off twice as fast as 0.
 
@@ -251,7 +283,7 @@ The builder works from the Builder's Hut and takes one building at a time: the o
 
 Before building they prepare the site: pick up items, remove plants (picking berries and the like first), fell trees away from the site, chop logs and stumps, break rocks and take down leftovers of old colony buildings. Then they flatten the ground, to 30 cm under the floor for a design with posts (the natural ground for a raised hut), or to the floors' underside for a design without posts. What they gather goes to their hut.
 
-Tools stay in the colony's chests. The builder works with a copy of the best axe, pickaxe and hoe there, and fetches stone for raising low ground. The hoe levels the ground; a pickaxe is only needed for rocks and for ground more than half a metre too high. If one is missing they say so ("Needs a pickaxe (Antler pickaxe or better)") and wait.
+The builder works with an axe, a pickaxe and a hoe of their own (1.8.0, see [Tools](#tools)), each taken from the colony's chests when a site first needs it, and fetches stone for raising low ground. The hoe levels the ground; a pickaxe is only needed for rocks and for ground more than half a metre too high. If one is missing they say so ("Needs a pickaxe (Antler pickaxe or better)") and wait.
 
 While building, they clear whatever grows or falls into the site. What they can't clear is named in the hut window but doesn't stop the building. They never reshape the ground right next to another building. They fell a tree from behind it, opposite the way it will fall, step clear after the blow and wait for the logs to settle, like the lumberjack. Dropped items on a new site are picked up only if they're plain (wood, stone, berries…); a player's own gear stays.
 
@@ -268,6 +300,20 @@ Builders take huts down (0.23) when you ask on a hut's window: every piece from 
 Statuses: Building <hut> (12/29), Repairing <hut> (30/32), Taking down <hut>, Mending the <hut>, Fetching materials, Needs 6 Fine wood, Waiting for space, Can't reach the building site, Can't place: no support for <piece>, No work, Clearing the building site, Flattening the ground, Needs a pickaxe (Antler pickaxe or better).
 
 Waiting for space (1.4) means someone stands where the next piece goes. After a few seconds a settler there is asked to make way (they walk out by the door and keep away for half a minute: "Making way for the builder"), and moved out if they stay. For a player or an animal the builder works on other pieces and tries that one again later.
+
+## Tools
+
+Since 1.8.0 lumberjacks, builders and farmers work with tools of their own. A lumberjack needs an axe, a builder an axe, a pickaxe and a hoe when a site calls for them, and a farmer a Cultivator. They take the tool from the colony's chests, the best one their hut's level allows, and keep it, so it's no longer in the chest. They only take a tool the chest can spare and only with room in their bag. A new lumberjack gets no free axe: with none in the chests they wait by their hut and their hover says "Needs an axe". Put one in any of the colony's chests and they fetch it.
+
+A better tool works faster. An axe's quality counts as it does for you, and the hut window's level box says about how much faster the next level's best axe chops.
+
+Tools wear as they work, as yours do. Once one is below a quarter, the settler walks between tasks to a station in the colony that can repair it, the same one the game would use for you (a workbench for flint and antler tools, a forge for bronze and iron ones, at the level the tool's recipe asks for), and comes back with it as new. It costs nothing. With no such station in the colony their hover says so ("Axe worn: needs a Forge") and they keep working until the tool breaks. A broken tool stops them, and Hugin tells you why.
+
+How fast tools wear is the server's setting `Colony.GearWear`, in percent: at 100 a tool needs a trip to a station about every two or three game days of work, at 200 twice as often, and at 0 nothing wears. The world's own tool wear (a world modifier) counts too, so a world with no wear wears nothing for settlers either. In creative mode nothing wears.
+
+A settler who loses their job puts their tools back in their hut's chest, or the camp's, or another colony chest with room. One who dies leaves them in their cairn. One you send away hands them back before leaving, and what no chest can take is left beside the camp's chest.
+
+On update day, the first time you load a world with 1.8.0, every working settler keeps the tool they worked with as their own (a lumberjack with no better axe in the chests keeps a flint one), and every farmer gets a Cultivator when the colony has one. The chests keep what they hold, so no colony stops. Guards keep borrowing for now; their own weapons and armour come in a later update.
 
 ## Skills
 

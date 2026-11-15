@@ -2,21 +2,20 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 11 November 2026._
+_Last updated 15 November 2026._
 
-VikingColonies 1.7.1 · Works with Valheim 1.0.21 (checked 30 October 2026).
+VikingColonies 1.8.0 · Works with Valheim 1.0.21 (checked 30 October 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Chieftain's Camp's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
 - **A courier sometimes ends up outside the storehouse's back wall.** They wait there instead of going round to the
   door. After about two minutes they drop that trip, and the next one usually goes in normally. A fix is coming in
-  1.7.2.
-- **A settler can step onto a lit fire while meeting for a chat.** Now and then the spot settlers pick for a chat is on a
-  burning fire. The settler standing there catches fire and is moved clear, with no lasting harm. Being fixed for
-  1.8.0.
+  1.8.1.
 
 ## Recently fixed
 
+- **A settler can step onto a lit fire while meeting for a chat**: fixed in 1.8.0: update the mod. Settlers who meet for a
+  chat or a sparring match no longer pick a spot beside a lit fire.
 - **A Troll can catch a settler at their hut's door**: fixed in 1.7.1: update the mod. From a Troll, settlers go in only
   when they'll be through the door well before it reaches them, and otherwise keep running.
 - **Hugin the raven can stand in a settler's way by a door**: fixed in 1.7.1: update the mod. Hugin keeps out of

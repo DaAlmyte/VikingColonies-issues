@@ -46,7 +46,7 @@ plan does, and it's in #roadmap on the Discord too.
 
 - [Getting started](guide/Getting-Started.md) takes you through the install and your first colony.
 - [Buildings](guide/Buildings.md) covers every building, placing huts, levels and upgrades.
-- [Citizens and jobs](guide/Citizens-and-Jobs.md) explains how settlers live, work, eat, sleep and feel.
+- [Settlers and jobs](guide/Settlers-and-Jobs.md) explains how settlers live, work, eat, sleep and feel.
 - [Settings](guide/Settings.md) lists every option and what it does.
 - [Multiplayer](guide/Multiplayer.md) is about servers and playing with friends.
 - [Troubleshooting](guide/Troubleshooting.md) answers common questions and covers other mods and removing the mod.

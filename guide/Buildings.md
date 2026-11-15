@@ -7,8 +7,8 @@ game's own tooltip box (1.7).
 ## Chieftain's Camp
 - The colony's start: a camp round a fire (called the Town Hall before 1.5.1; only the name changed).
 - Cost: 20 Wood, 10 Stone (settings `Town Hall.WoodCost`, `Town Hall.StoneCost`). Needs a workbench nearby.
-- It founds a colony. On first build it adopts nearby citizens without a colony, then tops up to the starting citizen
-  count (4 by default). Later, any citizen without a colony who comes inside its area joins too.
+- It founds a colony. On first build it adopts nearby settlers without a colony, then tops up to the starting settler
+  count (4 by default). Later, any settler without a colony who comes inside its area joins too.
 - **E** opens the 24-slot colony chest. Keep food here for newcomers; settlers eat from any colony chest. The chest
   keeps 10 food of any kind for newcomers to start with (see its [Keep in stock](#keep-in-stock) list), and settlers eat
   food beyond that first.
@@ -44,22 +44,29 @@ game's own tooltip box (1.7).
     to take the job. A worker who is stuck, has nothing to do or has no job gives no sign. The signs hide while one of the mod's windows is open. A
     hut's own window says why its worker isn't working, in the same words as the People tab.
 
+    **Signs by the doors** (1.8.0): hang the game's own sign (the hammer's Misc tab) within 2 m of a hut's door and
+    leave it empty. About ten seconds later the hut's mark and short name appear on it, in white: an axe for the
+    Lumberjack's Hut, a mushroom for the Forager's Hut, a sheaf for the Farm, a hammer for the Builder's Hut, a shield
+    for the Watchtower, a crate for the Storehouse, meat for the Mead Hall and a bed for the Longhouse. Your own words on
+    a sign are never changed; empty a sign to get the mark back. Only the player who hung the sign writes it, and only
+    at a colony they may manage. Nothing of the mod's is saved with the sign, so it keeps its words if the mod goes.
+
     With the game's raven hints on (Settings, "Enable raven hints"), **Hugin's next step** shows too. It came in with 1.5.1.
     It runs through seven steps for a new colony (a Builder's Hut, a job for a settler, a Longhouse, food in the camp's
     chest, a Watchtower, the camp's level 2), the last one done and the next, with what Hugin says of it. Each is read
     from the colony as it stands, so an older colony starts with what it has ticked off, and the block goes once all
     are done. Under the boxes (1.7.0) there's a small line, "Ideas, sneak peeks, help: our Discord"; a click opens the
     mod's Discord in your browser.
-  - **People** is a table of every citizen (1.7.0: name, job, what they're doing, where they work and their mood; a
-    newcomer's reads *Settling in* for about a minute), ten a page. Citizens nobody is near show their last known
-    status. Vanished citizens show as *Missing* and drop off after 3 in-game days.
+  - **People** is a table of every settler (1.7.0: name, job, what they're doing, where they work and their mood; a
+    newcomer's reads *Settling in* for about a minute), ten a page. Settlers nobody is near show their last known
+    status. Vanished settlers show as *Missing* and drop off after 3 in-game days.
 
     **Sort** (1.7.0) can also put the list in **needs you** order: those who can't work until you help come first,
     and their Doing column says why ("Needs a weapon in the Watchtower's chest", "No job: give them one in a hut's
     window"), orange when it's yours to fix. **Show me**, beside Send away, closes the window and pins your own map for
     a minute where the chosen settler is, or was last seen. Only you see the pin.
 
-    Click a citizen to see their page in the box under the list (1.5.1): who they are, their mood and why, their
+    Click a settler to see their page in the box under the list (1.5.1): who they are, their mood and why, their
     skills, their home, what they carry and their newest lines in the Saga. **Recall**, in that box, brings them at once
     to a free spot by the camp, wherever they are in the loaded world (stuck somewhere, or just far off), and they
     carry on with their work from there. Only players who may manage the colony (its owner, or players on a ward
@@ -195,7 +202,7 @@ game's own tooltip box (1.7).
 - **Stop at** (0.22) offers "no limit", 200, 500 or 1000 Wood. With that much Wood in the colony's chests they rest
   ("Enough wood") and start again below it.
 - **Shift+E** shows the worker (name and status), **Hire**, **Fire** and **Auto-hire** (on by default: a hut without a
-  worker hires a jobless citizen by itself). Firing switches auto-hire off so the same citizen isn't re-hired at once.
+  worker hires a jobless settler by itself). Firing switches auto-hire off so the same settler isn't re-hired at once.
 - Destroying the hut makes its worker jobless after about 30 seconds. A building has to be missing that long to count
   as gone, so one that is still loading isn't mistaken for a destroyed one.
 - **Take down** (0.23, any finished hut's window; click twice, "Sure? Take it down") sends a builder to take its
@@ -246,11 +253,11 @@ game's own tooltip box (1.7).
   falling).
 - With nothing to build, the builder mends damaged colony buildings, the worst-damaged first. Pieces a troll or a fire
   broke off a finished hut are put back as a repair order, while the hut keeps working. A piece you take away with your
-  hammer stays away. See [Citizens and jobs](Citizens-and-Jobs.md#builder).
+  hammer stays away. See [Settlers and jobs](Settlers-and-Jobs.md#builder).
 
 ## Forager's Hut
 - Cost: 20 Wood (setting `Forager Hut.WoodCost`). Needs a Chieftain's Camp nearby.
-- It hires a forager once its building stands (see [Citizens and jobs](Citizens-and-Jobs.md#forager)). They pick what
+- It hires a forager once its building stands (see [Settlers and jobs](Settlers-and-Jobs.md#forager)). They pick what
   grows wild within 40 m (10 m more per level) and grows back, and fill the hut's chest with food the colony eats and
   herbs such as dandelions and thistles for you.
 - **E** opens storage. **Shift+E** shows the worker, their status, what the hut's level gives and how many kinds they
@@ -260,7 +267,7 @@ game's own tooltip box (1.7).
 
 ## Farm
 - Cost: 20 Wood (setting `Farm.WoodCost`). Needs a Chieftain's Camp nearby.
-- It hires a farmer once its building stands (see [Citizens and jobs](Citizens-and-Jobs.md#farmer)). They work only the
+- It hires a farmer once its building stands (see [Settlers and jobs](Settlers-and-Jobs.md#farmer)). They work only the
   fields you mark with **field markers** (below), as in MineColonies: a Farm has no ground of its own (since 0.20.1).
   Place a marker near the Farm, choose its crop and size, and the Farm takes it, with one field per level (1 at
   level 1, 5 at level 5). With no field the Farm's window says "No field yet" and the farmer says "Needs a field".
@@ -289,7 +296,7 @@ game's own tooltip box (1.7).
   settler the colony has lost, their trade, the day and how. Build it from the hammer's Misc tab, inside a colony you
   may manage (the camp is its station), one per colony ("The colony already has a memorial stone"); it costs 20
   Stone (`Memorial.StoneCost`). E reads it like a runestone, 20 lines a page, newest first. See
-  [Citizens and jobs](Citizens-and-Jobs.md) for the fallen return.
+  [Settlers and jobs](Settlers-and-Jobs.md) for the fallen return.
 
 ## Field markers
 - A **scarecrow** (1.7.0; a sign before) in the hammer's **Misc** tab (setting `Field.WoodCost`, 4 Wood), placed inside
@@ -311,7 +318,7 @@ game's own tooltip box (1.7).
 ## Watchtower
 - (1.1) Cost: 20 Wood (setting `Watchtower.WoodCost`). Needs the colony nearby, as every hut: within the colony's area
   (see [The colony's area](#the-colonys-area)).
-- It hires a guard once its building stands (see [Citizens and jobs](Citizens-and-Jobs.md#guard)), with two at level
+- It hires a guard once its building stands (see [Settlers and jobs](Settlers-and-Jobs.md#guard)), with two at level
   3–4, three at level 5 (1.2), each at their own place by the door. They keep watch and fight monsters that come near
   the colony with the best gear in its chest (copies, the items stay in the chest):
   - **Role** (its window's button, 1.2): **Warrior** (to start) takes the best melee weapon (a club, an axe, a sword, a
@@ -377,7 +384,7 @@ game's own tooltip box (1.7).
   asks you to empty the chests yourself. Its own chest's things go to the camp by themselves, as with every hut.
 - Hugin explains the storehouse the first time you place one (one placed already built in creative mode too).
 - It hires couriers (1.5) like a Watchtower hires guards: one at levels 1–2, two at 3–4, three at 5 (Hire, Fire,
-  Auto-hire). They carry for the whole colony, see [Citizens and jobs](Citizens-and-Jobs.md#courier). Its own chest is
+  Auto-hire). They carry for the whole colony, see [Settlers and jobs](Settlers-and-Jobs.md#courier). Its own chest is
   your drop-off: empty your bag into it after a trip, and couriers take what stacks to whoever needs it, or into the
   chests inside. Gear (weapons, armour, tools) stays where you put it.
 
@@ -385,7 +392,7 @@ game's own tooltip box (1.7).
 - (1.6) Cost: 20 Wood (setting `Mead Hall.WoodCost`). One per colony (placing says so in red otherwise). Within the
   colony's area, as every hut.
 - It's the colony's kitchen and table. It hires a cook (Hire, Fire, Auto-hire in its window), see
-  [Citizens and jobs](Citizens-and-Jobs.md#cook). The cook works the cooking stations inside it, both the ones its
+  [Settlers and jobs](Settlers-and-Jobs.md#cook). The cook works the cooking stations inside it, both the ones its
   design brings and any you put inside its walls (a cooking station over a fire; while it has no design yet, any within
   8 m of its chest).
 - Its chest is the larder, and everything the cook roasts goes there. Settlers eat their breakfast at its table when its
@@ -472,7 +479,8 @@ game's own tooltip box (1.7).
     **Orders** and the post (a Watchtower). A storehouse's shows its store.
   - **Level** shows anything wrong first, in orange (no camp near it, the camp gone, not your colony), then what the
     level gives and what the next one needs (or why it can't happen yet), with **Upgrade**.
-  - **The building** shows how it stands, with **Build** and **Take down**.
+  - **The building** shows how it stands, with **Build** and **Take down**. Until a sign hangs by a door in your colony,
+    it also says that a sign there gets the hut's mark (1.8.0).
   - A line under the boxes answers a click (a recall, a hand-over, a take-down's "Sure?").
 - **Fields** is a table of each field's crop, size, how far and who works it, with **Assign** or **Leave**.
 
@@ -613,13 +621,15 @@ game's own tooltip box (1.7).
 
 ### What a level gives
 - In a **Lumberjack's Hut** the lumberjack works 10 m further out per level (40 m at level 1, 80 m at level 5;
-  `Lumberjack.RadiusPerLevel`), and may use better axes: up to flint (1), iron (2), black metal (3), Jotun Bane (4),
-  Berserkir (5). They borrow a copy of the best allowed axe in the colony's chests (the axe stays in the chest). Their
-  Trees list fells the kinds that axe can fell.
+  `Lumberjack.RadiusPerLevel`), and may use better axes: up to flint (1), iron (2), black metal or Jotun Bane (3 and 4,
+  the same tier), Berserkir (5). They take the best allowed axe in the colony's chests as their own (1.8.0; see Settlers and Jobs,
+  Tools). Their Trees list fells the kinds that axe can fell.
 - A **Builder's Hut** lets the builder use axes and pickaxes up to the same ladder (pickaxes: antler, iron, black
   metal). For a tree or rock that needs a better tool than their level allows, they say which Builder's Hut level it
   takes, or you can clear it yourself. A level-1 builder uses only a flint axe and an antler pickaxe, so keep one in a
   chest; birch and oak on their sites wait for a level-2 Builder's Hut (they work on other sites meanwhile).
+- For both huts, the window's level box says when the next level allows a better axe, and about how much faster it
+  chops (1.8.0), from the same numbers the settler works by.
 - A **Longhouse** gets two more beds per level.
 - In a **Forager's Hut** the forager works 10 m further out per level (40 m at level 1, 80 m at level 5).
 - A **Farm** works one more field per level (1 at level 1, 5 at level 5).

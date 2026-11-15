@@ -14,7 +14,7 @@
   address, needs UDP ports 2456–2458 open on the router for friends outside the house.
 - If you use r2modman or the Thunderstore app, start the game from it (Start modded). Started straight from Steam it
   has no mods, and a server without crossplay turns you away with "Incompatible version".
-- Citizens and buildings are saved with the world and look the same for everyone.
+- Settlers and buildings are saved with the world and look the same for everyone.
 - The server's settings count. The colony buildings' costs, and every other colony setting marked as synced, come from
   the server when you join it, and the hammer asks the server's cost at once. In a world of your own you get your own
   again.
@@ -30,9 +30,9 @@
 - Settlers hand chests over like players do. The computer that has a hut chest sends its latest contents first, and
   the settler's computer reloads them before changing the chest, so what a friend just put in or took out is kept.
   While a friend has a hut chest open, a settler who needs it waits by it until it's closed.
-- Hiring, firing and joining a colony are applied by the computer that runs the citizen, which checks the citizen is
-  still free first, so two huts can't hire the same citizen.
-- A building has to be missing for about 30 seconds before citizens treat it as destroyed, so a player still loading
+- Hiring, firing and joining a colony are applied by the computer that runs the settler, which checks the settler is
+  still free first, so two huts can't hire the same settler.
+- A building has to be missing for about 30 seconds before settlers treat it as destroyed, so a player still loading
   into a big base doesn't make anyone lose their colony or job.
 - When a Chieftain's Camp is lost, each hut and each settler notices on its own (on the computer that runs it) and
   keeps the colony for the grace days (`Colony.TownHallGraceDays`, shared from the server). The huts remember who built
@@ -57,4 +57,4 @@
   hut, the player who placed it), and the order keeps that design. The hut window's upgrade line shows the viewer's own
   designs' cost. A design one player saved with `vc_blueprint save` is used on others' computers only if they have a
   copy of it in their own designs folder.
-- A citizen keeps working when you're away only while someone is near it (Valheim only runs areas near players).
+- A settler keeps working when you're away only while someone is near them (Valheim only runs areas near players).

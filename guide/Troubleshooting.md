@@ -29,7 +29,7 @@
 
 ## Settlers and newcomers
 
-- **Nobody gets hired**: either every citizen already has a job or auto-hire is off (Shift+E on the hut). More
+- **Nobody gets hired**: either every settler already has a job or auto-hire is off (Shift+E on the hut). More
   settlers come by themselves if you build a Longhouse (free beds) and keep 5 food in the camp's chest. A newcomer
   then arrives each day.
 - **No newcomers though there's a bed and food**: the colony may be unhappy, and the camp's Overview says so. Choose a
@@ -105,9 +105,14 @@
 
 ## Lumberjack
 
-- **Lumberjack stands at the hut saying "No trees nearby"**: no tree within the hut's work area (40 m at level 1, 10 m
-  more per level) is one their level's axe can fell. Birch and oak need a level-2 hut. Trees that would fall on
-  buildings are left alone.
+- **Lumberjack stands at the hut saying "No trees nearby"**: no tree stands within the hut's work area (40 m at level 1,
+  10 m more per level).
+- **"Leaving the trees by your buildings"**: the trees in reach stand within 3 m of something you built, or would fall
+  on it, so they're left standing (`Lumberjack.LeaveTreesNearBuildings`).
+- **"No trees to fell (see Trees…)"**: the hut's level can't fell the kinds in reach (birch and oak need a level 2 hut),
+  or you unticked them in the hut's Trees… list.
+- **"Needs a better axe in the colony's chests"**: the hut's level lets them fell these trees, but they only have their
+  flint axe. Put an axe the hut's level allows (bronze at level 2) in a chest of the colony's huts; they work with a copy and it stays there.
 - **The lumberjack doesn't replant**: put a Cultivator in the Lumberjack's Hut's storage (Shift+E on the hut shows
   whether replanting is on), and check the kind's Replant tick on its Trees list.
 - **The lumberjack leaves a tree standing**: one of four things is going on. The kind is unticked from Fell on the
