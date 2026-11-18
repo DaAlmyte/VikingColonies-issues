@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 15 November 2026._
+_Last changed 18 November 2026._
 
 ## Now: 1.8.1
 
@@ -23,9 +23,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.10
 
-- One order raises every hut to the colony's new age after a boss (being built)
 - Guard posts can stand anywhere in your colony, and the guards keep watch around the post. (being built)
-- Your colony celebrates when you come home with a boss's trophy, and one order raises every hut to the new age (being built)
 - Mark a garden for the forager or a wood for the lumberjack with two posts, or a place nobody touches. Coming in 1.10.0. (being built)
 - The mod in Spanish, Russian, German and Simplified Chinese
 
@@ -36,11 +34,11 @@ Ideas I'd like to build. They may change, move or drop out.
 - The Deep North in the colony's progression: Kall's fall counted at the camp and celebrated, the Deep North's lands for trips, its tools, weapons and armour used by settlers and guards
 - When you come home after a day or more, Hugin tells you what happened while you were away, what needs you first; the mine catches up on the days nobody was near
 - Your settlers' trips under way pinned on your own map, and a Far work list in the camp window
+- Old on/off settings from when each feature was new go away, and what they switched is part of every colony. For a gentler game there's the Relaxed preset.
 - Put a hut's chest in a room of a house you built, and that room becomes the hut. Nothing of yours gets taken down.
 - Send settlers on trips to biomes you've visited: they come back with what doesn't grow at home
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
-- Choose which settler works each hut, see how fast each would work there and why, and every hut gets a clearer window that says why a worker is idle
 
 ## Just out: 1.8.0
 
