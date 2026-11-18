@@ -2,18 +2,18 @@
 
 Problems in VikingColonies we know about, the worst first: what's being done, and a way round them where there is one.
 
-_Last updated 15 November 2026._
+_Last updated 18 November 2026._
 
-VikingColonies 1.8.0 · Works with Valheim 1.0.21 (checked 14 November 2026).
+VikingColonies 1.8.1 · Works with Valheim 1.0.21 (checked 14 November 2026).
 
 Is your problem not here? [Report it](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose), or press **Report a problem** in the Chieftain's Camp's window. Look at [Troubleshooting](Troubleshooting.md) first: it explains the things that work that way on purpose.
 
-- **A courier sometimes ends up outside the storehouse's back wall.** They wait there instead of going round to the
-  door. After about two minutes they drop that trip, and the next one usually goes in normally. We're working on a
-  fix: it goes in 1.8.1 (Wednesday 18 November) if it's ready by then, otherwise in the release after.
+Nothing open right now that we know of.
 
 ## Recently fixed
 
+- **A courier sometimes ends up outside the storehouse's back wall**: fixed in 1.8.1: update the mod. Couriers and
+  workers go round by the door to reach a chest behind a wall.
 - **A settler can step onto a lit fire while meeting for a chat**: fixed in 1.8.0: update the mod. Settlers who meet for a
   chat or a sparring match no longer pick a spot beside a lit fire.
 - **A Troll can catch a settler at their hut's door**: fixed in 1.7.1: update the mod. From a Troll, settlers go in only
