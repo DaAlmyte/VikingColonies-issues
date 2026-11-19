@@ -20,28 +20,30 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 
 ### 1.10
 
+- One colony difficulty setting, Relaxed, Normal or Hardcore, sets yields, risk and upkeep at once (being built)
 - Guard posts can stand anywhere in your colony, and the guards keep watch around the post. (being built)
 - Our own memorial stone, with each fallen settler's name carved on it in runes. (being built)
-- The mod in Spanish, Russian, German and Simplified Chinese
+- See what a gathering hut can reach before you place it, and what your colony knows on the camp's Saga tab (being built)
+- The mod in Spanish, Russian, German and Simplified Chinese (being built)
 - A settler who stops right outside a door now shuts it behind them.
 - Settlers swing their weapons and tools smoothly, without shaking
 
 ### 1.11
 
-- Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear
+- Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear (being built)
 
 ## Later
 
 Ideas I'd like to build. They may change, move or drop out.
 
 - The Deep North in the colony's progression: Kall's fall counted at the camp and celebrated, the Deep North's lands for trips, its tools, weapons and armour used by settlers and guards
+- A miner who digs stone and a trickle of the ores you've brought home
+- The miner and the lumberjack stop at the amount you set and start again when the stock runs low
 - When you come home after a day or more, Hugin tells you what happened while you were away, what needs you first; the mine catches up on the days nobody was near
 - Your settlers' trips under way pinned on your own map, and a Far work list in the camp window
 - Old on/off settings from when each feature was new go away, and what they switched is part of every colony. For a gentler game there's the Relaxed preset.
 - Settlers with free time vary what they do and rarely repeat the last thing.
-- Put a hut's chest in a room of a house you built, and that room becomes the hut. Nothing of yours gets taken down.
-- Send settlers on trips to biomes you've visited: they come back with what doesn't grow at home
-- Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
+- Many more Norse names, so fewer settlers share one.
 
 ## Just out: 1.8.1
 
