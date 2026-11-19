@@ -11,6 +11,7 @@ Planned for Sunday 22 November. Anything that isn't ready in time moves to the n
 - One order raises every hut to the colony's new age after a boss
 - Your colony celebrates when you come home with a boss's trophy, and one order raises every hut to the new age
 - Mark a garden for the forager or a wood for the lumberjack with two posts, or a place nobody touches
+- Yule in the colony: from 20 December, three Yule nights, with a feast and cups at the evening fire to the year's fallen by name
 - Fixes for problems players reported: see the [known issues](guide/Known-Issues.md).
 
 ## Next
@@ -37,7 +38,7 @@ Ideas I'd like to build. They may change, move or drop out.
 - When you come home after a day or more, Hugin tells you what happened while you were away, what needs you first; the mine catches up on the days nobody was near
 - Your settlers' trips under way pinned on your own map, and a Far work list in the camp window
 - Old on/off settings from when each feature was new go away, and what they switched is part of every colony. For a gentler game there's the Relaxed preset.
-- Yule in the colony: from 20 December, three Yule nights, with a feast and cups at the evening fire to the year's fallen by name
+- Settlers with free time vary what they do and rarely repeat the last thing.
 - Put a hut's chest in a room of a house you built, and that room becomes the hut. Nothing of yours gets taken down.
 - Send settlers on trips to biomes you've visited: they come back with what doesn't grow at home
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
