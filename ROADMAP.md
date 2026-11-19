@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 18 November 2026._
+_Last changed 19 November 2026._
 
 ## Now: 1.9.0
 
@@ -41,28 +41,6 @@ Ideas I'd like to build. They may change, move or drop out.
 - Put a hut's chest in a room of a house you built, and that room becomes the hut. Nothing of yours gets taken down.
 - Send settlers on trips to biomes you've visited: they come back with what doesn't grow at home
 - Visitors at the camp: a wandering skald, a pedlar, a stranger asking to join
-
-## Just out: 1.8.0
-
-- Settlers' own tools: each lumberjack, builder and farmer carries a real tool from your chests, which wears, gets repaired at your workbench or forge, and works faster the better it is
-- Settlers change into their job's outfit when hired: a hat for every trade and Viking colours for every kind of work
-- Quick start: one button on a new camp lays out its first huts on good spots, for you to accept or move
-- Guards get more health from the armour they wear, so a guard in iron can stand up to a Troll
-- Settlers pick better places to stand: out of a fire's reach, and not in a doorway, in a rock or on a bench.
-- Guards walk real rounds of the colony, past several huts, before they go back to their post
-- See where your colony's border runs: on the map, on the ground, and how far a Watchtower pushes it out
-- Farmers hold their own cultivator and swing it when they work new farmland and plant.
-- The cook takes free time like everyone else when the meals are done.
-- Guards on watch look around, and turn to you when you come near.
-- Each settler goes to the fire, to bed and out in the morning at their own moment.
-- Hang a sign by a hut's door and leave it empty: it gets the hut's mark and name. Your own words on a sign stay.
-- Settlers earn bynames from what they do, like Ulf Tree-feller or Bjorn Troll-bane
-- Safer first days: early settlers are knocked out, not killed, until your first Longhouse stands
-- Every hut's window gets the camp window's clear look: boxes, tables and lit tabs.
-- Settlers answer each other when they chat.
-- Every hut gets a richer look at all five levels
-
-Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
 
 ## Your ideas
 
