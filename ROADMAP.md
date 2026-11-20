@@ -2,16 +2,16 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 19 November 2026._
+_Last changed 20 November 2026._
 
 ## Now: 1.9.0
 
 Planned for Sunday 22 November. Anything that isn't ready in time moves to the next update, so it doesn't hold up the rest.
 
 - One order raises every hut to the colony's new age after a boss
+- Yule in the colony: from 20 December, three Yule nights, with a feast and cups at the evening fire to the year's fallen by name
 - Your colony celebrates when you come home with a boss's trophy, and one order raises every hut to the new age
 - Mark a garden for the forager or a wood for the lumberjack with two posts, or a place nobody touches
-- Yule in the colony: from 20 December, three Yule nights, with a feast and cups at the evening fire to the year's fallen by name
 - Fixes for problems players reported: see the [known issues](guide/Known-Issues.md).
 
 ## Next
@@ -23,7 +23,6 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - One colony difficulty setting, Relaxed, Normal or Hardcore, sets yields, risk and upkeep at once (being built)
 - Guard posts can stand anywhere in your colony, and the guards keep watch around the post. (being built)
 - Settlers greet you in different ways, and not all at once. (being built)
-- Our own memorial stone, with each fallen settler's name carved on it in runes. (being built)
 - See what a gathering hut can reach before you place it, and what your colony knows on the camp's Saga tab (being built)
 - The mod in Spanish, Russian, German and Simplified Chinese (being built)
 - A settler who stops right outside a door now shuts it behind them.
