@@ -2,7 +2,7 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 20 November 2026._
+_Last changed 22 November 2026._
 
 ## Now: 1.9.0
 
@@ -23,6 +23,8 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 - One colony difficulty setting, Relaxed, Normal or Hardcore, sets yields, risk and upkeep at once (being built)
 - Guard posts can stand anywhere in your colony, and the guards keep watch around the post. (being built)
 - Settlers greet you in different ways, and not all at once. (being built)
+- New settlers take one of 88 Norse first names instead of 24. (being built)
+- Our own memorial stone, with each fallen settler's name carved on it in runes. (being built)
 - See what a gathering hut can reach before you place it, and what your colony knows on the camp's Saga tab (being built)
 - The mod in Spanish, Russian, German and Simplified Chinese (being built)
 - A settler who stops right outside a door now shuts it behind them.
@@ -31,6 +33,7 @@ No dates from here on: two updates a week, new features on Sundays and fixes on 
 ### 1.11
 
 - Settlers' own gear, part 2: guards keep their own weapons and armour, workers wear armour from your chests, and pressing E on a settler shows and changes their gear (being built)
+- See where your colony's border runs: on the map, on the ground, and how far a Watchtower pushes it out (being built)
 
 ## Later
 
