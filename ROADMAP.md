@@ -48,14 +48,6 @@ Ideas I'd like to build. They may change, move or drop out.
 - Old on/off settings from when each feature was new go away, and what they switched is part of every colony. For a gentler game there's the Relaxed preset.
 - Settlers with free time vary what they do and rarely repeat the last thing.
 
-## Just out: 1.8.1
-
-- The lumberjack no longer leaves a log lying for minutes after it rolls a little.
-- Logs from trees your settlers fell no longer damage your own buildings when they roll.
-- A felled tree no longer lands on the end of a long wall or beam a few steps away
-
-Everything in each update: the [changelog](https://thunderstore.io/c/valheim/p/DaAlmyte/VikingColonies/changelog/).
-
 ## Your ideas
 
 Post them in #feedback on the [Discord](https://discord.gg/yCzDUPQA3D), one post per idea with the Idea tag, or on the [issues page](https://github.com/DaAlmyte/VikingColonies-issues/issues/new/choose). I read every post, and the 👍 count on posts helps me decide what comes next.
