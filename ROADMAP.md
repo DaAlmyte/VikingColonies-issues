@@ -2,11 +2,11 @@
 
 What's coming to VikingColonies: the next update, the one or two after it, and ideas for later. This page follows the plan I work from and changes when the plan does.
 
-_Last changed 22 November 2026._
+_Last changed 23 November 2026._
 
 ## Now: 1.9.0
 
-Planned for Sunday 22 November. Anything that isn't ready in time moves to the next update, so it doesn't hold up the rest.
+Coming soon: it's taking a little longer than planned. Anything that isn't ready in time moves to the next update, so it doesn't hold up the rest.
 
 - One order raises every hut to the colony's new age after a boss
 - Yule in the colony: from 20 December, three Yule nights, with a feast and cups at the evening fire to the year's fallen by name
